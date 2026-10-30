@@ -1,0 +1,40 @@
+{
+  "schema_version": "normal-cylinder-diagnostic-config-1.0",
+  "experiment_id": "normal_constraint_cylinder_diagnostic",
+  "run_id": "normal-continuum-medium-model-numerical-fine",
+  "study": {"development_only": true, "paper_eligible": false},
+  "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p5.json",
+  "source_config_sha256": "4927ca71c4b68fd156f526fadbf94ff65fe9fe2166df0c1133934b54a99efd3b",
+  "grid": {"nx": 880, "ny": 164, "lx": 2.2, "ly": 0.41},
+  "normal_constraint": {
+    "kernel": "tensor-cubic-bspline-native-mac",
+    "markers": 48,
+    "nominal_surface_shift": 0,
+    "angle_origin": 0,
+    "force_protocol": "mac-brinkman-plus-normal-reaction-prototype-v1"
+  },
+  "max_steps": 144000,
+  "chunk_steps": 1000,
+  "gates": {"divergence_max": 1e-8, "normal_velocity_max": 1e-10, "mass_flux_mismatch": 1e-9, "cv_relative_closure": 0.00001},
+  "planar_calibration_control": {
+    "method": "continuous-planar-tangential-shear-zero-displacement",
+    "reference_data": "none",
+    "purpose": "same-continuum-model-discretization-only",
+    "paper_eligible": false
+  },
+  "pressure_preconditioner": "constant-poisson-dct",
+  "fixed_model_control": {
+    "method": "fixed-physical-mask-kernel-and-markers",
+    "refinement_factor": 2,
+    "reference_normal_config": "configs/forward_verification/diagnostics/cylinder_normal_continuum_medium.json",
+    "reference_normal_config_sha256": "11bf5d641732fc588bd97acadb07d316f62258934f73c64db9e8c709378a773a",
+    "paper_eligible": false
+  },
+  "fixed_model_fine_authorization": {
+    "date": "2026-09-19",
+    "scope": "single-fixed-physical-model-880x164-control",
+    "gpu_preallocation_fraction": 0.70,
+    "gpu_memory_stop_mib": 22000,
+    "minimum_disk_free_gib": 30
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "alpha_max": 2400.0,
+  "claim": "The projected-gradient closed loop at fixed interface width and penalization reaches consistent optimized shapes on nested grids; each level's optimum is evaluated on every other level.",
+  "coefficient_differences": [
+    {
+      "cardinal_radii_difference": [
+        -0.02493158687352559,
+        -0.010888538422544142,
+        -0.02631857292920614,
+        -0.01712549800243829
+      ],
+      "l2_difference": 0.09081623521965569,
+      "l2_difference_relative_to_bound": 0.10702795960941851,
+      "levels": [
+        "coarse",
+        "medium"
+      ],
+      "max_abs_difference": 0.07899445670066826
+    },
+    {
+      "cardinal_radii_difference": [
+        -0.027222322341563854,
+        -0.010083116258258806,
+        -0.027000593537657436,
+        -0.019548086878389742
+      ],
+      "l2_difference": 0.09494271214996307,
+      "l2_difference_relative_to_bound": 0.11189105930913551,
+      "levels": [
+        "coarse",
+        "fine"
+      ],
+      "max_abs_difference": 0.08366915270305365
+    },
+    {
+      "cardinal_radii_difference": [
+        -0.002290735468038263,
+        0.0008054221642853354,
+        -0.0006820206084512948,
+        -0.0024225888759514536
+      ],
+      "l2_difference": 0.008124725206045503,
+      "l2_difference_relative_to_bound": 0.009575080480786742,
+      "levels": [
+        "medium",
+        "fine"
+      ],
+      "max_abs_difference": 0.004739315085307725
+    }
+  ],
+  "cross_evaluation": [
+    {
+      "evaluated_on": "coarse",
+      "gain_percent": 79.45454603029418,
+      "mean_u": 0.6440323410701068,
+      "optimized_on": "coarse"
+    },
+    {
+      "evaluated_on": "coarse",
+      "gain_percent": 73.53370666815123,
+      "mean_u": 0.622783439218062,
+      "optimized_on": "medium"
+    },
+    {
+      "evaluated_on": "coarse",
+      "gain_percent": 73.50524937078143,
+      "mean_u": 0.6226813107390069,
+      "optimized_on": "fine"
+    },
+    {
+      "evaluated_on": "medium",
+      "gain_percent": 65.72749205558515,
+      "mean_u": 0.615799662688945,
+      "optimized_on": "coarse"
+    },
+    {
+      "evaluated_on": "medium",
+      "gain_percent": 70.30633858543307,
+      "mean_u": 0.6328134490777422,
+      "optimized_on": "medium"
+    },
+    {
+      "evaluated_on": "medium",
+      "gain_percent": 70.2564691104743,
+      "mean_u": 0.6326281472580068,
+      "optimized_on": "fine"
+    },
+    {
+      "evaluated_on": "fine",
+      "gain_percent": 65.58936838135652,
+      "mean_u": 0.6183270485181722,
+      "optimized_on": "coarse"
+    },
+    {
+      "evaluated_on": "fine",
+      "gain_percent": 70.01462216897201,
+      "mean_u": 0.6348513830221755,
+      "optimized_on": "medium"
+    },
+    {
+      "evaluated_on": "fine",
+      "gain_percent": 70.06045376012125,
+      "mean_u": 0.6350225227080213,
+      "optimized_on": "fine"
+    }
+  ],
+  "epsilon": 0.075,
+  "levels": {
+    "coarse": [
+      32,
+      20
+    ],
+    "fine": [
+      128,
+      80
+    ],
+    "medium": [
+      64,
+      40
+    ]
+  },
+  "merged_provenance": {
+    "backend": "cpu",
+    "device_kind": "cpu",
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "git_branch": "paper/major-revision-2026-09",
+    "git_commit": "e2c9573684c1d292583fc7e35891bbfb6f45176d",
+    "git_dirty": false,
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "precision": "float64",
+    "processor": "x86_64",
+    "python": "3.11.13",
+    "scipy": "1.16.0",
+    "utc": "2026-09-03T20:27:26.977818+00:00",
+    "x64_enabled": true
+  },
+  "per_level": {
+    "coarse": {
+      "accepted_updates": 42,
+      "active_bounds": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "cardinal_radii": [
+        0.33849867614148693,
+        0.1907044585660353,
+        0.33853700434332346,
+        0.18098763138203236
+      ],
+      "epsilon_over_h": 1.4999999999999998,
+      "final_coefficients": [
+        0.3,
+        0.0017110535121694856,
+        0.009559065205972831,
+        -0.0017676653023340487,
+        -0.030673738628775378,
+        -0.028582008212404003,
+        -0.017596240426595713,
+        -0.002433909058274303
+      ],
+      "iterations": 43,
+      "loop_seconds": 44.20144770799379,
+      "mean_velocity_increase_percent": 79.45454603064131,
+      "projected_gradient_ratio": 0.0009024253484220749
+    },
+    "fine": {
+      "accepted_updates": 15,
+      "active_bounds": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "cardinal_radii": [
+        0.3657209984830508,
+        0.2007875748242941,
+        0.3655375978809809,
+        0.2005357182604221
+      ],
+      "epsilon_over_h": 5.999999999999999,
+      "final_coefficients": [
+        0.3,
+        0.00016310267789393064,
+        0.09322821790902648,
+        8.76986211638279e-05,
+        -0.0003650310577108173,
+        -0.0006852307273254902,
+        -0.00012459292241306087,
+        -5.7665367239638694e-05
+      ],
+      "iterations": 16,
+      "loop_seconds": 1300.3364202889934,
+      "mean_velocity_increase_percent": 70.06045376018587,
+      "projected_gradient_ratio": 0.00037282232275511195
+    },
+    "medium": {
+      "accepted_updates": 21,
+      "active_bounds": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "cardinal_radii": [
+        0.3634302630150125,
+        0.20159299698857944,
+        0.3648555772725296,
+        0.19811312938447065
+      ],
+      "epsilon_over_h": 2.9999999999999996,
+      "final_coefficients": [
+        0.3,
+        -0.0010852454691189254,
+        0.08855352190664109,
+        -0.0008718378605367927,
+        0.002209933778396299,
+        -0.005424545812633215,
+        0.0010737885622141266,
+        0.003281739375443939
+      ],
+      "iterations": 22,
+      "loop_seconds": 110.28276121300587,
+      "mean_velocity_increase_percent": 70.30633858534728,
+      "projected_gradient_ratio": 0.0009158765889152144
+    }
+  },
+  "provenance_by_level": {
+    "coarse": {
+      "backend": "cpu",
+      "device_kind": "cpu",
+      "devices": [
+        "TFRT_CPU_0"
+      ],
+      "git_branch": "paper/major-revision-2026-09",
+      "git_commit": "f454880f049562bc0b565b2b1882e503c1c12aba",
+      "git_dirty": true,
+      "jax": "0.7.0",
+      "jaxlib": "0.7.0",
+      "numpy": "2.3.1",
+      "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+      "precision": "float64",
+      "processor": "x86_64",
+      "python": "3.11.13",
+      "scipy": "1.16.0",
+      "script": "examples/36_closed_loop_refinement.py",
+      "start_utc": "2026-09-03T19:57:49.744437+00:00",
+      "utc": "2026-09-03T19:58:54.386745+00:00",
+      "x64_enabled": true
+    },
+    "fine": {
+      "backend": "cpu",
+      "device_kind": "cpu",
+      "devices": [
+        "TFRT_CPU_0"
+      ],
+      "git_branch": "paper/major-revision-2026-09",
+      "git_commit": "e2c9573684c1d292583fc7e35891bbfb6f45176d",
+      "git_dirty": false,
+      "jax": "0.7.0",
+      "jaxlib": "0.7.0",
+      "numpy": "2.3.1",
+      "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+      "precision": "float64",
+      "processor": "x86_64",
+      "python": "3.11.13",
+      "scipy": "1.16.0",
+      "script": "examples/36_closed_loop_refinement.py",
+      "start_utc": "2026-09-03T20:01:15.430562+00:00",
+      "utc": "2026-09-03T20:25:16.333070+00:00",
+      "x64_enabled": true
+    },
+    "medium": {
+      "backend": "cpu",
+      "device_kind": "cpu",
+      "devices": [
+        "TFRT_CPU_0"
+      ],
+      "git_branch": "paper/major-revision-2026-09",
+      "git_commit": "f454880f049562bc0b565b2b1882e503c1c12aba",
+      "git_dirty": true,
+      "jax": "0.7.0",
+      "jaxlib": "0.7.0",
+      "numpy": "2.3.1",
+      "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+      "precision": "float64",
+      "processor": "x86_64",
+      "python": "3.11.13",
+      "scipy": "1.16.0",
+      "script": "examples/36_closed_loop_refinement.py",
+      "start_utc": "2026-09-03T19:58:57.990152+00:00",
+      "utc": "2026-09-03T20:01:12.392431+00:00",
+      "x64_enabled": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "forward-verification-config-1.0",
+  "case": "planar-poiseuille",
+  "run_id": "grid-coarse-24x12",
+  "study": {"name": "grid-refinement", "level": "coarse"},
+  "grid": {"nx": 24, "ny": 12, "lx": 3.0, "ly": 1.0},
+  "physics": {"mean_velocity": 0.2, "viscosity": 0.05, "density": 1.0},
+  "solver": {
+    "dt": 0.002,
+    "max_steps": 4000,
+    "pressure_tolerance": 1e-11,
+    "pressure_atol": 1e-13,
+    "pressure_maxiter": 1500,
+    "nonlinear_rtol": 1e-7,
+    "nonlinear_atol": 1e-10,
+    "nonlinear_min_steps": 20,
+    "include_advection": true
+  },
+  "timing_samples": 3
+}

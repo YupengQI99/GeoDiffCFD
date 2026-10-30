@@ -1,0 +1,74 @@
+{
+  "configuration": {
+    "alpha_max": 15.0,
+    "dt": 0.03,
+    "epsilon_over_h": 0.8,
+    "mobility_weighted": true,
+    "timing_samples": 3,
+    "unrolled_steps": 500,
+    "viscosity": 0.2
+  },
+  "converged": true,
+  "fixed_point_iterations": 1095,
+  "fixed_point_residual": 1.249580567777358e-08,
+  "grid": [
+    6,
+    6
+  ],
+  "implicit": {
+    "gradient": [
+      -6.347048035270576,
+      -1.852320126508525,
+      16.17571063053062
+    ],
+    "median_runtime_seconds": 0.06020147600065684,
+    "objective": -1.8980748249869985,
+    "warm_runtime_seconds": [
+      0.06723718099965481,
+      0.059641496001859196,
+      0.06020147600065684
+    ]
+  },
+  "provenance": {
+    "backend": "cpu",
+    "device_kind": "cpu",
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "git_branch": "paper/major-revision-2026-09",
+    "git_commit": "e534c52afd2515414182820173c7a8a043c6d951",
+    "git_dirty": false,
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "precision": "float64",
+    "processor": "x86_64",
+    "python": "3.11.13",
+    "scipy": "1.16.0",
+    "script": "examples/23_implicit_vs_unrolled.py",
+    "utc": "2026-09-03T09:32:01.199722+00:00",
+    "x64_enabled": true
+  },
+  "relative_gradient_difference": 0.003674129732777141,
+  "scope": "small unit-scale backend check; the manuscript's cross-backend evidence on the flagship problem is examples/31_steady_result_to_geometry.py",
+  "theta": [
+    0.91,
+    0.47,
+    0.16
+  ],
+  "unrolled_500_steps": {
+    "gradient": [
+      -6.323875837845237,
+      -1.8453317013227253,
+      16.11649625740564
+    ],
+    "median_runtime_seconds": 0.061669948998314794,
+    "objective": -1.8972653870300789,
+    "warm_runtime_seconds": [
+      0.06674376500450308,
+      0.05825741999433376,
+      0.061669948998314794
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "220x41": {
+    "source": "github.com/YupengQI99/jax_cad feat/multibody-wake-design@203efc0:runs/wake_design_diagnostics/coarse_optimization_v1/evaluation-000/history.csv",
+    "alpha_max": 160.0,
+    "epsilon": 0.015,
+    "dt": 0.00025,
+    "window_s": [
+      4.0,
+      6.0
+    ],
+    "cd_max": 4.393914594274985,
+    "cl_max": 0.6464027859318637,
+    "st": 0.2778978086834145,
+    "cycles": 5
+  },
+  "440x82": {
+    "source": "github.com/YupengQI99/jax_cad feat/multibody-wake-design@203efc0:runs/wake_design_diagnostics/medium_initial_v1/evaluation-000/history.csv",
+    "alpha_max": 160,
+    "epsilon": 0.015,
+    "dt": 0.00025,
+    "window_s": [
+      4.0,
+      6.0
+    ],
+    "cd_max": 4.514711316194823,
+    "cl_max": 0.7437840214915228,
+    "st": 0.2793428189820662,
+    "cycles": 5
+  },
+  "cd_max_change_percent": 2.7491822912814268,
+  "st_change_percent": 0.5199790187254916,
+  "note": "Archived 6 s single-cylinder runs (window 4-6 s) with the design-model parameters; used only for the grid-change statement."
+}

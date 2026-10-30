@@ -1,0 +1,43 @@
+{
+  "case": "lid-driven-cavity-re100",
+  "conservation": {
+    "boundary_normal_flux_l1": 0.0,
+    "divergence_max": 7.297162873953766e-12,
+    "divergence_rms": 2.605724116669556e-12,
+    "net_boundary_flux": 0.0,
+    "pressure_mean": -1.0842021724855044e-18
+  },
+  "convergence": {
+    "converged": true,
+    "final_residual_max": 2.1137671144533243e-06,
+    "final_residual_rms": 6.995758824278368e-07,
+    "initial_residual_rms": 0.7010848736066126,
+    "iterations": 3383
+  },
+  "primary_vortex": {
+    "position_error": 0.017441330224498328,
+    "streamfunction": -0.08905076243560632,
+    "x": 0.625,
+    "y": 0.75
+  },
+  "profiles": {
+    "combined_l2_relative": 0.10313017110634218,
+    "u_l2_absolute": 0.026915930034303107,
+    "u_l2_relative": 0.058909969447756776,
+    "u_linf_absolute": 0.04861484455925458,
+    "u_linf_relative": 0.04861484455925458,
+    "v_l2_absolute": 0.017799021193077733,
+    "v_l2_relative": 0.1334214371250407,
+    "v_linf_absolute": 0.04781402217408212,
+    "v_linf_relative": 0.1948967601764241
+  },
+  "reference": {
+    "doi": "10.1016/0021-9991(82)90058-4",
+    "name": "Ghia, Ghia, and Shin (1982)",
+    "primary_vortex": {
+      "streamfunction": -0.103423,
+      "x": 0.6172,
+      "y": 0.7344
+    }
+  }
+}

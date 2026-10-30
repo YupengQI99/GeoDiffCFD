@@ -1,0 +1,66 @@
+{
+  "schema_version": "brinkman-pressure-equilibrium-config-1.0",
+  "case": "manufactured-pressure-equilibrium",
+  "experiment_id": "brinkman_pressure_response_diagnostic",
+  "run_id": "flat-pressure-response-v1",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "half_height": 0.1,
+  "wave_number": 31.41592653589793,
+  "pressure_amplitude": 0.01,
+  "cells_per_half": [
+    64,
+    128,
+    256
+  ],
+  "quadrature": 12,
+  "models": [
+    {
+      "name": "q1",
+      "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium.json",
+      "source_config_sha256": "70f3e07fbae39f42946c99086c91a5f8dd461475747540824b0773fd34941735"
+    },
+    {
+      "name": "q0p75",
+      "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p75.json",
+      "source_config_sha256": "ae4b98c0805cd58fff61ee2da17cca5d6a5c391a2e10f87e1411c466007e8a59"
+    },
+    {
+      "name": "q0p5",
+      "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p5.json",
+      "source_config_sha256": "4927ca71c4b68fd156f526fadbf94ff65fe9fe2166df0c1133934b54a99efd3b"
+    },
+    {
+      "name": "thin-medium",
+      "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p5_eps0p75.json",
+      "source_config_sha256": "ae5383628a470177c445d6a06ab8da5db6cd58d21b057a8822598f53456f19f3"
+    },
+    {
+      "name": "fine-mask",
+      "source_config": "configs/forward_verification/diagnostics/cylinder_fine_mask_common_trace_fe_source.json",
+      "source_config_sha256": "fb0d0cdfa1f72729fc1d4b8fc391e8526322ed034d7405124a31f60f03533d6e"
+    }
+  ],
+  "normal_constraint_control": "q0p5",
+  "sensitivity_audit": {
+    "model": "q0p5",
+    "cells_per_half": 64,
+    "alpha_fd_step": 0.01,
+    "shift_fd_step": 1e-7,
+    "taylor_steps": [
+      0.0001,
+      0.00005,
+      0.000025
+    ]
+  },
+  "limits": {
+    "normal_refinement_relative_change": 0.001,
+    "linear_backward_error": 1e-12,
+    "energy_defect": 1e-7,
+    "step_matching_relative_error": 0.00001,
+    "gradient_fd_relative_error": 0.0001,
+    "taylor_minimum_order": 1.8
+  }
+}

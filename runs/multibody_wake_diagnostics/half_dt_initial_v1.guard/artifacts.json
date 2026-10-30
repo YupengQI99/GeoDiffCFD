@@ -1,0 +1,17 @@
+{
+  "half_dt_initial_v1.guard/hardware.csv": "08dc4952e6a80e26d9ad25a2e367b08870efcd0b0a13d59baf8726efd09e0a11",
+  "half_dt_initial_v1.guard/source.json": "3007b99ab300e4dcce857aaf8ad78ad1fe9aa57624b10544386c489df5aab425",
+  "half_dt_initial_v1.guard/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "half_dt_initial_v1.guard/stdout.log": "5d8cec453b0edf3409dfc1f1e539aed138d06e213f6c5eb1c7bf8e676fc0fbc5",
+  "half_dt_initial_v1.guard/guard.json": "4660c8dead5aee59e0a78feb459a014bc25ac6b916f7c74c9a6684d0b0798dc1",
+  "half_dt_initial_v1.guard/config.json": "1caa35352659738f1aa282501ae1c948763fc1b55870bd0425392b4a21cb3db6",
+  "half_dt_initial_v1/result.json": "4aeb64aa6560cb958ec246bd2348b8b6eaf857e50bc0e686cc49c71e10a5f227",
+  "half_dt_initial_v1/geometry_envelope.json": "0941b18aade54e6052c749e378bfb309862a21329d415243eaea9b20bcddd960",
+  "half_dt_initial_v1/progress.json": "a99beedc1d1d6dffd7835c82ee1f65d75c989a3dd87da14e15bca5d4f648c01b",
+  "half_dt_initial_v1/evaluations.json": "ed0d83ecb29851b88db5b0cf0a2961e4ee29a0d953eb5577eac0e388eef914ca",
+  "half_dt_initial_v1/config.json": "1caa35352659738f1aa282501ae1c948763fc1b55870bd0425392b4a21cb3db6",
+  "half_dt_initial_v1/environment.json": "ea855432a62a5a5dcd1052690f99493f3c6218a881ec512d7cacbdb15afb36e3",
+  "half_dt_initial_v1/evaluation-000/fields.npz": "306833170f34104c0d7e4b8b478e8d3371941879412ddf819bb51943b900cb30",
+  "half_dt_initial_v1/evaluation-000/metrics.json": "164b88d2790c1e28bb895a48c708ce0aac78586b7c61d9d35dd33aebf62fab67",
+  "half_dt_initial_v1/evaluation-000/history.csv": "59fb9c3103048c7685e8d21f5b7f1fe88c25de67205c9238ace65e9ed1f6ffe0"
+}

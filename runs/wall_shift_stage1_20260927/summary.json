@@ -1,0 +1,761 @@
+{
+  "schema": "wall-shift-stage1-evidence-1",
+  "paper_eligible": false,
+  "source_commits": [
+    "04185bad95b37ec513ab0099e8aeb81f30a943ec"
+  ],
+  "all_registered_stage1_runs_completed": false,
+  "cases": [
+    {
+      "case": "S1",
+      "wall_shift_m": 0.003102,
+      "stages": {
+        "preflight": {
+          "status": "completed_raw_audit_passed",
+          "audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S1_preflight_20260927",
+            "passed_raw_audit": true,
+            "raw_audit": {
+              "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S1_preflight_20260927",
+              "passed": true,
+              "evaluations": 1,
+              "analytic_geometry_pullback_checks": 0,
+              "analytic_geometry_pullback_max_error": null,
+              "paper_eligible": false
+            },
+            "raw_field_force_max_error": 8.881784197001252e-16,
+            "core": {
+              "labels": [
+                "nominal_body1",
+                "corrected_body1"
+              ],
+              "sample_count": 100,
+              "mean_speed_ratio": [
+                0.012825614928920788,
+                0.012004130890163466
+              ],
+              "rms_speed_ratio": [
+                0.014037880207667646,
+                0.013164264156487228
+              ],
+              "mean_absolute_flux_ratio": [
+                0.000984828660353885,
+                0.0009243384420468208
+              ],
+              "max_absolute_flux_ratio": [
+                0.0010175637549726317,
+                0.0009476980571467045
+              ]
+            },
+            "core_counts": [
+              616,
+              524
+            ],
+            "window": {
+              "dt": 0.00025,
+              "n_steps": 200,
+              "window_start_step": 100,
+              "window_count": 100,
+              "window_start_time": 0.025,
+              "end_time": 0.05,
+              "max_velocity_component_all": 2.661082636203239,
+              "max_velocity_component_window": 2.4815060380066365,
+              "component_screening_index": 0.7697340270829243,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.36651071997274737,
+              "snapshot_component_upper_index": 0.8644911503570998,
+              "snapshot_cell_center_max_speed": 2.3617076406899495,
+              "snapshot_cell_center_index": 0.6972078725116609,
+              "snapshot_count": 1,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "periodic": null,
+            "steady": null,
+            "material_half_fraction_radius": {
+              "expected_m": 0.046898,
+              "minimum_m": 0.04688204800727222,
+              "maximum_m": 0.04691581332441283,
+              "mean_m": 0.046896095668743,
+              "crossing_count": 76,
+              "max_error_m": 1.7813324412828402e-05,
+              "method": "linear interpolation along cell-centred x rows"
+            },
+            "passed_registered_metrics": false,
+            "permits_stage2_metrics": false,
+            "paper_eligible": false
+          }
+        },
+        "production": {
+          "status": "completed_raw_audit_passed",
+          "audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S1_production_20260927",
+            "passed_raw_audit": true,
+            "raw_audit": {
+              "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S1_production_20260927",
+              "passed": true,
+              "evaluations": 1,
+              "analytic_geometry_pullback_checks": 0,
+              "analytic_geometry_pullback_max_error": null,
+              "paper_eligible": false
+            },
+            "raw_field_force_max_error": 1.3322676295501878e-15,
+            "core": {
+              "labels": [
+                "nominal_body1",
+                "corrected_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.009299554339956122,
+                0.009019692341541326
+              ],
+              "rms_speed_ratio": [
+                0.010825665425459548,
+                0.010340080180959322
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0009260229936860266,
+                0.0009003866970365356
+              ],
+              "max_absolute_flux_ratio": [
+                0.0009382404168219877,
+                0.0009122786707532589
+              ]
+            },
+            "core_counts": [
+              616,
+              524
+            ],
+            "window": {
+              "dt": 0.00025,
+              "n_steps": 40000,
+              "window_start_step": 32000,
+              "window_count": 8000,
+              "window_start_time": 8.0,
+              "end_time": 10.0,
+              "max_velocity_component_all": 2.661082636203239,
+              "max_velocity_component_window": 2.1684459485597967,
+              "component_screening_index": 0.5877697289781746,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.3394536069683057,
+              "snapshot_component_upper_index": 0.7790143096997759,
+              "snapshot_cell_center_max_speed": 2.232353206579768,
+              "snapshot_cell_center_index": 0.6229251048658717,
+              "snapshot_count": 23,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "periodic": {
+              "full_window": {
+                "minimum_times": [
+                  8.092088012333711,
+                  8.42908053263765,
+                  8.76607305840003,
+                  9.103065586948976,
+                  9.440058116910262,
+                  9.777050647577024
+                ],
+                "periods": [
+                  0.336992520303939,
+                  0.3369925257623798,
+                  0.33699252854894546,
+                  0.3369925299612859,
+                  0.3369925306667625
+                ],
+                "St": 0.2967424852882858,
+                "period_cv": 1.1179805321494712e-08,
+                "complete_period_count": 5,
+                "reason": null,
+                "Cd_max": 3.473038649648039,
+                "Cd_min": 3.3877040643263987,
+                "Cd_time_mean": 3.430405552560327,
+                "Cl_max": 1.157526513791348,
+                "Cl_min": -1.197610845308663,
+                "Cl_time_mean": -0.025293697092878653,
+                "Cl_amplitude": 2.355137359100011
+              },
+              "first_half": {
+                "minimum_times": [
+                  8.092088012333711,
+                  8.42908053263765,
+                  8.76607305840003
+                ],
+                "periods": [
+                  0.336992520303939,
+                  0.3369925257623798
+                ],
+                "St": 0.2967424888241814,
+                "period_cv": 8.0987565559731e-09,
+                "complete_period_count": 2,
+                "reason": null,
+                "Cd_max": 3.473038478897086,
+                "Cd_min": 3.3877040643263987,
+                "Cd_time_mean": 3.430496837964479,
+                "Cl_max": 1.1575263422939084,
+                "Cl_min": -1.1976099205551853,
+                "Cl_time_mean": -0.02406657812787347,
+                "Cl_amplitude": 2.3551362628490935
+              },
+              "second_half": {
+                "minimum_times": [
+                  9.103065586948976,
+                  9.440058116910262,
+                  9.777050647577024
+                ],
+                "periods": [
+                  0.3369925299612859,
+                  0.3369925306667625
+                ],
+                "St": 0.2967424824129356,
+                "period_cv": 1.0467243374752803e-09,
+                "complete_period_count": 2,
+                "reason": null,
+                "Cd_max": 3.473038649648039,
+                "Cd_min": 3.387704140283547,
+                "Cd_time_mean": 3.430314267156176,
+                "Cl_max": 1.157526513791348,
+                "Cl_min": -1.197610845308663,
+                "Cl_time_mean": -0.026520816057883836,
+                "Cl_amplitude": 2.355137359100011
+              },
+              "errors": {
+                "Cd_max": {
+                  "reference_interval": [
+                    3.22,
+                    3.24
+                  ],
+                  "reference_midpoint": 3.2300000000000004,
+                  "signed_midpoint_percent": 7.524416397772105,
+                  "absolute_midpoint_percent": 7.524416397772105,
+                  "outside_interval_percent": 7.21481887455229,
+                  "signed_endpoint_percent_range": [
+                    7.192550915062923,
+                    7.858343156771408
+                  ]
+                },
+                "Cl_max": {
+                  "reference_interval": [
+                    0.99,
+                    1.01
+                  ],
+                  "reference_midpoint": 1.0,
+                  "signed_midpoint_percent": 15.752651379134797,
+                  "absolute_midpoint_percent": 15.752651379134797,
+                  "outside_interval_percent": 14.752651379134797,
+                  "signed_endpoint_percent_range": [
+                    14.606585523895843,
+                    16.92187007993413
+                  ]
+                },
+                "St": {
+                  "reference_interval": [
+                    0.295,
+                    0.305
+                  ],
+                  "reference_midpoint": 0.3,
+                  "signed_midpoint_percent": -1.0858382372380682,
+                  "absolute_midpoint_percent": 1.0858382372380682,
+                  "outside_interval_percent": 0.0,
+                  "signed_endpoint_percent_range": [
+                    -2.707381872693182,
+                    0.5906729790799314
+                  ]
+                }
+              },
+              "relative_half_window_drift": {
+                "Cd_max": 4.9164714419144525e-08,
+                "Cd_time_mean": 5.322134817753809e-05,
+                "St": 2.160541927723229e-08,
+                "Cl_amplitude_report_only": 4.654721786661141e-07
+              },
+              "maximum_acceptance_drift": 5.322134817753809e-05,
+              "gates": {
+                "Cd_max": false,
+                "St": true,
+                "half_window_drift": true,
+                "cycles_available": true
+              },
+              "passed_benchmark_metrics": false,
+              "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+            },
+            "steady": null,
+            "material_half_fraction_radius": {
+              "expected_m": 0.046898,
+              "minimum_m": 0.04688204800727222,
+              "maximum_m": 0.04691581332441283,
+              "mean_m": 0.046896095668743,
+              "crossing_count": 76,
+              "max_error_m": 1.7813324412828402e-05,
+              "method": "linear interpolation along cell-centred x rows"
+            },
+            "passed_registered_metrics": false,
+            "permits_stage2_metrics": false,
+            "paper_eligible": false
+          }
+        }
+      }
+    },
+    {
+      "case": "S05",
+      "wall_shift_m": 0.001551,
+      "stages": {
+        "preflight": {
+          "status": "completed_raw_audit_passed",
+          "audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S05_preflight_20260927",
+            "passed_raw_audit": true,
+            "raw_audit": {
+              "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S05_preflight_20260927",
+              "passed": true,
+              "evaluations": 1,
+              "analytic_geometry_pullback_checks": 0,
+              "analytic_geometry_pullback_max_error": null,
+              "paper_eligible": false
+            },
+            "raw_field_force_max_error": 4.440892098500626e-16,
+            "core": {
+              "labels": [
+                "nominal_body1",
+                "corrected_body1"
+              ],
+              "sample_count": 100,
+              "mean_speed_ratio": [
+                0.012217709606255346,
+                0.011714502391648847
+              ],
+              "rms_speed_ratio": [
+                0.013367659829912426,
+                0.012833017237751935
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0009514732058411786,
+                0.0008921978580489354
+              ],
+              "max_absolute_flux_ratio": [
+                0.0009826165884421537,
+                0.0009149007501275788
+              ]
+            },
+            "core_counts": [
+              616,
+              556
+            ],
+            "window": {
+              "dt": 0.00025,
+              "n_steps": 200,
+              "window_start_step": 100,
+              "window_count": 100,
+              "window_start_time": 0.025,
+              "end_time": 0.05,
+              "max_velocity_component_all": 2.6682731278095497,
+              "max_velocity_component_window": 2.4944199155831965,
+              "component_screening_index": 0.7777663394072601,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.36874272424579496,
+              "snapshot_component_upper_index": 0.8743120051802832,
+              "snapshot_cell_center_max_speed": 2.3758038602539395,
+              "snapshot_cell_center_index": 0.7055554977996901,
+              "snapshot_count": 1,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "periodic": null,
+            "steady": null,
+            "material_half_fraction_radius": {
+              "expected_m": 0.048449000000000006,
+              "minimum_m": 0.048431334859431345,
+              "maximum_m": 0.04845994400609873,
+              "mean_m": 0.04844373900919768,
+              "crossing_count": 76,
+              "max_error_m": 1.766514056866092e-05,
+              "method": "linear interpolation along cell-centred x rows"
+            },
+            "passed_registered_metrics": false,
+            "permits_stage2_metrics": false,
+            "paper_eligible": false
+          }
+        },
+        "production": {
+          "status": "completed_raw_audit_passed",
+          "audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S05_production_20260927",
+            "passed_raw_audit": true,
+            "raw_audit": {
+              "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S05_production_20260927",
+              "passed": true,
+              "evaluations": 1,
+              "analytic_geometry_pullback_checks": 0,
+              "analytic_geometry_pullback_max_error": null,
+              "paper_eligible": false
+            },
+            "raw_field_force_max_error": 8.881784197001252e-16,
+            "core": {
+              "labels": [
+                "nominal_body1",
+                "corrected_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.00900819596159764,
+                0.008839099887590523
+              ],
+              "rms_speed_ratio": [
+                0.01042540698911729,
+                0.010133217625470538
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0009217125952030826,
+                0.0008934095435106247
+              ],
+              "max_absolute_flux_ratio": [
+                0.0009341286165189706,
+                0.0009054547674951028
+              ]
+            },
+            "core_counts": [
+              616,
+              556
+            ],
+            "window": {
+              "dt": 0.00025,
+              "n_steps": 40000,
+              "window_start_step": 32000,
+              "window_count": 8000,
+              "window_start_time": 8.0,
+              "end_time": 10.0,
+              "max_velocity_component_all": 2.6682731278095497,
+              "max_velocity_component_window": 2.1861012066903385,
+              "component_screening_index": 0.5973798107366193,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.3429350647381442,
+              "snapshot_component_upper_index": 0.7949214927637063,
+              "snapshot_cell_center_max_speed": 2.250775705889152,
+              "snapshot_cell_center_index": 0.6332489097776013,
+              "snapshot_count": 23,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "periodic": {
+              "full_window": {
+                "minimum_times": [
+                  8.216885646622723,
+                  8.559177233210313,
+                  8.901468825614021,
+                  9.243760420365932,
+                  9.586052015698714,
+                  9.928343610723738
+                ],
+                "periods": [
+                  0.3422915865875904,
+                  0.34229159240370777,
+                  0.3422915947519112,
+                  0.34229159533278164,
+                  0.34229159502502426
+                ],
+                "St": 0.2921485718538446,
+                "period_cv": 9.5942865612918e-09,
+                "complete_period_count": 5,
+                "reason": null,
+                "Cd_max": 3.6082942170422934,
+                "Cd_min": 3.5156240182718665,
+                "Cd_time_mean": 3.5628114277970373,
+                "Cl_max": 1.2387240384123266,
+                "Cl_min": -1.2797188927710694,
+                "Cl_time_mean": -0.02908093974738898,
+                "Cl_amplitude": 2.518442931183396
+              },
+              "first_half": {
+                "minimum_times": [
+                  8.216885646622723,
+                  8.559177233210313,
+                  8.901468825614021
+                ],
+                "periods": [
+                  0.3422915865875904,
+                  0.34229159240370777
+                ],
+                "St": 0.2921485746913776,
+                "period_cv": 8.495851992840098e-09,
+                "complete_period_count": 2,
+                "reason": null,
+                "Cd_max": 3.6082938869704217,
+                "Cd_min": 3.5156240182718665,
+                "Cd_time_mean": 3.5629554246714568,
+                "Cl_max": 1.2387238438339199,
+                "Cl_min": -1.2797184644793937,
+                "Cl_time_mean": -0.03707384549451629,
+                "Cl_amplitude": 2.518442308313314
+              },
+              "second_half": {
+                "minimum_times": [
+                  9.243760420365932,
+                  9.586052015698714,
+                  9.928343610723738
+                ],
+                "periods": [
+                  0.34229159533278164,
+                  0.34229159502502426
+                ],
+                "St": 0.29214856984067566,
+                "period_cv": 4.495543850250237e-10,
+                "complete_period_count": 2,
+                "reason": null,
+                "Cd_max": 3.6082942170422934,
+                "Cd_min": 3.515624111313973,
+                "Cd_time_mean": 3.562667430922617,
+                "Cl_max": 1.2387240384123266,
+                "Cl_min": -1.2797188927710694,
+                "Cl_time_mean": -0.02108803400026167,
+                "Cl_amplitude": 2.518442931183396
+              },
+              "errors": {
+                "Cd_max": {
+                  "reference_interval": [
+                    3.22,
+                    3.24
+                  ],
+                  "reference_midpoint": 3.2300000000000004,
+                  "signed_midpoint_percent": 11.711895264467277,
+                  "absolute_midpoint_percent": 11.711895264467277,
+                  "outside_interval_percent": 11.402297741247466,
+                  "signed_endpoint_percent_range": [
+                    11.367105464268313,
+                    12.058826616220287
+                  ]
+                },
+                "Cl_max": {
+                  "reference_interval": [
+                    0.99,
+                    1.01
+                  ],
+                  "reference_midpoint": 1.0,
+                  "signed_midpoint_percent": 23.87240384123266,
+                  "absolute_midpoint_percent": 23.87240384123266,
+                  "outside_interval_percent": 22.872403841232657,
+                  "signed_endpoint_percent_range": [
+                    22.645944397260067,
+                    25.123640243669353
+                  ]
+                },
+                "St": {
+                  "reference_interval": [
+                    0.295,
+                    0.305
+                  ],
+                  "reference_midpoint": 0.3,
+                  "signed_midpoint_percent": -2.6171427153851345,
+                  "absolute_midpoint_percent": 2.6171427153851345,
+                  "outside_interval_percent": 0.9504760487184701,
+                  "signed_endpoint_percent_range": [
+                    -4.213582998739485,
+                    -0.9665858122560711
+                  ]
+                }
+              },
+              "relative_half_window_drift": {
+                "Cd_max": 9.147587523590622e-08,
+                "Cd_time_mean": 8.083328424089023e-05,
+                "St": 1.6603544971791813e-08,
+                "Cl_amplitude_report_only": 2.473234848668851e-07
+              },
+              "maximum_acceptance_drift": 8.083328424089023e-05,
+              "gates": {
+                "Cd_max": false,
+                "St": true,
+                "half_window_drift": true,
+                "cycles_available": true
+              },
+              "passed_benchmark_metrics": false,
+              "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+            },
+            "steady": null,
+            "material_half_fraction_radius": {
+              "expected_m": 0.048449000000000006,
+              "minimum_m": 0.048431334859431345,
+              "maximum_m": 0.04845994400609873,
+              "mean_m": 0.04844373900919768,
+              "crossing_count": 76,
+              "max_error_m": 1.766514056866092e-05,
+              "method": "linear interpolation along cell-centred x rows"
+            },
+            "passed_registered_metrics": false,
+            "permits_stage2_metrics": false,
+            "paper_eligible": false
+          }
+        }
+      }
+    },
+    {
+      "case": "S15",
+      "wall_shift_m": 0.004653,
+      "stages": {
+        "preflight": {
+          "status": "completed_raw_audit_passed",
+          "audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S15_preflight_20260927",
+            "passed_raw_audit": true,
+            "raw_audit": {
+              "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S15_preflight_20260927",
+              "passed": true,
+              "evaluations": 1,
+              "analytic_geometry_pullback_checks": 0,
+              "analytic_geometry_pullback_max_error": null,
+              "paper_eligible": false
+            },
+            "raw_field_force_max_error": 4.440892098500626e-16,
+            "core": {
+              "labels": [
+                "nominal_body1",
+                "corrected_body1"
+              ],
+              "sample_count": 100,
+              "mean_speed_ratio": [
+                0.013477951146113075,
+                0.012052717330309935
+              ],
+              "rms_speed_ratio": [
+                0.014760334442336216,
+                0.013241302425743721
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0010189692203377316,
+                0.0008939061336177692
+              ],
+              "max_absolute_flux_ratio": [
+                0.0010534337224673623,
+                0.00090958976004339
+              ]
+            },
+            "core_counts": [
+              616,
+              468
+            ],
+            "window": {
+              "dt": 0.00025,
+              "n_steps": 200,
+              "window_start_step": 100,
+              "window_count": 100,
+              "window_start_time": 0.025,
+              "end_time": 0.05,
+              "max_velocity_component_all": 2.6430948151573475,
+              "max_velocity_component_window": 2.4672376660478204,
+              "component_screening_index": 0.7609077125956369,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.3640454145430739,
+              "snapshot_component_upper_index": 0.854787005802871,
+              "snapshot_cell_center_max_speed": 2.3502896876650383,
+              "snapshot_cell_center_index": 0.6904827019930779,
+              "snapshot_count": 1,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "periodic": null,
+            "steady": null,
+            "material_half_fraction_radius": {
+              "expected_m": 0.045347000000000005,
+              "minimum_m": 0.045330331896679114,
+              "maximum_m": 0.04536139913412934,
+              "mean_m": 0.04534316578413184,
+              "crossing_count": 72,
+              "max_error_m": 1.666810332089097e-05,
+              "method": "linear interpolation along cell-centred x rows"
+            },
+            "passed_registered_metrics": false,
+            "permits_stage2_metrics": false,
+            "paper_eligible": false
+          }
+        },
+        "production": {
+          "status": "interrupted_excluded",
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S15_production_20260927",
+          "reason": "another GPU process appeared",
+          "exit_code": -15,
+          "usable_production_result": false,
+          "retried": false
+        }
+      }
+    },
+    {
+      "case": "S1_2D1",
+      "wall_shift_m": 0.003102,
+      "stages": {
+        "preflight": {
+          "status": "not_started",
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S1_2D1_preflight_20260927"
+        },
+        "production": {
+          "status": "not_started",
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/wall_shift_S1_2D1_production_20260927"
+        }
+      }
+    }
+  ],
+  "S1_passed": false,
+  "stage2_started": false,
+  "stage2_reason": "S1 drag error exceeds the preregistered 5% limit",
+  "sensitivity_slopes": {
+    "lower_one_sided": {
+      "available": true,
+      "left": "S05",
+      "right": "S1",
+      "delta_w_m": 0.001551,
+      "dCdmax_dw_per_m": -87.20539483833278,
+      "dSt_dw_per_m": 2.9619042130504254
+    },
+    "upper_one_sided": {
+      "available": false,
+      "reason": "required production result unavailable"
+    },
+    "central_secant": {
+      "available": false,
+      "reason": "required production result unavailable"
+    }
+  },
+  "baseline_C": {
+    "Cd_max": 3.7391437351119365,
+    "St": 0.2879757532472553,
+    "errors": {
+      "Cd_max": {
+        "reference_interval": [
+          3.22,
+          3.24
+        ],
+        "reference_midpoint": 3.2300000000000004,
+        "signed_midpoint_percent": 15.762963935354058,
+        "absolute_midpoint_percent": 15.762963935354058,
+        "outside_interval_percent": 15.45336641213425,
+        "signed_endpoint_percent_range": [
+          15.405670836788165,
+          16.122476245712303
+        ]
+      },
+      "Cl_max": {
+        "reference_interval": [
+          0.99,
+          1.01
+        ],
+        "reference_midpoint": 1.0,
+        "signed_midpoint_percent": 31.459734071912226,
+        "absolute_midpoint_percent": 31.459734071912226,
+        "outside_interval_percent": 30.459734071912226,
+        "signed_endpoint_percent_range": [
+          30.15815254644776,
+          32.78761017364871
+        ]
+      },
+      "St": {
+        "reference_interval": [
+          0.295,
+          0.305
+        ],
+        "reference_midpoint": 0.3,
+        "signed_midpoint_percent": -4.008082250914901,
+        "absolute_midpoint_percent": 4.008082250914901,
+        "outside_interval_percent": 2.3414155842482374,
+        "signed_endpoint_percent_range": [
+          -5.581720246801547,
+          -2.3811005941507535
+        ]
+      }
+    },
+    "repository_path": "runs/multibody_review_checks_20260926/summary.json",
+    "sha256": "33b41202eaaf9bfbf8dd478c438c8e75c3ca82e58e8604d467d0c401f096c165"
+  },
+  "scope": "Partial stage-1 forward evidence. S15 production interrupted by single-GPU protection; no automatic retry. No manuscript edits or stage-2 results."
+}

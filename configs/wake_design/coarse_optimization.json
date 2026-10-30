@@ -1,0 +1,14 @@
+{
+  "schema": "wake-design-development-1", "paper_eligible": false,
+  "grid": {"nx": 220, "ny": 41, "lx": 2.2, "ly": 0.41},
+  "viscosity": 0.001, "dt": 0.00025, "mean_inlet": 1.0,
+  "center": [0.2, 0.2], "radius": 0.05,
+  "alpha_max": 160.0, "epsilon": 0.015,
+  "advection_scheme": "central", "theta": [0.0, 0.0],
+  "n_steps": 24000, "chunk_steps": 100, "window_start_step": 16000,
+  "max_optimization_steps": 6,
+  "gradient_gate_records": [
+    {"path": "runs/wake_design_diagnostics/coarse_gradient_initial_v1/result.json", "sha256": "c3dec727a781d17a13fa1772e7554537e2235e9c07f791acbec45e7ae455440a"},
+    {"path": "runs/wake_design_diagnostics/coarse_gradient_nonzero_v1/result.json", "sha256": "962fffe7a8043cd7d2cc6ab58b17c7d52f86f0047017d4bc64c6a76d3a9cd14a"}
+  ]
+}

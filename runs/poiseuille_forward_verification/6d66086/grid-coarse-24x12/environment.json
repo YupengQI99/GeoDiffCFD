@@ -1,0 +1,38 @@
+{
+  "git": {
+    "branch": "exp/forward-verification-suite",
+    "commit": "6d660866277e05e052925afe53d5c1c9f20ab70d",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "hardware": {
+    "accelerators": [
+      {
+        "count": 1,
+        "driver": "575.57.08",
+        "memory_bytes": 25757220864,
+        "name": "NVIDIA GeForce RTX 4090",
+        "platform": "cuda"
+      }
+    ],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "hostname": "workstation",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155702272,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37"
+  },
+  "software": {
+    "backend": "gpu",
+    "environment_variables": {
+      "JAX_ENABLE_X64": "true",
+      "JAX_PLATFORMS": "cuda",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+    },
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "precision": "float64",
+    "python": "3.11.13",
+    "scipy": "1.16.0"
+  }
+}

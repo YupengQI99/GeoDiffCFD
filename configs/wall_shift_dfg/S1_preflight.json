@@ -1,0 +1,8 @@
+{
+  "schema": "wall-shift-dfg-stage1-1",
+  "paper_eligible": false,
+  "case": "S1",
+  "phase": "preflight",
+  "wall_shift": 0.003102,
+  "normalize_level_set": false
+}

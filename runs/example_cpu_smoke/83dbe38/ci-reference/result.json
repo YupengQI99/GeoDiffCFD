@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "schema_cpu_smoke_fixture",
+  "run_id": "ci-reference",
+  "git": {
+    "repository": "https://github.com/YupengQI99/jax_cad.git",
+    "commit": "83dbe38ad533b6e2a259015f82aac285ab8661de",
+    "branch": "infra/compute-handoff-v1",
+    "dirty": false
+  },
+  "command": {
+    "argv": ["python", "tools/validate_experiment_result.py", "result.json"],
+    "working_directory": "."
+  },
+  "timestamps": {
+    "start_utc": "2026-09-01T10:00:00Z",
+    "end_utc": "2026-09-01T10:00:01Z",
+    "status": "success",
+    "exit_code": 0
+  },
+  "configuration": {
+    "case": "schema-validation-fixture",
+    "grid": [8, 6],
+    "note": "Synthetic infrastructure fixture; not scientific evidence."
+  },
+  "hardware": {
+    "hostname": "github-actions-fixture",
+    "platform": "Linux fixture",
+    "cpu_model": "synthetic",
+    "logical_cpu_count": 2,
+    "memory_bytes": 4294967296,
+    "accelerators": [
+      {
+        "platform": "cpu",
+        "name": "synthetic CPU device",
+        "count": 1,
+        "memory_bytes": null,
+        "driver": null
+      }
+    ]
+  },
+  "software": {
+    "python": "3.11",
+    "jax": "fixture",
+    "jaxlib": "fixture",
+    "numpy": "fixture",
+    "scipy": "fixture",
+    "backend": "cpu",
+    "precision": "float64",
+    "environment_variables": {"JAX_ENABLE_X64": "true"}
+  },
+  "primal": {
+    "converged": true,
+    "iterations": 2,
+    "residual_norm": 1.0e-7,
+    "divergence_rms": 2.0e-12,
+    "divergence_max": 8.0e-12,
+    "mass_flux_mismatch": 3.0e-10,
+    "failure_reason": null
+  },
+  "objective": {
+    "name": "synthetic_fixture_objective",
+    "value": -0.125,
+    "units": null,
+    "normalization": "fixture only"
+  },
+  "gradient": {
+    "success": true,
+    "backend": "unrolled",
+    "parameterization": "two synthetic parameters",
+    "parameter_names": ["theta_0", "theta_1"],
+    "values": [0.1, -0.2],
+    "norm": 0.223606797749979,
+    "adjoint_residual": null,
+    "message": "Synthetic infrastructure fixture; not scientific evidence.",
+    "taylor_test": {
+      "epsilons": [0.008, 0.004, 0.002],
+      "first_order_remainders": [6.4e-5, 1.6e-5, 4.0e-6],
+      "first_order_rates": [2.0, 2.0]
+    }
+  },
+  "timing": {
+    "compile_seconds": 0.1,
+    "forward_samples_seconds": [0.01, 0.011],
+    "gradient_samples_seconds": [0.02, 0.021],
+    "optimizer_step_samples_seconds": [0.032]
+  },
+  "memory": {
+    "peak_host_bytes": 104857600,
+    "peak_accelerator_bytes": null,
+    "measurement_method": "synthetic fixture"
+  },
+  "artifacts": [
+    {
+      "path": "config.json",
+      "sha256": "2cb6a08dc4831ec775230439c1d588b298aa03dd8a49ac7183fe9a4da4137886",
+      "media_type": "application/json",
+      "role": "config"
+    },
+    {
+      "path": "environment.txt",
+      "sha256": "fd4d1f142ddcbae54342b3f624534ae594779be9a20b35644739f5ad3da43b6a",
+      "media_type": "text/plain",
+      "role": "environment"
+    },
+    {
+      "path": "residual_history.csv",
+      "sha256": "21556810a8afdd2fbc73b46fe5b9ae631191ccca6f24d95b5e031bf024f3b0b1",
+      "media_type": "text/csv",
+      "role": "residual-history"
+    }
+  ],
+  "notes": "Synthetic schema/validator fixture. It must never be aggregated as scientific evidence."
+}

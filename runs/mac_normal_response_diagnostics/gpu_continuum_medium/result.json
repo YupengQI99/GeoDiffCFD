@@ -1,0 +1,429 @@
+{
+  "artifacts": [
+    {
+      "media_type": "application/json",
+      "path": "config.json",
+      "role": "config",
+      "sha256": "e8a561ff2b66f7a8306a60b9626c8ffa587613444a5ff2cdf1de0183442bb89d"
+    },
+    {
+      "media_type": "application/json",
+      "path": "environment.json",
+      "role": "environment",
+      "sha256": "8896465402853bf8f8fabb231463983c981b8b8b82f62ceeb24491bd0ad45366"
+    },
+    {
+      "media_type": "application/json",
+      "path": "preparation.json",
+      "role": "table",
+      "sha256": "55ff7eae7511e378d6e75ed209f718ed7c3a82d3ef65c10410beba8c7ccda420"
+    },
+    {
+      "media_type": "application/json",
+      "path": "metrics.json",
+      "role": "table",
+      "sha256": "5c0829d26db2a1edc6639e3ade958733490b321f23a11a3a7f04d437cb9109b4"
+    },
+    {
+      "media_type": "application/json",
+      "path": "progress.json",
+      "role": "other",
+      "sha256": "a00fa74c86c7748ea89a9a86c824d06a835f78610dddc5f07fce6e165e4a11ce"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "python_stacks.log",
+      "role": "other",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "media_type": "application/x-npz",
+      "path": "fields.npz",
+      "role": "field",
+      "sha256": "648d731d788ca551fbc80c8ef7914ba13227ffda77333d2bc1fe0adbeeb5b526"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "residual_history.csv",
+      "role": "residual-history",
+      "sha256": "0661f5d52bc38399df52b61019860e478ad3859342a9b6e12bd78eaed7b28e23"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stdout.log",
+      "role": "log",
+      "sha256": "b59a61066ea44eaa64be4681ce9c4caad8c75c291ce4c105e0f0b663632d9780"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stderr.log",
+      "role": "log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "command": {
+    "argv": [
+      "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+      "/home/user/GeoDiffCFD/jax_cad/tools/run_normal_cylinder.py",
+      "--config",
+      "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/cylinder_normal_continuum_medium.json",
+      "--output-dir",
+      "/home/user/GeoDiffCFD/mac_response_20260919/gpu_continuum_medium"
+    ],
+    "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+  },
+  "configuration": {
+    "chunk_steps": 1000,
+    "experiment_id": "normal_constraint_cylinder_diagnostic",
+    "gates": {
+      "cv_relative_closure": 1e-05,
+      "divergence_max": 1e-08,
+      "mass_flux_mismatch": 1e-09,
+      "normal_velocity_max": 1e-10
+    },
+    "grid": {
+      "lx": 2.2,
+      "ly": 0.41,
+      "nx": 440,
+      "ny": 82
+    },
+    "max_steps": 36000,
+    "normal_constraint": {
+      "angle_origin": 0,
+      "force_protocol": "mac-brinkman-plus-normal-reaction-prototype-v1",
+      "kernel": "tensor-cubic-bspline-native-mac",
+      "markers": 48,
+      "nominal_surface_shift": 0
+    },
+    "planar_calibration_control": {
+      "method": "continuous-planar-tangential-shear-zero-displacement",
+      "paper_eligible": false,
+      "purpose": "same-continuum-model-discretization-only",
+      "reference_data": "none"
+    },
+    "reference_comparison": {
+      "boundary_conditions_exact": false,
+      "paper_eligible": false,
+      "quantity_definition_exact": false,
+      "reason": "Normal interpolation constraints plus finite tangential penalisation; new total-reaction protocol requires independent and mesh validation."
+    },
+    "requires_gradient": false,
+    "resolved_base": {
+      "acceptance_observables": {
+        "drag_coefficient": "metrics.numerical.brinkman_drag_coefficient",
+        "lift_coefficient": "metrics.numerical.brinkman_lift_coefficient",
+        "normal_surface_slip_rms": "metrics.surface_measurement.normal_surface_slip_rms",
+        "pressure_difference": "metrics.numerical.pressure_difference",
+        "tangential_surface_slip_rms": "metrics.surface_measurement.tangential_surface_slip_rms"
+      },
+      "boundary_conditions": {
+        "cylinder": "immersed-brinkman-no-slip-limit",
+        "inlet": "analytic-parabolic-face-average",
+        "outlet": "zero-total-traction-finite-volume",
+        "walls": "no-slip"
+      },
+      "case": "dfg-cylinder-2d1-re20",
+      "grid": {
+        "lx": 2.2,
+        "ly": 0.41,
+        "nx": 440,
+        "ny": 82
+      },
+      "immersed_boundary": {
+        "alpha_max": 160,
+        "alpha_max_h_squared_over_nu": 4,
+        "delta_b_over_h": 0.5,
+        "epsilon_over_h": 1.5,
+        "h_definition": "max(dx,dy)",
+        "mask_midpoint_shift_over_h": 0.11248513031767304,
+        "material_mapping": "compact-cosine-heaviside",
+        "reference_free_calibration": {
+          "baseline_discrete_calibration": {
+            "application": "calibrated-root",
+            "bracket_over_h": [
+              -2,
+              3
+            ],
+            "calibrated_root_over_h": 0.16696815943578258,
+            "cell_centre_phase_over_h": 0.5,
+            "displacement_tolerance_over_h": 1e-10,
+            "far_field_fit_cells": 16,
+            "fluid_cells": 64,
+            "iterations": 34,
+            "max_iterations": 80,
+            "method": "one-dimensional-steady-planar-tangential-shear-zero-displacement",
+            "reference_data": "none",
+            "root_displacement_over_h": -8.009481660212433e-11,
+            "sampling": "tangential-cell",
+            "shift_tolerance_over_h": 1e-12,
+            "solid_cells": 64,
+            "tool": "tools/calibrate_brinkman_mask.py",
+            "unshifted_displacement_over_h": 0.1313752071922972
+          },
+          "baseline_discrete_shift_over_h": 0.16696815943578258,
+          "integration": {
+            "atol": 1e-13,
+            "definition": "continuous compact-cosine half-space tangential shear; not MAC calibration",
+            "endpoint_logarithmic_derivative": 0.6201607575773376,
+            "epsilon_over_reference_h": 1.5,
+            "function_evaluations": 446,
+            "method": "DOP853",
+            "paper_eligible": false,
+            "q": 0.5,
+            "reference_data": "none",
+            "rtol": 1e-11,
+            "schema_version": "continuum-planar-displacement-1.0",
+            "unshifted_displacement_over_reference_h": 0.11248513031767304,
+            "zero_displacement_shift_over_reference_h": 0.11248513031767304
+          },
+          "method": "continuous-planar-tangential-shear-zero-displacement",
+          "paper_eligible": false,
+          "purpose": "same-continuum-model-discretization-only",
+          "reference_data": "none",
+          "satisfies_original_single_phase_discrete_zero": false
+        }
+      },
+      "initial_condition": "zero-interior-with-inlet-boundary",
+      "phase_lock": {
+        "cylinder_centre_over_h": [
+          40,
+          40
+        ],
+        "cylinder_radius_over_h": 10,
+        "grid_spacing": "dx=dy=h"
+      },
+      "physics": {
+        "cylinder_centre": [
+          0.2,
+          0.2
+        ],
+        "cylinder_radius": 0.05,
+        "density": 1,
+        "maximum_inlet_velocity": 0.3,
+        "mean_inlet_velocity": 0.2,
+        "reynolds_number": 20,
+        "viscosity": 0.001
+      },
+      "reference": {
+        "name": "DFG-FEATFLOW-2D-1",
+        "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html"
+      },
+      "run_id": "diagnostic-central-medium-q0.5",
+      "schema_version": "forward-verification-config-1.2",
+      "solver": {
+        "advection_scheme": "central",
+        "chunk_steps": 1000,
+        "dt": 0.00125,
+        "include_advection": true,
+        "max_steps": 36000,
+        "nonlinear_atol": 1e-09,
+        "nonlinear_min_steps": 100,
+        "nonlinear_rtol": 1e-08,
+        "pressure_atol": 1e-14,
+        "pressure_maxiter": 4000,
+        "pressure_tolerance": 1e-12,
+        "stability_limits": {
+          "alpha_max_times_dt_max": 0.2,
+          "c_adv_max": 0.75,
+          "c_diff_max": 0.200000000001
+        }
+      },
+      "study": {
+        "development_only": true,
+        "level": "medium-q0.5",
+        "name": "fixed-grid-stronger-penalty-attribution-2026-09-19",
+        "paper_eligible": false,
+        "value": 0.5
+      },
+      "surface_measurement": {
+        "normal": "cylinder-outward-into-fluid",
+        "offset_sensitivity_shifts_over_h": [
+          0,
+          0.3,
+          0.6
+        ],
+        "offsets_over_h": [
+          4.5,
+          4.8,
+          5.1,
+          5.4,
+          5.7
+        ],
+        "polynomial_sensitivity_degrees": [
+          1,
+          2
+        ],
+        "pressure_polynomial_degree": 1,
+        "quadrature_points": 256,
+        "stress_tensor": "nu-grad-u-minus-pI",
+        "tangential_velocity_polynomial_degree": 1,
+        "trace_method": "pure-fluid-stencil-radial-polynomial"
+      },
+      "timing_samples": 1
+    },
+    "run_id": "normal-continuum-planar-control-medium",
+    "schema_version": "normal-cylinder-diagnostic-config-1.0",
+    "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p5.json",
+    "source_config_sha256": "4927ca71c4b68fd156f526fadbf94ff65fe9fe2166df0c1133934b54a99efd3b",
+    "study": {
+      "development_only": true,
+      "paper_eligible": false
+    },
+    "subprocess_capture": {
+      "argv": [
+        "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+        "/home/user/GeoDiffCFD/jax_cad/tools/run_normal_cylinder.py",
+        "--config",
+        "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/cylinder_normal_continuum_medium.json",
+        "--output-dir",
+        "/home/user/GeoDiffCFD/mac_response_20260919/gpu_continuum_medium"
+      ],
+      "end_utc": "2026-09-19T15:03:38.452399+00:00",
+      "exception": null,
+      "exit_code": 0,
+      "inner_reported": {
+        "command": {
+          "argv": [
+            "/home/user/GeoDiffCFD/jax_cad/tools/run_normal_cylinder.py",
+            "--config",
+            "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/cylinder_normal_continuum_medium.json",
+            "--output-dir",
+            "/home/user/GeoDiffCFD/mac_response_20260919/gpu_continuum_medium"
+          ],
+          "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+        },
+        "timestamps": {
+          "end_utc": "2026-09-19T15:03:35.333350+00:00",
+          "exit_code": 0,
+          "start_utc": "2026-09-19T14:48:51.581579+00:00",
+          "status": "success"
+        }
+      },
+      "inner_result": {
+        "accepted": true,
+        "normalization_error": null,
+        "present": true
+      },
+      "method": "subprocess.run with binary stdout/stderr pipes",
+      "schema_version": "subprocess-capture-1.0",
+      "start_utc": "2026-09-19T14:48:50.084458+00:00",
+      "streams": {
+        "stderr": {
+          "byte_count": 0,
+          "path": "stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "byte_count": 6000,
+          "path": "stdout.log",
+          "sha256": "b59a61066ea44eaa64be4681ce9c4caad8c75c291ce4c105e0f0b663632d9780"
+        }
+      },
+      "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+    }
+  },
+  "experiment_id": "normal_constraint_cylinder_diagnostic",
+  "git": {
+    "branch": "fix/cylinder-convergence-diagnostics",
+    "commit": "ecb79eb67dfc60476086c33ea0e4cd771d7c7f26",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "gradient": {
+    "adjoint_residual": null,
+    "backend": "none",
+    "message": "Forward diagnostic; separate small-grid geometry-gradient audits, not a cylinder gradient claim.",
+    "norm": null,
+    "parameter_names": [],
+    "parameterization": null,
+    "success": false,
+    "taylor_test": null,
+    "values": []
+  },
+  "hardware": {
+    "accelerators": [
+      {
+        "count": 1,
+        "driver": "575.57.08",
+        "memory_bytes": 25757220864,
+        "name": "NVIDIA GeForce RTX 4090",
+        "platform": "cuda"
+      }
+    ],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "device_visibility": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "ROCR_VISIBLE_DEVICES": null,
+      "unset_policy": "runtime default; all enumerated devices may be visible"
+    },
+    "hostname": "workstation",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155698176,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "process_cpu_affinity": [
+      0,
+      1
+    ]
+  },
+  "memory": {
+    "measurement_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; JAX device.memory_stats()['peak_bytes_in_use']",
+    "peak_accelerator_bytes": 91703040,
+    "peak_host_bytes": 2044252160
+  },
+  "notes": "Opt-in normal constraint, full Brinkman plus multiplier reaction, no paper promotion; success means numerical guards passed, not sharp DFG acceptance.",
+  "objective": {
+    "name": "relative_total_reaction_drag_error",
+    "normalization": "DFG reference C_D=5.57953523384",
+    "units": "dimensionless",
+    "value": 0.00356156905419569
+  },
+  "primal": {
+    "converged": true,
+    "divergence_max": 3.318456620604593e-13,
+    "divergence_rms": 7.134221465770882e-14,
+    "failure_reason": null,
+    "iterations": 19239,
+    "mass_flux_mismatch": 0.0,
+    "residual_norm": 1.2444369801727614e-08
+  },
+  "run_id": "normal-continuum-planar-control-medium",
+  "schema_version": "1.0",
+  "software": {
+    "backend": "gpu",
+    "backend_platform_version": "PJRT C API\ncuda 12080",
+    "cuda_toolkit_nvcc": null,
+    "environment_variables": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "JAX_ENABLE_X64": "true",
+      "JAX_PLATFORMS": "cuda",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "XLA_FLAGS": "--xla_backend_optimization_level=0",
+      "XLA_PYTHON_CLIENT_MEM_FRACTION": "0.70",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "true"
+    },
+    "jax": "0.7.0",
+    "jax_cuda_pjrt": "0.7.0",
+    "jax_cuda_plugin": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "precision": "float64",
+    "python": "3.11.13",
+    "scipy": "1.16.0"
+  },
+  "timestamps": {
+    "end_utc": "2026-09-19T15:03:38.452399+00:00",
+    "exit_code": 0,
+    "start_utc": "2026-09-19T14:48:50.084458+00:00",
+    "status": "success"
+  },
+  "timing": {
+    "compile_seconds": 55.61408303701319,
+    "forward_samples_seconds": [
+      847.8768237920012
+    ],
+    "gradient_samples_seconds": [],
+    "optimizer_step_samples_seconds": []
+  }
+}

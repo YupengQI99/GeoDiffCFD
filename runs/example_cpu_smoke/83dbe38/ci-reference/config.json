@@ -1,0 +1,6 @@
+{
+  "case": "schema-validation-fixture",
+  "grid": [8, 6],
+  "precision": "float64",
+  "note": "Synthetic infrastructure fixture; not scientific evidence."
+}

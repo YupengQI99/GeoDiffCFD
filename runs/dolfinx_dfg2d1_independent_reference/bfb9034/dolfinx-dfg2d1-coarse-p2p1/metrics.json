@@ -1,0 +1,208 @@
+{
+  "case": "dfg-cylinder-2d1-re20",
+  "conservation": {
+    "boundary_length_absolute_errors": {
+      "cylinder": 0.00032288244759970386,
+      "inlet": 5.551115123125783e-17,
+      "outlet": 0.0,
+      "walls": 8.881784197001252e-16
+    },
+    "cylinder_flux": 0.0,
+    "divergence_l2": 0.025664755179855742,
+    "divergence_max_at_dg1_nodes": 2.7858918848191045,
+    "divergence_rms": 0.027140951463237858,
+    "element_strong_momentum_residual_l2": 0.025795857296188475,
+    "expected_inlet_flux": 0.082,
+    "fluid_area": 0.8941782767479869,
+    "force_x_decomposition_absolute_error": 8.673617379884035e-19,
+    "force_y_decomposition_absolute_error": 4.946672411965114e-19,
+    "inlet_flux": 0.082,
+    "net_outward_flux": 1.3877787807814457e-16,
+    "outlet_flux": 0.08200000000000014,
+    "relative_inlet_flux_error": 0.0,
+    "relative_inlet_outlet_mismatch": 1.692413147294446e-15,
+    "walls_flux": 0.0
+  },
+  "formulation": {
+    "continuity": "div(u) = 0",
+    "dynamic_viscosity": 0.001,
+    "force_normal": "cylinder-outward-into-fluid",
+    "force_quadrature_degree": 10,
+    "force_stress": "mu * grad(u) - p I; mu=rho*nu and rho=1",
+    "geometry": "boundary-fitted Gmsh rectangle-minus-circle",
+    "momentum": "rho * (grad(u) u) - mu * div(grad(u)) + grad(p) = 0",
+    "outlet": "natural (mu * grad(u) - p I) n = 0",
+    "pressure_element": "continuous Lagrange P1",
+    "pressure_probe_boundary_vertices": {
+      "front": {
+        "actual": [
+          0.15000000000000002,
+          0.2
+        ],
+        "distance": 2.7755575615628914e-17,
+        "target": [
+          0.15,
+          0.2
+        ]
+      },
+      "rear": {
+        "actual": [
+          0.25,
+          0.2
+        ],
+        "distance": 0.0,
+        "target": [
+          0.25,
+          0.2
+        ]
+      }
+    },
+    "pressure_probe_definition": "p(0.15,0.2) - p(0.25,0.2)",
+    "velocity_element": "continuous Lagrange P2"
+  },
+  "mesh": {
+    "bulk_size": 0.04,
+    "cell_type": "triangle",
+    "cells_global": 4801,
+    "cylinder_refinement_distance": 0.2,
+    "cylinder_size": 0.008,
+    "geometry_degree": 1,
+    "gmsh_algorithm": 6,
+    "maximum_cell_diameter": 0.05274566447111031,
+    "minimum_cell_diameter": 0.006623429170137636,
+    "mixed_dofs_global": 22047,
+    "tagged_facets_global": {
+      "cylinder": 40,
+      "inlet": 12,
+      "outlet": 11,
+      "walls": 114
+    },
+    "vertices_global": 2489,
+    "wake_box": {
+      "thickness": 0.025,
+      "x_max": 1.1,
+      "x_min": 0.15,
+      "y_max": 0.32,
+      "y_min": 0.08
+    },
+    "wake_size": 0.015
+  },
+  "metrics": {
+    "drag_coefficient": 5.523349975493813,
+    "force_x": 0.011046699950987629,
+    "force_y": 2.5643150564864567e-05,
+    "lift_coefficient": 0.01282157528243228,
+    "pressure_difference": 0.11743656495681161,
+    "pressure_drag_coefficient": 3.600119026493825,
+    "pressure_force_x": 0.007200238052987652,
+    "pressure_force_y": 1.518814770391808e-05,
+    "pressure_front": 0.1322707224794718,
+    "pressure_lift_coefficient": 0.007594073851959039,
+    "pressure_rear": 0.014834157522660188,
+    "viscous_drag_coefficient": 1.9232309489999886,
+    "viscous_force_x": 0.003846461897999978,
+    "viscous_force_y": 1.0455002860945991e-05,
+    "viscous_lift_coefficient": 0.005227501430472995
+  },
+  "nonlinear_convergence": {
+    "converged": true,
+    "final_over_initial": 5.475313189318881e-10,
+    "final_residual_l2": 5.534561940025382e-13,
+    "history": [
+      {
+        "iteration": 0,
+        "residual_l2": 0.0010108210706233356
+      },
+      {
+        "iteration": 1,
+        "residual_l2": 0.0002347135694378404
+      },
+      {
+        "iteration": 2,
+        "residual_l2": 1.3838579181733429e-05
+      },
+      {
+        "iteration": 3,
+        "residual_l2": 5.148312662393526e-08
+      },
+      {
+        "iteration": 4,
+        "residual_l2": 5.534561940025382e-13
+      }
+    ],
+    "initial_residual_l2": 0.0010108210706233356,
+    "iterations": 4,
+    "linear_iterations_total": 4,
+    "snes_reason_code": 2
+  },
+  "original_interval_membership": {
+    "drag_coefficient": false,
+    "lift_coefficient": false,
+    "pressure_difference": true
+  },
+  "physical_tags": {
+    "boundary_lengths": {
+      "cylinder": 0.3138363829113796,
+      "inlet": 0.4099999999999999,
+      "outlet": 0.41,
+      "walls": 4.400000000000001
+    },
+    "cylinder": 14,
+    "fluid": 1,
+    "gmsh_curve_entities": {
+      "cylinder": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "inlet": [
+        10
+      ],
+      "outlet": [
+        11
+      ],
+      "walls": [
+        9,
+        12
+      ]
+    },
+    "inlet": 11,
+    "outlet": 12,
+    "walls": 13
+  },
+  "reference": {
+    "drag_coefficient": 5.57953523384,
+    "lift_coefficient": 0.010618948146,
+    "name": "DFG-FEATFLOW-2D-1 high-precision reference",
+    "original_intervals": {
+      "drag_coefficient": [
+        5.57,
+        5.59
+      ],
+      "lift_coefficient": [
+        0.0104,
+        0.011
+      ],
+      "pressure_difference": [
+        0.1172,
+        0.1176
+      ]
+    },
+    "paper_eligible": false,
+    "pressure_difference": 0.11752016697,
+    "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html"
+  },
+  "relative_errors": {
+    "drag_coefficient": 0.01006988144916114,
+    "lift_coefficient": 0.2074242294197451,
+    "pressure_difference": 0.0007113843976220559
+  },
+  "run_id": "dolfinx-dfg2d1-coarse-p2p1",
+  "timing_seconds": {
+    "mesh_generation_and_import": 0.059326387010514736,
+    "nonlinear_solve": 0.32197267306037247,
+    "stokes_initialisation": 0.5203754929825664,
+    "total_before_serialisation": 3.104773318162188
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "git": {
+    "branch": "fix/cylinder-convergence-diagnostics",
+    "commit": "ecb79eb67dfc60476086c33ea0e4cd771d7c7f26",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "hardware": {
+    "accelerators": [
+      {
+        "count": 1,
+        "driver": "575.57.08",
+        "memory_bytes": 25757220864,
+        "name": "NVIDIA GeForce RTX 4090",
+        "platform": "cuda"
+      }
+    ],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "device_visibility": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "ROCR_VISIBLE_DEVICES": null,
+      "unset_policy": "runtime default; all enumerated devices may be visible"
+    },
+    "hostname": "workstation",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155698176,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "process_cpu_affinity": [
+      0,
+      1
+    ]
+  },
+  "software": {
+    "backend": "gpu",
+    "backend_platform_version": "PJRT C API\ncuda 12080",
+    "cuda_toolkit_nvcc": null,
+    "environment_variables": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "JAX_ENABLE_X64": "true",
+      "JAX_PLATFORMS": "cuda",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "XLA_FLAGS": "--xla_backend_optimization_level=0",
+      "XLA_PYTHON_CLIENT_MEM_FRACTION": "0.70",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "true"
+    },
+    "jax": "0.7.0",
+    "jax_cuda_pjrt": "0.7.0",
+    "jax_cuda_plugin": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "precision": "float64",
+    "python": "3.11.13",
+    "scipy": "1.16.0"
+  },
+  "source_snapshot": {
+    "branch": "fix/cylinder-convergence-diagnostics",
+    "commit": "ecb79eb67dfc60476086c33ea0e4cd771d7c7f26",
+    "dirty": false,
+    "input_file_sha256": {
+      "configs/forward_verification/diagnostics/cylinder_central_medium_q0p5.json": "4927ca71c4b68fd156f526fadbf94ff65fe9fe2166df0c1133934b54a99efd3b",
+      "configs/forward_verification/diagnostics/cylinder_normal_continuum_medium.json": "11bf5d641732fc588bd97acadb07d316f62258934f73c64db9e8c709378a773a",
+      "jax_cad/continuum_mask_calibration.py": "d3099a6b22e57e8cfa8840717dce9e9741ecb31e34a23bb355e4752d909bb0c5",
+      "jax_cad/differentiable/mac_normal_constraint.py": "681566ba5848ba86c1c8337e4d1082647b094fc26db26ed24ab8b7761dd78fee",
+      "jax_cad/differentiable/mac_normal_response.py": "ede65d06368a0b2221f4fcf806cbebe32476c7cd7f4364d44791a4874fcedd89",
+      "tools/run_normal_cylinder.py": "ed6eebe9f3664e1a4765c8d226951c0fb3f5f672b67147f541b952ea06d3626c"
+    },
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "normal-cylinder-diagnostic-config-1.0",
+  "experiment_id": "normal_constraint_cylinder_diagnostic",
+  "run_id": "normal-q0p5-fine64-fe-source-only",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "source_config": "configs/forward_verification/diagnostics/cylinder_q0p5_fine_fe_source.json",
+  "source_config_sha256": "ddcd59826e832ad8bed18408f833a9f6ff6318c24a0037cf1aad0901ef295e03",
+  "grid": {
+    "nx": 880,
+    "ny": 164,
+    "lx": 2.2,
+    "ly": 0.41
+  },
+  "normal_constraint": {
+    "kernel": "tensor-cubic-bspline-native-mac",
+    "markers": 64,
+    "nominal_surface_shift": 0,
+    "angle_origin": 0,
+    "force_protocol": "mac-brinkman-plus-normal-reaction-prototype-v1"
+  },
+  "max_steps": 144000,
+  "chunk_steps": 1000,
+  "gates": {
+    "divergence_max": 1e-8,
+    "normal_velocity_max": 1e-10,
+    "mass_flux_mismatch": 1e-9,
+    "cv_relative_closure": 0.00001
+  },
+  "execution_scope": "CPU FE model refinement source; does not authorize fine GPU execution"
+}

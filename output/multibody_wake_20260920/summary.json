@@ -1,0 +1,649 @@
+{
+  "schema": "multibody-wake-comparison-1",
+  "paper_eligible": false,
+  "scope": "fixed-centre, fixed-area finite-Brinkman feature-constrained shape optimisation",
+  "comparisons": [
+    {
+      "label": "Optimisation mesh",
+      "initial": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1/evaluation-000/metrics.json",
+      "candidate": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1/evaluation-016/metrics.json",
+      "grid": {
+        "nx": 220,
+        "ny": 41,
+        "lx": 2.2,
+        "ly": 0.41
+      },
+      "dt": 0.00025,
+      "window": [
+        4.0,
+        6.0
+      ],
+      "initial_objective": 15.773125853773632,
+      "candidate_objective": 10.81166212373725,
+      "reduction_percent": 31.455171131151406,
+      "initial_areas": [
+        0.007853981633974482,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "candidate_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "initial_diffuse_area": 0.023872991244613357,
+      "candidate_diffuse_area": 0.02387483866489637,
+      "changes_relative_to_original_gain": {
+        "initial": 0.0,
+        "candidate": 0.0
+      }
+    },
+    {
+      "label": "Refined mesh",
+      "initial": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_initial_v1/evaluation-000/metrics.json",
+      "candidate": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_candidate_v1/evaluation-000/metrics.json",
+      "grid": {
+        "nx": 440,
+        "ny": 82,
+        "lx": 2.2,
+        "ly": 0.41
+      },
+      "dt": 0.00025,
+      "window": [
+        4.0,
+        6.0
+      ],
+      "initial_objective": 16.102550915246056,
+      "candidate_objective": 11.057217182963164,
+      "reduction_percent": 31.332512213986664,
+      "initial_areas": [
+        0.007853981633974482,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "candidate_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "initial_diffuse_area": 0.023864868032655546,
+      "candidate_diffuse_area": 0.023864744709214132,
+      "changes_relative_to_original_gain": {
+        "initial": 0.06639674890256801,
+        "candidate": 0.04949246282691534
+      }
+    },
+    {
+      "label": "Half time step",
+      "initial": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_initial_v1/evaluation-000/metrics.json",
+      "candidate": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_candidate_v1/evaluation-000/metrics.json",
+      "grid": {
+        "nx": 220,
+        "ny": 41,
+        "lx": 2.2,
+        "ly": 0.41
+      },
+      "dt": 0.000125,
+      "window": [
+        4.0,
+        6.0
+      ],
+      "initial_objective": 15.77158647987258,
+      "candidate_objective": 10.817631653559008,
+      "reduction_percent": 31.410630963699948,
+      "initial_areas": [
+        0.007853981633974482,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "candidate_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "initial_diffuse_area": 0.023872991244613357,
+      "candidate_diffuse_area": 0.02387483866489637,
+      "changes_relative_to_original_gain": {
+        "initial": 0.00031026607969183816,
+        "candidate": 0.0012031791718277024
+      }
+    },
+    {
+      "label": "Later window",
+      "initial": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_initial_v1/evaluation-000/metrics.json",
+      "candidate": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_candidate_v1/evaluation-000/metrics.json",
+      "grid": {
+        "nx": 220,
+        "ny": 41,
+        "lx": 2.2,
+        "ly": 0.41
+      },
+      "dt": 0.00025,
+      "window": [
+        10.0,
+        12.0
+      ],
+      "initial_objective": 15.760664882775771,
+      "candidate_objective": 10.896013265306946,
+      "reduction_percent": 30.86577662586568,
+      "initial_areas": [
+        0.007853981633974482,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "candidate_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "initial_diffuse_area": 0.023872991244613357,
+      "candidate_diffuse_area": 0.02387483866489637,
+      "changes_relative_to_original_gain": {
+        "initial": 0.002511551363849096,
+        "candidate": 0.017001261353386476
+      }
+    }
+  ],
+  "gradient_audits": [
+    {
+      "name": "gradient_initial_v1",
+      "value": 15.773125853773632,
+      "gradient": [
+        -1.028995048602609,
+        0.05729916613409757,
+        0.23494915663710017,
+        0.009630143063569038,
+        -1.8402189975368717,
+        0.02619448230409302,
+        0.08563406893855818,
+        -0.2511212343690525,
+        -1.0609805946356092,
+        -0.04091483290025894,
+        0.17224241946386518,
+        0.19551046185936696
+      ],
+      "direction": [
+        0.42163702135578396,
+        -0.31622776601683794,
+        0.21081851067789198,
+        0.10540925533894599,
+        -0.21081851067789198,
+        0.31622776601683794,
+        -0.42163702135578396,
+        0.10540925533894599,
+        0.31622776601683794,
+        0.21081851067789198,
+        0.10540925533894599,
+        -0.42163702135578396
+      ],
+      "epsilons": [
+        0.008,
+        0.004,
+        0.002,
+        0.001
+      ],
+      "remainders": [
+        3.092749759103005e-06,
+        7.700562364039692e-07,
+        1.9212345973276725e-07,
+        4.798207938323763e-08
+      ],
+      "rates": [
+        2.0058543933730966,
+        2.0029301143940823,
+        2.001466108086658
+      ],
+      "fd_step": 0.0001,
+      "finite_difference_checks": [
+        {
+          "label": "all_bodies",
+          "direction": [
+            0.42163702135578396,
+            -0.31622776601683794,
+            0.21081851067789198,
+            0.10540925533894599,
+            -0.21081851067789198,
+            0.31622776601683794,
+            -0.42163702135578396,
+            0.10540925533894599,
+            0.31622776601683794,
+            0.21081851067789198,
+            0.10540925533894599,
+            -0.42163702135578396
+          ],
+          "directional_ad": -0.47619223312737474,
+          "directional_fd": -0.47619223364492314,
+          "relative_difference": 1.0868476141859526e-09
+        },
+        {
+          "label": "body_1",
+          "direction": [
+            0.7302967433402214,
+            -0.5477225575051661,
+            0.3651483716701107,
+            0.18257418583505536,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "directional_ad": -0.6953062612249704,
+          "directional_fd": -0.6953062624859285,
+          "relative_difference": 1.813529064433438e-09
+        },
+        {
+          "label": "body_2",
+          "direction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.3651483716701107,
+            0.5477225575051661,
+            -0.7302967433402214,
+            0.18257418583505536,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "directional_ad": 0.577913742731489,
+          "directional_fd": 0.5779137427897041,
+          "relative_difference": 1.0073319787606466e-10
+        },
+        {
+          "label": "body_3",
+          "direction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5477225575051661,
+            0.3651483716701107,
+            0.18257418583505536,
+            -0.7302967433402214
+          ],
+          "directional_ad": -0.7073966234528151,
+          "directional_fd": -0.7073966248949404,
+          "relative_difference": 2.0386375299345686e-09
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "gradient_nonzero_v1",
+      "value": 15.668979707282604,
+      "gradient": [
+        -1.1347494409251706,
+        0.07422659193842483,
+        0.2578856699680711,
+        0.014908153646489342,
+        -1.75924066789678,
+        0.028314036989371544,
+        0.07722865267482976,
+        -0.23932988229007837,
+        -1.0066592280596196,
+        -0.05304575809009282,
+        0.16165069001548346,
+        0.1896185051679581
+      ],
+      "direction": [
+        0.42163702135578396,
+        -0.31622776601683794,
+        0.21081851067789198,
+        0.10540925533894599,
+        -0.21081851067789198,
+        0.31622776601683794,
+        -0.42163702135578396,
+        0.10540925533894599,
+        0.31622776601683794,
+        0.21081851067789198,
+        0.10540925533894599,
+        -0.42163702135578396
+      ],
+      "epsilons": [
+        0.008,
+        0.004,
+        0.002,
+        0.001
+      ],
+      "remainders": [
+        4.2518158314521284e-06,
+        1.0617223458382098e-06,
+        2.6527633879423924e-07,
+        6.629978927463146e-08
+      ],
+      "rates": [
+        2.0016725754943767,
+        2.000838626132402,
+        2.000419810721894
+      ],
+      "fd_step": 0.0001,
+      "finite_difference_checks": [
+        {
+          "label": "all_bodies",
+          "direction": [
+            0.42163702135578396,
+            -0.31622776601683794,
+            0.21081851067789198,
+            0.10540925533894599,
+            -0.21081851067789198,
+            0.31622776601683794,
+            -0.42163702135578396,
+            0.10540925533894599,
+            0.31622776601683794,
+            0.21081851067789198,
+            0.10540925533894599,
+            -0.42163702135578396
+          ],
+          "directional_ad": -0.516369544319268,
+          "directional_fd": -0.5163695445631333,
+          "relative_difference": 4.722690850145754e-10
+        },
+        {
+          "label": "body_1",
+          "direction": [
+            0.7302967433402214,
+            -0.5477225575051661,
+            0.3651483716701107,
+            0.18257418583505536,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "directional_ad": -0.7724710235059868,
+          "directional_fd": -0.7724710221790332,
+          "relative_difference": 1.7178037980538409e-09
+        },
+        {
+          "label": "body_2",
+          "direction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.3651483716701107,
+            0.5477225575051661,
+            -0.7302967433402214,
+            0.18257418583505536,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "directional_ad": 0.5577968100653697,
+          "directional_fd": 0.5577968101189157,
+          "relative_difference": 9.599543146177812e-11
+        },
+        {
+          "label": "body_3",
+          "direction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5477225575051661,
+            0.3651483716701107,
+            0.18257418583505536,
+            -0.7302967433402214
+          ],
+          "directional_ad": -0.679704072801544,
+          "directional_fd": -0.6797040752370975,
+          "relative_difference": 3.5832557510835807e-09
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "criteria": {
+    "positive_gain_all_comparisons": true,
+    "time_and_window_changes_below_tenth_of_gain": true,
+    "full_horizon_global_and_per_body_gradient_gates": true
+  },
+  "passed": true,
+  "optimizer_termination": "max_iterations",
+  "optimizer_stationarity_reached": false,
+  "final_theta": [
+    1.0,
+    -0.5931893473102787,
+    -1.0,
+    -0.08735577722460926,
+    1.0,
+    -0.3024696528758541,
+    -0.8793853192325943,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0
+  ],
+  "final_projected_gradient_norm": 0.16032077794737734,
+  "accepted_steps": 8,
+  "hardware": [
+    {
+      "name": "gpu_audit_v1",
+      "seconds": 149.96150265191682,
+      "maxima": {
+        "gpu_memory_mib": 17293.0,
+        "temperature_c": 50.0,
+        "cpu_temperature_c": 78.625,
+        "nvme_temperature_c": 48.85,
+        "power_w": 92.04
+      },
+      "minima": {
+        "disk_free_gib": 43.42623519897461,
+        "available_ram_fraction": 0.6378755489292293
+      }
+    },
+    {
+      "name": "coarse_initial_v1",
+      "seconds": 70.79099567304365,
+      "maxima": {
+        "gpu_memory_mib": 17291.0,
+        "temperature_c": 54.0,
+        "cpu_temperature_c": 80.0,
+        "nvme_temperature_c": 48.85,
+        "power_w": 122.34
+      },
+      "minima": {
+        "disk_free_gib": 43.416568756103516,
+        "available_ram_fraction": 0.67239620263955
+      }
+    },
+    {
+      "name": "gradient_initial_v1",
+      "seconds": 569.4691709678154,
+      "maxima": {
+        "gpu_memory_mib": 17293.0,
+        "temperature_c": 62.0,
+        "cpu_temperature_c": 84.875,
+        "nvme_temperature_c": 53.85,
+        "power_w": 131.49
+      },
+      "minima": {
+        "disk_free_gib": 43.281410217285156,
+        "available_ram_fraction": 0.6413409871798661
+      }
+    },
+    {
+      "name": "gradient_nonzero_v1",
+      "seconds": 590.4694763009902,
+      "maxima": {
+        "gpu_memory_mib": 17293.0,
+        "temperature_c": 62.0,
+        "cpu_temperature_c": 83.875,
+        "nvme_temperature_c": 57.85,
+        "power_w": 131.27
+      },
+      "minima": {
+        "disk_free_gib": 43.143592834472656,
+        "available_ram_fraction": 0.6406811668576322
+      }
+    },
+    {
+      "name": "optimization_v1",
+      "seconds": 1407.1014949120581,
+      "maxima": {
+        "gpu_memory_mib": 17293.0,
+        "temperature_c": 62.0,
+        "cpu_temperature_c": 83.875,
+        "nvme_temperature_c": 55.85,
+        "power_w": 130.52
+      },
+      "minima": {
+        "disk_free_gib": 42.432403564453125,
+        "available_ram_fraction": 0.6368888563488937
+      }
+    },
+    {
+      "name": "medium_initial_v1",
+      "seconds": 79.24825913016684,
+      "maxima": {
+        "gpu_memory_mib": 17291.0,
+        "temperature_c": 52.0,
+        "cpu_temperature_c": 79.375,
+        "nvme_temperature_c": 52.85,
+        "power_w": 139.57
+      },
+      "minima": {
+        "disk_free_gib": 42.107051849365234,
+        "available_ram_fraction": 0.673117055807286
+      }
+    },
+    {
+      "name": "medium_candidate_v1",
+      "seconds": 81.76313341408968,
+      "maxima": {
+        "gpu_memory_mib": 17291.0,
+        "temperature_c": 57.0,
+        "cpu_temperature_c": 81.25,
+        "nvme_temperature_c": 52.85,
+        "power_w": 145.92
+      },
+      "minima": {
+        "disk_free_gib": 42.07473373413086,
+        "available_ram_fraction": 0.6416095133810621
+      }
+    },
+    {
+      "name": "half_dt_initial_v1",
+      "seconds": 100.2876953270752,
+      "maxima": {
+        "gpu_memory_mib": 17291.0,
+        "temperature_c": 61.0,
+        "cpu_temperature_c": 80.5,
+        "nvme_temperature_c": 51.85,
+        "power_w": 125.91
+      },
+      "minima": {
+        "disk_free_gib": 42.07422637939453,
+        "available_ram_fraction": 0.6653581904429953
+      }
+    },
+    {
+      "name": "half_dt_candidate_v1",
+      "seconds": 100.90255846595392,
+      "maxima": {
+        "gpu_memory_mib": 17291.0,
+        "temperature_c": 62.0,
+        "cpu_temperature_c": 79.125,
+        "nvme_temperature_c": 52.85,
+        "power_w": 128.78
+      },
+      "minima": {
+        "disk_free_gib": 42.048309326171875,
+        "available_ram_fraction": 0.6707432780823754
+      }
+    },
+    {
+      "name": "late_window_initial_v1",
+      "seconds": 101.13784001604654,
+      "maxima": {
+        "gpu_memory_mib": 17291.0,
+        "temperature_c": 53.0,
+        "cpu_temperature_c": 82.25,
+        "nvme_temperature_c": 53.85,
+        "power_w": 120.35
+      },
+      "minima": {
+        "disk_free_gib": 42.03372573852539,
+        "available_ram_fraction": 0.6696992469908578
+      }
+    },
+    {
+      "name": "late_window_candidate_v1",
+      "seconds": 109.68307545385323,
+      "maxima": {
+        "gpu_memory_mib": 17291.0,
+        "temperature_c": 47.0,
+        "cpu_temperature_c": 82.875,
+        "nvme_temperature_c": 53.85,
+        "power_w": 120.27
+      },
+      "minima": {
+        "disk_free_gib": 42.02812576293945,
+        "available_ram_fraction": 0.651585009869063
+      }
+    }
+  ],
+  "source_sha256": {
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1/result.json": "251ebcb0dc020554d4748b9016afea0512f2afc4effb384139f353042295f018",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1/config.json": "050492e74947edb3c5896a6d0c398acb285cef220706cd0252a20edc8e6c658e",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1/evaluation-000/metrics.json": "37a862a42fe1617de543f22aea2dc2a9050e1350783092f91dd810f822a0eca4",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1/evaluation-016/metrics.json": "a52afdde917cad64071e91e17046e3c017fee7917e3b553adf61c843a3b1227c",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_initial_v1/evaluation-000/metrics.json": "d5979c5ae33a94c444d9be0f880b7403e6435135a4566f20053e792d9c69cef6",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_candidate_v1/evaluation-000/metrics.json": "73bcb97b3b4a83edd2fc5d64b0dad7404208edf201de7facd30c6047d9d5e4ea",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_initial_v1/config.json": "d8515c8c8d5df274260a37ee92316b0fa53b6dbd881bd40d2d327599a8955f85",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_candidate_v1/config.json": "65f143d55317e3808034a46632ceb2aaf8e71aa938d151f23d14d5dac264cd51",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_initial_v1/evaluation-000/metrics.json": "164b88d2790c1e28bb895a48c708ce0aac78586b7c61d9d35dd33aebf62fab67",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_candidate_v1/evaluation-000/metrics.json": "bdc39b0e06980495fd659d4fc885d911776a5f17e803cc03404e17db874dfef1",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_initial_v1/config.json": "1caa35352659738f1aa282501ae1c948763fc1b55870bd0425392b4a21cb3db6",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_candidate_v1/config.json": "e7a4d54dda587f5a09aec09054921eab60fe040a63f2a66a7872da9901b454f9",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_initial_v1/evaluation-000/metrics.json": "662c3ff4aaed0c1bf8e032170872bbe61f8c528b8e332735aa0d22782162ab5e",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_candidate_v1/evaluation-000/metrics.json": "73331c620d9ebe06cae8bd534ccf56c12ca1fc3e5696f380ba3e88a3d5ce24fa",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_initial_v1/config.json": "baba0a057c974f485775f3ea1e159ba3eb94983548d4542fe6957c3540aa18dc",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_candidate_v1/config.json": "40d7e789895bd322f89c3b97718efb0f6839ccd371c9a066c7a7075973adf130",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gradient_initial_v1/result.json": "ffbce58d9e5ca8d677828a08aa91ee628a4b8d6961f354570a861d1b1f87f63d",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gradient_nonzero_v1/result.json": "4e75c69f7ece12f22d6de697049f1a27f5a744eba707cf236a647721e0210b00",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gpu_audit_v1.guard/guard.json": "efe192e4678d0c3a2eb4ed64bc8e37c44a3fad1d84e28d96f932406c191e3028",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gpu_audit_v1.guard/hardware.csv": "12fb70741d1a2a0e470726da34aaabd06b4c988137030cc4fec3d80c52233013",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/coarse_initial_v1.guard/guard.json": "f579f0d044c8a37839b682bbe395ff69f5d5af3ba29d0949072ffbbd7dbffa5b",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/coarse_initial_v1.guard/hardware.csv": "1ea6bccd24b08a416c0d343727e06bb236d156c738397b456a3cb168858c5567",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gradient_initial_v1.guard/guard.json": "ba556f974b5e5732c9fb99e0f38ee1eb1c70a68d41d948883fe5d6686cf6503a",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gradient_initial_v1.guard/hardware.csv": "1cce3e54d228e617a2d3f34c7d1e50f49cba374b68ac0dab20cb2fac5940f86d",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gradient_nonzero_v1.guard/guard.json": "045dfffb09218bc939eb2762793312bcdd1e4b96f73129380a5ac4eeca5aab7d",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/gradient_nonzero_v1.guard/hardware.csv": "3cb7ebb84d73cffaf13ef82756ca4efbf3a16b3c0ff8bd426973776ccf48ea15",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1.guard/guard.json": "68e07e8dc5027ba2b67707ec8615d5ed188ab3e217646b118189043e20e287dc",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1.guard/hardware.csv": "c2383383f74cdc02fd43d4c87ca58998ee4295a12aa9468c0c830c2610b26099",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_initial_v1.guard/guard.json": "4553ef8ed5c8a7170735f54bd6fa4caae2c8e1d0757e0019e073aba3c7051c19",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_initial_v1.guard/hardware.csv": "7459f59b2e2036ebb487e154215d7a8eabaaac91096f576c350f17b4b524620a",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_candidate_v1.guard/guard.json": "3ba15143789351e1838ccb18267476d9855b201b08c232aa15a0dae03aff28da",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_candidate_v1.guard/hardware.csv": "c500b5ec8062fb878a10b4d3b7123daeebd07a813ec4fb5ad50a3e2b6892fd9b",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_initial_v1.guard/guard.json": "4660c8dead5aee59e0a78feb459a014bc25ac6b916f7c74c9a6684d0b0798dc1",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_initial_v1.guard/hardware.csv": "08dc4952e6a80e26d9ad25a2e367b08870efcd0b0a13d59baf8726efd09e0a11",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_candidate_v1.guard/guard.json": "85ced1caa74e1b4d2f183441c1ad62596cbf3a70e7e6c5d7ff9a8d1ae8675cfb",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_candidate_v1.guard/hardware.csv": "35110d69724c1a36262b09cef8fc93e338e2331046c6a97512d86f57189b9ff0",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_initial_v1.guard/guard.json": "5a845a6245f6c8b893faebca353824954b1a67ca423a166856de4624868726d8",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_initial_v1.guard/hardware.csv": "21f20d2d92cfd0f65de34d8dbbf6433cd42b87e4dc1c0c51f2ae03e5bd11bc61",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_candidate_v1.guard/guard.json": "d6d9128e613ed3851aa6577f6466a504998f65aa6ce3b6dfeec6e7d9b7c22e9e",
+    "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_candidate_v1.guard/hardware.csv": "a405d05d575d1346cc783befd0622a5348cd5f97bfb09349adc255c69367dc45",
+    "/home/user/GeoDiffCFD/jax_cad/tools/summarize_multibody_wake.py": "435702005f4ccf6bc8174a7efd350cf843e8ec0ae0e3a769faecfa16f91fcc26"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "chunk_steps": 1000,
+  "experiment_id": "normal_constraint_cylinder_diagnostic",
+  "fixed_model_control": {
+    "method": "fixed-physical-mask-kernel-and-markers",
+    "paper_eligible": false,
+    "reference_normal_config": "configs/forward_verification/diagnostics/cylinder_normal_continuum_medium.json",
+    "reference_normal_config_sha256": "11bf5d641732fc588bd97acadb07d316f62258934f73c64db9e8c709378a773a",
+    "refinement_factor": 2
+  },
+  "fixed_model_fine_authorization": {
+    "date": "2026-09-19",
+    "gpu_memory_stop_mib": 22000,
+    "gpu_preallocation_fraction": 0.7,
+    "minimum_disk_free_gib": 30,
+    "scope": "single-fixed-physical-model-880x164-control"
+  },
+  "gates": {
+    "cv_relative_closure": 1e-05,
+    "divergence_max": 1e-08,
+    "mass_flux_mismatch": 1e-09,
+    "normal_velocity_max": 1e-10
+  },
+  "grid": {
+    "lx": 2.2,
+    "ly": 0.41,
+    "nx": 880,
+    "ny": 164
+  },
+  "max_steps": 144000,
+  "normal_constraint": {
+    "angle_origin": 0,
+    "force_protocol": "mac-brinkman-plus-normal-reaction-prototype-v1",
+    "kernel": "tensor-cubic-bspline-native-mac",
+    "markers": 48,
+    "nominal_surface_shift": 0
+  },
+  "planar_calibration_control": {
+    "method": "continuous-planar-tangential-shear-zero-displacement",
+    "paper_eligible": false,
+    "purpose": "same-continuum-model-discretization-only",
+    "reference_data": "none"
+  },
+  "pressure_preconditioner": "constant-poisson-dct",
+  "resolved_base": {
+    "acceptance_observables": {
+      "drag_coefficient": "metrics.numerical.brinkman_drag_coefficient",
+      "lift_coefficient": "metrics.numerical.brinkman_lift_coefficient",
+      "normal_surface_slip_rms": "metrics.surface_measurement.normal_surface_slip_rms",
+      "pressure_difference": "metrics.numerical.pressure_difference",
+      "tangential_surface_slip_rms": "metrics.surface_measurement.tangential_surface_slip_rms"
+    },
+    "boundary_conditions": {
+      "cylinder": "immersed-brinkman-no-slip-limit",
+      "inlet": "analytic-parabolic-face-average",
+      "outlet": "zero-total-traction-finite-volume",
+      "walls": "no-slip"
+    },
+    "case": "dfg-cylinder-2d1-re20",
+    "fixed_model_resolution": {
+      "calibration_reference_h": 0.005,
+      "kernel_ratio": 2,
+      "kernel_widths": [
+        0.005,
+        0.005
+      ],
+      "note": "calibration metadata uses original physical h; *_over_h values use refined numerical h",
+      "physical_model_unchanged": true,
+      "reference_grid": {
+        "lx": 2.2,
+        "ly": 0.41,
+        "nx": 440,
+        "ny": 82
+      },
+      "reference_h": 0.005,
+      "reference_normal_config": "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/cylinder_normal_continuum_medium.json"
+    },
+    "grid": {
+      "lx": 2.2,
+      "ly": 0.41,
+      "nx": 880,
+      "ny": 164
+    },
+    "immersed_boundary": {
+      "alpha_max": 160,
+      "alpha_max_h_squared_over_nu": 1.0,
+      "delta_b_over_h": 1.0,
+      "epsilon_over_h": 3.0,
+      "h_definition": "max(dx,dy)",
+      "mask_midpoint_shift_over_h": 0.2249702606353461,
+      "material_mapping": "compact-cosine-heaviside",
+      "reference_free_calibration": {
+        "baseline_discrete_calibration": {
+          "application": "calibrated-root",
+          "bracket_over_h": [
+            -2,
+            3
+          ],
+          "calibrated_root_over_h": 0.16696815943578258,
+          "cell_centre_phase_over_h": 0.5,
+          "displacement_tolerance_over_h": 1e-10,
+          "far_field_fit_cells": 16,
+          "fluid_cells": 64,
+          "iterations": 34,
+          "max_iterations": 80,
+          "method": "one-dimensional-steady-planar-tangential-shear-zero-displacement",
+          "reference_data": "none",
+          "root_displacement_over_h": -8.009481660212433e-11,
+          "sampling": "tangential-cell",
+          "shift_tolerance_over_h": 1e-12,
+          "solid_cells": 64,
+          "tool": "tools/calibrate_brinkman_mask.py",
+          "unshifted_displacement_over_h": 0.1313752071922972
+        },
+        "baseline_discrete_shift_over_h": 0.16696815943578258,
+        "integration": {
+          "atol": 1e-13,
+          "definition": "continuous compact-cosine half-space tangential shear; not MAC calibration",
+          "endpoint_logarithmic_derivative": 0.6201607575773376,
+          "epsilon_over_reference_h": 1.5,
+          "function_evaluations": 446,
+          "method": "DOP853",
+          "paper_eligible": false,
+          "q": 0.5,
+          "reference_data": "none",
+          "rtol": 1e-11,
+          "schema_version": "continuum-planar-displacement-1.0",
+          "unshifted_displacement_over_reference_h": 0.11248513031767304,
+          "zero_displacement_shift_over_reference_h": 0.11248513031767304
+        },
+        "method": "continuous-planar-tangential-shear-zero-displacement",
+        "paper_eligible": false,
+        "purpose": "same-continuum-model-discretization-only",
+        "reference_data": "none",
+        "satisfies_original_single_phase_discrete_zero": false
+      }
+    },
+    "initial_condition": "zero-interior-with-inlet-boundary",
+    "phase_lock": {
+      "cylinder_centre_over_h": [
+        80,
+        80
+      ],
+      "cylinder_radius_over_h": 20,
+      "grid_spacing": "dx=dy=h"
+    },
+    "physics": {
+      "cylinder_centre": [
+        0.2,
+        0.2
+      ],
+      "cylinder_radius": 0.05,
+      "density": 1,
+      "maximum_inlet_velocity": 0.3,
+      "mean_inlet_velocity": 0.2,
+      "reynolds_number": 20,
+      "viscosity": 0.001
+    },
+    "reference": {
+      "name": "DFG-FEATFLOW-2D-1",
+      "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html"
+    },
+    "run_id": "diagnostic-central-medium-q0.5",
+    "schema_version": "forward-verification-config-1.2",
+    "solver": {
+      "advection_scheme": "central",
+      "chunk_steps": 1000,
+      "dt": 0.0003125,
+      "include_advection": true,
+      "max_steps": 144000,
+      "nonlinear_atol": 1e-09,
+      "nonlinear_min_steps": 100,
+      "nonlinear_rtol": 1e-08,
+      "pressure_atol": 1e-14,
+      "pressure_maxiter": 4000,
+      "pressure_tolerance": 1e-12,
+      "stability_limits": {
+        "alpha_max_times_dt_max": 0.2,
+        "c_adv_max": 0.75,
+        "c_diff_max": 0.200000000001
+      }
+    },
+    "study": {
+      "development_only": true,
+      "level": "medium-q0.5",
+      "name": "fixed-grid-stronger-penalty-attribution-2026-09-19",
+      "paper_eligible": false,
+      "value": 0.5
+    },
+    "surface_measurement": {
+      "normal": "cylinder-outward-into-fluid",
+      "offset_sensitivity_shifts_over_h": [
+        0,
+        0.6,
+        1.2
+      ],
+      "offsets_over_h": [
+        9.0,
+        9.6,
+        10.2,
+        10.8,
+        11.4
+      ],
+      "polynomial_sensitivity_degrees": [
+        1,
+        2
+      ],
+      "pressure_polynomial_degree": 1,
+      "quadrature_points": 256,
+      "stress_tensor": "nu-grad-u-minus-pI",
+      "tangential_velocity_polynomial_degree": 1,
+      "trace_method": "pure-fluid-stencil-radial-polynomial"
+    },
+    "timing_samples": 1
+  },
+  "run_id": "normal-continuum-medium-model-numerical-fine",
+  "schema_version": "normal-cylinder-diagnostic-config-1.0",
+  "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p5.json",
+  "source_config_sha256": "4927ca71c4b68fd156f526fadbf94ff65fe9fe2166df0c1133934b54a99efd3b",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  }
+}

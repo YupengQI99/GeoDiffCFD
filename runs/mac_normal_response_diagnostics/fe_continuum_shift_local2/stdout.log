@@ -1,0 +1,81 @@
+{"docker_command": ["docker", "run", "--rm", "--name", "brinkman-diagnostic-328af9215a1c4c8d8f17ff5fdf386150", "--pull=never", "--network=none", "--memory=8g", "--memory-swap=8g", "--cpus=2", "--pids-limit=128", "--user", "1000:1000", "--mount", "type=bind,src=/home/user/GeoDiffCFD/jax_cad,dst=/home/user/GeoDiffCFD/jax_cad,readonly", "--mount", "type=bind,src=/home/user/GeoDiffCFD/mac_response_20260919/fe_continuum_shift_local2,dst=/home/user/GeoDiffCFD/mac_response_20260919/fe_continuum_shift_local2", "--workdir", "/home/user/GeoDiffCFD/jax_cad", "--env", "OMP_NUM_THREADS=1", "--env", "OPENBLAS_NUM_THREADS=1", "--env", "MKL_NUM_THREADS=1", "--env", "CUDA_VISIBLE_DEVICES=", "--env", "XDG_CACHE_HOME=/tmp/cache", "--env", "XDG_CONFIG_HOME=/tmp/config", "dolfinx/dolfinx@sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8", "python3", "/home/user/GeoDiffCFD/jax_cad/tools/dolfinx_brinkman_cylinder.py", "--config", "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/fe_normal_continuum_shift_local2.json", "--output-dir", "/home/user/GeoDiffCFD/mac_response_20260919/fe_continuum_shift_local2"]}
+{"normal_newton": {"iteration": 0, "residual_l2": 0.022252855201373538, "normal_constraint_max": 0.004874946179683619}}
+{"normal_newton": {"iteration": 1, "residual_l2": 0.00012666277106692598, "normal_constraint_max": 1.5361366014930364e-17}}
+{"normal_newton": {"iteration": 2, "residual_l2": 8.379233437816448e-06, "normal_constraint_max": 4.119968255444917e-18}}
+{"normal_newton": {"iteration": 3, "residual_l2": 3.247113874366882e-08, "normal_constraint_max": 3.1523389923252855e-18}}
+{"normal_newton": {"iteration": 4, "residual_l2": 3.0809286760832045e-13, "normal_constraint_max": 4.026529933450927e-18}}
+{
+  "force_x": 0.011165544078788829,
+  "force_y": 2.1981410483066973e-05,
+  "drag_coefficient": 5.582772039394413,
+  "lift_coefficient": 0.010990705241533484,
+  "pressure_front": 0.059041496803897364,
+  "pressure_rear": 0.024036429237545346,
+  "pressure_difference": 0.03500506756635202,
+  "pressure_difference_radial_extrapolated": 0.11678917441836123,
+  "integrated_alpha": 1.2887618594272245,
+  "normal_constraint": {
+    "converged": true,
+    "iterations": 4,
+    "final_residual_l2": 3.0809286760832045e-13,
+    "initial_residual_l2": 0.022252855201373538,
+    "threshold": 1e-11,
+    "history": [
+      {
+        "iteration": 0,
+        "residual_l2": 0.022252855201373538,
+        "normal_constraint_max": 0.004874946179683619,
+        "damping": 1.0,
+        "linear_relative_residual": 2.156965764607129e-15,
+        "relative_minimum_singular_value": 0.0005314462232035875
+      },
+      {
+        "iteration": 1,
+        "residual_l2": 0.00012666277106692598,
+        "normal_constraint_max": 1.5361366014930364e-17,
+        "damping": 1.0,
+        "linear_relative_residual": 5.237312731095881e-14,
+        "relative_minimum_singular_value": 0.0005353415876023405
+      },
+      {
+        "iteration": 2,
+        "residual_l2": 8.379233437816448e-06,
+        "normal_constraint_max": 4.119968255444917e-18,
+        "damping": 1.0,
+        "linear_relative_residual": 3.483093807961986e-14,
+        "relative_minimum_singular_value": 0.0005341788392350499
+      },
+      {
+        "iteration": 3,
+        "residual_l2": 3.247113874366882e-08,
+        "normal_constraint_max": 3.1523389923252855e-18,
+        "damping": 1.0,
+        "linear_relative_residual": 2.696447328694951e-14,
+        "relative_minimum_singular_value": 0.0005341590440093192
+      },
+      {
+        "iteration": 4,
+        "residual_l2": 3.0809286760832045e-13,
+        "normal_constraint_max": 4.026529933450927e-18
+      }
+    ],
+    "constraint_force": [
+      0.010612890295902573,
+      1.8430575798001084e-05
+    ],
+    "normal_constraint_max": 4.026529933450927e-18,
+    "normal_work": 1.8364162017442822e-21,
+    "kernel_mass_error": 1.0190321475533892e-08,
+    "kernel_first_moment_error": 2.5034948281099645e-09,
+    "markers": 48,
+    "reference_h": 0.005,
+    "wall_seconds": 39.58709587203339,
+    "constraint_definition": "integral tensor-cubic delta_h(x-X_m) n_m dot u dx = 0",
+    "force_protocol": "FE finite-mask reaction plus integrated normal multipliers; no sharp acceptance"
+  },
+  "brinkman_force_x": 0.0005526537828862551,
+  "brinkman_force_y": 3.5508346850658885e-06,
+  "constraint_force_x": 0.010612890295902573,
+  "constraint_force_y": 1.8430575798001084e-05
+}
+{"stop_reason": null, "elapsed_seconds": 58.693349558860064, "exit_code": 0}

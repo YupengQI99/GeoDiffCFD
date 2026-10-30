@@ -1,0 +1,33 @@
+{
+  "schema_version": "forward-verification-config-1.0",
+  "case": "lid-driven-cavity-re100",
+  "run_id": "cpu-smoke-16x16",
+  "grid": {
+    "nx": 16,
+    "ny": 16,
+    "lx": 1.0,
+    "ly": 1.0
+  },
+  "physics": {
+    "lid_velocity": 1.0,
+    "reynolds_number": 100.0,
+    "viscosity": 0.01,
+    "density": 1.0
+  },
+  "solver": {
+    "dt": 0.005,
+    "max_steps": 5000,
+    "pressure_tolerance": 1e-10,
+    "pressure_atol": 1e-12,
+    "pressure_maxiter": 1000,
+    "nonlinear_rtol": 1e-5,
+    "nonlinear_atol": 1e-8,
+    "nonlinear_min_steps": 100,
+    "include_advection": true
+  },
+  "timing_samples": 3,
+  "reference": {
+    "name": "Ghia-Ghia-Shin-1982",
+    "doi": "10.1016/0021-9991(82)90058-4"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "paper_eligible": false,
+  "records": [
+    {
+      "directory": "/home/user/GeoDiffCFD/multibody_wake_final_20260923/gradient_final_retry_v1",
+      "passed": true,
+      "evaluations": 13,
+      "analytic_pullback_checks": 1,
+      "analytic_pullback_max_error": 7.771561172376096e-16,
+      "raw_field_force_max_error": 7.105427357601002e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/multibody_wake_final_20260923/medium_final_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 3.552713678800501e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/multibody_wake_final_20260923/half_dt_final_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 3.552713678800501e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/multibody_wake_final_20260923/late_window_final_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 3.552713678800501e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/coarse_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/medium_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 7.105427357601002e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/half_dt_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/late_window_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_diagnostics/optimization_v1",
+      "passed": true,
+      "evaluations": 17,
+      "analytic_pullback_checks": 9,
+      "analytic_pullback_max_error": 2.1094237467877974e-15,
+      "raw_field_force_max_error": 7.105427357601002e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "/home/user/GeoDiffCFD/jax_cad/runs/multibody_wake_continuation_20260921/continuation_01_retry",
+      "passed": true,
+      "evaluations": 6,
+      "analytic_pullback_checks": 4,
+      "analytic_pullback_max_error": 1.3322676295501878e-15,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    }
+  ]
+}

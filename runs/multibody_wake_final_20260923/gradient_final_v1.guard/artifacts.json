@@ -1,0 +1,16 @@
+{
+  "gradient_final_v1.guard/hardware.csv": "8f0722a94a3594364f10fa66899442b0846fa86cb310d56c886589471fbdeb07",
+  "gradient_final_v1.guard/source.json": "64275f9ac332c2dc777cc3879bd5ea02f639c6d9c801a06a2373388bde814d49",
+  "gradient_final_v1.guard/stderr.log": "c86051bc57a7c31f12e5e4a3b03faf02235eefcb3adb4d7f05e68d340f7efc8a",
+  "gradient_final_v1.guard/stdout.log": "4edea322d66ddf73ef0e1244d5323d7c6f17168344cb9aae2f35cf62e519848a",
+  "gradient_final_v1.guard/guard.json": "7859089010f06ff63fcd4169a83ac3efbe9f878c492cea21d2c103dedfa67a0e",
+  "gradient_final_v1.guard/config.json": "79f441e7383ed74294a2517696aef36ee166582449c06e70c84db51eb0cedd68",
+  "gradient_final_v1/geometry_envelope.json": "0941b18aade54e6052c749e378bfb309862a21329d415243eaea9b20bcddd960",
+  "gradient_final_v1/progress.json": "8612fd01bffa7197774c1320158676b7e055bbca5442795f6c6ab6d5c19afef8",
+  "gradient_final_v1/evaluations.json": "607002fde61b50fcf717e946393633f40d7c7de3da6bc78df2f3fa88746b1472",
+  "gradient_final_v1/config.json": "79f441e7383ed74294a2517696aef36ee166582449c06e70c84db51eb0cedd68",
+  "gradient_final_v1/environment.json": "15b7dd2063a1a7e66bb1a9af1ac631a3a99ab0d83aedb791cc6f260836096290",
+  "gradient_final_v1/evaluation-000/fields.npz": "9474fb493c66c83c5ed1a8b6bf9b2fbb39a2538c74cb670292f66c71cb4a06ec",
+  "gradient_final_v1/evaluation-000/metrics.json": "a5e65f5a69181c379a54ca64f1b1bbe14dee27f748193bd14e030f85c2f24e28",
+  "gradient_final_v1/evaluation-000/history.csv": "6f3a0ae03023276eb5faa0c9a004759c0a44879d8614c25b0aa915c6d59f6e7a"
+}

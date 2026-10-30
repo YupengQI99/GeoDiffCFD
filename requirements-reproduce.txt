@@ -1,0 +1,5 @@
+# Numerical stack used by the archived studies (Python 3.11).
+jax==0.7.0
+jaxlib==0.7.0
+numpy==2.3.1
+scipy==1.16.0

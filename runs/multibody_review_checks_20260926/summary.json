@@ -1,0 +1,2957 @@
+{
+  "schema": "multibody-review-checks-1",
+  "paper_eligible": false,
+  "source_commits": [
+    "3e5566d64f233159d1d8d16bc77aec4e025305e6",
+    "9c7aaafbd9417422358e4abb0b986eceb0ea0492",
+    "9fd44f4292a910586be1617f8327d9714b719740"
+  ],
+  "timecheck": {
+    "schema": "multibody-timecheck-summary-1",
+    "paper_eligible": false,
+    "cases": [
+      {
+        "J_initial_original": 18.02735872259119,
+        "J_final_original": 11.38612618114155,
+        "J_initial_dt2": 18.021754665299607,
+        "J_final_dt2": 11.385920401198907,
+        "gain_original_percent": 36.83974254712702,
+        "gain_dt2_percent": 36.82124403168031,
+        "gain_change_percentage_points": -0.018498515446708552,
+        "objective_changes": [
+          -0.005604057291584752,
+          -0.00020577994264314725
+        ],
+        "objective_relative_changes_percent": [
+          -0.031086402494237622,
+          -0.0018072866870558091
+        ],
+        "individual_objective_change_limit": 0.6641232541449642,
+        "gain_gate": true,
+        "individual_objective_gate": true,
+        "case": "A",
+        "windows": [
+          {
+            "shape": "initial",
+            "original": {
+              "dt": 0.00025,
+              "n_steps": 24000,
+              "window_start_step": 16000,
+              "window_count": 8000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 3.3411736858227785,
+              "max_velocity_component_window": 2.7443822925564794,
+              "component_screening_index": 0.9414542709621947,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.261288390944694,
+              "snapshot_component_upper_index": 1.7927943140859885,
+              "snapshot_cell_center_max_speed": 2.8641070898552865,
+              "snapshot_cell_center_index": 1.0253886777699148,
+              "snapshot_count": 24,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "dt2": {
+              "dt": 0.000125,
+              "n_steps": 48000,
+              "window_start_step": 32000,
+              "window_count": 16000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 3.3229001086958676,
+              "max_velocity_component_window": 2.741465216043121,
+              "component_screening_index": 0.46972697067339725,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.13067402343699833,
+              "snapshot_component_upper_index": 0.897171618225286,
+              "snapshot_cell_center_max_speed": 2.8617881416124393,
+              "snapshot_cell_center_index": 0.5118644604670987,
+              "snapshot_count": 25,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            }
+          },
+          {
+            "shape": "final10",
+            "original": {
+              "dt": 0.00025,
+              "n_steps": 24000,
+              "window_start_step": 16000,
+              "window_count": 8000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 2.985559662897896,
+              "max_velocity_component_window": 2.2653315271927865,
+              "component_screening_index": 0.6414658660117003,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.21615905529864238,
+              "snapshot_component_upper_index": 1.1703948774479922,
+              "snapshot_cell_center_max_speed": 2.4674681008704566,
+              "snapshot_cell_center_index": 0.7610498536016572,
+              "snapshot_count": 24,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "dt2": {
+              "dt": 0.000125,
+              "n_steps": 48000,
+              "window_start_step": 32000,
+              "window_count": 16000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 2.977396763981941,
+              "max_velocity_component_window": 2.243353427849942,
+              "component_screening_index": 0.3145396626403803,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.10688730392187927,
+              "snapshot_component_upper_index": 0.579019061118504,
+              "snapshot_cell_center_max_speed": 2.468704800206258,
+              "snapshot_cell_center_index": 0.38090646191008876,
+              "snapshot_count": 25,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            }
+          }
+        ],
+        "leakage": [
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_initial_dt2",
+            "sampled_steps": [
+              33000,
+              36000,
+              39000,
+              42000,
+              45000,
+              46100,
+              46200,
+              46300,
+              46400,
+              46500,
+              46600,
+              46700,
+              46800,
+              46900,
+              47000,
+              47100,
+              47200,
+              47300,
+              47400,
+              47500,
+              47600,
+              47700,
+              47800,
+              47900,
+              48000
+            ],
+            "snapshot_only_mean_speed": [
+              0.048116256709219866,
+              0.04556053594258985,
+              0.08167884452049451,
+              0.048116256709219866,
+              0.04556053594258985,
+              0.08167884452049451
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.005994385195256938,
+              0.009509611979154786,
+              0.010976398849162574,
+              0.005994385195256938,
+              0.009509611979154786,
+              0.010976398849162574
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "case_body2",
+                "case_body3",
+                "common_body1",
+                "common_body2",
+                "common_body3"
+              ],
+              "sample_count": 16000,
+              "mean_speed_ratio": [
+                0.04811617382725017,
+                0.04544134885901818,
+                0.08168431963909409,
+                0.04811617382725017,
+                0.04544134885901818,
+                0.08168431963909409
+              ],
+              "rms_speed_ratio": [
+                0.05299986623091726,
+                0.048466249763776725,
+                0.08873687750845483,
+                0.05299986623091726,
+                0.048466249763776725,
+                0.08873687750845483
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0059943601092736585,
+                0.009487457641373931,
+                0.011181769453268932,
+                0.0059943601092736585,
+                0.009487457641373931,
+                0.011181769453268932
+              ],
+              "max_absolute_flux_ratio": [
+                0.005996479744389607,
+                0.00960563159047194,
+                0.01310867645388538,
+                0.005996479744389607,
+                0.00960563159047194,
+                0.01310867645388538
+              ]
+            },
+            "objective": 18.021754665299607,
+            "passed": true,
+            "paper_eligible": false
+          },
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_final10_dt2",
+            "sampled_steps": [
+              33000,
+              36000,
+              39000,
+              42000,
+              45000,
+              46100,
+              46200,
+              46300,
+              46400,
+              46500,
+              46600,
+              46700,
+              46800,
+              46900,
+              47000,
+              47100,
+              47200,
+              47300,
+              47400,
+              47500,
+              47600,
+              47700,
+              47800,
+              47900,
+              48000
+            ],
+            "snapshot_only_mean_speed": [
+              0.030588754191145193,
+              0.020679466396294238,
+              0.040828390775950456,
+              0.030588754191145193,
+              0.020679466396294238,
+              0.040828390775950456
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.0029309237845348644,
+              0.003928419442653593,
+              0.0035549076249113383,
+              0.0029309237845348644,
+              0.003928419442653593,
+              0.0035549076249113383
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "case_body2",
+                "case_body3",
+                "common_body1",
+                "common_body2",
+                "common_body3"
+              ],
+              "sample_count": 16000,
+              "mean_speed_ratio": [
+                0.030589690353323287,
+                0.020652647544137537,
+                0.04071890554574821,
+                0.030589690353323287,
+                0.020652647544137537,
+                0.04071890554574821
+              ],
+              "rms_speed_ratio": [
+                0.03729116323411638,
+                0.023301760077951948,
+                0.04791462702583558,
+                0.03729116323411638,
+                0.023301760077951948,
+                0.04791462702583558
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0029310668485085793,
+                0.00391672978868136,
+                0.0037028045379852866,
+                0.0029310668485085793,
+                0.00391672978868136,
+                0.0037028045379852866
+              ],
+              "max_absolute_flux_ratio": [
+                0.002932137009904914,
+                0.003981377237246646,
+                0.0043056451042521315,
+                0.002932137009904914,
+                0.003981377237246646,
+                0.0043056451042521315
+              ]
+            },
+            "objective": 11.385920401198907,
+            "passed": true,
+            "paper_eligible": false
+          }
+        ],
+        "raw_checks": [
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_initial_dt2",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_pullback_checks": 0,
+            "analytic_pullback_max_error": null,
+            "raw_field_force_max_error": 7.105427357601002e-15,
+            "paper_eligible": false
+          },
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_final10_dt2",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_pullback_checks": 0,
+            "analytic_pullback_max_error": null,
+            "raw_field_force_max_error": 7.105427357601002e-15,
+            "paper_eligible": false
+          }
+        ],
+        "selected_runs": [
+          {
+            "shape": "initial",
+            "original": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_initial_production",
+            "dt2": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_initial_dt2"
+          },
+          {
+            "shape": "final10",
+            "original": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_final10_production",
+            "dt2": "/media/user/external/jax_cad_multibody_sensitivity_20260926/A_final10_dt2"
+          }
+        ],
+        "component_index_gate": true,
+        "passed_registered_criteria": true
+      },
+      {
+        "J_initial_original": 15.473847967108805,
+        "J_final_original": 9.22148600072817,
+        "J_initial_dt2": 15.510412318254385,
+        "J_final_dt2": 9.228790197980908,
+        "gain_original_percent": 40.405993258242226,
+        "gain_dt2_percent": 40.499388355269986,
+        "gain_change_percentage_points": 0.09339509702775928,
+        "objective_changes": [
+          0.03656435114558043,
+          0.0073041972527381205
+        ],
+        "objective_relative_changes_percent": [
+          0.23629772777464,
+          0.07920846219537012
+        ],
+        "individual_objective_change_limit": 0.6252361966380635,
+        "gain_gate": true,
+        "individual_objective_gate": true,
+        "case": "C",
+        "windows": [
+          {
+            "shape": "initial",
+            "original": {
+              "dt": 0.00025,
+              "n_steps": 24000,
+              "window_start_step": 16000,
+              "window_count": 8000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 3.504225079818336,
+              "max_velocity_component_window": 2.9553100100862086,
+              "component_screening_index": 1.0917321569644682,
+              "steps_component_index_above_one": 1711,
+              "window_max_cfl": 0.5587225982808262,
+              "snapshot_component_upper_index": 2.0118123924295674,
+              "snapshot_cell_center_max_speed": 3.0130991418655566,
+              "snapshot_cell_center_index": 1.1348458048388692,
+              "snapshot_count": 24,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "dt2": {
+              "dt": 0.000125,
+              "n_steps": 48000,
+              "window_start_step": 32000,
+              "window_count": 16000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 3.481544089359234,
+              "max_velocity_component_window": 2.977234096730155,
+              "component_screening_index": 0.5539951791707889,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.2779555712759528,
+              "snapshot_component_upper_index": 0.9835258205655206,
+              "snapshot_cell_center_max_speed": 2.99954995854255,
+              "snapshot_cell_center_index": 0.5623312471120383,
+              "snapshot_count": 25,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            }
+          },
+          {
+            "shape": "final10",
+            "original": {
+              "dt": 0.00025,
+              "n_steps": 24000,
+              "window_start_step": 16000,
+              "window_count": 8000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 3.070668372861778,
+              "max_velocity_component_window": 2.4655456596549814,
+              "component_screening_index": 0.7598644249804397,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.4383757144558361,
+              "snapshot_component_upper_index": 1.150727582112952,
+              "snapshot_cell_center_max_speed": 2.5610442273099916,
+              "snapshot_cell_center_index": 0.819868441779729,
+              "snapshot_count": 24,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            },
+            "dt2": {
+              "dt": 0.000125,
+              "n_steps": 48000,
+              "window_start_step": 32000,
+              "window_count": 16000,
+              "window_start_time": 4.0,
+              "end_time": 6.0,
+              "max_velocity_component_all": 3.060411710184606,
+              "max_velocity_component_window": 2.425923295974409,
+              "component_screening_index": 0.36781898987195877,
+              "steps_component_index_above_one": 0,
+              "window_max_cfl": 0.21671483711382725,
+              "snapshot_component_upper_index": 0.5673779556900455,
+              "snapshot_cell_center_max_speed": 2.55596061264297,
+              "snapshot_cell_center_index": 0.40830841583638916,
+              "snapshot_count": 25,
+              "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+            }
+          }
+        ],
+        "leakage": [
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_initial_dt2",
+            "sampled_steps": [
+              33000,
+              36000,
+              39000,
+              42000,
+              45000,
+              46100,
+              46200,
+              46300,
+              46400,
+              46500,
+              46600,
+              46700,
+              46800,
+              46900,
+              47000,
+              47100,
+              47200,
+              47300,
+              47400,
+              47500,
+              47600,
+              47700,
+              47800,
+              47900,
+              48000
+            ],
+            "snapshot_only_mean_speed": [
+              0.01231105634788918,
+              0.011754070407204846,
+              0.0209928531861049,
+              0.011721370532441107,
+              0.011077927153724843,
+              0.01988721363292585
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.0016875095089520882,
+              0.002989366579426072,
+              0.0028914007801636656,
+              0.001450166258292995,
+              0.0025234535330917384,
+              0.002554812832189232
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "case_body2",
+                "case_body3",
+                "common_body1",
+                "common_body2",
+                "common_body3"
+              ],
+              "sample_count": 16000,
+              "mean_speed_ratio": [
+                0.012303916015806,
+                0.011793387915889736,
+                0.02090155480259415,
+                0.01171482263548164,
+                0.011108788622557089,
+                0.019769783702954007
+              ],
+              "rms_speed_ratio": [
+                0.014257685208866047,
+                0.013052490388261843,
+                0.023630007414027553,
+                0.013107045692199365,
+                0.011855311203892122,
+                0.02169340345908543
+              ],
+              "mean_absolute_flux_ratio": [
+                0.001686576969389607,
+                0.0029936673594064054,
+                0.002984725715687353,
+                0.001449364546949791,
+                0.0025270862260986246,
+                0.0026384622949259247
+              ],
+              "max_absolute_flux_ratio": [
+                0.0016923180382380375,
+                0.0031062111811276565,
+                0.0038899685460956125,
+                0.001454203866529031,
+                0.002618673454687134,
+                0.00343805268659808
+              ]
+            },
+            "objective": 15.510412318254385,
+            "passed": true,
+            "paper_eligible": false
+          },
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_dt2_retry1",
+            "sampled_steps": [
+              33000,
+              36000,
+              39000,
+              42000,
+              45000,
+              46100,
+              46200,
+              46300,
+              46400,
+              46500,
+              46600,
+              46700,
+              46800,
+              46900,
+              47000,
+              47100,
+              47200,
+              47300,
+              47400,
+              47500,
+              47600,
+              47700,
+              47800,
+              47900,
+              48000
+            ],
+            "snapshot_only_mean_speed": [
+              0.008036019457573245,
+              0.00566180833823813,
+              0.009581234027558828,
+              0.007023902733129366,
+              0.004892318939887199,
+              0.008370793389101428
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.0006796844372865167,
+              0.0014423315474821963,
+              0.0007605420338622374,
+              0.0005637700501157449,
+              0.001029914500895584,
+              0.0006758310158636642
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "case_body2",
+                "case_body3",
+                "common_body1",
+                "common_body2",
+                "common_body3"
+              ],
+              "sample_count": 16000,
+              "mean_speed_ratio": [
+                0.008034745438509355,
+                0.00569840637109572,
+                0.009687091549573179,
+                0.00702258644600575,
+                0.004925872237705464,
+                0.008451998807311624
+              ],
+              "rms_speed_ratio": [
+                0.010508638096261735,
+                0.006994484193063218,
+                0.012861726670395753,
+                0.008924947812295438,
+                0.005564401672996535,
+                0.010767377566104377
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0006795533322360234,
+                0.0014491949117917623,
+                0.0007269161643502404,
+                0.0005636667514097908,
+                0.0010348782962650977,
+                0.0006481990607013349
+              ],
+              "max_absolute_flux_ratio": [
+                0.000680295018569076,
+                0.0014876974695575435,
+                0.0008206279336292618,
+                0.0005642197229253479,
+                0.00106265857689877,
+                0.000724631121405956
+              ]
+            },
+            "objective": 9.228790197980908,
+            "passed": true,
+            "paper_eligible": false
+          }
+        ],
+        "raw_checks": [
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_initial_dt2",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_pullback_checks": 0,
+            "analytic_pullback_max_error": null,
+            "raw_field_force_max_error": 7.105427357601002e-15,
+            "paper_eligible": false
+          },
+          {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_dt2_retry1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_pullback_checks": 0,
+            "analytic_pullback_max_error": null,
+            "raw_field_force_max_error": 3.552713678800501e-15,
+            "paper_eligible": false
+          }
+        ],
+        "selected_runs": [
+          {
+            "shape": "initial",
+            "original": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_initial_production",
+            "dt2": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_initial_dt2"
+          },
+          {
+            "shape": "final10",
+            "original": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_production",
+            "dt2": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_dt2_retry1"
+          }
+        ],
+        "component_index_gate": true,
+        "passed_registered_criteria": true
+      }
+    ],
+    "excluded_attempts": [
+      {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_dt2",
+        "reason": "hardware-aborted incomplete attempt; retry explicitly selected",
+        "guard": {
+          "schema": "wake-hardware-guard-1",
+          "command": [
+            "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+            "/home/user/GeoDiffCFD/jax_cad/tools/run_multibody_penalty.py",
+            "--mode",
+            "forward",
+            "--config",
+            "/home/user/GeoDiffCFD/jax_cad/configs/multibody_penalty_timecheck/C_final10_production.json",
+            "--output-dir",
+            "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_dt2"
+          ],
+          "initial": {
+            "gpu_memory_mib": 15.0,
+            "temperature_c": 46.0,
+            "power_w": 37.91,
+            "cpu_temperature_c": 67.5,
+            "nvme_temperature_c": 52.85,
+            "unix_time": 1790448696.080099,
+            "available_ram_fraction": 0.680587366182662,
+            "disk_free_gib": 1968.9667510986328,
+            "disk_used_fraction": 0.8678720212948293,
+            "system_disk_free_gib": 25.18000030517578,
+            "system_disk_loss_gib": 0.0
+          },
+          "peak_temperatures_memory_and_minimum_reserves": {
+            "gpu_memory_mib": 18070.0,
+            "temperature_c": 56.0,
+            "power_w": 202.58,
+            "cpu_temperature_c": 84.0,
+            "nvme_temperature_c": 54.85,
+            "unix_time": 1790448696.080099,
+            "available_ram_fraction": 0.6318497843363644,
+            "disk_free_gib": 1968.966365814209,
+            "disk_used_fraction": 0.8678720471494316,
+            "system_disk_free_gib": 25.18000030517578,
+            "system_disk_loss_gib": 0.0
+          },
+          "stop_reason": "another GPU process appeared",
+          "elapsed_seconds": 277.52178309694864,
+          "source_unchanged": true,
+          "exit_code": -2,
+          "paper_eligible": false,
+          "storage_policy": {
+            "external_root": "/media/user/external/jax_cad_multibody_sensitivity_20260926",
+            "mounted_device": 2065,
+            "external_minimum_free_gib": 30,
+            "system_initial_free_gib": 25.18000030517578,
+            "system_maximum_loss_mib": 128,
+            "runtime_maximum_mib": 256,
+            "environment": {
+              "PYTHONDONTWRITEBYTECODE": "1",
+              "TMPDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/C_final10_dt2/tmp",
+              "XDG_CACHE_HOME": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/C_final10_dt2/xdg",
+              "MPLCONFIGDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/C_final10_dt2/matplotlib",
+              "CUDA_CACHE_PATH": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/C_final10_dt2/cuda",
+              "JAX_COMPILATION_CACHE_DIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/C_final10_dt2/jax",
+              "TMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/C_final10_dt2/tmp",
+              "TEMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/C_final10_dt2/tmp"
+            },
+            "external_drive_temperature": "SMART unavailable to current user; not measured"
+          }
+        }
+      }
+    ],
+    "all_passed": true,
+    "limits": "No claim of general numerical stability or time/grid convergence from one halving."
+  },
+  "dfg2d2": {
+    "schema": "dfg2d2-pairing-summary-1",
+    "paper_eligible": false,
+    "cases": [
+      {
+        "case": "P",
+        "grid": {
+          "nx": 440,
+          "ny": 82,
+          "lx": 2.2,
+          "ly": 0.41
+        },
+        "alpha_max": 160.0,
+        "epsilon": 0.015,
+        "dt": 0.00025,
+        "selected_directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_P_dt1",
+        "conditional_half_step_used": false,
+        "Cd_max": 4.516372903005001,
+        "Cl_max": 0.747100460220908,
+        "St": 0.27918476231963,
+        "period_cv": 1.2319137777041943e-06,
+        "maximum_half_window_drift": null,
+        "errors": {
+          "Cd_max": {
+            "reference_interval": [
+              3.22,
+              3.24
+            ],
+            "reference_midpoint": 3.2300000000000004,
+            "signed_midpoint_percent": 39.82578647074304,
+            "absolute_midpoint_percent": 39.82578647074304,
+            "outside_interval_percent": 39.51618894752324,
+            "signed_endpoint_percent_range": [
+              39.39422540138891,
+              40.260028043633554
+            ]
+          },
+          "Cl_max": {
+            "reference_interval": [
+              0.99,
+              1.01
+            ],
+            "reference_midpoint": 1.0,
+            "signed_midpoint_percent": -25.289953977909196,
+            "absolute_midpoint_percent": 25.289953977909196,
+            "outside_interval_percent": 24.289953977909196,
+            "signed_endpoint_percent_range": [
+              -26.029657403870488,
+              -24.53530704839313
+            ]
+          },
+          "St": {
+            "reference_interval": [
+              0.295,
+              0.305
+            ],
+            "reference_midpoint": 0.3,
+            "signed_midpoint_percent": -6.93841256012332,
+            "absolute_midpoint_percent": 6.93841256012332,
+            "outside_interval_percent": 5.2717458934566555,
+            "signed_endpoint_percent_range": [
+              -8.464012354219664,
+              -5.361097518769475
+            ]
+          }
+        },
+        "window": {
+          "dt": 0.00025,
+          "n_steps": 40000,
+          "window_start_step": 32000,
+          "window_count": 8000,
+          "window_start_time": 8.0,
+          "end_time": 10.0,
+          "max_velocity_component_all": 2.230633753092458,
+          "max_velocity_component_window": 2.1730455828554187,
+          "component_screening_index": 0.5902658881459308,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.1698656249642862,
+          "snapshot_component_upper_index": 0.7815029199914197,
+          "snapshot_cell_center_max_speed": 2.2095363243859634,
+          "snapshot_cell_center_index": 0.6102563460976291,
+          "snapshot_count": 23,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "core": {
+          "labels": [
+            "case_body1",
+            "common_body1"
+          ],
+          "sample_count": 8000,
+          "mean_speed_ratio": [
+            0.15454340032939043,
+            0.15454340032939043
+          ],
+          "rms_speed_ratio": [
+            0.1631241663311023,
+            0.1631241663311023
+          ],
+          "mean_absolute_flux_ratio": [
+            0.023283560267918176,
+            0.023283560267918176
+          ],
+          "max_absolute_flux_ratio": [
+            0.023398729443187327,
+            0.023398729443187327
+          ]
+        },
+        "passed_registered_benchmark": false,
+        "original_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_P_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_P_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.7763568394002505e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_P_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.15443497950766594,
+              0.15443497950766594
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.02328183007973348,
+              0.02328183007973348
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.15454340032939043,
+                0.15454340032939043
+              ],
+              "rms_speed_ratio": [
+                0.1631241663311023,
+                0.1631241663311023
+              ],
+              "mean_absolute_flux_ratio": [
+                0.023283560267918176,
+                0.023283560267918176
+              ],
+              "max_absolute_flux_ratio": [
+                0.023398729443187327,
+                0.023398729443187327
+              ]
+            },
+            "objective": 4.487884956099955,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.230633753092458,
+            "max_velocity_component_window": 2.1730455828554187,
+            "component_screening_index": 0.5902658881459308,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.1698656249642862,
+            "snapshot_component_upper_index": 0.7815029199914197,
+            "snapshot_cell_center_max_speed": 2.2095363243859634,
+            "snapshot_cell_center_index": 0.6102563460976291,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.246627154017725,
+                8.604812215887419,
+                8.962997866496924,
+                9.321183875855803,
+                9.679370104157863
+              ],
+              "periods": [
+                0.358185061869694,
+                0.3581856506095047,
+                0.3581860093588798,
+                0.3581862283020598
+              ],
+              "St": 0.27918476231963,
+              "period_cv": 1.2319137777041943e-06,
+              "complete_period_count": 4,
+              "reason": null,
+              "Cd_max": 4.516372903005001,
+              "Cd_min": 4.460569084729856,
+              "Cd_time_mean": 4.487884956099953,
+              "Cl_max": 0.747100460220908,
+              "Cl_min": -0.7875365812660475,
+              "Cl_time_mean": 0.012467840204770837,
+              "Cl_amplitude": 1.5346370414869557
+            },
+            "first_half": {
+              "minimum_times": [
+                8.246627154017725,
+                8.604812215887419,
+                8.962997866496924
+              ],
+              "periods": [
+                0.358185061869694,
+                0.3581856506095047
+              ],
+              "St": 0.2791850595173619,
+              "period_cv": 8.21836795425727e-07,
+              "complete_period_count": 2,
+              "reason": null,
+              "Cd_max": 4.516360247153085,
+              "Cd_min": 4.460569084729856,
+              "Cd_time_mean": 4.488294495104169,
+              "Cl_max": 0.7470496142499473,
+              "Cl_min": -0.7875060807199962,
+              "Cl_time_mean": -0.007017407211644695,
+              "Cl_amplitude": 1.5345556949699435
+            },
+            "second_half": {
+              "minimum_times": [
+                9.321183875855803,
+                9.679370104157863
+              ],
+              "periods": [
+                0.3581862283020598
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 4.516372903005001,
+              "Cd_min": 4.460600442912067,
+              "Cd_time_mean": 4.487475417095738,
+              "Cl_max": 0.747100460220908,
+              "Cl_min": -0.7875365812660475,
+              "Cl_time_mean": 0.03195308762118637,
+              "Cl_amplitude": 1.5346370414869557
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 39.82578647074304,
+                "absolute_midpoint_percent": 39.82578647074304,
+                "outside_interval_percent": 39.51618894752324,
+                "signed_endpoint_percent_range": [
+                  39.39422540138891,
+                  40.260028043633554
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": -25.289953977909196,
+                "absolute_midpoint_percent": 25.289953977909196,
+                "outside_interval_percent": 24.289953977909196,
+                "signed_endpoint_percent_range": [
+                  -26.029657403870488,
+                  -24.53530704839313
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -6.93841256012332,
+                "absolute_midpoint_percent": 6.93841256012332,
+                "outside_interval_percent": 5.2717458934566555,
+                "signed_endpoint_percent_range": [
+                  -8.464012354219664,
+                  -5.361097518769475
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 2.80221589040346e-06,
+              "Cd_time_mean": 0.0001825086909408038,
+              "St": null,
+              "Cl_amplitude_report_only": 5.300700739855328e-05
+            },
+            "maximum_acceptance_drift": null,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": false,
+              "cycles_available": false
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        },
+        "selected_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_P_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_P_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.7763568394002505e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_P_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.15443497950766594,
+              0.15443497950766594
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.02328183007973348,
+              0.02328183007973348
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.15454340032939043,
+                0.15454340032939043
+              ],
+              "rms_speed_ratio": [
+                0.1631241663311023,
+                0.1631241663311023
+              ],
+              "mean_absolute_flux_ratio": [
+                0.023283560267918176,
+                0.023283560267918176
+              ],
+              "max_absolute_flux_ratio": [
+                0.023398729443187327,
+                0.023398729443187327
+              ]
+            },
+            "objective": 4.487884956099955,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.230633753092458,
+            "max_velocity_component_window": 2.1730455828554187,
+            "component_screening_index": 0.5902658881459308,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.1698656249642862,
+            "snapshot_component_upper_index": 0.7815029199914197,
+            "snapshot_cell_center_max_speed": 2.2095363243859634,
+            "snapshot_cell_center_index": 0.6102563460976291,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.246627154017725,
+                8.604812215887419,
+                8.962997866496924,
+                9.321183875855803,
+                9.679370104157863
+              ],
+              "periods": [
+                0.358185061869694,
+                0.3581856506095047,
+                0.3581860093588798,
+                0.3581862283020598
+              ],
+              "St": 0.27918476231963,
+              "period_cv": 1.2319137777041943e-06,
+              "complete_period_count": 4,
+              "reason": null,
+              "Cd_max": 4.516372903005001,
+              "Cd_min": 4.460569084729856,
+              "Cd_time_mean": 4.487884956099953,
+              "Cl_max": 0.747100460220908,
+              "Cl_min": -0.7875365812660475,
+              "Cl_time_mean": 0.012467840204770837,
+              "Cl_amplitude": 1.5346370414869557
+            },
+            "first_half": {
+              "minimum_times": [
+                8.246627154017725,
+                8.604812215887419,
+                8.962997866496924
+              ],
+              "periods": [
+                0.358185061869694,
+                0.3581856506095047
+              ],
+              "St": 0.2791850595173619,
+              "period_cv": 8.21836795425727e-07,
+              "complete_period_count": 2,
+              "reason": null,
+              "Cd_max": 4.516360247153085,
+              "Cd_min": 4.460569084729856,
+              "Cd_time_mean": 4.488294495104169,
+              "Cl_max": 0.7470496142499473,
+              "Cl_min": -0.7875060807199962,
+              "Cl_time_mean": -0.007017407211644695,
+              "Cl_amplitude": 1.5345556949699435
+            },
+            "second_half": {
+              "minimum_times": [
+                9.321183875855803,
+                9.679370104157863
+              ],
+              "periods": [
+                0.3581862283020598
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 4.516372903005001,
+              "Cd_min": 4.460600442912067,
+              "Cd_time_mean": 4.487475417095738,
+              "Cl_max": 0.747100460220908,
+              "Cl_min": -0.7875365812660475,
+              "Cl_time_mean": 0.03195308762118637,
+              "Cl_amplitude": 1.5346370414869557
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 39.82578647074304,
+                "absolute_midpoint_percent": 39.82578647074304,
+                "outside_interval_percent": 39.51618894752324,
+                "signed_endpoint_percent_range": [
+                  39.39422540138891,
+                  40.260028043633554
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": -25.289953977909196,
+                "absolute_midpoint_percent": 25.289953977909196,
+                "outside_interval_percent": 24.289953977909196,
+                "signed_endpoint_percent_range": [
+                  -26.029657403870488,
+                  -24.53530704839313
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -6.93841256012332,
+                "absolute_midpoint_percent": 6.93841256012332,
+                "outside_interval_percent": 5.2717458934566555,
+                "signed_endpoint_percent_range": [
+                  -8.464012354219664,
+                  -5.361097518769475
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 2.80221589040346e-06,
+              "Cd_time_mean": 0.0001825086909408038,
+              "St": null,
+              "Cl_amplitude_report_only": 5.300700739855328e-05
+            },
+            "maximum_acceptance_drift": null,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": false,
+              "cycles_available": false
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        }
+      },
+      {
+        "case": "A",
+        "grid": {
+          "nx": 440,
+          "ny": 82,
+          "lx": 2.2,
+          "ly": 0.41
+        },
+        "alpha_max": 640.0,
+        "epsilon": 0.015,
+        "dt": 0.00025,
+        "selected_directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_A_dt1",
+        "conditional_half_step_used": false,
+        "Cd_max": 4.598213850119886,
+        "Cl_max": 1.6439782290016032,
+        "St": 0.27299556721647383,
+        "period_cv": 1.490662481905884e-08,
+        "maximum_half_window_drift": 4.906088075113223e-05,
+        "errors": {
+          "Cd_max": {
+            "reference_interval": [
+              3.22,
+              3.24
+            ],
+            "reference_midpoint": 3.2300000000000004,
+            "signed_midpoint_percent": 42.35956192321626,
+            "absolute_midpoint_percent": 42.35956192321626,
+            "outside_interval_percent": 42.04996439999646,
+            "signed_endpoint_percent_range": [
+              41.920180559255726,
+              42.80167236397161
+            ]
+          },
+          "Cl_max": {
+            "reference_interval": [
+              0.99,
+              1.01
+            ],
+            "reference_midpoint": 1.0,
+            "signed_midpoint_percent": 64.39782290016032,
+            "absolute_midpoint_percent": 64.39782290016032,
+            "outside_interval_percent": 63.397822900160314,
+            "signed_endpoint_percent_range": [
+              62.77012168332705,
+              66.05840696985892
+            ]
+          },
+          "St": {
+            "reference_interval": [
+              0.295,
+              0.305
+            ],
+            "reference_midpoint": 0.3,
+            "signed_midpoint_percent": -9.001477594508723,
+            "absolute_midpoint_percent": 9.001477594508723,
+            "outside_interval_percent": 7.33481092784205,
+            "signed_endpoint_percent_range": [
+              -10.493256650336447,
+              -7.4591297571275135
+            ]
+          }
+        },
+        "window": {
+          "dt": 0.00025,
+          "n_steps": 40000,
+          "window_start_step": 32000,
+          "window_count": 8000,
+          "window_start_time": 8.0,
+          "end_time": 10.0,
+          "max_velocity_component_all": 2.4673916720109506,
+          "max_velocity_component_window": 2.24119716101787,
+          "component_screening_index": 0.6278705893193199,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.17820714063995907,
+          "snapshot_component_upper_index": 0.8528489474210496,
+          "snapshot_cell_center_max_speed": 2.294831846605969,
+          "snapshot_cell_center_index": 0.6582816505246203,
+          "snapshot_count": 23,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "core": {
+          "labels": [
+            "case_body1",
+            "common_body1"
+          ],
+          "sample_count": 8000,
+          "mean_speed_ratio": [
+            0.03895720735420893,
+            0.03895720735420893
+          ],
+          "rms_speed_ratio": [
+            0.042674074256994966,
+            0.042674074256994966
+          ],
+          "mean_absolute_flux_ratio": [
+            0.004987633745275873,
+            0.004987633745275873
+          ],
+          "max_absolute_flux_ratio": [
+            0.005063002244294739,
+            0.005063002244294739
+          ]
+        },
+        "passed_registered_benchmark": false,
+        "original_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_A_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_A_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.7763568394002505e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_A_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.038927138665886686,
+              0.038927138665886686
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.004990197597541099,
+              0.004990197597541099
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.03895720735420893,
+                0.03895720735420893
+              ],
+              "rms_speed_ratio": [
+                0.042674074256994966,
+                0.042674074256994966
+              ],
+              "mean_absolute_flux_ratio": [
+                0.004987633745275873,
+                0.004987633745275873
+              ],
+              "max_absolute_flux_ratio": [
+                0.005063002244294739,
+                0.005063002244294739
+              ]
+            },
+            "objective": 4.523425464793058,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.4673916720109506,
+            "max_velocity_component_window": 2.24119716101787,
+            "component_screening_index": 0.6278705893193199,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.17820714063995907,
+            "snapshot_component_upper_index": 0.8528489474210496,
+            "snapshot_cell_center_max_speed": 2.294831846605969,
+            "snapshot_cell_center_index": 0.6582816505246203,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.06129195860076,
+                8.427598262698954,
+                8.793904576756232,
+                9.160210896860535,
+                9.526517214510813,
+                9.892823529234365
+              ],
+              "periods": [
+                0.36630630409819354,
+                0.36630631405727776,
+                0.36630632010430375,
+                0.36630631765027744,
+                0.3663063147235519
+              ],
+              "St": 0.27299556721647383,
+              "period_cv": 1.490662481905884e-08,
+              "complete_period_count": 5,
+              "reason": null,
+              "Cd_max": 4.598213850119886,
+              "Cd_min": 4.450299737001668,
+              "Cd_time_mean": 4.52342546479306,
+              "Cl_max": 1.6439782290016032,
+              "Cl_min": -1.692476798640442,
+              "Cl_time_mean": -0.11534749604752138,
+              "Cl_amplitude": 3.336455027642045
+            },
+            "first_half": {
+              "minimum_times": [
+                8.06129195860076,
+                8.427598262698954,
+                8.793904576756232
+              ],
+              "periods": [
+                0.36630630409819354,
+                0.36630631405727776
+              ],
+              "St": 0.2729955709793099,
+              "period_cv": 1.3593929420761763e-08,
+              "complete_period_count": 2,
+              "reason": null,
+              "Cd_max": 4.598213850119886,
+              "Cd_min": 4.450299737001668,
+              "Cd_time_mean": 4.523536426411717,
+              "Cl_max": 1.6439782290016032,
+              "Cl_min": -1.692475151579955,
+              "Cl_time_mean": -0.07343128865353031,
+              "Cl_amplitude": 3.336453380581558
+            },
+            "second_half": {
+              "minimum_times": [
+                9.160210896860535,
+                9.526517214510813,
+                9.892823529234365
+              ],
+              "periods": [
+                0.36630631765027744,
+                0.3663063147235519
+              ],
+              "St": 0.27299556568108185,
+              "period_cv": 3.994915456361441e-09,
+              "complete_period_count": 2,
+              "reason": null,
+              "Cd_max": 4.598213758792177,
+              "Cd_min": 4.450300035758726,
+              "Cd_time_mean": 4.523314503174402,
+              "Cl_max": 1.6439774392387267,
+              "Cl_min": -1.692476798640442,
+              "Cl_time_mean": -0.15726370344151247,
+              "Cl_amplitude": 3.3364542378791686
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 42.35956192321626,
+                "absolute_midpoint_percent": 42.35956192321626,
+                "outside_interval_percent": 42.04996439999646,
+                "signed_endpoint_percent_range": [
+                  41.920180559255726,
+                  42.80167236397161
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": 64.39782290016032,
+                "absolute_midpoint_percent": 64.39782290016032,
+                "outside_interval_percent": 63.397822900160314,
+                "signed_endpoint_percent_range": [
+                  62.77012168332705,
+                  66.05840696985892
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -9.001477594508723,
+                "absolute_midpoint_percent": 9.001477594508723,
+                "outside_interval_percent": 7.33481092784205,
+                "signed_endpoint_percent_range": [
+                  -10.493256650336447,
+                  -7.4591297571275135
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 1.9861561886371766e-08,
+              "Cd_time_mean": 4.906088075113223e-05,
+              "St": 1.940774378499353e-08,
+              "Cl_amplitude_report_only": 2.5694864866348006e-07
+            },
+            "maximum_acceptance_drift": 4.906088075113223e-05,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": true,
+              "cycles_available": true
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        },
+        "selected_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_A_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_A_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.7763568394002505e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_A_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.038927138665886686,
+              0.038927138665886686
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.004990197597541099,
+              0.004990197597541099
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.03895720735420893,
+                0.03895720735420893
+              ],
+              "rms_speed_ratio": [
+                0.042674074256994966,
+                0.042674074256994966
+              ],
+              "mean_absolute_flux_ratio": [
+                0.004987633745275873,
+                0.004987633745275873
+              ],
+              "max_absolute_flux_ratio": [
+                0.005063002244294739,
+                0.005063002244294739
+              ]
+            },
+            "objective": 4.523425464793058,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.4673916720109506,
+            "max_velocity_component_window": 2.24119716101787,
+            "component_screening_index": 0.6278705893193199,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.17820714063995907,
+            "snapshot_component_upper_index": 0.8528489474210496,
+            "snapshot_cell_center_max_speed": 2.294831846605969,
+            "snapshot_cell_center_index": 0.6582816505246203,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.06129195860076,
+                8.427598262698954,
+                8.793904576756232,
+                9.160210896860535,
+                9.526517214510813,
+                9.892823529234365
+              ],
+              "periods": [
+                0.36630630409819354,
+                0.36630631405727776,
+                0.36630632010430375,
+                0.36630631765027744,
+                0.3663063147235519
+              ],
+              "St": 0.27299556721647383,
+              "period_cv": 1.490662481905884e-08,
+              "complete_period_count": 5,
+              "reason": null,
+              "Cd_max": 4.598213850119886,
+              "Cd_min": 4.450299737001668,
+              "Cd_time_mean": 4.52342546479306,
+              "Cl_max": 1.6439782290016032,
+              "Cl_min": -1.692476798640442,
+              "Cl_time_mean": -0.11534749604752138,
+              "Cl_amplitude": 3.336455027642045
+            },
+            "first_half": {
+              "minimum_times": [
+                8.06129195860076,
+                8.427598262698954,
+                8.793904576756232
+              ],
+              "periods": [
+                0.36630630409819354,
+                0.36630631405727776
+              ],
+              "St": 0.2729955709793099,
+              "period_cv": 1.3593929420761763e-08,
+              "complete_period_count": 2,
+              "reason": null,
+              "Cd_max": 4.598213850119886,
+              "Cd_min": 4.450299737001668,
+              "Cd_time_mean": 4.523536426411717,
+              "Cl_max": 1.6439782290016032,
+              "Cl_min": -1.692475151579955,
+              "Cl_time_mean": -0.07343128865353031,
+              "Cl_amplitude": 3.336453380581558
+            },
+            "second_half": {
+              "minimum_times": [
+                9.160210896860535,
+                9.526517214510813,
+                9.892823529234365
+              ],
+              "periods": [
+                0.36630631765027744,
+                0.3663063147235519
+              ],
+              "St": 0.27299556568108185,
+              "period_cv": 3.994915456361441e-09,
+              "complete_period_count": 2,
+              "reason": null,
+              "Cd_max": 4.598213758792177,
+              "Cd_min": 4.450300035758726,
+              "Cd_time_mean": 4.523314503174402,
+              "Cl_max": 1.6439774392387267,
+              "Cl_min": -1.692476798640442,
+              "Cl_time_mean": -0.15726370344151247,
+              "Cl_amplitude": 3.3364542378791686
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 42.35956192321626,
+                "absolute_midpoint_percent": 42.35956192321626,
+                "outside_interval_percent": 42.04996439999646,
+                "signed_endpoint_percent_range": [
+                  41.920180559255726,
+                  42.80167236397161
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": 64.39782290016032,
+                "absolute_midpoint_percent": 64.39782290016032,
+                "outside_interval_percent": 63.397822900160314,
+                "signed_endpoint_percent_range": [
+                  62.77012168332705,
+                  66.05840696985892
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -9.001477594508723,
+                "absolute_midpoint_percent": 9.001477594508723,
+                "outside_interval_percent": 7.33481092784205,
+                "signed_endpoint_percent_range": [
+                  -10.493256650336447,
+                  -7.4591297571275135
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 1.9861561886371766e-08,
+              "Cd_time_mean": 4.906088075113223e-05,
+              "St": 1.940774378499353e-08,
+              "Cl_amplitude_report_only": 2.5694864866348006e-07
+            },
+            "maximum_acceptance_drift": 4.906088075113223e-05,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": true,
+              "cycles_available": true
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        }
+      },
+      {
+        "case": "B",
+        "grid": {
+          "nx": 440,
+          "ny": 82,
+          "lx": 2.2,
+          "ly": 0.41
+        },
+        "alpha_max": 160.0,
+        "epsilon": 0.0075,
+        "dt": 0.00025,
+        "selected_directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_B_dt1",
+        "conditional_half_step_used": false,
+        "Cd_max": 4.086804294582698,
+        "Cl_max": 0.7340006801734428,
+        "St": 0.28957820146909574,
+        "period_cv": 9.625604964236288e-08,
+        "maximum_half_window_drift": null,
+        "errors": {
+          "Cd_max": {
+            "reference_interval": [
+              3.22,
+              3.24
+            ],
+            "reference_midpoint": 3.2300000000000004,
+            "signed_midpoint_percent": 26.526448748690324,
+            "absolute_midpoint_percent": 26.526448748690324,
+            "outside_interval_percent": 26.216851225470506,
+            "signed_endpoint_percent_range": [
+              26.13593501798448,
+              26.919388030518544
+            ]
+          },
+          "Cl_max": {
+            "reference_interval": [
+              0.99,
+              1.01
+            ],
+            "reference_midpoint": 1.0,
+            "signed_midpoint_percent": -26.599931982655722,
+            "absolute_midpoint_percent": 26.599931982655722,
+            "outside_interval_percent": 25.599931982655722,
+            "signed_endpoint_percent_range": [
+              -27.3266653293621,
+              -25.858517154197703
+            ]
+          },
+          "St": {
+            "reference_interval": [
+              0.295,
+              0.305
+            ],
+            "reference_midpoint": 0.3,
+            "signed_midpoint_percent": -3.4739328436347527,
+            "absolute_midpoint_percent": 3.4739328436347527,
+            "outside_interval_percent": 1.807266176968081,
+            "signed_endpoint_percent_range": [
+              -5.0563273871817245,
+              -1.8378978070861862
+            ]
+          }
+        },
+        "window": {
+          "dt": 0.00025,
+          "n_steps": 40000,
+          "window_start_step": 32000,
+          "window_count": 8000,
+          "window_start_time": 8.0,
+          "end_time": 10.0,
+          "max_velocity_component_all": 2.24994291006698,
+          "max_velocity_component_window": 2.1455599171211097,
+          "component_screening_index": 0.5754284197445929,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.16728328338743859,
+          "snapshot_component_upper_index": 0.7596764880462941,
+          "snapshot_cell_center_max_speed": 2.1778959810329788,
+          "snapshot_cell_center_index": 0.5929038630249501,
+          "snapshot_count": 23,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "core": {
+          "labels": [
+            "case_body1",
+            "common_body1"
+          ],
+          "sample_count": 8000,
+          "mean_speed_ratio": [
+            0.1566658935457731,
+            0.15102660293570244
+          ],
+          "rms_speed_ratio": [
+            0.17094054048052096,
+            0.1609259132398521
+          ],
+          "mean_absolute_flux_ratio": [
+            0.02468476594750907,
+            0.02209285236128428
+          ],
+          "max_absolute_flux_ratio": [
+            0.024806118892885143,
+            0.022211126279582227
+          ]
+        },
+        "passed_registered_benchmark": false,
+        "original_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_B_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_B_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.7763568394002505e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_B_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.15669572996756104,
+              0.151059308263965
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.024686847316011108,
+              0.022095102712459683
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.1566658935457731,
+                0.15102660293570244
+              ],
+              "rms_speed_ratio": [
+                0.17094054048052096,
+                0.1609259132398521
+              ],
+              "mean_absolute_flux_ratio": [
+                0.02468476594750907,
+                0.02209285236128428
+              ],
+              "max_absolute_flux_ratio": [
+                0.024806118892885143,
+                0.022211126279582227
+              ]
+            },
+            "objective": 4.058941894210879,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.24994291006698,
+            "max_velocity_component_window": 2.1455599171211097,
+            "component_screening_index": 0.5754284197445929,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.16728328338743859,
+            "snapshot_component_upper_index": 0.7596764880462941,
+            "snapshot_cell_center_max_speed": 2.1778959810329788,
+            "snapshot_cell_center_index": 0.5929038630249501,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.312855524385725,
+                8.658185333988135,
+                9.003515189766473,
+                9.348845068747819,
+                9.694174967529959
+              ],
+              "periods": [
+                0.34532980960240955,
+                0.3453298557783384,
+                0.34532987898134593,
+                0.3453298987821398
+              ],
+              "St": 0.28957820146909574,
+              "period_cv": 9.625604964236288e-08,
+              "complete_period_count": 4,
+              "reason": null,
+              "Cd_max": 4.086804294582698,
+              "Cd_min": 4.030360815236497,
+              "Cd_time_mean": 4.0589418942108795,
+              "Cl_max": 0.7340006801734428,
+              "Cl_min": -0.7749095662753818,
+              "Cl_time_mean": 0.003994785170544816,
+              "Cl_amplitude": 1.5089102464488247
+            },
+            "first_half": {
+              "minimum_times": [
+                8.312855524385725,
+                8.658185333988135
+              ],
+              "periods": [
+                0.34532980960240955
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 4.086800414376719,
+              "Cd_min": 4.030360815236497,
+              "Cd_time_mean": 4.0584315042839965,
+              "Cl_max": 0.7339936397295999,
+              "Cl_min": -0.7749007205240623,
+              "Cl_time_mean": 0.004532525082745834,
+              "Cl_amplitude": 1.5088943602536622
+            },
+            "second_half": {
+              "minimum_times": [
+                9.348845068747819,
+                9.694174967529959
+              ],
+              "periods": [
+                0.3453298987821398
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 4.086804294582698,
+              "Cd_min": 4.030366266976741,
+              "Cd_time_mean": 4.059452284137763,
+              "Cl_max": 0.7340006801734428,
+              "Cl_min": -0.7749095662753818,
+              "Cl_time_mean": 0.003457045258343797,
+              "Cl_amplitude": 1.5089102464488247
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 26.526448748690324,
+                "absolute_midpoint_percent": 26.526448748690324,
+                "outside_interval_percent": 26.216851225470506,
+                "signed_endpoint_percent_range": [
+                  26.13593501798448,
+                  26.919388030518544
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": -26.599931982655722,
+                "absolute_midpoint_percent": 26.599931982655722,
+                "outside_interval_percent": 25.599931982655722,
+                "signed_endpoint_percent_range": [
+                  -27.3266653293621,
+                  -25.858517154197703
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -3.4739328436347527,
+                "absolute_midpoint_percent": 3.4739328436347527,
+                "outside_interval_percent": 1.807266176968081,
+                "signed_endpoint_percent_range": [
+                  -5.0563273871817245,
+                  -1.8378978070861862
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 9.49447465318847e-07,
+              "Cd_time_mean": 0.0002514891516980863,
+              "St": null,
+              "Cl_amplitude_report_only": 1.052825719743765e-05
+            },
+            "maximum_acceptance_drift": null,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": false,
+              "cycles_available": false
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        },
+        "selected_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_B_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_B_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.7763568394002505e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_B_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.15669572996756104,
+              0.151059308263965
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.024686847316011108,
+              0.022095102712459683
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.1566658935457731,
+                0.15102660293570244
+              ],
+              "rms_speed_ratio": [
+                0.17094054048052096,
+                0.1609259132398521
+              ],
+              "mean_absolute_flux_ratio": [
+                0.02468476594750907,
+                0.02209285236128428
+              ],
+              "max_absolute_flux_ratio": [
+                0.024806118892885143,
+                0.022211126279582227
+              ]
+            },
+            "objective": 4.058941894210879,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.24994291006698,
+            "max_velocity_component_window": 2.1455599171211097,
+            "component_screening_index": 0.5754284197445929,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.16728328338743859,
+            "snapshot_component_upper_index": 0.7596764880462941,
+            "snapshot_cell_center_max_speed": 2.1778959810329788,
+            "snapshot_cell_center_index": 0.5929038630249501,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.312855524385725,
+                8.658185333988135,
+                9.003515189766473,
+                9.348845068747819,
+                9.694174967529959
+              ],
+              "periods": [
+                0.34532980960240955,
+                0.3453298557783384,
+                0.34532987898134593,
+                0.3453298987821398
+              ],
+              "St": 0.28957820146909574,
+              "period_cv": 9.625604964236288e-08,
+              "complete_period_count": 4,
+              "reason": null,
+              "Cd_max": 4.086804294582698,
+              "Cd_min": 4.030360815236497,
+              "Cd_time_mean": 4.0589418942108795,
+              "Cl_max": 0.7340006801734428,
+              "Cl_min": -0.7749095662753818,
+              "Cl_time_mean": 0.003994785170544816,
+              "Cl_amplitude": 1.5089102464488247
+            },
+            "first_half": {
+              "minimum_times": [
+                8.312855524385725,
+                8.658185333988135
+              ],
+              "periods": [
+                0.34532980960240955
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 4.086800414376719,
+              "Cd_min": 4.030360815236497,
+              "Cd_time_mean": 4.0584315042839965,
+              "Cl_max": 0.7339936397295999,
+              "Cl_min": -0.7749007205240623,
+              "Cl_time_mean": 0.004532525082745834,
+              "Cl_amplitude": 1.5088943602536622
+            },
+            "second_half": {
+              "minimum_times": [
+                9.348845068747819,
+                9.694174967529959
+              ],
+              "periods": [
+                0.3453298987821398
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 4.086804294582698,
+              "Cd_min": 4.030366266976741,
+              "Cd_time_mean": 4.059452284137763,
+              "Cl_max": 0.7340006801734428,
+              "Cl_min": -0.7749095662753818,
+              "Cl_time_mean": 0.003457045258343797,
+              "Cl_amplitude": 1.5089102464488247
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 26.526448748690324,
+                "absolute_midpoint_percent": 26.526448748690324,
+                "outside_interval_percent": 26.216851225470506,
+                "signed_endpoint_percent_range": [
+                  26.13593501798448,
+                  26.919388030518544
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": -26.599931982655722,
+                "absolute_midpoint_percent": 26.599931982655722,
+                "outside_interval_percent": 25.599931982655722,
+                "signed_endpoint_percent_range": [
+                  -27.3266653293621,
+                  -25.858517154197703
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -3.4739328436347527,
+                "absolute_midpoint_percent": 3.4739328436347527,
+                "outside_interval_percent": 1.807266176968081,
+                "signed_endpoint_percent_range": [
+                  -5.0563273871817245,
+                  -1.8378978070861862
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 9.49447465318847e-07,
+              "Cd_time_mean": 0.0002514891516980863,
+              "St": null,
+              "Cl_amplitude_report_only": 1.052825719743765e-05
+            },
+            "maximum_acceptance_drift": null,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": false,
+              "cycles_available": false
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        }
+      },
+      {
+        "case": "C",
+        "grid": {
+          "nx": 880,
+          "ny": 164,
+          "lx": 2.2,
+          "ly": 0.41
+        },
+        "alpha_max": 2560.0,
+        "epsilon": 0.0075,
+        "dt": 0.00025,
+        "selected_directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_C_dt1",
+        "conditional_half_step_used": false,
+        "Cd_max": 3.7391437351119365,
+        "Cl_max": 1.3145973407191223,
+        "St": 0.2879757532472553,
+        "period_cv": 2.0033108587730307e-08,
+        "maximum_half_window_drift": null,
+        "errors": {
+          "Cd_max": {
+            "reference_interval": [
+              3.22,
+              3.24
+            ],
+            "reference_midpoint": 3.2300000000000004,
+            "signed_midpoint_percent": 15.762963935354058,
+            "absolute_midpoint_percent": 15.762963935354058,
+            "outside_interval_percent": 15.45336641213425,
+            "signed_endpoint_percent_range": [
+              15.405670836788165,
+              16.122476245712303
+            ]
+          },
+          "Cl_max": {
+            "reference_interval": [
+              0.99,
+              1.01
+            ],
+            "reference_midpoint": 1.0,
+            "signed_midpoint_percent": 31.459734071912226,
+            "absolute_midpoint_percent": 31.459734071912226,
+            "outside_interval_percent": 30.459734071912226,
+            "signed_endpoint_percent_range": [
+              30.15815254644776,
+              32.78761017364871
+            ]
+          },
+          "St": {
+            "reference_interval": [
+              0.295,
+              0.305
+            ],
+            "reference_midpoint": 0.3,
+            "signed_midpoint_percent": -4.008082250914901,
+            "absolute_midpoint_percent": 4.008082250914901,
+            "outside_interval_percent": 2.3414155842482374,
+            "signed_endpoint_percent_range": [
+              -5.581720246801547,
+              -2.3811005941507535
+            ]
+          }
+        },
+        "window": {
+          "dt": 0.00025,
+          "n_steps": 40000,
+          "window_start_step": 32000,
+          "window_count": 8000,
+          "window_start_time": 8.0,
+          "end_time": 10.0,
+          "max_velocity_component_all": 2.671257386826024,
+          "max_velocity_component_window": 2.2034865326250013,
+          "component_screening_index": 0.6069191124324689,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.34627848448997994,
+          "snapshot_component_upper_index": 0.8085239898381066,
+          "snapshot_cell_center_max_speed": 2.270871834550059,
+          "snapshot_cell_center_index": 0.6446073611190938,
+          "snapshot_count": 23,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "core": {
+          "labels": [
+            "case_body1",
+            "common_body1"
+          ],
+          "sample_count": 8000,
+          "mean_speed_ratio": [
+            0.009514367728192965,
+            0.008722511665778197
+          ],
+          "rms_speed_ratio": [
+            0.011401481766855131,
+            0.010048991165977735
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0009557560504985196,
+            0.0009134604835741554
+          ],
+          "max_absolute_flux_ratio": [
+            0.000963149227196096,
+            0.0009266014848663425
+          ]
+        },
+        "passed_registered_benchmark": false,
+        "original_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_C_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_C_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.3322676295501878e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_C_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.009524597787501593,
+              0.008732875502549779
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.0009559115434467047,
+              0.000913870605054562
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.009514367728192965,
+                0.008722511665778197
+              ],
+              "rms_speed_ratio": [
+                0.011401481766855131,
+                0.010048991165977735
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0009557560504985196,
+                0.0009134604835741554
+              ],
+              "max_absolute_flux_ratio": [
+                0.000963149227196096,
+                0.0009266014848663425
+              ]
+            },
+            "objective": 3.689400737425182,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.671257386826024,
+            "max_velocity_component_window": 2.2034865326250013,
+            "component_screening_index": 0.6069191124324689,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.34627848448997994,
+            "snapshot_component_upper_index": 0.8085239898381066,
+            "snapshot_cell_center_max_speed": 2.270871834550059,
+            "snapshot_cell_center_index": 0.6446073611190938,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.33293841592587,
+                8.680189862329813,
+                9.027441318896768,
+                9.3746927807569,
+                9.721944245373466
+              ],
+              "periods": [
+                0.3472514464039431,
+                0.3472514565669549,
+                0.34725146186013234,
+                0.34725146461656564
+              ],
+              "St": 0.2879757532472553,
+              "period_cv": 2.0033108587730307e-08,
+              "complete_period_count": 4,
+              "reason": null,
+              "Cd_max": 3.7391437351119365,
+              "Cd_min": 3.6399831435098107,
+              "Cd_time_mean": 3.6894007374251823,
+              "Cl_max": 1.3145973407191223,
+              "Cl_min": -1.356199949262382,
+              "Cl_time_mean": 0.022412772893929164,
+              "Cl_amplitude": 2.670797289981504
+            },
+            "first_half": {
+              "minimum_times": [
+                8.33293841592587,
+                8.680189862329813
+              ],
+              "periods": [
+                0.3472514464039431
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 3.739143385544565,
+              "Cd_min": 3.6399831435098107,
+              "Cd_time_mean": 3.6881502946692954,
+              "Cl_max": 1.314596480423781,
+              "Cl_min": -1.3561987322585396,
+              "Cl_time_mean": 0.03200938990539952,
+              "Cl_amplitude": 2.6707952126823207
+            },
+            "second_half": {
+              "minimum_times": [
+                9.3746927807569,
+                9.721944245373466
+              ],
+              "periods": [
+                0.34725146461656564
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 3.7391437351119365,
+              "Cd_min": 3.6399837769523695,
+              "Cd_time_mean": 3.6906511801810695,
+              "Cl_max": 1.3145973407191223,
+              "Cl_min": -1.356199949262382,
+              "Cl_time_mean": 0.012816155882458815,
+              "Cl_amplitude": 2.670797289981504
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 15.762963935354058,
+                "absolute_midpoint_percent": 15.762963935354058,
+                "outside_interval_percent": 15.45336641213425,
+                "signed_endpoint_percent_range": [
+                  15.405670836788165,
+                  16.122476245712303
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": 31.459734071912226,
+                "absolute_midpoint_percent": 31.459734071912226,
+                "outside_interval_percent": 30.459734071912226,
+                "signed_endpoint_percent_range": [
+                  30.15815254644776,
+                  32.78761017364871
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -4.008082250914901,
+                "absolute_midpoint_percent": 4.008082250914901,
+                "outside_interval_percent": 2.3414155842482374,
+                "signed_endpoint_percent_range": [
+                  -5.581720246801547,
+                  -2.3811005941507535
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 9.348861564511505e-08,
+              "Cd_time_mean": 0.0006778568363163047,
+              "St": null,
+              "Cl_amplitude_report_only": 7.777824214238204e-07
+            },
+            "maximum_acceptance_drift": null,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": false,
+              "cycles_available": false
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        },
+        "selected_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_C_dt1",
+          "passed": true,
+          "raw_audit": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_C_dt1",
+            "passed": true,
+            "evaluations": 1,
+            "analytic_geometry_pullback_checks": 0,
+            "analytic_geometry_pullback_max_error": null,
+            "paper_eligible": false
+          },
+          "raw_field_force_max_error": 1.3322676295501878e-15,
+          "core": {
+            "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/DFG2D2_C_dt1",
+            "sampled_steps": [
+              32500,
+              35000,
+              37500,
+              38100,
+              38200,
+              38300,
+              38400,
+              38500,
+              38600,
+              38700,
+              38800,
+              38900,
+              39000,
+              39100,
+              39200,
+              39300,
+              39400,
+              39500,
+              39600,
+              39700,
+              39800,
+              39900,
+              40000
+            ],
+            "snapshot_only_mean_speed": [
+              0.009524597787501593,
+              0.008732875502549779
+            ],
+            "snapshot_only_mean_absolute_flux": [
+              0.0009559115434467047,
+              0.000913870605054562
+            ],
+            "full_window": {
+              "labels": [
+                "case_body1",
+                "common_body1"
+              ],
+              "sample_count": 8000,
+              "mean_speed_ratio": [
+                0.009514367728192965,
+                0.008722511665778197
+              ],
+              "rms_speed_ratio": [
+                0.011401481766855131,
+                0.010048991165977735
+              ],
+              "mean_absolute_flux_ratio": [
+                0.0009557560504985196,
+                0.0009134604835741554
+              ],
+              "max_absolute_flux_ratio": [
+                0.000963149227196096,
+                0.0009266014848663425
+              ]
+            },
+            "objective": 3.689400737425182,
+            "passed": true,
+            "paper_eligible": false
+          },
+          "window": {
+            "dt": 0.00025,
+            "n_steps": 40000,
+            "window_start_step": 32000,
+            "window_count": 8000,
+            "window_start_time": 8.0,
+            "end_time": 10.0,
+            "max_velocity_component_all": 2.671257386826024,
+            "max_velocity_component_window": 2.2034865326250013,
+            "component_screening_index": 0.6069191124324689,
+            "steps_component_index_above_one": 0,
+            "window_max_cfl": 0.34627848448997994,
+            "snapshot_component_upper_index": 0.8085239898381066,
+            "snapshot_cell_center_max_speed": 2.270871834550059,
+            "snapshot_cell_center_index": 0.6446073611190938,
+            "snapshot_count": 23,
+            "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+          },
+          "periodic": {
+            "full_window": {
+              "minimum_times": [
+                8.33293841592587,
+                8.680189862329813,
+                9.027441318896768,
+                9.3746927807569,
+                9.721944245373466
+              ],
+              "periods": [
+                0.3472514464039431,
+                0.3472514565669549,
+                0.34725146186013234,
+                0.34725146461656564
+              ],
+              "St": 0.2879757532472553,
+              "period_cv": 2.0033108587730307e-08,
+              "complete_period_count": 4,
+              "reason": null,
+              "Cd_max": 3.7391437351119365,
+              "Cd_min": 3.6399831435098107,
+              "Cd_time_mean": 3.6894007374251823,
+              "Cl_max": 1.3145973407191223,
+              "Cl_min": -1.356199949262382,
+              "Cl_time_mean": 0.022412772893929164,
+              "Cl_amplitude": 2.670797289981504
+            },
+            "first_half": {
+              "minimum_times": [
+                8.33293841592587,
+                8.680189862329813
+              ],
+              "periods": [
+                0.3472514464039431
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 3.739143385544565,
+              "Cd_min": 3.6399831435098107,
+              "Cd_time_mean": 3.6881502946692954,
+              "Cl_max": 1.314596480423781,
+              "Cl_min": -1.3561987322585396,
+              "Cl_time_mean": 0.03200938990539952,
+              "Cl_amplitude": 2.6707952126823207
+            },
+            "second_half": {
+              "minimum_times": [
+                9.3746927807569,
+                9.721944245373466
+              ],
+              "periods": [
+                0.34725146461656564
+              ],
+              "St": null,
+              "period_cv": null,
+              "complete_period_count": 1,
+              "reason": "fewer than two complete lift cycles",
+              "Cd_max": 3.7391437351119365,
+              "Cd_min": 3.6399837769523695,
+              "Cd_time_mean": 3.6906511801810695,
+              "Cl_max": 1.3145973407191223,
+              "Cl_min": -1.356199949262382,
+              "Cl_time_mean": 0.012816155882458815,
+              "Cl_amplitude": 2.670797289981504
+            },
+            "errors": {
+              "Cd_max": {
+                "reference_interval": [
+                  3.22,
+                  3.24
+                ],
+                "reference_midpoint": 3.2300000000000004,
+                "signed_midpoint_percent": 15.762963935354058,
+                "absolute_midpoint_percent": 15.762963935354058,
+                "outside_interval_percent": 15.45336641213425,
+                "signed_endpoint_percent_range": [
+                  15.405670836788165,
+                  16.122476245712303
+                ]
+              },
+              "Cl_max": {
+                "reference_interval": [
+                  0.99,
+                  1.01
+                ],
+                "reference_midpoint": 1.0,
+                "signed_midpoint_percent": 31.459734071912226,
+                "absolute_midpoint_percent": 31.459734071912226,
+                "outside_interval_percent": 30.459734071912226,
+                "signed_endpoint_percent_range": [
+                  30.15815254644776,
+                  32.78761017364871
+                ]
+              },
+              "St": {
+                "reference_interval": [
+                  0.295,
+                  0.305
+                ],
+                "reference_midpoint": 0.3,
+                "signed_midpoint_percent": -4.008082250914901,
+                "absolute_midpoint_percent": 4.008082250914901,
+                "outside_interval_percent": 2.3414155842482374,
+                "signed_endpoint_percent_range": [
+                  -5.581720246801547,
+                  -2.3811005941507535
+                ]
+              }
+            },
+            "relative_half_window_drift": {
+              "Cd_max": 9.348861564511505e-08,
+              "Cd_time_mean": 0.0006778568363163047,
+              "St": null,
+              "Cl_amplitude_report_only": 7.777824214238204e-07
+            },
+            "maximum_acceptance_drift": null,
+            "gates": {
+              "Cd_max": false,
+              "St": false,
+              "half_window_drift": false,
+              "cycles_available": false
+            },
+            "passed_benchmark_metrics": false,
+            "method": "lift minima with 10% full-window prominence, 0.05 s minimum spacing and quadratic substep interpolation; St=0.1/mean(period); half windows analyzed independently"
+          },
+          "passed_registered_benchmark": false,
+          "half_step_required": false,
+          "paper_eligible": false
+        }
+      }
+    ],
+    "C_passed": false,
+    "scope": "Forward single-cylinder accuracy at the registered settings only; not proof of three-body sharp-interface, gradient, or grid convergence."
+  },
+  "scope": "Fixed geometry forward checks only; no new optimization or manuscript edits."
+}

@@ -1,0 +1,39 @@
+{
+  "dolfinx": "0.11.0.post0",
+  "git_branch": "fix/cylinder-convergence-diagnostics",
+  "git_commit": "f3372f4bb7ba157ed4a24d5affd3da76812c19ad",
+  "git_dirty": false,
+  "git_repository": "https://github.com/YupengQI99/jax_cad.git",
+  "gmsh": "4.15.2",
+  "hostname": "fbd640954e75",
+  "mpi_rank": 0,
+  "mpi_size": 1,
+  "numpy": "2.4.6",
+  "petsc4py": "3.25.1",
+  "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "reproducibility_environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "XDG_CACHE_HOME": "/tmp/cache",
+    "XDG_CONFIG_HOME": "/tmp/config"
+  },
+  "source_snapshot": {
+    "branch": "fix/cylinder-convergence-diagnostics",
+    "commit": "f3372f4bb7ba157ed4a24d5affd3da76812c19ad",
+    "dirty": false,
+    "input_file_sha256": {
+      "/home/user/GeoDiffCFD/jax_cad/ffcx_options.json": null,
+      "/home/user/.petscrc": null,
+      "/tmp/config/ffcx/ffcx_options.json": null,
+      "configs/forward_verification/diagnostics/cylinder_continuum_shift_medium_fe_source.json": "c0fa06cd91ef9aee910a6b1833cab296411aa0653e83ac6ead32a1dd7e3ba1dc",
+      "configs/forward_verification/diagnostics/fe_normal_continuum_shift_local3.json": "c827b63c51105d12c063dd3be8dcc7829caf1347be119326ca2b5228dd125224",
+      "configs/forward_verification/diagnostics/normal_continuum_shift_medium48_fe_source.json": "78a5832a8d0122b1d2457ee394c5d953663375a4f5e389faa0fb3e23114ce795",
+      "tools/dolfinx_brinkman_cylinder.py": "ab90253041f63b1fdded23ad1b1220be396d5f5e4ea7a6a1ce20eb7cf8a315f9",
+      "tools/dolfinx_dfg2d1.py": "8d1141168d2ea52ce5a44cab4a6aee9dd7e5552be389ae57d68facab015bf0d9",
+      "tools/fe_normal_constraint.py": "939ae45ab36396eca632880212f6e71494174d5a53c04f277376174b78dcc890"
+    },
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  }
+}

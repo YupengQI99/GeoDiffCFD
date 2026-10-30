@@ -1,0 +1,3 @@
+summary.json -text
+artifacts_sha256.json -text
+objectives.csv -text whitespace=cr-at-eol

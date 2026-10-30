@@ -1,0 +1,33 @@
+{
+  "schema_version": "dolfinx-finite-brinkman-config-1.0",
+  "experiment_id": "dolfinx_normal_constraint_diagnostic",
+  "case": "dfg-cylinder-2d1-finite-brinkman-normal-convolution",
+  "run_id": "finite-normal-continuum-fine96-local3",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "source_config": "configs/forward_verification/diagnostics/cylinder_continuum_shift_fine_fe_source.json",
+  "source_config_sha256": "068098c476e7fb51816e3f6ce668fab72d0ae107ed2d26fec6d4803f9dca2ba7",
+  "normal_constraint": {
+    "source_config": "configs/forward_verification/diagnostics/normal_continuum_shift_fine96_fe_source.json",
+    "source_config_sha256": "cb8ed038b68adeec4f8b76ec07d7b149f2bad833f01dce43896c76496bb78b36"
+  },
+  "mesh": {
+    "nx": 220,
+    "ny": 41,
+    "diagonal": "right",
+    "local_refinements": 3
+  },
+  "quadrature_degree": 14,
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8",
+    "expected_versions": {
+      "dolfinx": "0.11.0.post0",
+      "gmsh": "4.15.2",
+      "petsc4py": "3.25.1"
+    }
+  },
+  "advection_form": "conservative",
+  "study_protocol": "Independent fixed-PDE discretization pair for the single authorized fine GPU model; same h=.0025, alpha=640, continuous planar shift and 96 markers. No GPU launch; original 8 GiB CPU guard and mesh limits retained."
+}

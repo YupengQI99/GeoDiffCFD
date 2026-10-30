@@ -1,0 +1,32 @@
+{
+  "schema_version": "normal-cylinder-diagnostic-config-1.0",
+  "experiment_id": "normal_constraint_cylinder_diagnostic",
+  "run_id": "normal-q0p5-coarse-24markers",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "source_config": "configs/forward_verification/diagnostics/cylinder_central_coarse_q0p5.json",
+  "source_config_sha256": "08ada68c48a136f4bfc5c4448b34ff4d393db52091888f65677bc40b8bbbfec9",
+  "grid": {
+    "nx": 220,
+    "ny": 41,
+    "lx": 2.2,
+    "ly": 0.41
+  },
+  "normal_constraint": {
+    "kernel": "tensor-cubic-bspline-native-mac",
+    "markers": 24,
+    "nominal_surface_shift": 0,
+    "angle_origin": 0,
+    "force_protocol": "mac-brinkman-plus-normal-reaction-prototype-v1"
+  },
+  "max_steps": 12000,
+  "chunk_steps": 1000,
+  "gates": {
+    "divergence_max": 1e-8,
+    "normal_velocity_max": 1e-10,
+    "mass_flux_mismatch": 1e-9,
+    "cv_relative_closure": 0.00001
+  }
+}

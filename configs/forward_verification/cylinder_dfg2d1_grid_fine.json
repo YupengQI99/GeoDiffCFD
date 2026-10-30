@@ -1,0 +1,15 @@
+{
+  "schema_version": "forward-verification-config-1.1",
+  "case": "dfg-cylinder-2d1-re20",
+  "run_id": "grid-fine-344x64-eps1.5-alpha2000",
+  "initial_condition": "zero-interior-with-inlet-boundary",
+  "study": {"name": "grid-refinement", "level": "fine"},
+  "grid": {"nx": 344, "ny": 64, "lx": 2.2, "ly": 0.41},
+  "physics": {"density": 1.0, "viscosity": 0.001, "maximum_inlet_velocity": 0.3, "mean_inlet_velocity": 0.2, "reynolds_number": 20.0, "cylinder_centre": [0.2, 0.2], "cylinder_radius": 0.05},
+  "immersed_boundary": {"alpha_max": 2000.0, "epsilon_over_h": 1.5, "h_definition": "max(dx,dy)", "material_mapping": "compact-cosine-heaviside"},
+  "boundary_conditions": {"inlet": "analytic-parabolic-face-average", "walls": "no-slip", "cylinder": "immersed-brinkman-no-slip-limit", "outlet": "zero-total-traction-finite-volume"},
+  "surface_measurement": {"stress_tensor": "nu-grad-u-minus-pI", "normal": "cylinder-outward-into-fluid", "trace_method": "pure-fluid-stencil-radial-polynomial", "offsets_over_h": [3.5, 3.8, 4.1, 4.4, 4.7], "offset_sensitivity_shifts_over_h": [0.0, 0.3, 0.6], "pressure_polynomial_degree": 1, "tangential_velocity_polynomial_degree": 1, "polynomial_sensitivity_degrees": [1, 2], "quadrature_points": 256},
+  "solver": {"dt": 0.003, "max_steps": 10000, "pressure_tolerance": 1e-10, "pressure_atol": 1e-12, "pressure_maxiter": 4000, "nonlinear_rtol": 1e-6, "nonlinear_atol": 1e-7, "nonlinear_min_steps": 100, "include_advection": true},
+  "timing_samples": 3,
+  "reference": {"name": "DFG-FEATFLOW-2D-1", "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html"}
+}

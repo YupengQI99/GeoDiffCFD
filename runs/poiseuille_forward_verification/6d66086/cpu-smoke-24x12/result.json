@@ -1,0 +1,178 @@
+{
+  "artifacts": [
+    {
+      "media_type": "application/json",
+      "path": "config.json",
+      "role": "config",
+      "sha256": "f60f33b13992ba4d47b545397e6b096e5bdba730b30325d47fc4bdb11c095c98"
+    },
+    {
+      "media_type": "application/json",
+      "path": "environment.json",
+      "role": "environment",
+      "sha256": "e66f74d3b74b2a402bcb903c76b57d960f670fd14a9f61e1406ba4d4305ce39c"
+    },
+    {
+      "media_type": "application/json",
+      "path": "metrics.json",
+      "role": "table",
+      "sha256": "9431ea1dd9927bb61aa9483f4189657ea76b99fb1adcf6fa7b513c43d06198b5"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "profile.csv",
+      "role": "table",
+      "sha256": "c8a18c5f38ec261cadf547ffdd02b3231055f966bbd10f09341bb9988074d4ff"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "residual_history.csv",
+      "role": "residual-history",
+      "sha256": "2bcda62659b977bbc681299a85878623b2b5243752fc64ac912ee07f2109d051"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stdout.log",
+      "role": "log",
+      "sha256": "9431ea1dd9927bb61aa9483f4189657ea76b99fb1adcf6fa7b513c43d06198b5"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stderr.log",
+      "role": "log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "command": {
+    "argv": [
+      "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+      "examples/28_poiseuille_verification.py",
+      "--config",
+      "configs/forward_verification/poiseuille_cpu_smoke.json",
+      "--output-dir",
+      "runs/poiseuille_forward_verification/6d66086/cpu-smoke-24x12"
+    ],
+    "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+  },
+  "configuration": {
+    "analytical_solution_rescaled_from_numerical_result": false,
+    "case": "planar-poiseuille",
+    "grid": {
+      "lx": 3.0,
+      "ly": 1.0,
+      "nx": 24,
+      "ny": 12
+    },
+    "physics": {
+      "density": 1.0,
+      "mean_velocity": 0.2,
+      "viscosity": 0.05
+    },
+    "reference_comparison": {
+      "boundary_conditions_exact": true,
+      "paper_eligible": true,
+      "quantity_definition_exact": true
+    },
+    "requires_gradient": false,
+    "run_id": "cpu-smoke-24x12",
+    "schema_version": "forward-verification-config-1.0",
+    "solver": {
+      "dt": 0.002,
+      "include_advection": true,
+      "max_steps": 3000,
+      "nonlinear_atol": 1e-10,
+      "nonlinear_min_steps": 20,
+      "nonlinear_rtol": 1e-07,
+      "pressure_atol": 1e-13,
+      "pressure_maxiter": 1500,
+      "pressure_tolerance": 1e-11
+    },
+    "timing_samples": 3
+  },
+  "experiment_id": "poiseuille_forward_verification",
+  "git": {
+    "branch": "exp/forward-verification-suite",
+    "commit": "6d660866277e05e052925afe53d5c1c9f20ab70d",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "gradient": {
+    "adjoint_residual": null,
+    "backend": "none",
+    "message": "Canonical forward verification intentionally has no design gradient.",
+    "norm": null,
+    "parameter_names": [],
+    "parameterization": null,
+    "success": false,
+    "taylor_test": null,
+    "values": []
+  },
+  "hardware": {
+    "accelerators": [
+      {
+        "count": 1,
+        "driver": null,
+        "memory_bytes": null,
+        "name": "cpu",
+        "platform": "cpu"
+      }
+    ],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "hostname": "workstation",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155702272,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37"
+  },
+  "memory": {
+    "measurement_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+    "peak_accelerator_bytes": null,
+    "peak_host_bytes": 577204224
+  },
+  "notes": "Issue #5 planar-Poiseuille case; detailed physical metrics are in metrics.json.",
+  "objective": {
+    "name": "poiseuille_velocity_profile_relative_l2_error",
+    "normalization": "continuum profile fixed by configured mean velocity",
+    "units": "dimensionless",
+    "value": 0.006154090757822085
+  },
+  "primal": {
+    "converged": true,
+    "divergence_max": 8.047726104982487e-15,
+    "divergence_rms": 3.21596091722023e-15,
+    "failure_reason": null,
+    "iterations": 1863,
+    "mass_flux_mismatch": 0.0,
+    "residual_norm": 6.951448198437517e-10
+  },
+  "run_id": "cpu-smoke-24x12",
+  "schema_version": "1.0",
+  "software": {
+    "backend": "cpu",
+    "environment_variables": {
+      "JAX_ENABLE_X64": "true",
+      "JAX_PLATFORMS": "cpu"
+    },
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "precision": "float64",
+    "python": "3.11.13",
+    "scipy": "1.16.0"
+  },
+  "timestamps": {
+    "end_utc": "2026-09-01T17:12:07.257768+00:00",
+    "exit_code": 0,
+    "start_utc": "2026-09-01T17:12:04.926125+00:00",
+    "status": "success"
+  },
+  "timing": {
+    "compile_seconds": 0.5077920351177454,
+    "forward_samples_seconds": [
+      0.1969776621554047,
+      0.21458548004738986,
+      0.20748152979649603
+    ],
+    "gradient_samples_seconds": [],
+    "optimizer_step_samples_seconds": []
+  }
+}

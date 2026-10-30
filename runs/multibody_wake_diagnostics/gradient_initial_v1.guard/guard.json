@@ -1,0 +1,40 @@
+{
+  "schema": "wake-hardware-guard-1",
+  "command": [
+    "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+    "/home/user/GeoDiffCFD/jax_cad/tools/run_multibody_wake.py",
+    "--mode",
+    "gradient",
+    "--config",
+    "/home/user/GeoDiffCFD/jax_cad/configs/multibody_wake/coarse_initial.json",
+    "--output-dir",
+    "/home/user/GeoDiffCFD/multibody_wake_20260920/gradient_initial_v1"
+  ],
+  "initial": {
+    "gpu_memory_mib": 15.0,
+    "temperature_c": 49.0,
+    "power_w": 39.33,
+    "cpu_temperature_c": 79.375,
+    "nvme_temperature_c": 48.85,
+    "unix_time": 1789899699.3932471,
+    "available_ram_fraction": 0.6959811077238577,
+    "disk_free_gib": 43.414981842041016,
+    "disk_used_fraction": 0.9726526973466121
+  },
+  "peak_temperatures_memory_and_minimum_reserves": {
+    "gpu_memory_mib": 17293.0,
+    "temperature_c": 62.0,
+    "power_w": 131.49,
+    "cpu_temperature_c": 84.875,
+    "nvme_temperature_c": 53.85,
+    "unix_time": 1789899699.3932471,
+    "available_ram_fraction": 0.6413409871798661,
+    "disk_free_gib": 43.281410217285156,
+    "disk_used_fraction": 0.9727368347455725
+  },
+  "stop_reason": null,
+  "elapsed_seconds": 569.4691709678154,
+  "source_unchanged": true,
+  "exit_code": 0,
+  "paper_eligible": false
+}

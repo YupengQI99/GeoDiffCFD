@@ -1,0 +1,183 @@
+{
+  "artifacts": [
+    {
+      "media_type": "application/json",
+      "path": "config.json",
+      "role": "config",
+      "sha256": "4246227c2996f9f2a78dc8ff4c6d47a7c1bcda523e5847a0e864fab4265c0836"
+    },
+    {
+      "media_type": "application/json",
+      "path": "environment.json",
+      "role": "environment",
+      "sha256": "f7549c5be953323a4e39a9af6f941707949f2b359009fab74f594fad8ec15d5a"
+    },
+    {
+      "media_type": "application/json",
+      "path": "metrics.json",
+      "role": "table",
+      "sha256": "28f638917b32fd38ff03dc6940d3da7ce3e074ccef188e931d69411b0e7f13c9"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "profile.csv",
+      "role": "table",
+      "sha256": "f7332e95f79a1aca077fde8bcbec971081ecc3aad0b7adc694c7c9a682326368"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "residual_history.csv",
+      "role": "residual-history",
+      "sha256": "f98f8b107a4c68e8a887e2ff78046dbf6cdbe4cf7e7dae42f79f5571de40f76e"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stdout.log",
+      "role": "log",
+      "sha256": "28f638917b32fd38ff03dc6940d3da7ce3e074ccef188e931d69411b0e7f13c9"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stderr.log",
+      "role": "log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "command": {
+    "argv": [
+      "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+      "examples/28_poiseuille_verification.py",
+      "--config",
+      "configs/forward_verification/poiseuille_grid_medium.json",
+      "--output-dir",
+      "runs/poiseuille_forward_verification/6d66086/grid-medium-48x24"
+    ],
+    "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+  },
+  "configuration": {
+    "analytical_solution_rescaled_from_numerical_result": false,
+    "case": "planar-poiseuille",
+    "grid": {
+      "lx": 3.0,
+      "ly": 1.0,
+      "nx": 48,
+      "ny": 24
+    },
+    "physics": {
+      "density": 1.0,
+      "mean_velocity": 0.2,
+      "viscosity": 0.05
+    },
+    "reference_comparison": {
+      "boundary_conditions_exact": true,
+      "paper_eligible": true,
+      "quantity_definition_exact": true
+    },
+    "requires_gradient": false,
+    "run_id": "grid-medium-48x24",
+    "schema_version": "forward-verification-config-1.0",
+    "solver": {
+      "dt": 0.002,
+      "include_advection": true,
+      "max_steps": 4000,
+      "nonlinear_atol": 1e-10,
+      "nonlinear_min_steps": 20,
+      "nonlinear_rtol": 1e-07,
+      "pressure_atol": 1e-13,
+      "pressure_maxiter": 2000,
+      "pressure_tolerance": 1e-11
+    },
+    "study": {
+      "level": "medium",
+      "name": "grid-refinement"
+    },
+    "timing_samples": 3
+  },
+  "experiment_id": "poiseuille_forward_verification",
+  "git": {
+    "branch": "exp/forward-verification-suite",
+    "commit": "6d660866277e05e052925afe53d5c1c9f20ab70d",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "gradient": {
+    "adjoint_residual": null,
+    "backend": "none",
+    "message": "Canonical forward verification intentionally has no design gradient.",
+    "norm": null,
+    "parameter_names": [],
+    "parameterization": null,
+    "success": false,
+    "taylor_test": null,
+    "values": []
+  },
+  "hardware": {
+    "accelerators": [
+      {
+        "count": 1,
+        "driver": "575.57.08",
+        "memory_bytes": 25757220864,
+        "name": "NVIDIA GeForce RTX 4090",
+        "platform": "cuda"
+      }
+    ],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "hostname": "workstation",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155702272,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37"
+  },
+  "memory": {
+    "measurement_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; JAX device.memory_stats()['peak_bytes_in_use']",
+    "peak_accelerator_bytes": 750080,
+    "peak_host_bytes": 800718848
+  },
+  "notes": "Issue #5 planar-Poiseuille case; detailed physical metrics are in metrics.json.",
+  "objective": {
+    "name": "poiseuille_velocity_profile_relative_l2_error",
+    "normalization": "continuum profile fixed by configured mean velocity",
+    "units": "dimensionless",
+    "value": 0.0015595219774098962
+  },
+  "primal": {
+    "converged": true,
+    "divergence_max": 1.218297972199865e-14,
+    "divergence_rms": 3.707520003251151e-15,
+    "failure_reason": null,
+    "iterations": 1663,
+    "mass_flux_mismatch": 2.7755575615628914e-16,
+    "residual_norm": 4.937718902770594e-10
+  },
+  "run_id": "grid-medium-48x24",
+  "schema_version": "1.0",
+  "software": {
+    "backend": "gpu",
+    "environment_variables": {
+      "JAX_ENABLE_X64": "true",
+      "JAX_PLATFORMS": "cuda",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+    },
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "precision": "float64",
+    "python": "3.11.13",
+    "scipy": "1.16.0"
+  },
+  "timestamps": {
+    "end_utc": "2026-09-01T16:55:55.913912+00:00",
+    "exit_code": 0,
+    "start_utc": "2026-09-01T16:55:33.695496+00:00",
+    "status": "success"
+  },
+  "timing": {
+    "compile_seconds": 1.0699341071303934,
+    "forward_samples_seconds": [
+      5.778637188021094,
+      5.828364545945078,
+      5.827487407950684
+    ],
+    "gradient_samples_seconds": [],
+    "optimizer_step_samples_seconds": []
+  }
+}

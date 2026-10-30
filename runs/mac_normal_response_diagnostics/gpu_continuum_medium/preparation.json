@@ -1,0 +1,11 @@
+{
+  "basis_bytes": 41764608,
+  "basis_divergence_max": 2.948559805874846e-12,
+  "column_batching": "map",
+  "preparation_seconds": 9.494095396948978,
+  "preparation_staging": "separate-kernels",
+  "pressure_residual_relative_max": 9.991370640605627e-13,
+  "relative_asymmetry": 1.7552972964018915e-13,
+  "relative_minimum_eigenvalue": 0.0011021414311299747,
+  "valid": true
+}

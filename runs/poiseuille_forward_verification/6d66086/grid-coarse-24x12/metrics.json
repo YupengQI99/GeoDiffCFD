@@ -1,0 +1,40 @@
+{
+  "analytical": {
+    "centreline_velocity": 0.30000000000000004,
+    "pressure_gradient": -0.12000000000000002
+  },
+  "case": "planar-poiseuille",
+  "conservation": {
+    "divergence_max": 8.100688581638342e-15,
+    "divergence_rms": 3.2072553546049582e-15,
+    "inlet_flux": 0.2,
+    "outlet_flux": 0.20000000000000007,
+    "relative_mass_flux_mismatch": 2.7755575615628914e-16
+  },
+  "convergence": {
+    "converged": true,
+    "final_residual_max": 2.682467678538636e-09,
+    "final_residual_rms": 6.951448340467345e-10,
+    "initial_residual_rms": 0.007003405500558896,
+    "iterations": 1863
+  },
+  "errors": {
+    "centreline_velocity_relative": 0.013435316572077414,
+    "mean_velocity_relative": 1.3877787807814457e-16,
+    "pressure_gradient_relative": 0.01399342839874598,
+    "velocity_l2_absolute": 0.0013483221783702898,
+    "velocity_l2_relative": 0.0061540907578221,
+    "velocity_linf_absolute": 0.0019472616382899544,
+    "velocity_linf_relative": 0.006536262841812433
+  },
+  "independent_inputs": {
+    "height": 1.0,
+    "mean_velocity": 0.2,
+    "viscosity": 0.05
+  },
+  "numerical": {
+    "centreline_velocity": 0.2959694050283768,
+    "mean_velocity": 0.19999999999999998,
+    "pressure_gradient": -0.1183207885921505
+  }
+}

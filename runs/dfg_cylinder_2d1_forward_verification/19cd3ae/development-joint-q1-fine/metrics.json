@@ -1,0 +1,868 @@
+{
+  "acceptance_observables": {
+    "diagnostic_only": [
+      "metrics.numerical.surface_drag_coefficient",
+      "metrics.numerical.surface_lift_coefficient",
+      "metrics.numerical.dfg_reduced_drag_coefficient",
+      "metrics.numerical.dfg_reduced_lift_coefficient",
+      "metrics.finite_brinkman_discrete_momentum_audit"
+    ],
+    "primary": {
+      "drag_coefficient": "metrics.numerical.brinkman_drag_coefficient",
+      "lift_coefficient": "metrics.numerical.brinkman_lift_coefficient",
+      "normal_surface_slip_rms": "metrics.surface_measurement.normal_surface_slip_rms",
+      "pressure_difference": "metrics.numerical.pressure_difference",
+      "tangential_surface_slip_rms": "metrics.surface_measurement.tangential_surface_slip_rms"
+    },
+    "selection_rule": "frozen before runs; diagnostic estimators cannot replace a failed primary observable"
+  },
+  "case": "dfg-cylinder-2d1-re20",
+  "configuration_schema_version": "forward-verification-config-1.2",
+  "conservation": {
+    "divergence_max": 3.858025010572419e-12,
+    "divergence_rms": 8.253881924117574e-13,
+    "inlet_flux": 0.08200000000000003,
+    "outlet_flux": 0.0820000000000012,
+    "relative_mass_flux_mismatch": 1.421627043727334e-14
+  },
+  "convergence": {
+    "chunked_solve": {
+      "chunk_count": 26,
+      "chunk_steps": 1000,
+      "chunks": [
+        {
+          "converged": false,
+          "first_iteration": 1,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.026648346642341645,
+          "residual_rms_start": 184.61943071320349,
+          "seconds": 139.5173610849888
+        },
+        {
+          "converged": false,
+          "first_iteration": 1001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.013376775030527402,
+          "residual_rms_start": 0.02662662623119251,
+          "seconds": 127.5493641080102
+        },
+        {
+          "converged": false,
+          "first_iteration": 2001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.007793227948888523,
+          "residual_rms_start": 0.01336865491447279,
+          "seconds": 125.85810335900169
+        },
+        {
+          "converged": false,
+          "first_iteration": 3001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.005021329754368275,
+          "residual_rms_start": 0.007789490736233184,
+          "seconds": 124.08527532199514
+        },
+        {
+          "converged": false,
+          "first_iteration": 4001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.0033921083745695325,
+          "residual_rms_start": 0.005019276983184979,
+          "seconds": 125.88773286801006
+        },
+        {
+          "converged": false,
+          "first_iteration": 5001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.0023323579398716507,
+          "residual_rms_start": 0.003390818740782575,
+          "seconds": 124.42032115899201
+        },
+        {
+          "converged": false,
+          "first_iteration": 6001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.001611086931277966,
+          "residual_rms_start": 0.0023314929925599805,
+          "seconds": 122.27118724401225
+        },
+        {
+          "converged": false,
+          "first_iteration": 7001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.001111663636177,
+          "residual_rms_start": 0.0016104911182936751,
+          "seconds": 124.59946782200132
+        },
+        {
+          "converged": false,
+          "first_iteration": 8001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.0007640470233508299,
+          "residual_rms_start": 0.001111249423351599,
+          "seconds": 125.4879793739965
+        },
+        {
+          "converged": false,
+          "first_iteration": 9001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.0005222102450336593,
+          "residual_rms_start": 0.0007637586007865791,
+          "seconds": 125.53667359800602
+        },
+        {
+          "converged": false,
+          "first_iteration": 10001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.00035325358058706653,
+          "residual_rms_start": 0.0005220098314114218,
+          "seconds": 125.7546616269974
+        },
+        {
+          "converged": false,
+          "first_iteration": 11001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.00023490481040421091,
+          "residual_rms_start": 0.000353111884473289,
+          "seconds": 126.26015287799237
+        },
+        {
+          "converged": false,
+          "first_iteration": 12001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.0001529912963531489,
+          "residual_rms_start": 0.00023480783742380854,
+          "seconds": 126.4851787059888
+        },
+        {
+          "converged": false,
+          "first_iteration": 13001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 0.00010368330040340848,
+          "residual_rms_start": 0.00015292434673400438,
+          "seconds": 126.56823833199451
+        },
+        {
+          "converged": false,
+          "first_iteration": 14001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 7.814892255807713e-05,
+          "residual_rms_start": 0.00010364996306752885,
+          "seconds": 126.41641307799728
+        },
+        {
+          "converged": false,
+          "first_iteration": 15001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 5.856761559172145e-05,
+          "residual_rms_start": 7.812783220970759e-05,
+          "seconds": 126.26996280599269
+        },
+        {
+          "converged": false,
+          "first_iteration": 16001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 4.194645856979598e-05,
+          "residual_rms_start": 5.8549332556600304e-05,
+          "seconds": 126.15833562301123
+        },
+        {
+          "converged": false,
+          "first_iteration": 17001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 2.9311256072910825e-05,
+          "residual_rms_start": 4.193173179831563e-05,
+          "seconds": 126.25553595900419
+        },
+        {
+          "converged": false,
+          "first_iteration": 18001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 2.0575087199970367e-05,
+          "residual_rms_start": 2.930070640518704e-05,
+          "seconds": 127.39277819699782
+        },
+        {
+          "converged": false,
+          "first_iteration": 19001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 1.4501457095085283e-05,
+          "residual_rms_start": 2.056792262232358e-05,
+          "seconds": 127.8101649510063
+        },
+        {
+          "converged": false,
+          "first_iteration": 20001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 1.0098223245372472e-05,
+          "residual_rms_start": 1.4496310278994397e-05,
+          "seconds": 127.65502507099882
+        },
+        {
+          "converged": false,
+          "first_iteration": 21001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 6.9979989346847214e-06,
+          "residual_rms_start": 1.0094518011378628e-05,
+          "seconds": 128.69434559000365
+        },
+        {
+          "converged": false,
+          "first_iteration": 22001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 4.859459064938898e-06,
+          "residual_rms_start": 6.995445876455458e-06,
+          "seconds": 128.65297755599022
+        },
+        {
+          "converged": false,
+          "first_iteration": 23001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 3.350013386555038e-06,
+          "residual_rms_start": 4.857676902797045e-06,
+          "seconds": 128.31282166599703
+        },
+        {
+          "converged": false,
+          "first_iteration": 24001,
+          "frozen": false,
+          "iterations": 1000,
+          "residual_rms_end": 2.292784861186445e-06,
+          "residual_rms_start": 3.3487506084884835e-06,
+          "seconds": 128.5454736870015
+        },
+        {
+          "converged": true,
+          "first_iteration": 25001,
+          "frozen": false,
+          "iterations": 459,
+          "residual_rms_end": 1.9266195544411986e-06,
+          "residual_rms_start": 2.2919146798035294e-06,
+          "seconds": 58.8474403010041
+        }
+      ],
+      "freeze_tolerance": 1e-09,
+      "frozen_chunk_restarts": 0,
+      "max_restarts": 3,
+      "threshold": 1.9273191493342808e-06,
+      "wall_seconds": 3233.6197678799945
+    },
+    "converged": true,
+    "final_residual_max": 1.6655290225318573e-05,
+    "final_residual_rms": 1.9266195544412016e-06,
+    "initial_residual_rms": 1.9273191493342807,
+    "iterations": 25459
+  },
+  "finite_brinkman_discrete_momentum_audit": {
+    "boundary_proximity_limitation": "Margins 1/2/3 ensure three nested boxes on the coarsest grid; the control surfaces are not asserted to be remote from the diffuse interface. This audit tests algebraic closure and the reported steady residual only.",
+    "classification": "finite-Brinkman discrete momentum-balance audit; not sharp interface traction",
+    "control_volumes": [
+      {
+        "algebraic_closure": {
+          "x": 9.83105740912856e-19,
+          "y": -1.7348420212983436e-20
+        },
+        "brinkman_volume_reaction": {
+          "captured_force_x": 0.011872008723931907,
+          "captured_force_y": 1.456930232972442e-05,
+          "global_force_x": 0.011872008723931906,
+          "global_force_y": 1.4569302329724453e-05,
+          "uncaptured_force_x": -1.734723475976807e-18,
+          "uncaptured_force_y": 3.218725199566341e-20
+        },
+        "captures_all_strict_nonzero_alpha_face_support": {
+          "both": true,
+          "u": true,
+          "v": true
+        },
+        "flux_decomposition_body_force_sign": {
+          "convective": {
+            "force_x": -0.0007798922529328937,
+            "force_y": -1.2767792342035009e-05
+          },
+          "pressure": {
+            "force_x": 0.009958702048796486,
+            "force_y": 2.2020546058531643e-05
+          },
+          "source": {
+            "force_x": 0.0,
+            "force_y": 0.0
+          },
+          "viscous": {
+            "force_x": 0.00269319892804858,
+            "force_y": 5.3165448855105685e-06
+          }
+        },
+        "indices_inclusive": {
+          "u_momentum": {
+            "i_start": 57,
+            "i_stop": 103,
+            "j_start": 57,
+            "j_stop": 102
+          },
+          "v_momentum": {
+            "i_start": 57,
+            "i_stop": 102,
+            "j_start": 57,
+            "j_stop": 103
+          }
+        },
+        "inferred_brinkman_reaction": {
+          "drag_coefficient": 5.936004361956084,
+          "force_x": 0.011872008723912171,
+          "force_y": 1.4569298602007203e-05,
+          "lift_coefficient": 0.0072846493010035995
+        },
+        "margin_cells_outside_strict_support": 1,
+        "momentum_residual_integral": {
+          "x": 1.9736932091929047e-14,
+          "y": 3.727717200672908e-12
+        },
+        "physical_boundaries": {
+          "u_momentum_dual_rectangle": {
+            "coordinate_definition": "x=[(u_i_start-1/2)dx,(u_i_stop+1/2)dx], y=[u_j_start*dy,(u_j_stop+1)dy]",
+            "x_max": 0.25875,
+            "x_min": 0.14125000000000001,
+            "y_max": 0.2575,
+            "y_min": 0.14250000000000002
+          },
+          "v_momentum_dual_rectangle": {
+            "coordinate_definition": "x=[v_i_start*dx,(v_i_stop+1)dx], y=[(v_j_start-1/2)dy,(v_j_stop+1/2)dy]",
+            "x_max": 0.2575,
+            "x_min": 0.14250000000000002,
+            "y_max": 0.25875,
+            "y_min": 0.14125000000000001
+          }
+        },
+        "relative_algebraic_closure": 8.282154109772436e-17,
+        "relative_algebraic_closure_by_component": {
+          "normalization": "max(abs(global_force_component), 1e-12)",
+          "x": 8.280871112662558e-17,
+          "y": 1.1907516105001814e-15
+        },
+        "relative_cv_volume_closure": 3.139962867367996e-10,
+        "relative_cv_volume_closure_by_component": {
+          "normalization": "max(abs(global_force_component), 1e-12)",
+          "x": 1.6623934032666175e-12,
+          "y": 2.5586106552377586e-07
+        }
+      },
+      {
+        "algebraic_closure": {
+          "x": 1.2299514705324077e-18,
+          "y": -7.69849612869901e-20
+        },
+        "brinkman_volume_reaction": {
+          "captured_force_x": 0.011872008723931906,
+          "captured_force_y": 1.4569302329724466e-05,
+          "global_force_x": 0.011872008723931906,
+          "global_force_y": 1.4569302329724453e-05,
+          "uncaptured_force_x": 0.0,
+          "uncaptured_force_y": -1.3552527156068805e-20
+        },
+        "captures_all_strict_nonzero_alpha_face_support": {
+          "both": true,
+          "u": true,
+          "v": true
+        },
+        "flux_decomposition_body_force_sign": {
+          "convective": {
+            "force_x": -0.0009647244063159177,
+            "force_y": -1.6798481298556796e-05
+          },
+          "pressure": {
+            "force_x": 0.010267742028565015,
+            "force_y": 2.3759949249241423e-05
+          },
+          "source": {
+            "force_x": 0.0,
+            "force_y": 0.0
+          },
+          "viscous": {
+            "force_x": 0.0025689911016494337,
+            "force_y": 7.6078298929544e-06
+          }
+        },
+        "indices_inclusive": {
+          "u_momentum": {
+            "i_start": 56,
+            "i_stop": 104,
+            "j_start": 56,
+            "j_stop": 103
+          },
+          "v_momentum": {
+            "i_start": 56,
+            "i_stop": 103,
+            "j_start": 56,
+            "j_stop": 104
+          }
+        },
+        "inferred_brinkman_reaction": {
+          "drag_coefficient": 5.936004361949263,
+          "force_x": 0.01187200872389853,
+          "force_y": 1.4569297843639027e-05,
+          "lift_coefficient": 0.007284648921819512
+        },
+        "margin_cells_outside_strict_support": 2,
+        "momentum_residual_integral": {
+          "x": 3.33773096292643e-14,
+          "y": 4.486085362772464e-12
+        },
+        "physical_boundaries": {
+          "u_momentum_dual_rectangle": {
+            "coordinate_definition": "x=[(u_i_start-1/2)dx,(u_i_stop+1/2)dx], y=[u_j_start*dy,(u_j_stop+1)dy]",
+            "x_max": 0.26125,
+            "x_min": 0.13875,
+            "y_max": 0.26,
+            "y_min": 0.14
+          },
+          "v_momentum_dual_rectangle": {
+            "coordinate_definition": "x=[v_i_start*dx,(v_i_stop+1)dx], y=[(v_j_start-1/2)dy,(v_j_stop+1/2)dy]",
+            "x_max": 0.26,
+            "x_min": 0.14,
+            "y_max": 0.26125,
+            "y_min": 0.13875
+          }
+        },
+        "relative_algebraic_closure": 1.0380362181006967e-16,
+        "relative_algebraic_closure_by_component": {
+          "normalization": "max(abs(global_force_component), 1e-12)",
+          "x": 1.036009574397498e-16,
+          "y": 5.2840526982492856e-15
+        },
+        "relative_cv_volume_closure": 3.77880973789649e-10,
+        "relative_cv_volume_closure_by_component": {
+          "normalization": "max(abs(global_force_component), 1e-12)",
+          "x": 2.8113254002680603e-12,
+          "y": 3.0791353890740975e-07
+        }
+      },
+      {
+        "algebraic_closure": {
+          "x": 1.691138548693175e-19,
+          "y": -1.570567990613147e-21
+        },
+        "brinkman_volume_reaction": {
+          "captured_force_x": 0.011872008723931907,
+          "captured_force_y": 1.4569302329724354e-05,
+          "global_force_x": 0.011872008723931906,
+          "global_force_y": 1.4569302329724453e-05,
+          "uncaptured_force_x": -1.734723475976807e-18,
+          "uncaptured_force_y": 9.825582188149884e-20
+        },
+        "captures_all_strict_nonzero_alpha_face_support": {
+          "both": true,
+          "u": true,
+          "v": true
+        },
+        "flux_decomposition_body_force_sign": {
+          "convective": {
+            "force_x": -0.0011278156175587445,
+            "force_y": -2.122896436180577e-05
+          },
+          "pressure": {
+            "force_x": 0.010561626203984303,
+            "force_y": 2.620282582979466e-05
+          },
+          "source": {
+            "force_x": 0.0,
+            "force_y": 0.0
+          },
+          "viscous": {
+            "force_x": 0.0024381981374547324,
+            "force_y": 9.595435598746811e-06
+          }
+        },
+        "indices_inclusive": {
+          "u_momentum": {
+            "i_start": 55,
+            "i_stop": 105,
+            "j_start": 55,
+            "j_stop": 104
+          },
+          "v_momentum": {
+            "i_start": 55,
+            "i_stop": 104,
+            "j_start": 55,
+            "j_stop": 105
+          }
+        },
+        "inferred_brinkman_reaction": {
+          "drag_coefficient": 5.936004361940144,
+          "force_x": 0.01187200872388029,
+          "force_y": 1.45692970667357e-05,
+          "lift_coefficient": 0.007284648533367848
+        },
+        "margin_cells_outside_strict_support": 3,
+        "momentum_residual_integral": {
+          "x": 5.1616866141544764e-14,
+          "y": 5.262988653409274e-12
+        },
+        "physical_boundaries": {
+          "u_momentum_dual_rectangle": {
+            "coordinate_definition": "x=[(u_i_start-1/2)dx,(u_i_stop+1/2)dx], y=[u_j_start*dy,(u_j_stop+1)dy]",
+            "x_max": 0.26375,
+            "x_min": 0.13625,
+            "y_max": 0.2625,
+            "y_min": 0.1375
+          },
+          "v_momentum_dual_rectangle": {
+            "coordinate_definition": "x=[v_i_start*dx,(v_i_stop+1)dx], y=[(v_j_start-1/2)dy,(v_j_stop+1/2)dy]",
+            "x_max": 0.2625,
+            "x_min": 0.1375,
+            "y_max": 0.26375,
+            "y_min": 0.13625
+          }
+        },
+        "relative_algebraic_closure": 1.4245358495206686e-17,
+        "relative_algebraic_closure_by_component": {
+          "normalization": "max(abs(global_force_component), 1e-12)",
+          "x": 1.4244754935903423e-17,
+          "y": 1.0779980777863719e-16
+        },
+        "relative_cv_volume_closure": 4.433316992172322e-10,
+        "relative_cv_volume_closure_by_component": {
+          "normalization": "max(abs(global_force_component), 1e-12)",
+          "x": 4.347764411901047e-12,
+          "y": 3.6123820728479453e-07
+        }
+      }
+    ],
+    "discrete_identities": {
+      "algebraic_closure": "inferred reaction - captured Brinkman volume reaction + momentum residual integral",
+      "componentwise_normalization": "absolute component error / max(abs(global force component), 1e-12); this is the protocol gate and does not let drag mask a small or zero lift",
+      "flux_balance": "inferred reaction = source + convective + pressure + viscous contributions, with every contribution reported in the body-force sign convention",
+      "relative_cv_volume_closure": "L2 norm(inferred reaction - captured volume reaction) / max(L2 norm(global Brinkman volume reaction), 1e-12)",
+      "residual_balance": "inferred reaction = captured Brinkman volume reaction - momentum residual integral"
+    },
+    "strict_nonzero_alpha_face_support": {
+      "u": {
+        "i_start": 58,
+        "i_stop": 102,
+        "j_start": 58,
+        "j_stop": 101,
+        "nonzero_face_count": 1604
+      },
+      "v": {
+        "i_start": 58,
+        "i_stop": 101,
+        "j_start": 58,
+        "j_stop": 102,
+        "nonzero_face_count": 1604
+      }
+    },
+    "strict_nonzero_support_definition": "alpha_face != 0.0",
+    "summary": {
+      "component_coefficient_spans_classification": "diagnostic only; not the vector-force spread protocol gate",
+      "control_volume_count": 3,
+      "drag_coefficient_spread": 1.5940138098358148e-11,
+      "global_brinkman_drag_coefficient": 5.936004361965951,
+      "global_brinkman_lift_coefficient": 0.007284651164862225,
+      "lift_coefficient_spread": 7.676357518388022e-10,
+      "maximum_relative_algebraic_closure": 1.0380362181006967e-16,
+      "maximum_relative_algebraic_closure_by_component": {
+        "x": 1.036009574397498e-16,
+        "y": 5.2840526982492856e-15
+      },
+      "maximum_relative_cv_volume_closure": 4.433316992172322e-10,
+      "maximum_relative_cv_volume_closure_by_component": {
+        "x": 4.347764411901047e-12,
+        "y": 3.6123820728479453e-07
+      },
+      "normalized_drag_coefficient_spread": 2.6853312643252368e-12,
+      "normalized_lift_coefficient_spread": 1.0537714634044806e-07,
+      "vector_force_spread": 1.5356024778902658e-12,
+      "vector_force_spread_normalization": "max pairwise L2 inferred-force difference / max(L2 global Brinkman force, 1e-12); protocol gate",
+      "vector_force_spread_normalized": 1.293463774564466e-10
+    }
+  },
+  "immersed_boundary": {
+    "alpha_max": 160.0,
+    "alpha_max_h_squared_over_nu": 1.0,
+    "delta_b_over_h": 1.0,
+    "diameter_over_h": 40.0,
+    "diffuse_transition_thickness_over_diameter": 0.075,
+    "epsilon": 0.00375,
+    "epsilon_over_h": 1.5,
+    "h_reference": 0.0025,
+    "mask_midpoint_shift": 0.0019524758349871263,
+    "mask_midpoint_shift_over_h": 0.7809903339948505,
+    "mask_shift_sign": "positive expands the penalised mask into nominal fluid",
+    "material_mapping": "compact-cosine-heaviside",
+    "minimum_nominal_pure_fluid_signed_distance": 0.005702475834987127,
+    "minimum_nominal_pure_fluid_signed_distance_over_h": 2.2809903339948505,
+    "penalisation_length": 0.0025,
+    "penalisation_length_over_h": 1.0,
+    "phase_lock": {
+      "cylinder_centre_over_h": [
+        80.0,
+        80.0
+      ],
+      "cylinder_radius_over_h": 20.0,
+      "dx_over_h": 1.0,
+      "dy_over_h": 1.0
+    },
+    "reaction_definition": "specific force: volume integral of alpha_face * velocity_face",
+    "reference_free_calibration": {
+      "application": "calibrated-root",
+      "bracket_over_h": [
+        -2.0,
+        3.0
+      ],
+      "calibrated_root_over_h": 0.7809903339948505,
+      "cell_centre_phase_over_h": 0.5,
+      "displacement_tolerance_over_h": 1e-10,
+      "far_field_fit_cells": 16,
+      "fluid_cells": 64,
+      "iterations": 32,
+      "max_iterations": 80,
+      "method": "one-dimensional-steady-planar-tangential-shear-zero-displacement",
+      "reference_data": "none",
+      "root_displacement_over_h": 3.8912760233010544e-11,
+      "sampling": "tangential-cell",
+      "shift_tolerance_over_h": 1e-12,
+      "solid_cells": 64,
+      "tool": "tools/calibrate_brinkman_mask.py",
+      "unshifted_displacement_over_h": 0.7776123743802338
+    }
+  },
+  "numerical": {
+    "brinkman_drag_coefficient": 5.936004361965951,
+    "brinkman_force_x": 0.011872008723931906,
+    "brinkman_force_y": 1.4569302329724453e-05,
+    "brinkman_lift_coefficient": 0.007284651164862225,
+    "dfg_reduced_drag_coefficient": 4.656944030172296,
+    "dfg_reduced_lift_coefficient": 0.004974453952664862,
+    "discrete_inlet_mean_velocity": 0.2000000000000001,
+    "pressure_difference": 0.116612537571098,
+    "pressure_front": 0.13026016512799476,
+    "pressure_rear": 0.013647627556896757,
+    "recirculation_length_from_cylinder_rear": 0.08637748186222421,
+    "surface_drag_coefficient": 4.882871088317384,
+    "surface_lift_coefficient": 0.005504616000602452
+  },
+  "original_interval_membership_development_only": {
+    "brinkman_drag_coefficient": false,
+    "brinkman_lift_coefficient": false,
+    "dfg_reduced_drag_coefficient": false,
+    "dfg_reduced_lift_coefficient": false,
+    "pressure_difference": false,
+    "recirculation_length": false,
+    "surface_drag_coefficient": false,
+    "surface_lift_coefficient": false
+  },
+  "reference": {
+    "drag_coefficient": 5.57953523384,
+    "high_precision_source": "Nabh (1998), high-order numerical reference",
+    "lift_coefficient": 0.010618948146,
+    "original_doi": "10.1007/978-3-322-89849-4_39",
+    "original_intervals": {
+      "drag_coefficient": [
+        5.57,
+        5.59
+      ],
+      "lift_coefficient": [
+        0.0104,
+        0.011
+      ],
+      "pressure_difference": [
+        0.1172,
+        0.1176
+      ],
+      "recirculation_length": [
+        0.0842,
+        0.0852
+      ]
+    },
+    "pressure_difference": 0.11752016697,
+    "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html"
+  },
+  "relative_errors": {
+    "brinkman_drag_coefficient": 0.06388867767407552,
+    "brinkman_lift_coefficient": 0.31399503371656967,
+    "dfg_reduced_drag_coefficient": 0.16535269785056084,
+    "dfg_reduced_lift_coefficient": 0.5315492754770946,
+    "pressure_difference": 0.007723179963943526,
+    "surface_drag_coefficient": 0.12486060510870738,
+    "surface_lift_coefficient": 0.4816232337780123
+  },
+  "stability": {
+    "all_within_configured_limits": true,
+    "alpha_max_times_dt": 0.1,
+    "c_adv": 0.14469200184292372,
+    "c_diff": 0.2,
+    "configured_limits": {
+      "alpha_max_times_dt_max": 0.2,
+      "c_adv_max": 0.75,
+      "c_diff_max": 0.200000000001
+    },
+    "definitions": {
+      "alpha_max_times_dt": "alpha_max*dt",
+      "c_adv": "dt*(max_abs_u/dx + max_abs_v/dy)",
+      "c_diff": "nu*dt*(1/dx^2 + 1/dy^2)"
+    },
+    "max_abs_u": 0.38949928093940195,
+    "max_abs_v": 0.18926872643229295,
+    "within_configured_limits": {
+      "alpha_max_times_dt": true,
+      "c_adv": true,
+      "c_diff": true
+    }
+  },
+  "surface_measurement": {
+    "base_quadrature_points": 256,
+    "configured_density": 1.0,
+    "dfg_reduced_definition": "sharp-no-slip-limit DFG tangential-derivative formula, with the finite-field normal derivative omitted",
+    "dfg_reduced_drag_coefficient": 4.656944030172296,
+    "dfg_reduced_lift_coefficient": 0.004974453952664862,
+    "drag_coefficient": 4.882871088317384,
+    "drag_quadrature_absolute_difference": 9.338637842137842e-05,
+    "force_definition": "finite-Brinkman full specific traction: integral of (nu grad(u) - p I) n over the nominal circle",
+    "force_x": 0.00976574217663477,
+    "force_y": 1.1009232001204907e-05,
+    "full_minus_dfg_reduced_drag_coefficient": 0.2259270581450883,
+    "full_minus_dfg_reduced_lift_coefficient": 0.0005301620479375895,
+    "lift_coefficient": 0.005504616000602452,
+    "lift_quadrature_absolute_difference": 2.472442101426539e-06,
+    "maximum_normal_surface_slip": 0.014266425533399216,
+    "maximum_tangential_surface_slip": 0.15794709900985915,
+    "minimum_interpolation_node_signed_distance": 0.008000538790600892,
+    "minimum_stencil_signed_distance": 0.007254912452993922,
+    "minimum_velocity_alpha_support_signed_distance": 0.007254912452993922,
+    "normal": "cylinder-outward-into-fluid",
+    "normal_fit_rms": 9.911988494436773e-05,
+    "normal_surface_slip_rms": 0.00763186526601062,
+    "offset_drag_coefficient_span": 0.0798705938196429,
+    "offset_lift_coefficient_span": 0.00039926807856012145,
+    "offset_pressure_difference_span": 8.466297379328136e-06,
+    "offset_sensitivity": [
+      {
+        "dfg_reduced_drag_coefficient": 4.656944030172296,
+        "dfg_reduced_lift_coefficient": 0.004974453952664862,
+        "drag_coefficient": 4.882871088317384,
+        "lift_coefficient": 0.005504616000602452,
+        "offsets_over_h": [
+          4.5,
+          4.8,
+          5.1,
+          5.4,
+          5.7
+        ],
+        "pressure_difference": 0.116612537571098,
+        "shift_over_h": 0.0
+      },
+      {
+        "dfg_reduced_drag_coefficient": 4.611644941261482,
+        "dfg_reduced_lift_coefficient": 0.004763065635709153,
+        "drag_coefficient": 4.841816601002676,
+        "lift_coefficient": 0.005315696671415622,
+        "offsets_over_h": [
+          4.8,
+          5.1,
+          5.3999999999999995,
+          5.7,
+          6.0
+        ],
+        "pressure_difference": 0.11660870691851344,
+        "shift_over_h": 0.3
+      },
+      {
+        "dfg_reduced_drag_coefficient": 4.569194897411559,
+        "dfg_reduced_lift_coefficient": 0.004529804980559812,
+        "drag_coefficient": 4.803000494497741,
+        "lift_coefficient": 0.00510534792204233,
+        "offsets_over_h": [
+          5.1,
+          5.3999999999999995,
+          5.699999999999999,
+          6.0,
+          6.3
+        ],
+        "pressure_difference": 0.11660407127371868,
+        "shift_over_h": 0.6
+      }
+    ],
+    "offsets_over_h": [
+      4.5,
+      4.8,
+      5.1,
+      5.4,
+      5.7
+    ],
+    "polynomial_degree_drag_coefficient_span": 0.6276014594591253,
+    "polynomial_degree_lift_coefficient_span": 0.0011247939415118544,
+    "polynomial_degree_pressure_difference_span": 2.2761848686436714e-05,
+    "polynomial_degree_sensitivity": [
+      {
+        "degree": 1,
+        "dfg_reduced_drag_coefficient": 4.656944030172296,
+        "dfg_reduced_lift_coefficient": 0.004974453952664862,
+        "full_drag_coefficient": 4.882871088317384,
+        "full_lift_coefficient": 0.005504616000602452,
+        "pressure_difference": 0.116612537571098,
+        "pressure_fit_condition_number": 24.223645460570054,
+        "pressure_value_weight_l1": 10.39999999999998,
+        "velocity_derivative_weight_l1_normalized": 11.399999999999984,
+        "velocity_fit_condition_number": 24.223645460570054,
+        "velocity_value_weight_l1": 10.39999999999998
+      },
+      {
+        "degree": 2,
+        "dfg_reduced_drag_coefficient": 5.360553686500406,
+        "dfg_reduced_lift_coefficient": 0.006482863952958689,
+        "full_drag_coefficient": 5.5104725477765095,
+        "full_lift_coefficient": 0.006629409942114306,
+        "pressure_difference": 0.11663529941978444,
+        "pressure_fit_condition_number": 744.7821486504748,
+        "pressure_value_weight_l1": 163.79999999999683,
+        "velocity_derivative_weight_l1_normalized": 369.14285714285046,
+        "velocity_fit_condition_number": 744.7821486504748,
+        "velocity_value_weight_l1": 163.79999999999683
+      }
+    ],
+    "pressure_and_force_units": "kinematic, per unit density",
+    "pressure_drag_coefficient": 3.826518248352922,
+    "pressure_fit_condition_number": 24.223645460570054,
+    "pressure_fit_rms": 1.042126858254001e-05,
+    "pressure_force_x": 0.007653036496705846,
+    "pressure_force_y": 4.1097268827568e-06,
+    "pressure_lift_coefficient": 0.0020548634413783996,
+    "pressure_value_weight_l1": 10.39999999999998,
+    "reported_quadrature_points": 512,
+    "required_minimum_stencil_signed_distance": 0.005702475834987127,
+    "tangential_fit_rms": 0.0003193144555870532,
+    "tangential_surface_slip_rms": 0.08442477342613969,
+    "trace_method": "pure-fluid-stencil-radial-polynomial",
+    "velocity_derivative_weight_l1_normalized": 11.399999999999984,
+    "velocity_fit_condition_number": 24.223645460570054,
+    "velocity_value_weight_l1": 10.39999999999998,
+    "viscous_drag_coefficient": 1.056352839964462,
+    "viscous_force_x": 0.0021127056799289242,
+    "viscous_force_y": 6.899505118448107e-06,
+    "viscous_lift_coefficient": 0.0034497525592240524
+  }
+}

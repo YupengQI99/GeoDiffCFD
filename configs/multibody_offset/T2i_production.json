@@ -1,0 +1,11 @@
+{
+  "schema": "multibody-calibrated-offset-sensitivity-20260928-1",
+  "paper_eligible": false,
+  "case": "T2i",
+  "shape": "initial",
+  "phase": "production",
+  "wall_shift": 0.003102,
+  "normalize_level_set": false,
+  "anchor_sha256": "911134bb4a9ea3546865103c6d63fc17bef64a1a3744b7d402a90bb2986f3a14",
+  "final_sha256": "f44a8576610f36435c00e6c7505d0db3099abf5bdc9994a2067f50786348c89c"
+}

@@ -1,0 +1,21 @@
+{
+  "basis_bytes": 166657536,
+  "basis_divergence_max": 2.5122126601218042e-12,
+  "column_batching": "map",
+  "kernel_ratio": 2,
+  "kernel_widths": [
+    0.005,
+    0.005
+  ],
+  "manufactured_pressure_preflight": {
+    "max_fresh_relative_residual": 2.728532760361305e-14,
+    "max_relative_solution_error": 5.532611425488385e-14
+  },
+  "preparation_seconds": 9.373296641046181,
+  "preparation_staging": "separate-kernels",
+  "pressure_preconditioner": "constant-poisson-dct",
+  "pressure_residual_relative_max": 1.2479107561232578e-13,
+  "relative_asymmetry": 9.112502419306166e-15,
+  "relative_minimum_eigenvalue": 0.000491379726317582,
+  "valid": true
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "dolfinx-finite-brinkman-config-1.0",
+  "case": "dfg-cylinder-2d1-finite-brinkman",
+  "run_id": "finite-brinkman-q0p75-local3",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p75.json",
+  "source_config_sha256": "ae4b98c0805cd58fff61ee2da17cca5d6a5c391a2e10f87e1411c466007e8a59",
+  "mesh": {
+    "nx": 220,
+    "ny": 41,
+    "diagonal": "right",
+    "local_refinements": 3
+  },
+  "quadrature_degree": 10,
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8",
+    "expected_versions": {
+      "dolfinx": "0.11.0.post0",
+      "gmsh": "4.15.2",
+      "petsc4py": "3.25.1"
+    }
+  },
+  "advection_form": "advective"
+}

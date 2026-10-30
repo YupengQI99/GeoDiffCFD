@@ -1,0 +1,17 @@
+{
+  "medium_candidate_v1.guard/hardware.csv": "c500b5ec8062fb878a10b4d3b7123daeebd07a813ec4fb5ad50a3e2b6892fd9b",
+  "medium_candidate_v1.guard/source.json": "3007b99ab300e4dcce857aaf8ad78ad1fe9aa57624b10544386c489df5aab425",
+  "medium_candidate_v1.guard/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "medium_candidate_v1.guard/stdout.log": "a95616837d90b78f6a7e74c984183a3e75df4a42c1dadd07dac3090e4ea0ad7b",
+  "medium_candidate_v1.guard/guard.json": "3ba15143789351e1838ccb18267476d9855b201b08c232aa15a0dae03aff28da",
+  "medium_candidate_v1.guard/config.json": "65f143d55317e3808034a46632ceb2aaf8e71aa938d151f23d14d5dac264cd51",
+  "medium_candidate_v1/result.json": "793f223d83a5680aaa4fc7ccacd3dde6efb983579f8062e2719432ac8ea96c7a",
+  "medium_candidate_v1/geometry_envelope.json": "0941b18aade54e6052c749e378bfb309862a21329d415243eaea9b20bcddd960",
+  "medium_candidate_v1/progress.json": "5f30c6f05cdfa40c8e3d639a171e5ad1d666565adc71c4749b1bbaadd4bdd5f3",
+  "medium_candidate_v1/evaluations.json": "fa78ede27c73f747af2f6eb6de59befcd0d5d29b0e403e275b5bc7b7cf08bbec",
+  "medium_candidate_v1/config.json": "65f143d55317e3808034a46632ceb2aaf8e71aa938d151f23d14d5dac264cd51",
+  "medium_candidate_v1/environment.json": "5187b226ea910b0a083e8176314c5419d77750ae03798b7dbff586f55ad6107f",
+  "medium_candidate_v1/evaluation-000/fields.npz": "3c2525800ffa9e67222e1a1000afca175cb6fc85be85de9f56db60666ca1284b",
+  "medium_candidate_v1/evaluation-000/metrics.json": "73bcb97b3b4a83edd2fc5d64b0dad7404208edf201de7facd30c6047d9d5e4ea",
+  "medium_candidate_v1/evaluation-000/history.csv": "62945ef5d3c38b5052b81e040e1b76cfc9c0d2b8f72b9e826e44c5ef5162c9a7"
+}

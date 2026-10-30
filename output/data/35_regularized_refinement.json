@@ -1,0 +1,2020 @@
+{
+  "alpha_max": [
+    600.0,
+    2400.0,
+    9600.0
+  ],
+  "alpha_max_by_level": {
+    "coarse": [
+      600.0,
+      2400.0,
+      9600.0
+    ],
+    "fine": [
+      600.0,
+      2400.0,
+      9600.0
+    ],
+    "finest": [
+      600.0
+    ],
+    "medium": [
+      600.0,
+      2400.0,
+      9600.0
+    ]
+  },
+  "claim": "At fixed interface width and penalization the converged objective and its native-geometry derivative converge under grid refinement; the regularization limit is estimated separately on the finest grid.",
+  "entries": [
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.19999999999999998,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.38951992606630154,
+      "dt": 0.0015,
+      "epsilon": 0.075,
+      "epsilon_over_h": 1.4999999999999998,
+      "first_call_seconds_including_compile": 5.342001796001568,
+      "gradient": [
+        -1.100708384588633,
+        -0.02634102984947806,
+        0.5042557395488549,
+        0.007813742089887655,
+        0.014701565819720756,
+        -0.11151270632490569,
+        -0.000873289562904549,
+        0.11978746710413064
+      ],
+      "gradient_norm": 1.2221246756407462,
+      "h": 0.05,
+      "level": "coarse",
+      "mean_streamwise_velocity": 0.4436070399311355,
+      "nx": 32,
+      "ny": 20,
+      "objective": -0.4436070399311355,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 2.707995307298792e-11,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489257976293602,
+      "smoothed_solid_area_relative_error": 0.01187030482368808,
+      "steady_residual_max": 7.298499998809049e-11,
+      "steady_residual_rms": 2.2113910718042545e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 1.756181906996062
+    },
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.19999999999999998,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.44195171536514577,
+      "dt": 0.0015,
+      "epsilon": 0.075,
+      "epsilon_over_h": 1.4999999999999998,
+      "first_call_seconds_including_compile": 1.7589348100009374,
+      "gradient": [
+        -0.8144254906225844,
+        -0.015153812501666915,
+        0.030065856646688635,
+        0.008712875465693999,
+        -0.03581633995732804,
+        -0.2203662811185335,
+        -0.026614581638977727,
+        0.28572157655029884
+      ],
+      "gradient_norm": 0.8925736110081399,
+      "h": 0.05,
+      "level": "coarse",
+      "mean_streamwise_velocity": 0.5823657727098882,
+      "nx": 32,
+      "ny": 20,
+      "objective": -0.5823657727098882,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 3.892013501253313e-11,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.2149145738538365,
+      "smoothed_solid_area_relative_error": 0.01197386897415032,
+      "steady_residual_max": 1.0815186246571074e-10,
+      "steady_residual_rms": 3.1786095546544955e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 1.77501894600573
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.06666666666666667,
+      "brinkman_layer_over_h": 0.09999999999999999,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.35635204498867273,
+      "dt": 0.0015,
+      "epsilon": 0.075,
+      "epsilon_over_h": 1.4999999999999998,
+      "first_call_seconds_including_compile": 8.771550974008278,
+      "gradient": [
+        -0.8452743783233718,
+        -0.026462169602396585,
+        0.34999053821074533,
+        0.025297663416224185,
+        0.04524726850126359,
+        -0.1883912953066837,
+        -0.016055408721222172,
+        0.1879773924831502
+      ],
+      "gradient_norm": 0.9547011267247576,
+      "h": 0.05,
+      "level": "coarse",
+      "mean_streamwise_velocity": 0.35888326894844225,
+      "nx": 32,
+      "ny": 20,
+      "objective": -0.35888326894844225,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 3.728872026226986e-13,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489257976293602,
+      "smoothed_solid_area_relative_error": 0.01187030482368808,
+      "steady_residual_max": 2.301375756630364e-11,
+      "steady_residual_rms": 5.735012183716092e-12,
+      "study": "fixed_regularization",
+      "taylor_test": {
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.0215398132251923,
+          2.0267874529882492,
+          2.017394722245801
+        ],
+        "first_order_remainders": [
+          6.443730602936903e-05,
+          1.587059664535928e-05,
+          3.89465897526059e-06,
+          9.6199565707486e-07
+        ],
+        "zero_order_rates": [
+          0.9831695870421203,
+          0.9917522410404763,
+          0.9959945121758127
+        ]
+      },
+      "warm_value_and_grad_seconds": 0.918369058999815
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.06666666666666667,
+      "brinkman_layer_over_h": 0.09999999999999999,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.49809757392919357,
+      "dt": 0.0015,
+      "epsilon": 0.075,
+      "epsilon_over_h": 1.4999999999999998,
+      "first_call_seconds_including_compile": 0.8937105329969199,
+      "gradient": [
+        -0.8593696888670084,
+        -0.012723586637346533,
+        0.16294879523649103,
+        0.027394886677974937,
+        -0.0550355856883892,
+        -0.477485504904418,
+        -0.019021745476772454,
+        0.4970188926777709
+      ],
+      "gradient_norm": 1.115523137837549,
+      "h": 0.05,
+      "level": "coarse",
+      "mean_streamwise_velocity": 0.5009064591199565,
+      "nx": 32,
+      "ny": 20,
+      "objective": -0.5009064591199565,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 1.7179033996730105e-13,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.2149145738538365,
+      "smoothed_solid_area_relative_error": 0.01197386897415032,
+      "steady_residual_max": 1.0101225411673909e-11,
+      "steady_residual_rms": 2.6187351118261707e-12,
+      "study": "fixed_regularization",
+      "taylor_test": {
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          1.8921115484638096,
+          1.958556456928552,
+          1.981388625061289
+        ],
+        "first_order_remainders": [
+          6.698176925840332e-05,
+          1.804572287059233e-05,
+          4.642907612165776e-06,
+          1.1757977712651335e-06
+        ],
+        "zero_order_rates": [
+          0.9886695191554381,
+          0.9936131099654447,
+          0.9966700180991703
+        ]
+      },
+      "warm_value_and_grad_seconds": 0.8902739970071707
+    },
+    {
+      "alpha_max": 9600.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.049999999999999996,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.3111761468606926,
+      "dt": 0.0015,
+      "epsilon": 0.075,
+      "epsilon_over_h": 1.4999999999999998,
+      "first_call_seconds_including_compile": 8.208985281991772,
+      "gradient": [
+        -0.5397813694255021,
+        0.021731650256807712,
+        0.10409076724247845,
+        0.0630030561552881,
+        0.07463330809413593,
+        -0.12851442982469577,
+        -0.05598195314488433,
+        0.1258104931843513
+      ],
+      "gradient_norm": 0.5896514334208266,
+      "h": 0.05,
+      "level": "coarse",
+      "mean_streamwise_velocity": 0.31263008283870397,
+      "nx": 32,
+      "ny": 20,
+      "objective": -0.31263008283870397,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 6.004817683035953e-13,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489257976293602,
+      "smoothed_solid_area_relative_error": 0.01187030482368808,
+      "steady_residual_max": 3.8546124625504774e-11,
+      "steady_residual_rms": 9.342546754865808e-12,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 1.5711516000010306
+    },
+    {
+      "alpha_max": 9600.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.049999999999999996,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.6736787624962753,
+      "dt": 0.0015,
+      "epsilon": 0.075,
+      "epsilon_over_h": 1.4999999999999998,
+      "first_call_seconds_including_compile": 1.5425660780019825,
+      "gradient": [
+        -1.1569415666906038,
+        0.009612160746421886,
+        0.4595378426958505,
+        0.05111375452975639,
+        -0.030188315590677525,
+        -0.8448982055406614,
+        0.07886679410565502,
+        0.8189717117506942
+      ],
+      "gradient_norm": 1.7158358823403845,
+      "h": 0.05,
+      "level": "coarse",
+      "mean_streamwise_velocity": 0.4497313843657169,
+      "nx": 32,
+      "ny": 20,
+      "objective": -0.4497313843657169,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 1.0768307089684832e-12,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.2149145738538365,
+      "smoothed_solid_area_relative_error": 0.01197386897415032,
+      "steady_residual_max": 5.97278337899354e-11,
+      "steady_residual_rms": 1.6525586586828475e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 1.5366395129967714
+    },
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.349174530308792,
+      "dt": 0.000375,
+      "epsilon": 0.075,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 11.776949332997901,
+      "gradient": [
+        -0.9530014786817409,
+        0.000686221170925122,
+        0.3334938283641138,
+        -0.0003380883441499172,
+        -0.001121170661674914,
+        -0.013412994113658068,
+        0.0003740260995675343,
+        0.015449043597279
+      ],
+      "gradient_norm": 1.0098764852238618,
+      "h": 0.025,
+      "level": "medium",
+      "mean_streamwise_velocity": 0.45142332793270595,
+      "nx": 64,
+      "ny": 40,
+      "objective": -0.45142332793270595,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 8.334792899998344e-12,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489262167021864,
+      "smoothed_solid_area_relative_error": 0.011870502153604646,
+      "steady_residual_max": 4.431921496461655e-11,
+      "steady_residual_rms": 6.810612960658206e-12,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 8.848548951995326
+    },
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.49158685118020484,
+      "dt": 0.000375,
+      "epsilon": 0.075,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 8.979410428000847,
+      "gradient": [
+        -1.0207631405221427,
+        0.00020930022022815076,
+        0.15670945634751207,
+        0.0006813970623232614,
+        6.112736979966421e-05,
+        -0.14270093568847048,
+        0.0002648862363308774,
+        0.2107689818305985
+      ],
+      "gradient_norm": 1.0636272587309168,
+      "h": 0.025,
+      "level": "medium",
+      "mean_streamwise_velocity": 0.5849063975819184,
+      "nx": 64,
+      "ny": 40,
+      "objective": -0.5849063975819184,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 1.2938923621988092e-11,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.21489590181295398,
+      "smoothed_solid_area_relative_error": 0.01188594744740279,
+      "steady_residual_max": 5.645484080218921e-11,
+      "steady_residual_rms": 1.0572359952322963e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 8.567606744996738
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.06666666666666667,
+      "brinkman_layer_over_h": 0.19999999999999998,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.3188886924408796,
+      "dt": 0.000375,
+      "epsilon": 0.075,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 13.279607466000016,
+      "gradient": [
+        -0.879055127801893,
+        0.0012830677176702415,
+        0.35356575175981664,
+        -0.0008022837924227949,
+        -0.002355677686656541,
+        -0.04357821502886304,
+        0.0008993141300536397,
+        0.046288972533118575
+      ],
+      "gradient_norm": 0.9496299470008724,
+      "h": 0.025,
+      "level": "medium",
+      "mean_streamwise_velocity": 0.37157363274549843,
+      "nx": 64,
+      "ny": 40,
+      "objective": -0.37157363274549843,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 7.866436890707519e-13,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489262167021864,
+      "smoothed_solid_area_relative_error": 0.011870502153604646,
+      "steady_residual_max": 8.472045287533092e-11,
+      "steady_residual_rms": 2.3701935793596464e-11,
+      "study": "fixed_regularization",
+      "taylor_test": {
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.0223818732819696,
+          2.0171432451934703,
+          2.0100258089592855
+        ],
+        "first_order_remainders": [
+          8.458616843263394e-05,
+          2.0821007772221312e-05,
+          5.14376505796933e-06,
+          1.277035773722629e-06
+        ],
+        "zero_order_rates": [
+          0.9750976816643061,
+          0.9879391440924659,
+          0.9941063647116406
+        ]
+      },
+      "warm_value_and_grad_seconds": 4.437117938010488
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.06666666666666667,
+      "brinkman_layer_over_h": 0.19999999999999998,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.4411408140438815,
+      "dt": 0.000375,
+      "epsilon": 0.075,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 5.350272897994728,
+      "gradient": [
+        -0.9619263502529535,
+        0.0003505599483902694,
+        0.19528530242327038,
+        0.0011425738087209002,
+        -2.0576831798332917e-05,
+        -0.11223383631380404,
+        0.00047736205477719174,
+        0.18372466942888213
+      ],
+      "gradient_norm": 1.004883822881583,
+      "h": 0.025,
+      "level": "medium",
+      "mean_streamwise_velocity": 0.4937355850051523,
+      "nx": 64,
+      "ny": 40,
+      "objective": -0.4937355850051523,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 5.529146536407515e-13,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.21489590181295398,
+      "smoothed_solid_area_relative_error": 0.01188594744740279,
+      "steady_residual_max": 5.785516510314892e-11,
+      "steady_residual_rms": 1.608201551476035e-11,
+      "study": "fixed_regularization",
+      "taylor_test": {
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.03625759038479,
+          2.0240572012671354,
+          2.013476826238912
+        ],
+        "first_order_remainders": [
+          8.865329733274757e-05,
+          2.1613260084033274e-05,
+          5.313960832916006e-06,
+          1.316138001193005e-06
+        ],
+        "zero_order_rates": [
+          0.9810758317868743,
+          0.990935621905689,
+          0.9955951053993831
+        ]
+      },
+      "warm_value_and_grad_seconds": 5.349606208008481
+    },
+    {
+      "alpha_max": 9600.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.09999999999999999,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.3191359139669438,
+      "dt": 0.000375,
+      "epsilon": 0.075,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 25.450894936991972,
+      "gradient": [
+        -0.8018585964701967,
+        0.002699944741188433,
+        0.3403294686061983,
+        -0.0018696569282599176,
+        -0.004873325167517463,
+        -0.13477300500669867,
+        0.0020124359661054317,
+        0.13478233212365295
+      ],
+      "gradient_norm": 0.8917230401764318,
+      "h": 0.025,
+      "level": "medium",
+      "mean_streamwise_velocity": 0.3219786666750556,
+      "nx": 64,
+      "ny": 40,
+      "objective": -0.3219786666750556,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 3.194866374861957e-12,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489262167021864,
+      "smoothed_solid_area_relative_error": 0.011870502153604646,
+      "steady_residual_max": 3.0280910418012397e-10,
+      "steady_residual_rms": 9.776492224525713e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 9.705480417003855
+    },
+    {
+      "alpha_max": 9600.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.09999999999999999,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.3695335616200946,
+      "dt": 0.000375,
+      "epsilon": 0.075,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 7.215101989990217,
+      "gradient": [
+        -0.9176969926125338,
+        0.000481720228828586,
+        0.21758169582797257,
+        0.0019085290698158362,
+        -0.0003757958216090221,
+        0.00909580003972241,
+        0.0009532737908071395,
+        0.06474985479713523
+      ],
+      "gradient_norm": 0.9454045517000048,
+      "h": 0.025,
+      "level": "medium",
+      "mean_streamwise_velocity": 0.43632511041501304,
+      "nx": 64,
+      "ny": 40,
+      "objective": -0.43632511041501304,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 2.733010854305385e-12,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.21489590181295398,
+      "smoothed_solid_area_relative_error": 0.01188594744740279,
+      "steady_residual_max": 5.786429113641134e-10,
+      "steady_residual_rms": 8.5414843564603e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 7.745952411001781
+    },
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.7999999999999999,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.3478886941474255,
+      "dt": 9.375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 5.999999999999999,
+      "first_call_seconds_including_compile": 52.63129807500809,
+      "gradient": [
+        -0.9535307913497024,
+        6.115556465624561e-06,
+        0.32261415909282815,
+        4.526044144902153e-05,
+        0.00010172985627469183,
+        -0.00022122750818630993,
+        -1.889188759949395e-05,
+        0.00022942172692211327
+      ],
+      "gradient_norm": 1.0066285213855586,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.45283273915101674,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.45283273915101674,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 1.9521572179595607e-11,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489620009624266,
+      "smoothed_solid_area_relative_error": 0.011887351981717439,
+      "steady_residual_max": 1.8782486677082488e-10,
+      "steady_residual_rms": 1.5949939550892537e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 48.944324336000136
+    },
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.7999999999999999,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.49695298160211016,
+      "dt": 9.375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 5.999999999999999,
+      "first_call_seconds_including_compile": 47.16684881300898,
+      "gradient": [
+        -1.0215138425739783,
+        -7.624646288181824e-05,
+        0.14614950092087695,
+        -0.00012588763141330866,
+        -3.089822293376315e-05,
+        -0.14682742938359558,
+        -7.325984390597895e-05,
+        0.21674521891273482
+      ],
+      "gradient_norm": 1.0646065090508905,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.5868628357343407,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.5868628357343407,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 1.3227765392965635e-11,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.21489624521105238,
+      "smoothed_solid_area_relative_error": 0.011887564415000686,
+      "steady_residual_max": 1.6680212766573277e-10,
+      "steady_residual_rms": 1.0804444447841615e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 47.14478957098618
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.06666666666666667,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.3076923634294198,
+      "dt": 9.375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 5.999999999999999,
+      "first_call_seconds_including_compile": 81.46552220601006,
+      "gradient": [
+        -0.8790227535592146,
+        -2.3206651604726347e-05,
+        0.33903892904264277,
+        7.531033926582581e-05,
+        0.0001854083576673382,
+        -0.0003219655802995762,
+        -2.375667703830714e-05,
+        0.0003474761125726797
+      ],
+      "gradient_norm": 0.9421404684193987,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.3734098719998432,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.3734098719998432,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 9.387680699836815e-13,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489620009624266,
+      "smoothed_solid_area_relative_error": 0.011887351981717439,
+      "steady_residual_max": 2.658628733831492e-10,
+      "steady_residual_rms": 5.034167994323268e-11,
+      "study": "fixed_regularization",
+      "taylor_test": {
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.016290066788601,
+          2.006393983138976,
+          2.0032565519994847
+        ],
+        "first_order_remainders": [
+          8.792622952376794e-05,
+          2.1734750540467916e-05,
+          5.4096589735033165e-06,
+          1.3493654212349822e-06
+        ],
+        "zero_order_rates": [
+          0.9732288824965453,
+          0.9870334748693806,
+          0.9936023987425366
+        ]
+      },
+      "warm_value_and_grad_seconds": 55.27086836598755
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.06666666666666667,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.45426696817090795,
+      "dt": 9.375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 5.999999999999999,
+      "first_call_seconds_including_compile": 36.74262295399967,
+      "gradient": [
+        -0.9640643987251389,
+        -0.00014917201616498899,
+        0.18247824472329097,
+        -0.00021889580001008963,
+        -3.793679594396582e-05,
+        -0.13335513753741504,
+        -0.0001494228656356289,
+        0.20851879354605152
+      ],
+      "gradient_norm": 1.011920080139798,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.4961217538046072,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.4961217538046072,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 8.520138896033851e-13,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.21489624521105238,
+      "smoothed_solid_area_relative_error": 0.011887564415000686,
+      "steady_residual_max": 1.571330635052881e-10,
+      "steady_residual_rms": 3.7198603427395976e-11,
+      "study": "fixed_regularization",
+      "taylor_test": {
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          1.9892395670104288,
+          1.9935589865421095,
+          1.9981674668304241
+        ],
+        "first_order_remainders": [
+          9.535849462930998e-05,
+          2.401809776394169e-05,
+          6.0313919939920455e-06,
+          1.5097645068760067e-06
+        ],
+        "zero_order_rates": [
+          0.9808354159412626,
+          0.9904126334779827,
+          0.995193403689357
+        ]
+      },
+      "warm_value_and_grad_seconds": 51.905934191003325
+    },
+    {
+      "alpha_max": 9600.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.19999999999999998,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.28031886260498334,
+      "dt": 9.375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 5.999999999999999,
+      "first_call_seconds_including_compile": 114.88662209200265,
+      "gradient": [
+        -0.8258489855661956,
+        -0.00012743644359240053,
+        0.34637429241315426,
+        0.00012823070077942755,
+        0.0003482315957304069,
+        -0.0002531024737711454,
+        -2.1418330834972743e-05,
+        0.0003287910665925667
+      ],
+      "gradient_norm": 0.8955456571147026,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.32435198686666156,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.32435198686666156,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 2.857758640374779e-12,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489620009624266,
+      "smoothed_solid_area_relative_error": 0.011887351981717439,
+      "steady_residual_max": 7.417585295987905e-10,
+      "steady_residual_rms": 1.720868697398258e-10,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 101.88384991101339
+    },
+    {
+      "alpha_max": 9600.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.19999999999999998,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.4228777993838709,
+      "dt": 9.375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 5.999999999999999,
+      "first_call_seconds_including_compile": 94.00651153999206,
+      "gradient": [
+        -0.9196298503968743,
+        -0.0002953785502251838,
+        0.20279132133873365,
+        -0.00040745663355388345,
+        -3.0382664481347355e-05,
+        -0.12203890229526171,
+        -0.0003097765191380497,
+        0.19743437326402496
+      ],
+      "gradient_norm": 0.9699059528247427,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.43888518418181344,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.43888518418181344,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 2.6324684787724795e-12,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.21489624521105238,
+      "smoothed_solid_area_relative_error": 0.011887564415000686,
+      "steady_residual_max": 6.294472026935338e-10,
+      "steady_residual_rms": 1.566953117861907e-10,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 109.63580457899661
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.17978767528850184,
+      "dt": 9.375e-05,
+      "epsilon": 0.15,
+      "epsilon_over_h": 11.999999999999998,
+      "first_call_seconds_including_compile": 42.38861478299077,
+      "gradient": [
+        -0.5635627155293496,
+        1.8773334041023715e-05,
+        0.27276908300728375,
+        1.3304491240821031e-05,
+        -2.1276806235467904e-05,
+        -7.185582471809157e-05,
+        2.602304601973318e-05,
+        7.013082635069084e-05
+      ],
+      "gradient_norm": 0.6261037603467897,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.1722371797281672,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.1722371797281672,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 8.808633436491162e-13,
+      "shape": "circle",
+      "smoothed_solid_area": 0.2224696314090999,
+      "smoothed_solid_area_relative_error": 0.047548565875450303,
+      "steady_residual_max": 1.8772655999144128e-10,
+      "steady_residual_rms": 5.1444580717907966e-11,
+      "study": "regularization_limit",
+      "warm_value_and_grad_seconds": 45.64432203699835
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.03333333333333333,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.29313233959236595,
+      "dt": 9.375e-05,
+      "epsilon": 0.15,
+      "epsilon_over_h": 11.999999999999998,
+      "first_call_seconds_including_compile": 39.50296519900439,
+      "gradient": [
+        -0.6919764875977537,
+        -2.156180426364507e-06,
+        0.18605244299548893,
+        1.7134024349045596e-05,
+        2.5166565504438493e-05,
+        -0.05766152033166915,
+        1.88274779170175e-05,
+        0.09624113397811396
+      ],
+      "gradient_norm": 0.7252821375265769,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.2536271847068676,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.2536271847068676,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 9.281437882715704e-13,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.22246964640876934,
+      "smoothed_solid_area_relative_error": 0.04754863650478574,
+      "steady_residual_max": 2.343172184060549e-10,
+      "steady_residual_rms": 5.297876297416296e-11,
+      "study": "regularization_limit",
+      "warm_value_and_grad_seconds": 43.60360264999326
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.3776713409278686,
+      "dt": 9.375e-05,
+      "epsilon": 0.0375,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 84.58023923900328,
+      "gradient": [
+        -1.0496705256595693,
+        -0.001851898209795838,
+        0.3709777690526096,
+        -0.0005423608164461316,
+        0.0014497929778038224,
+        -0.0002742334048007333,
+        -0.000994496942456173,
+        0.0005478778399509582
+      ],
+      "gradient_norm": 1.1133013552268125,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.49987461698743396,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.49987461698743396,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 9.424121411391014e-13,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21300271056486345,
+      "smoothed_solid_area_relative_error": 0.0029714283541506115,
+      "steady_residual_max": 1.8595353035166795e-10,
+      "steady_residual_rms": 4.8005421670890604e-11,
+      "study": "regularization_limit",
+      "warm_value_and_grad_seconds": 84.79123147699283
+    },
+    {
+      "alpha_max": 2400.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 0.39999999999999997,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.533705831969159,
+      "dt": 9.375e-05,
+      "epsilon": 0.0375,
+      "epsilon_over_h": 2.9999999999999996,
+      "first_call_seconds_including_compile": 51.01006676298857,
+      "gradient": [
+        -1.0862295267639897,
+        -0.0004622063814843716,
+        0.18660477920561008,
+        0.0008465458037925921,
+        -0.0008237301955790269,
+        -0.19113367282555532,
+        0.0004531629364855558,
+        0.29119371751618284
+      ],
+      "gradient_norm": 1.1558735244859601,
+      "h": 0.0125,
+      "level": "fine",
+      "mean_streamwise_velocity": 0.6420456391859276,
+      "nx": 128,
+      "ny": 80,
+      "objective": -0.6420456391859276,
+      "primal_converged": true,
+      "primal_method": "gmres",
+      "primal_residual": 9.316681712115897e-13,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.2130024886805697,
+      "smoothed_solid_area_relative_error": 0.0029703835617794928,
+      "steady_residual_max": 1.1427717452883179e-10,
+      "steady_residual_rms": 3.265305169902522e-11,
+      "study": "regularization_limit",
+      "warm_value_and_grad_seconds": 51.82624554799986
+    },
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 1.5999999999999999,
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "directional_derivative": -0.34849685382820467,
+      "dt": 2.34375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 11.999999999999998,
+      "first_call_seconds_including_compile": 111.49922983700526,
+      "gradient": [
+        -0.9526850366535995,
+        1.2176010185868306e-05,
+        0.31892209287446294,
+        -1.505216536727645e-06,
+        1.14699783317793e-05,
+        0.0001252122807841191,
+        -9.607711764308133e-06,
+        -0.00012970363044827052
+      ],
+      "gradient_norm": 1.0046492488737722,
+      "h": 0.00625,
+      "level": "finest",
+      "mean_streamwise_velocity": 0.4532114733859052,
+      "nx": 256,
+      "ny": 160,
+      "objective": -0.4532114733859052,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 6.68758842654664e-11,
+      "shape": "circle",
+      "smoothed_solid_area": 0.21489615763584205,
+      "smoothed_solid_area_relative_error": 0.011887152047319714,
+      "steady_residual_max": 6.610063607581651e-10,
+      "steady_residual_rms": 5.462052266530626e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 105.435533647993
+    },
+    {
+      "alpha_max": 600.0,
+      "brinkman_layer_over_epsilon": 0.13333333333333333,
+      "brinkman_layer_over_h": 1.5999999999999999,
+      "coefficients": [
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        -0.03,
+        0.0,
+        0.02
+      ],
+      "directional_derivative": -0.4979524939711411,
+      "dt": 2.34375e-05,
+      "epsilon": 0.075,
+      "epsilon_over_h": 11.999999999999998,
+      "first_call_seconds_including_compile": 134.48121414899651,
+      "gradient": [
+        -1.0213937079058968,
+        -1.5211748668753078e-06,
+        0.1430352323533935,
+        -2.5533584898898738e-05,
+        -1.250814069548526e-05,
+        -0.1469733197170619,
+        2.2287993628493027e-06,
+        0.2169030094444696
+      ],
+      "gradient_norm": 1.0641204148377976,
+      "h": 0.00625,
+      "level": "finest",
+      "mean_streamwise_velocity": 0.5874073460313847,
+      "nx": 256,
+      "ny": 160,
+      "objective": -0.5874073460313847,
+      "primal_converged": true,
+      "primal_method": "saddle",
+      "primal_residual": 6.1360060347367e-11,
+      "shape": "deformed",
+      "smoothed_solid_area": 0.21489615831879255,
+      "smoothed_solid_area_relative_error": 0.011887155263146584,
+      "steady_residual_max": 4.4858428083216495e-10,
+      "steady_residual_rms": 5.0117934398091527e-11,
+      "study": "fixed_regularization",
+      "warm_value_and_grad_seconds": 135.18531348199758
+    }
+  ],
+  "epsilon": 0.075,
+  "epsilon_sequence_fine": [
+    0.15,
+    0.075,
+    0.0375
+  ],
+  "grid_convergence": [
+    {
+      "alpha_max": 600.0,
+      "derivative_changes": [
+        0.04034539575750956,
+        0.0012858361613664604,
+        -0.0006081596807791523
+      ],
+      "derivative_extrapolated": -0.34904262781906953,
+      "derivative_observed_orders": [
+        4.971625307396393,
+        1.0801847509427591
+      ],
+      "derivative_relative_changes": [
+        0.11576975606614304,
+        0.0036896636145826653,
+        0.0017450937479021008
+      ],
+      "directional_derivative": [
+        -0.38951992606630154,
+        -0.349174530308792,
+        -0.3478886941474255,
+        -0.34849685382820467
+      ],
+      "epsilon": 0.075,
+      "epsilon_over_h": [
+        1.4999999999999998,
+        2.9999999999999996,
+        5.999999999999999,
+        11.999999999999998
+      ],
+      "h": [
+        0.05,
+        0.025,
+        0.0125,
+        0.00625
+      ],
+      "levels": [
+        "coarse",
+        "medium",
+        "fine",
+        "finest"
+      ],
+      "min_taylor_first_order_rate": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "objective": [
+        -0.4436070399311355,
+        -0.45142332793270595,
+        -0.45283273915101674,
+        -0.4532114733859052
+      ],
+      "objective_changes": [
+        -0.00781628800157047,
+        -0.0014094112183107854,
+        -0.0003787342348884337
+      ],
+      "objective_extrapolated": -0.453350643681724,
+      "objective_observed_orders": [
+        2.4713910238458467,
+        1.895834860837507
+      ],
+      "shape": "circle"
+    },
+    {
+      "alpha_max": 600.0,
+      "derivative_changes": [
+        -0.04963513581505907,
+        -0.005366130421905313,
+        -0.0009995123690309526
+      ],
+      "derivative_extrapolated": -0.498181280863823,
+      "derivative_observed_orders": [
+        3.209407715647223,
+        2.424585793579637
+      ],
+      "derivative_relative_changes": [
+        0.0996784561097824,
+        0.010776390291995019,
+        0.0020072444281981636
+      ],
+      "directional_derivative": [
+        -0.44195171536514577,
+        -0.49158685118020484,
+        -0.49695298160211016,
+        -0.4979524939711411
+      ],
+      "epsilon": 0.075,
+      "epsilon_over_h": [
+        1.4999999999999998,
+        2.9999999999999996,
+        5.999999999999999,
+        11.999999999999998
+      ],
+      "h": [
+        0.05,
+        0.025,
+        0.0125,
+        0.00625
+      ],
+      "levels": [
+        "coarse",
+        "medium",
+        "fine",
+        "finest"
+      ],
+      "min_taylor_first_order_rate": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "objective": [
+        -0.5823657727098882,
+        -0.5849063975819184,
+        -0.5868628357343407,
+        -0.5874073460313847
+      ],
+      "objective_changes": [
+        -0.002540624872030217,
+        -0.001956438152422302,
+        -0.000544510297043943
+      ],
+      "objective_extrapolated": -0.5876173365507001,
+      "objective_observed_orders": [
+        0.3769538705189076,
+        1.845198267386517
+      ],
+      "shape": "deformed"
+    },
+    {
+      "alpha_max": 2400.0,
+      "derivative_changes": [
+        0.03746335254779315,
+        0.011196329011459782
+      ],
+      "derivative_extrapolated": -0.3029199238281282,
+      "derivative_observed_orders": [
+        1.7424542231182825
+      ],
+      "derivative_relative_changes": [
+        0.12175587372478519,
+        0.03638806269570632
+      ],
+      "directional_derivative": [
+        -0.35635204498867273,
+        -0.3188886924408796,
+        -0.3076923634294198
+      ],
+      "epsilon": 0.075,
+      "epsilon_over_h": [
+        1.4999999999999998,
+        2.9999999999999996,
+        5.999999999999999
+      ],
+      "h": [
+        0.05,
+        0.025,
+        0.0125
+      ],
+      "levels": [
+        "coarse",
+        "medium",
+        "fine"
+      ],
+      "min_taylor_first_order_rate": [
+        2.017394722245801,
+        2.0100258089592855,
+        2.0032565519994847
+      ],
+      "objective": [
+        -0.35888326894844225,
+        -0.37157363274549843,
+        -0.3734098719998432
+      ],
+      "objective_changes": [
+        -0.012690363797056181,
+        -0.0018362392543447847
+      ],
+      "objective_extrapolated": -0.373720516546617,
+      "objective_observed_orders": [
+        2.788907474502306
+      ],
+      "shape": "circle"
+    },
+    {
+      "alpha_max": 2400.0,
+      "derivative_changes": [
+        0.05695675988531207,
+        -0.013126154127026446
+      ],
+      "derivative_extrapolated": -0.45819791822705414,
+      "derivative_observed_orders": [
+        2.117422799245426
+      ],
+      "derivative_relative_changes": [
+        0.12538168935031027,
+        0.028895242328269
+      ],
+      "directional_derivative": [
+        -0.49809757392919357,
+        -0.4411408140438815,
+        -0.45426696817090795
+      ],
+      "epsilon": 0.075,
+      "epsilon_over_h": [
+        1.4999999999999998,
+        2.9999999999999996,
+        5.999999999999999
+      ],
+      "h": [
+        0.05,
+        0.025,
+        0.0125
+      ],
+      "levels": [
+        "coarse",
+        "medium",
+        "fine"
+      ],
+      "min_taylor_first_order_rate": [
+        1.8921115484638096,
+        2.013476826238912,
+        1.9892395670104288
+      ],
+      "objective": [
+        -0.5009064591199565,
+        -0.4937355850051523,
+        -0.4961217538046072
+      ],
+      "objective_changes": [
+        0.00717087411480416,
+        -0.002386168799454913
+      ],
+      "objective_extrapolated": -0.49731175426737895,
+      "objective_observed_orders": [
+        1.5874528871811322
+      ],
+      "shape": "deformed"
+    },
+    {
+      "alpha_max": 9600.0,
+      "derivative_changes": [
+        -0.007959767106251181,
+        0.03881705136196045
+      ],
+      "derivative_extrapolated": -0.32914893669545653,
+      "derivative_observed_orders": [
+        -2.2858924066943125
+      ],
+      "derivative_relative_changes": [
+        0.02839540312157958,
+        0.1384746320716214
+      ],
+      "directional_derivative": [
+        -0.3111761468606926,
+        -0.3191359139669438,
+        -0.28031886260498334
+      ],
+      "epsilon": 0.075,
+      "epsilon_over_h": [
+        1.4999999999999998,
+        2.9999999999999996,
+        5.999999999999999
+      ],
+      "h": [
+        0.05,
+        0.025,
+        0.0125
+      ],
+      "levels": [
+        "coarse",
+        "medium",
+        "fine"
+      ],
+      "min_taylor_first_order_rate": [
+        null,
+        null,
+        null
+      ],
+      "objective": [
+        -0.31263008283870397,
+        -0.3219786666750556,
+        -0.32435198686666156
+      ],
+      "objective_changes": [
+        -0.00934858383635162,
+        -0.0023733201916059654
+      ],
+      "objective_extrapolated": -0.32515950454896847,
+      "objective_observed_orders": [
+        1.977841084015013
+      ],
+      "shape": "circle"
+    },
+    {
+      "alpha_max": 9600.0,
+      "derivative_changes": [
+        0.30414520087618074,
+        -0.05334423776377628
+      ],
+      "derivative_extrapolated": -0.4342238790291988,
+      "derivative_observed_orders": [
+        2.5113558951394284
+      ],
+      "derivative_relative_changes": [
+        0.7192271651983565,
+        0.12614575142392992
+      ],
+      "directional_derivative": [
+        -0.6736787624962753,
+        -0.3695335616200946,
+        -0.4228777993838709
+      ],
+      "epsilon": 0.075,
+      "epsilon_over_h": [
+        1.4999999999999998,
+        2.9999999999999996,
+        5.999999999999999
+      ],
+      "h": [
+        0.05,
+        0.025,
+        0.0125
+      ],
+      "levels": [
+        "coarse",
+        "medium",
+        "fine"
+      ],
+      "min_taylor_first_order_rate": [
+        null,
+        null,
+        null
+      ],
+      "objective": [
+        -0.4497313843657169,
+        -0.43632511041501304,
+        -0.43888518418181344
+      ],
+      "objective_changes": [
+        0.013406273950703873,
+        -0.002560073766800397
+      ],
+      "objective_extrapolated": -0.4394894490469582,
+      "objective_observed_orders": [
+        2.388651033809505
+      ],
+      "shape": "deformed"
+    }
+  ],
+  "levels": {
+    "coarse": [
+      32,
+      20
+    ],
+    "fine": [
+      128,
+      80
+    ],
+    "finest": [
+      256,
+      160
+    ],
+    "medium": [
+      64,
+      40
+    ]
+  },
+  "merged_provenance": {
+    "backend": "cpu",
+    "device_kind": "cpu",
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "git_branch": "paper/major-revision-2026-09",
+    "git_commit": "e2c9573684c1d292583fc7e35891bbfb6f45176d",
+    "git_dirty": true,
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "precision": "float64",
+    "processor": "x86_64",
+    "python": "3.11.13",
+    "scipy": "1.16.0",
+    "utc": "2026-09-03T20:46:59.397907+00:00",
+    "x64_enabled": true
+  },
+  "penalization_dependence": [
+    {
+      "alpha_max": [
+        600.0,
+        2400.0,
+        9600.0
+      ],
+      "directional_derivative": [
+        -0.38951992606630154,
+        -0.35635204498867273,
+        -0.3111761468606926
+      ],
+      "level": "coarse",
+      "objective": [
+        -0.4436070399311355,
+        -0.35888326894844225,
+        -0.31263008283870397
+      ],
+      "shape": "circle"
+    },
+    {
+      "alpha_max": [
+        600.0,
+        2400.0,
+        9600.0
+      ],
+      "directional_derivative": [
+        -0.44195171536514577,
+        -0.49809757392919357,
+        -0.6736787624962753
+      ],
+      "level": "coarse",
+      "objective": [
+        -0.5823657727098882,
+        -0.5009064591199565,
+        -0.4497313843657169
+      ],
+      "shape": "deformed"
+    },
+    {
+      "alpha_max": [
+        600.0,
+        2400.0,
+        9600.0
+      ],
+      "directional_derivative": [
+        -0.349174530308792,
+        -0.3188886924408796,
+        -0.3191359139669438
+      ],
+      "level": "medium",
+      "objective": [
+        -0.45142332793270595,
+        -0.37157363274549843,
+        -0.3219786666750556
+      ],
+      "shape": "circle"
+    },
+    {
+      "alpha_max": [
+        600.0,
+        2400.0,
+        9600.0
+      ],
+      "directional_derivative": [
+        -0.49158685118020484,
+        -0.4411408140438815,
+        -0.3695335616200946
+      ],
+      "level": "medium",
+      "objective": [
+        -0.5849063975819184,
+        -0.4937355850051523,
+        -0.43632511041501304
+      ],
+      "shape": "deformed"
+    },
+    {
+      "alpha_max": [
+        600.0,
+        2400.0,
+        9600.0
+      ],
+      "directional_derivative": [
+        -0.3478886941474255,
+        -0.3076923634294198,
+        -0.28031886260498334
+      ],
+      "level": "fine",
+      "objective": [
+        -0.45283273915101674,
+        -0.3734098719998432,
+        -0.32435198686666156
+      ],
+      "shape": "circle"
+    },
+    {
+      "alpha_max": [
+        600.0,
+        2400.0,
+        9600.0
+      ],
+      "directional_derivative": [
+        -0.49695298160211016,
+        -0.45426696817090795,
+        -0.4228777993838709
+      ],
+      "level": "fine",
+      "objective": [
+        -0.5868628357343407,
+        -0.4961217538046072,
+        -0.43888518418181344
+      ],
+      "shape": "deformed"
+    },
+    {
+      "alpha_max": [
+        600.0
+      ],
+      "directional_derivative": [
+        -0.34849685382820467
+      ],
+      "level": "finest",
+      "objective": [
+        -0.4532114733859052
+      ],
+      "shape": "circle"
+    },
+    {
+      "alpha_max": [
+        600.0
+      ],
+      "directional_derivative": [
+        -0.4979524939711411
+      ],
+      "level": "finest",
+      "objective": [
+        -0.5874073460313847
+      ],
+      "shape": "deformed"
+    }
+  ],
+  "provenance_by_level": {
+    "coarse": {
+      "backend": "cpu",
+      "device_kind": "cpu",
+      "devices": [
+        "TFRT_CPU_0"
+      ],
+      "git_branch": "paper/major-revision-2026-09",
+      "git_commit": "cff6489e97c4617d4b5c222fae5f9551067e67d1",
+      "git_dirty": false,
+      "jax": "0.7.0",
+      "jaxlib": "0.7.0",
+      "numpy": "2.3.1",
+      "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+      "precision": "float64",
+      "processor": "x86_64",
+      "python": "3.11.13",
+      "scipy": "1.16.0",
+      "script": "examples/35_regularized_refinement.py",
+      "start_utc": "2026-09-03T16:19:50.901759+00:00",
+      "utc": "2026-09-03T16:21:53.522247+00:00",
+      "x64_enabled": true
+    },
+    "fine": {
+      "backend": "cpu",
+      "device_kind": "cpu",
+      "devices": [
+        "TFRT_CPU_0"
+      ],
+      "git_branch": "paper/major-revision-2026-09",
+      "git_commit": "9e71539ff3b9e0386a7c6f6e7bd41f4d7837cd88",
+      "git_dirty": true,
+      "jax": "0.7.0",
+      "jaxlib": "0.7.0",
+      "numpy": "2.3.1",
+      "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+      "precision": "float64",
+      "processor": "x86_64",
+      "python": "3.11.13",
+      "scipy": "1.16.0",
+      "script": "examples/35_regularized_refinement.py",
+      "start_utc": "2026-09-03T16:26:42.914694+00:00",
+      "utc": "2026-09-03T17:00:42.103760+00:00",
+      "x64_enabled": true
+    },
+    "finest": {
+      "backend": "cpu",
+      "device_kind": "cpu",
+      "devices": [
+        "TFRT_CPU_0"
+      ],
+      "git_branch": "paper/major-revision-2026-09",
+      "git_commit": "e2c9573684c1d292583fc7e35891bbfb6f45176d",
+      "git_dirty": true,
+      "jax": "0.7.0",
+      "jaxlib": "0.7.0",
+      "numpy": "2.3.1",
+      "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+      "precision": "float64",
+      "processor": "x86_64",
+      "python": "3.11.13",
+      "scipy": "1.16.0",
+      "script": "examples/35_regularized_refinement.py",
+      "start_utc": "2026-09-03T20:36:30.869099+00:00",
+      "utc": "2026-09-03T20:46:57.701697+00:00",
+      "x64_enabled": true
+    },
+    "medium": {
+      "backend": "cpu",
+      "device_kind": "cpu",
+      "devices": [
+        "TFRT_CPU_0"
+      ],
+      "git_branch": "paper/major-revision-2026-09",
+      "git_commit": "cff6489e97c4617d4b5c222fae5f9551067e67d1",
+      "git_dirty": false,
+      "jax": "0.7.0",
+      "jaxlib": "0.7.0",
+      "numpy": "2.3.1",
+      "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+      "precision": "float64",
+      "processor": "x86_64",
+      "python": "3.11.13",
+      "scipy": "1.16.0",
+      "script": "examples/35_regularized_refinement.py",
+      "start_utc": "2026-09-03T16:22:02.124447+00:00",
+      "utc": "2026-09-03T16:26:30.013865+00:00",
+      "x64_enabled": true
+    }
+  },
+  "regularization_limit": [
+    {
+      "alpha_max": 2400.0,
+      "derivative_observed_order_in_epsilon": 0.8700756550292242,
+      "directional_derivative": [
+        -0.17978767528850184,
+        -0.3076923634294198,
+        -0.3776713409278686
+      ],
+      "epsilon": [
+        0.15,
+        0.075,
+        0.0375
+      ],
+      "epsilon_over_h": [
+        11.999999999999998,
+        5.999999999999999,
+        2.9999999999999996
+      ],
+      "level": "fine",
+      "objective": [
+        -0.1722371797281672,
+        -0.3734098719998432,
+        -0.49987461698743396
+      ],
+      "objective_observed_order_in_epsilon": 0.6696992271813644,
+      "shape": "circle"
+    },
+    {
+      "alpha_max": 2400.0,
+      "derivative_observed_order_in_epsilon": 1.0203496757320987,
+      "directional_derivative": [
+        -0.29313233959236595,
+        -0.45426696817090795,
+        -0.533705831969159
+      ],
+      "epsilon": [
+        0.15,
+        0.075,
+        0.0375
+      ],
+      "epsilon_over_h": [
+        11.999999999999998,
+        5.999999999999999,
+        2.9999999999999996
+      ],
+      "level": "fine",
+      "objective": [
+        -0.2536271847068676,
+        -0.4961217538046072,
+        -0.6420456391859276
+      ],
+      "objective_observed_order_in_epsilon": 0.732736388656797,
+      "shape": "deformed"
+    }
+  ],
+  "shapes": {
+    "circle": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "deformed": [
+      0.15,
+      0.0,
+      0.05,
+      0.0,
+      0.0,
+      -0.03,
+      0.0,
+      0.02
+    ]
+  },
+  "taylor_direction": [
+    0.3,
+    -0.4,
+    0.2,
+    0.1,
+    -0.25,
+    0.15,
+    0.12,
+    -0.08
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "220x41_initial": {
+    "source": "jax_cad feat/multibody-wake-design@203efc0:runs/multibody_wake_diagnostics/coarse_initial_v1/evaluation-000/history.csv",
+    "dt": 0.00025,
+    "nu": 0.001,
+    "window_face_index_max": 0.6817636544463131,
+    "overall_face_index_max": 0.9711280339234245,
+    "window_max_velocity_component": 2.3354034417141945
+  },
+  "220x41_final": {
+    "source": "jax_cad feat/multibody-wake-design@203efc0:runs/multibody_wake_final_20260923/gradient_final_retry_v1/evaluation-000/history.csv",
+    "dt": 0.00025,
+    "nu": 0.001,
+    "window_face_index_max": 0.567931324424747,
+    "overall_face_index_max": 0.823511731632932,
+    "window_max_velocity_component": 2.1315371437997452
+  },
+  "440x82_initial": {
+    "source": "jax_cad feat/multibody-wake-design@203efc0:runs/multibody_wake_diagnostics/medium_initial_v1/evaluation-000/history.csv",
+    "dt": 0.00025,
+    "nu": 0.001,
+    "window_face_index_max": 0.6951855363667804,
+    "overall_face_index_max": 1.045815140038318,
+    "window_max_velocity_component": 2.358279943292196
+  },
+  "440x82_final": {
+    "source": "jax_cad feat/multibody-wake-design@203efc0:runs/multibody_wake_final_20260923/medium_final_v1/evaluation-000/history.csv",
+    "dt": 0.00025,
+    "nu": 0.001,
+    "window_face_index_max": 0.7567277751320719,
+    "overall_face_index_max": 0.8880742892647554,
+    "window_max_velocity_component": 2.4604516254250104
+  }
+}

@@ -1,0 +1,2 @@
+Synthetic CI fixture for the compute-handoff validator.
+No performance or physical conclusion may be drawn from this record.

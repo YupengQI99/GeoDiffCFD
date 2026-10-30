@@ -1,0 +1,292 @@
+{
+  "accelerator": {
+    "device": "cuda:0",
+    "implicit_fixed_point": {
+      "compile_seconds": 28.554026440004236,
+      "gradient": [
+        -0.8452743783233158,
+        -0.02646216960243332,
+        0.34999053821065595,
+        0.02529766341623124,
+        0.04524726850126923,
+        -0.18839129530663598,
+        -0.016055408721219643,
+        0.187977392483118
+      ],
+      "objective": -0.35888326894844413,
+      "taylor_test": {
+        "directional_derivative": -0.3563520449886879,
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.0213222269440263,
+          2.0265123395254077,
+          2.017213083862166
+        ],
+        "first_order_remainders": [
+          6.509022125909033e-05,
+          1.6033824534928114e-05,
+          3.93546564770599e-06,
+          9.72197455211053e-07
+        ],
+        "minimum_asymptotic_rate": 2.017213083862166,
+        "zero_order_rates": [
+          0.9829985667662173,
+          0.9916682231518879,
+          0.9959528672683045
+        ]
+      },
+      "warm_samples_seconds": [
+        1.795972512991284,
+        1.7451905729976716,
+        1.7533992379903793
+      ]
+    },
+    "platform": "gpu",
+    "state": {
+      "converged": true,
+      "mean_streamwise_velocity": 0.3588832689484435,
+      "primal_residual": 3.7684476097824007e-13
+    },
+    "unrolled_reverse_mode": {
+      "compile_seconds": 58.59623849100899,
+      "gradient": [
+        -0.8452743793501509,
+        -0.02646216823990956,
+        0.34999053118798296,
+        0.025297662055093383,
+        0.04524732382232741,
+        -0.1883912929653443,
+        -0.016055361685205622,
+        0.1879774040664337
+      ],
+      "objective": -0.35888326894190237,
+      "taylor_test": {
+        "directional_derivative": -0.3563520624999348,
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.021320118654537,
+          2.026508489608261,
+          2.01721536484897
+        ],
+        "first_order_remainders": [
+          6.509083845236685e-05,
+          1.6034000000920978e-05,
+          3.935519217585642e-06,
+          9.72209151720374e-07
+        ],
+        "minimum_asymptotic_rate": 2.01721536484897,
+        "zero_order_rates": [
+          0.9829984275933589,
+          0.9916681529916089,
+          0.9959528059097648
+        ]
+      },
+      "warm_samples_seconds": [
+        51.15449889100273,
+        52.1738857349992,
+        51.59086655201099
+      ]
+    }
+  },
+  "claim": "Device dependence of the flagship geometry gradient for both sensitivity backends.",
+  "comparison": {
+    "implicit_fixed_point": {
+      "accelerator_minimum_taylor_rate": 2.017213083862166,
+      "accelerator_taylor_passes_1p8": true,
+      "relative_gradient_difference": 1.396940343103049e-13,
+      "relative_objective_difference": 0.0
+    },
+    "state_relative_l2_difference": 4.5675134658449373e-14,
+    "unrolled_reverse_mode": {
+      "accelerator_minimum_taylor_rate": 2.01721536484897,
+      "accelerator_taylor_passes_1p8": true,
+      "relative_gradient_difference": 6.80201645670626e-16,
+      "relative_objective_difference": 1.546774565304247e-16
+    }
+  },
+  "configuration": {
+    "adjoint_atol": 1e-12,
+    "adjoint_maxiter": 40000,
+    "adjoint_restart": 60,
+    "adjoint_tol": 1e-10,
+    "alpha_max": 2400.0,
+    "base_radius": 0.26,
+    "brinkman_layer_thickness": 0.005,
+    "center": [
+      0.92,
+      0.47
+    ],
+    "coefficient_bound": 0.3,
+    "diffusion_number": 0.05904,
+    "dt": 0.0015,
+    "dx": 0.0625,
+    "dy": 0.05,
+    "epsilon": 0.07500000000000001,
+    "epsilon_over_h": 1.5,
+    "fixed_point_atol": 1e-12,
+    "fixed_point_max_iterations": 400000,
+    "fixed_point_rtol": 1e-12,
+    "force_x": 1.0,
+    "h": 0.05,
+    "include_advection": false,
+    "initial_step": 0.04,
+    "lx": 2.0,
+    "ly": 1.0,
+    "max_iterations": 60,
+    "mobility_weighted": true,
+    "modes": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "n_geometry_parameters": 8,
+    "nx": 32,
+    "ny": 20,
+    "preconditioner_alpha_fraction": 0.05,
+    "pressure_maxiter": 500,
+    "pressure_tol": 1e-12,
+    "primal_atol": 1e-14,
+    "primal_maxiter": 40000,
+    "primal_method": "gmres",
+    "primal_restart": 60,
+    "primal_tol": 1e-12,
+    "profile": "compact",
+    "regularization_order": 2,
+    "regularization_weight": 0.0001,
+    "relative_gradient_tolerance": 0.001,
+    "use_preconditioner": false,
+    "viscosity": 0.06
+  },
+  "cpu": {
+    "device": "TFRT_CPU_0",
+    "implicit_fixed_point": {
+      "compile_seconds": 14.924799485001131,
+      "gradient": [
+        -0.8452743783233758,
+        -0.026462169602403152,
+        0.3499905382107223,
+        0.025297663416218804,
+        0.04524726850131069,
+        -0.18839129530669738,
+        -0.01605540872118738,
+        0.18797739248316475
+      ],
+      "objective": -0.35888326894844413,
+      "taylor_test": {
+        "directional_derivative": -0.3563520449887113,
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.02132219024254,
+          2.0265121737688276,
+          2.017213277142076
+        ],
+        "first_order_remainders": [
+          6.509022117362397e-05,
+          1.603382492176798e-05,
+          3.935466194815223e-06,
+          9.721974601194531e-07
+        ],
+        "minimum_asymptotic_rate": 2.017213277142076,
+        "zero_order_rates": [
+          0.982998567206466,
+          0.991668223869541,
+          0.9959528661745929
+        ]
+      },
+      "warm_samples_seconds": [
+        1.1241168809938245,
+        1.0103052719932748,
+        1.1612498829927063
+      ]
+    },
+    "platform": "cpu",
+    "state": {
+      "converged": true,
+      "mean_streamwise_velocity": 0.3588832689484419,
+      "primal_residual": 3.7470996800388597e-13
+    },
+    "unrolled_reverse_mode": {
+      "compile_seconds": 26.51078290901205,
+      "gradient": [
+        -0.8452743793501512,
+        -0.02646216823990917,
+        0.3499905311879833,
+        0.02529766205509311,
+        0.045247323822327254,
+        -0.18839129296534426,
+        -0.016055361685205688,
+        0.1879774040664338
+      ],
+      "objective": -0.3588832689419024,
+      "taylor_test": {
+        "directional_derivative": -0.3563520624999347,
+        "epsilons": [
+          0.008,
+          0.004,
+          0.002,
+          0.001
+        ],
+        "first_order_rates": [
+          2.0213201186232848,
+          2.026508489622915,
+          2.017215364704651
+        ],
+        "first_order_remainders": [
+          6.509083845253252e-05,
+          1.6034000001309123e-05,
+          3.935519217640937e-06,
+          9.72209151831288e-07
+        ],
+        "minimum_asymptotic_rate": 2.017215364704651,
+        "zero_order_rates": [
+          0.9829984275936706,
+          0.9916681529913242,
+          0.9959528059101026
+        ]
+      },
+      "warm_samples_seconds": [
+        24.428981213990483,
+        24.501812675996916,
+        23.00012797000818
+      ]
+    }
+  },
+  "provenance": {
+    "backend": "gpu",
+    "device_kind": "NVIDIA GeForce RTX 4090",
+    "devices": [
+      "cuda:0"
+    ],
+    "git_branch": "paper/major-revision-2026-09",
+    "git_commit": "c92f68e68e73696b022bab4b46c13cba65b78f82",
+    "git_dirty": false,
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "precision": "float64",
+    "processor": "x86_64",
+    "python": "3.11.13",
+    "scipy": "1.16.0",
+    "script": "examples/33_backend_device_check.py",
+    "utc": "2026-09-03T12:17:34.860410+00:00",
+    "x64_enabled": true
+  },
+  "unrolled_steps": 12800
+}

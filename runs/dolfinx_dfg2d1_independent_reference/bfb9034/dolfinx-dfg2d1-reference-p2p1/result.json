@@ -1,0 +1,280 @@
+{
+  "artifacts": [
+    {
+      "media_type": "application/json",
+      "path": "config.json",
+      "role": "config",
+      "sha256": "cdb4515047728d0c8f465274974376aceac2f66f9779b073d5b78c353119497d"
+    },
+    {
+      "media_type": "application/json",
+      "path": "environment.json",
+      "role": "environment",
+      "sha256": "37956e24d5c066a23807b196145330f8463f8082696696d664cc442da949777c"
+    },
+    {
+      "media_type": "application/json",
+      "path": "metrics.json",
+      "role": "table",
+      "sha256": "40d20b1feba4348f16d5c3cf2981dbb3bb38f67a4d042c4594ed91a264f055ee"
+    },
+    {
+      "media_type": "application/json",
+      "path": "solver_result.json",
+      "role": "other",
+      "sha256": "40fe870b37d4d9ae76b2cb7322461865c57a68ed4b438b39601bbe7ffffd1f83"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "residual_history.csv",
+      "role": "residual-history",
+      "sha256": "de4a22065ee65f6a90118a5c692d23e9dc7afde780d37f19f7d4c81ff89816b0"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stdout.log",
+      "role": "log",
+      "sha256": "b948758d774c251ea0b0230a1b49d807c1f07c38bc380845d5c4311a09d586aa"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stderr.log",
+      "role": "log",
+      "sha256": "ead568f332331c330730d61b7eeb6975f53c08eeefdd0b43b9aa880e020a7731"
+    }
+  ],
+  "command": {
+    "argv": [
+      "/dolfinx-env/bin/python3",
+      "tools/dolfinx_dfg2d1.py",
+      "--config",
+      "configs/forward_verification/dolfinx_dfg2d1_reference.json",
+      "--output-dir",
+      "/results/dolfinx/fine"
+    ],
+    "working_directory": "/work"
+  },
+  "configuration": {
+    "boundary_conditions": {
+      "cylinder": "no-slip-dirichlet",
+      "inlet": "parabolic-dirichlet",
+      "outlet": "natural-zero-traction",
+      "walls": "no-slip-dirichlet"
+    },
+    "case": "dfg-cylinder-2d1-re20",
+    "container": {
+      "digest": "sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8",
+      "expected_versions": {
+        "dolfinx": "0.11.0.post0",
+        "gmsh": "4.15.2",
+        "petsc4py": "3.25.1"
+      },
+      "image": "dolfinx/dolfinx:stable"
+    },
+    "finite_elements": {
+      "pressure_degree": 1,
+      "pressure_family": "Lagrange",
+      "velocity_degree": 2,
+      "velocity_family": "Lagrange"
+    },
+    "force_measurement": {
+      "normal": "cylinder-outward-into-fluid",
+      "pressure_probe_front": [
+        0.15,
+        0.2
+      ],
+      "pressure_probe_rear": [
+        0.25,
+        0.2
+      ],
+      "quadrature_degree": 10,
+      "stress_tensor": "nu-grad-u-minus-pI"
+    },
+    "geometry": {
+      "cylinder_centre": [
+        0.2,
+        0.2
+      ],
+      "cylinder_radius": 0.05,
+      "height": 0.41,
+      "length": 2.2
+    },
+    "mesh": {
+      "bulk_size": 0.018,
+      "cylinder_refinement_distance": 0.2,
+      "cylinder_size": 0.002,
+      "gmsh_algorithm": 6,
+      "wake_box": {
+        "thickness": 0.025,
+        "x_max": 1.1,
+        "x_min": 0.15,
+        "y_max": 0.32,
+        "y_min": 0.08
+      },
+      "wake_size": 0.005
+    },
+    "physics": {
+      "density": 1.0,
+      "kinematic_viscosity": 0.001,
+      "maximum_inlet_velocity": 0.3,
+      "mean_inlet_velocity": 0.2,
+      "reynolds_number": 20.0
+    },
+    "purpose": "Independent boundary-fitted comparison; establish mesh convergence before paper use.",
+    "reference": {
+      "drag_coefficient": 5.57953523384,
+      "lift_coefficient": 0.010618948146,
+      "name": "DFG-FEATFLOW-2D-1 high-precision reference",
+      "paper_eligible": false,
+      "pressure_difference": 0.11752016697,
+      "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html"
+    },
+    "reference_comparison": {
+      "boundary_conditions_exact": true,
+      "geometry_convergence_study_member": true,
+      "geometry_exact": false,
+      "paper_eligible": false,
+      "quantity_definition_exact": true,
+      "reason": "The boundary conditions and DFG traction definition match, but an individual polygonal-geometry grid cannot establish convergence-series paper eligibility."
+    },
+    "requires_gradient": false,
+    "run_id": "dolfinx-dfg2d1-reference-p2p1",
+    "schema_version": "dolfinx-dfg2d1-config-1.0",
+    "solver": {
+      "initialisation": "stokes",
+      "linear_solver": "mumps-lu",
+      "nonlinear_method": "newton-line-search",
+      "reporting_precision": 14,
+      "snes_absolute_tolerance": 1e-11,
+      "snes_max_iterations": 40,
+      "snes_relative_tolerance": 1e-10
+    },
+    "study": {
+      "level": "fine",
+      "name": "grid-refinement",
+      "value": 0.002
+    }
+  },
+  "experiment_id": "dolfinx_dfg2d1_independent_reference",
+  "git": {
+    "branch": "exp/forward-verification-suite",
+    "commit": "bfb9034dfc986cf931abf0d2a4521366f9be3947",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "gradient": {
+    "adjoint_residual": null,
+    "backend": "none",
+    "message": "Independent forward reference solve has no design gradient.",
+    "norm": null,
+    "parameter_names": [],
+    "parameterization": null,
+    "success": false,
+    "taylor_test": null,
+    "values": []
+  },
+  "hardware": {
+    "accelerators": [],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "device_visibility": {
+      "CUDA_VISIBLE_DEVICES": null,
+      "ROCR_VISIBLE_DEVICES": null,
+      "unset_policy": "runtime default; no accelerator backend used"
+    },
+    "hostname": "0a33caec5da1",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155702272,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.39",
+    "process_cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "memory": {
+    "measurement_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+    "peak_accelerator_bytes": null,
+    "peak_host_bytes": 1487101952
+  },
+  "notes": "Independent DOLFINx P2/P1 DFG 2D-1 reference. The raw solver record is retained verbatim. Individual study members remain paper-ineligible; a separate group-level review must establish the three-grid polygonal-geometry convergence claim. stdout.log is an in-process summary, not an outer Docker stream capture; the host invocation must retain its own stdout/stderr and image inspect.",
+  "objective": {
+    "name": "relative_error_of_boundary_fitted_drag_against_dfg_reference",
+    "normalization": "DFG reference C_D=5.57953523384",
+    "units": "dimensionless",
+    "value": 0.0011530488168684208
+  },
+  "primal": {
+    "converged": true,
+    "divergence_max": 0.7567971179542567,
+    "divergence_rms": 0.003563669884636985,
+    "failure_reason": null,
+    "iterations": 4,
+    "mass_flux_mismatch": 1.8616544620238903e-15,
+    "residual_norm": 2.031381044339159e-13
+  },
+  "run_id": "dolfinx-dfg2d1-reference-p2p1",
+  "schema_version": "1.0",
+  "software": {
+    "backend": "cpu",
+    "backend_platform_version": null,
+    "cuda_toolkit_nvcc": null,
+    "environment_variables": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTHONPATH": "/usr/local/dolfinx-real/lib/python3.12/dist-packages:/usr/local/lib:"
+    },
+    "jax": null,
+    "jax_cuda_pjrt": null,
+    "jax_cuda_plugin": null,
+    "jaxlib": null,
+    "numpy": "2.4.6",
+    "precision": "float64",
+    "python": "3.12.3",
+    "scipy": null
+  },
+  "timestamps": {
+    "end_utc": "2026-09-02T10:59:15.214546+00:00",
+    "exit_code": 0,
+    "start_utc": "2026-09-02T10:59:05.574553+00:00",
+    "status": "success"
+  },
+  "timing": {
+    "compile_seconds": null,
+    "forward_samples_seconds": [
+      4.342294404050335
+    ],
+    "gradient_samples_seconds": [],
+    "optimizer_step_samples_seconds": []
+  }
+}

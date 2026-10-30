@@ -1,0 +1,131 @@
+{
+  "schema_version": "forward-verification-config-1.2",
+  "case": "dfg-cylinder-2d1-re20",
+  "run_id": "fine-q0p5-physical-model-fe-source-only",
+  "initial_condition": "zero-interior-with-inlet-boundary",
+  "study": {
+    "name": "normal-constraint-model-refinement-2026-09-19",
+    "level": "fe-source-only",
+    "value": 0.0025,
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "grid": {
+    "nx": 880,
+    "ny": 164,
+    "lx": 2.2,
+    "ly": 0.41
+  },
+  "physics": {
+    "density": 1,
+    "viscosity": 0.001,
+    "maximum_inlet_velocity": 0.3,
+    "mean_inlet_velocity": 0.2,
+    "reynolds_number": 20,
+    "cylinder_centre": [
+      0.2,
+      0.2
+    ],
+    "cylinder_radius": 0.05
+  },
+  "phase_lock": {
+    "grid_spacing": "dx=dy=h",
+    "cylinder_centre_over_h": [
+      80,
+      80
+    ],
+    "cylinder_radius_over_h": 20
+  },
+  "immersed_boundary": {
+    "alpha_max": 640,
+    "delta_b_over_h": 0.5,
+    "alpha_max_h_squared_over_nu": 4,
+    "epsilon_over_h": 1.5,
+    "mask_midpoint_shift_over_h": 0.16696815943578258,
+    "h_definition": "max(dx,dy)",
+    "material_mapping": "compact-cosine-heaviside",
+    "reference_free_calibration": {
+      "method": "one-dimensional-steady-planar-tangential-shear-zero-displacement",
+      "tool": "tools/calibrate_brinkman_mask.py",
+      "sampling": "tangential-cell",
+      "reference_data": "none",
+      "solid_cells": 64,
+      "fluid_cells": 64,
+      "far_field_fit_cells": 16,
+      "cell_centre_phase_over_h": 0.5,
+      "bracket_over_h": [
+        -2,
+        3
+      ],
+      "displacement_tolerance_over_h": 1e-10,
+      "shift_tolerance_over_h": 1e-12,
+      "max_iterations": 80,
+      "unshifted_displacement_over_h": 0.1313752071922972,
+      "calibrated_root_over_h": 0.16696815943578258,
+      "root_displacement_over_h": -8.009481660212433e-11,
+      "iterations": 34,
+      "application": "calibrated-root"
+    }
+  },
+  "boundary_conditions": {
+    "inlet": "analytic-parabolic-face-average",
+    "walls": "no-slip",
+    "cylinder": "immersed-brinkman-no-slip-limit",
+    "outlet": "zero-total-traction-finite-volume"
+  },
+  "surface_measurement": {
+    "stress_tensor": "nu-grad-u-minus-pI",
+    "normal": "cylinder-outward-into-fluid",
+    "trace_method": "pure-fluid-stencil-radial-polynomial",
+    "offsets_over_h": [
+      4.5,
+      4.8,
+      5.1,
+      5.4,
+      5.7
+    ],
+    "offset_sensitivity_shifts_over_h": [
+      0,
+      0.3,
+      0.6
+    ],
+    "pressure_polynomial_degree": 1,
+    "tangential_velocity_polynomial_degree": 1,
+    "polynomial_sensitivity_degrees": [
+      1,
+      2
+    ],
+    "quadrature_points": 256
+  },
+  "solver": {
+    "dt": 0.0003125,
+    "stability_limits": {
+      "c_adv_max": 0.75,
+      "c_diff_max": 0.200000000001,
+      "alpha_max_times_dt_max": 0.2
+    },
+    "max_steps": 144000,
+    "chunk_steps": 1000,
+    "pressure_tolerance": 1e-12,
+    "pressure_atol": 1e-14,
+    "pressure_maxiter": 4000,
+    "nonlinear_rtol": 1e-8,
+    "nonlinear_atol": 1e-9,
+    "nonlinear_min_steps": 100,
+    "include_advection": true,
+    "advection_scheme": "central"
+  },
+  "acceptance_observables": {
+    "drag_coefficient": "metrics.numerical.brinkman_drag_coefficient",
+    "lift_coefficient": "metrics.numerical.brinkman_lift_coefficient",
+    "pressure_difference": "metrics.numerical.pressure_difference",
+    "normal_surface_slip_rms": "metrics.surface_measurement.normal_surface_slip_rms",
+    "tangential_surface_slip_rms": "metrics.surface_measurement.tangential_surface_slip_rms"
+  },
+  "timing_samples": 1,
+  "reference": {
+    "name": "DFG-FEATFLOW-2D-1",
+    "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html"
+  },
+  "execution_scope": "CPU FE physical-model definition only; no fine GPU authorization"
+}

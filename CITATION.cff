@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+type: software
+title: "GeoDiffCFD"
+version: 0.3.0
+authors:
+  - family-names: Qi
+    given-names: Yupeng
+repository-code: "https://github.com/YupengQI99/GeoDiffCFD"
+license: MIT
+preferred-citation:
+  type: article
+  title: "GeoDiffCFD: A differentiable Brinkman-penalization framework for two-dimensional flow design"
+  authors:
+    - family-names: Qi
+      given-names: Yupeng
+    - family-names: Wu
+      given-names: Yixuan
+    - family-names: Lou
+      given-names: Wanting
+    - family-names: Yan
+      given-names: Peiliang
+    - family-names: Yang
+      given-names: Guang
+    - family-names: Chu
+      given-names: Xu

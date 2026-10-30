@@ -1,0 +1,189 @@
+{
+  "artifacts": [
+    {
+      "media_type": "application/json",
+      "path": "config.json",
+      "role": "config",
+      "sha256": "b9f8da391e260a7f34006ec3cd11f2b2984d75357077412d0f63f8e57aa3be72"
+    },
+    {
+      "media_type": "application/json",
+      "path": "environment.json",
+      "role": "environment",
+      "sha256": "f7549c5be953323a4e39a9af6f941707949f2b359009fab74f594fad8ec15d5a"
+    },
+    {
+      "media_type": "application/json",
+      "path": "metrics.json",
+      "role": "table",
+      "sha256": "d11e3285d940fbc950289b49b57f84ddd11d8b89e53b4356f1d7354a914c6d81"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "profiles.csv",
+      "role": "table",
+      "sha256": "432231d77df778684075e3bccbbaecbc8e899442c900d9df174bc990290fb028"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "residual_history.csv",
+      "role": "residual-history",
+      "sha256": "7f0006de879a3ac45f502a7437cb6d543894d64caaf3dd559dfd6a9fc8340ceb"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stdout.log",
+      "role": "log",
+      "sha256": "d11e3285d940fbc950289b49b57f84ddd11d8b89e53b4356f1d7354a914c6d81"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stderr.log",
+      "role": "log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "command": {
+    "argv": [
+      "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+      "examples/29_cavity_re100.py",
+      "--config",
+      "configs/forward_verification/cavity_re100_grid_coarse.json",
+      "--output-dir",
+      "runs/cavity_re100_forward_verification/6d66086/grid-coarse-16x16"
+    ],
+    "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+  },
+  "configuration": {
+    "case": "lid-driven-cavity-re100",
+    "grid": {
+      "lx": 1.0,
+      "ly": 1.0,
+      "nx": 16,
+      "ny": 16
+    },
+    "mass_flux_mismatch_definition": "closed-boundary normal-flux L1 divided by U_lid*L",
+    "physics": {
+      "density": 1.0,
+      "lid_velocity": 1.0,
+      "reynolds_number": 100.0,
+      "viscosity": 0.01
+    },
+    "pressure_gauge": "zero discrete mean",
+    "reference": {
+      "doi": "10.1016/0021-9991(82)90058-4",
+      "name": "Ghia-Ghia-Shin-1982"
+    },
+    "reference_comparison": {
+      "boundary_conditions_exact": true,
+      "paper_eligible": true,
+      "quantity_definition_exact": true
+    },
+    "requires_gradient": false,
+    "run_id": "grid-coarse-16x16",
+    "schema_version": "forward-verification-config-1.0",
+    "solver": {
+      "dt": 0.005,
+      "include_advection": true,
+      "max_steps": 8000,
+      "nonlinear_atol": 1e-08,
+      "nonlinear_min_steps": 100,
+      "nonlinear_rtol": 1e-06,
+      "pressure_atol": 1e-12,
+      "pressure_maxiter": 1500,
+      "pressure_tolerance": 1e-10
+    },
+    "study": {
+      "level": "coarse",
+      "name": "grid-refinement"
+    },
+    "timing_samples": 3
+  },
+  "experiment_id": "cavity_re100_forward_verification",
+  "git": {
+    "branch": "exp/forward-verification-suite",
+    "commit": "6d660866277e05e052925afe53d5c1c9f20ab70d",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "gradient": {
+    "adjoint_residual": null,
+    "backend": "none",
+    "message": "Canonical forward verification intentionally has no design gradient.",
+    "norm": null,
+    "parameter_names": [],
+    "parameterization": null,
+    "success": false,
+    "taylor_test": null,
+    "values": []
+  },
+  "hardware": {
+    "accelerators": [
+      {
+        "count": 1,
+        "driver": "575.57.08",
+        "memory_bytes": 25757220864,
+        "name": "NVIDIA GeForce RTX 4090",
+        "platform": "cuda"
+      }
+    ],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "hostname": "workstation",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155702272,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37"
+  },
+  "memory": {
+    "measurement_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; JAX device.memory_stats()['peak_bytes_in_use']",
+    "peak_accelerator_bytes": 1234176,
+    "peak_host_bytes": 824332288
+  },
+  "notes": "Issue #5 Re=100 cavity; the open-channel pressure outlet is not used.",
+  "objective": {
+    "name": "ghia_centerline_combined_relative_l2_error",
+    "normalization": "published Re=100 Ghia centreline tables",
+    "units": "dimensionless",
+    "value": 0.10313017110634218
+  },
+  "primal": {
+    "converged": true,
+    "divergence_max": 7.297162873953766e-12,
+    "divergence_rms": 2.605724116669556e-12,
+    "failure_reason": null,
+    "iterations": 3383,
+    "mass_flux_mismatch": 0.0,
+    "residual_norm": 6.995758824278368e-07
+  },
+  "run_id": "grid-coarse-16x16",
+  "schema_version": "1.0",
+  "software": {
+    "backend": "gpu",
+    "environment_variables": {
+      "JAX_ENABLE_X64": "true",
+      "JAX_PLATFORMS": "cuda",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+    },
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "precision": "float64",
+    "python": "3.11.13",
+    "scipy": "1.16.0"
+  },
+  "timestamps": {
+    "end_utc": "2026-09-01T16:54:02.092228+00:00",
+    "exit_code": 0,
+    "start_utc": "2026-09-01T16:53:42.063609+00:00",
+    "status": "success"
+  },
+  "timing": {
+    "compile_seconds": 1.3944037309847772,
+    "forward_samples_seconds": [
+      4.07187951891683,
+      3.942692870972678,
+      3.943551244912669
+    ],
+    "gradient_samples_seconds": [],
+    "optimizer_step_samples_seconds": []
+  }
+}

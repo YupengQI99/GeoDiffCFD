@@ -1,0 +1,79 @@
+{
+  "schema_version": "dolfinx-dfg2d1-config-1.0",
+  "case": "dfg-cylinder-2d1-re20",
+  "run_id": "dolfinx-dfg2d1-medium-p2p1",
+  "purpose": "Medium member of the independent boundary-fitted grid study.",
+  "study": {"name": "grid-refinement", "level": "medium", "value": 0.004},
+  "container": {
+    "image": "dolfinx/dolfinx:stable",
+    "digest": "sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8",
+    "expected_versions": {
+      "dolfinx": "0.11.0.post0",
+      "gmsh": "4.15.2",
+      "petsc4py": "3.25.1"
+    }
+  },
+  "geometry": {
+    "length": 2.2,
+    "height": 0.41,
+    "cylinder_centre": [0.2, 0.2],
+    "cylinder_radius": 0.05
+  },
+  "physics": {
+    "density": 1.0,
+    "kinematic_viscosity": 0.001,
+    "mean_inlet_velocity": 0.2,
+    "maximum_inlet_velocity": 0.3,
+    "reynolds_number": 20.0
+  },
+  "mesh": {
+    "bulk_size": 0.025,
+    "cylinder_size": 0.004,
+    "wake_size": 0.008,
+    "cylinder_refinement_distance": 0.2,
+    "wake_box": {
+      "x_min": 0.15,
+      "x_max": 1.1,
+      "y_min": 0.08,
+      "y_max": 0.32,
+      "thickness": 0.025
+    },
+    "gmsh_algorithm": 6
+  },
+  "finite_elements": {
+    "velocity_family": "Lagrange",
+    "velocity_degree": 2,
+    "pressure_family": "Lagrange",
+    "pressure_degree": 1
+  },
+  "boundary_conditions": {
+    "inlet": "parabolic-dirichlet",
+    "walls": "no-slip-dirichlet",
+    "cylinder": "no-slip-dirichlet",
+    "outlet": "natural-zero-traction"
+  },
+  "force_measurement": {
+    "stress_tensor": "nu-grad-u-minus-pI",
+    "normal": "cylinder-outward-into-fluid",
+    "pressure_probe_front": [0.15, 0.2],
+    "pressure_probe_rear": [0.25, 0.2],
+    "quadrature_degree": 10
+  },
+  "solver": {
+    "initialisation": "stokes",
+    "nonlinear_method": "newton-line-search",
+    "linear_solver": "mumps-lu",
+    "snes_relative_tolerance": 1e-10,
+    "snes_absolute_tolerance": 1e-11,
+    "snes_max_iterations": 40,
+    "reporting_precision": 14
+  },
+  "reference": {
+    "name": "DFG-FEATFLOW-2D-1 high-precision reference",
+    "url": "https://wwwold.mathematik.tu-dortmund.de/~featflow/en/benchmarks/cfdbenchmarking/flow/dfg_benchmark1_re20.html",
+    "drag_coefficient": 5.57953523384,
+    "lift_coefficient": 0.010618948146,
+    "pressure_difference": 0.11752016697,
+    "paper_eligible": false
+  }
+}

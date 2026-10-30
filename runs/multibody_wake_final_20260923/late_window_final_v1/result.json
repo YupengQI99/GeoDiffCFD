@@ -1,0 +1,101 @@
+{
+  "schema": "multibody-wake-result-1",
+  "mode": "forward",
+  "provenance": {
+    "git_commit": "1fa04a755bfc7e8a1f81aca616171b384f1a7775",
+    "git_branch": "feat/multibody-wake-design",
+    "git_dirty": false,
+    "python": "3.11.13",
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "scipy": "1.16.0",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "processor": "x86_64",
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "device_kind": "NVIDIA GeForce RTX 4090",
+    "precision": "float64",
+    "x64_enabled": true,
+    "utc": "2026-09-23T20:14:16.100801+00:00"
+  },
+  "paper_eligible": false,
+  "scope": "three-body finite-Brinkman finite-time native shape design; not sharp-wall acceptance",
+  "value": 10.819743803684695,
+  "evaluations": [
+    {
+      "theta": [
+        1.0,
+        -1.0,
+        -1.0,
+        -0.3941003562933799,
+        1.0,
+        -0.5480380383065462,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0
+      ],
+      "body_coefficients": [
+        [
+          0.18,
+          0.19,
+          0.0,
+          -0.08,
+          -0.019705017814668997,
+          0.0
+        ],
+        [
+          0.22,
+          -0.05,
+          0.2,
+          -0.0438430430645237,
+          0.05,
+          0.0
+        ],
+        [
+          0.16,
+          0.11,
+          0.0,
+          0.1,
+          0.11,
+          0.0
+        ]
+      ],
+      "objective": 10.819743803684695,
+      "gradient": null,
+      "geometric_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "reference_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "diffuse_areas": [
+        0.007954593721569196,
+        0.007958251911123796,
+        0.007958229493931252
+      ],
+      "diffuse_area": 0.023871075126624244,
+      "seconds": 95.23404388409108,
+      "max_diagnostics": [
+        101.6602264672777,
+        3.6560492470240398,
+        2.6145547834462854e-12,
+        6.303180200006864e-12,
+        4.06179155350667e-16,
+        0.10714295609328252,
+        2.5667282390357293
+      ],
+      "paper_eligible": false,
+      "directory": "evaluation-000"
+    }
+  ]
+}

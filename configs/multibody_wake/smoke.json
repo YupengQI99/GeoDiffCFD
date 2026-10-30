@@ -1,0 +1,113 @@
+{
+  "schema": "multibody-wake-development-1",
+  "paper_eligible": false,
+  "geometry": {
+    "kind": "fixed-area-lobed-array-v1",
+    "modes": [
+      2,
+      3,
+      4
+    ],
+    "design_scales": [
+      0.18,
+      0.08,
+      0.05,
+      0.05
+    ],
+    "bodies": [
+      {
+        "name": "trefoil",
+        "center": [
+          0.35,
+          0.135
+        ],
+        "radius": 0.05,
+        "base_coefficients": [
+          0,
+          0.24,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "quatrefoil",
+        "center": [
+          0.7,
+          0.275
+        ],
+        "radius": 0.05,
+        "base_coefficients": [
+          0.04,
+          0,
+          0.2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "swept_trefoil",
+        "center": [
+          1.05,
+          0.175
+        ],
+        "radius": 0.05,
+        "base_coefficients": [
+          -0.02,
+          0.16,
+          0,
+          0.02,
+          0.16,
+          0
+        ]
+      }
+    ]
+  },
+  "grid": {
+    "nx": 220,
+    "ny": 41,
+    "lx": 2.2,
+    "ly": 0.41
+  },
+  "viscosity": 0.001,
+  "dt": 0.00025,
+  "mean_inlet": 1,
+  "reference_diameter": 0.1,
+  "alpha_max": 160,
+  "epsilon": 0.015,
+  "advection_scheme": "central",
+  "theta": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "n_steps": 400,
+  "chunk_steps": 100,
+  "window_start_step": 200,
+  "taylor_direction": [
+    0.4,
+    -0.3,
+    0.2,
+    0.1,
+    -0.2,
+    0.3,
+    -0.4,
+    0.1,
+    0.3,
+    0.2,
+    0.1,
+    -0.4
+  ],
+  "per_body_fd": true
+}

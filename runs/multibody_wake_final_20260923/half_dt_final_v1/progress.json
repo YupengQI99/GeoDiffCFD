@@ -1,0 +1,8 @@
+{
+  "evaluation": 0,
+  "stage": "forward",
+  "step": 48000,
+  "total_steps": 48000,
+  "accumulated_objective": 10.737995894322932,
+  "elapsed_seconds": 70.01344988192432
+}

@@ -1,0 +1,181 @@
+{
+  "analytic_sdf": {
+    "design_size": 3,
+    "gradient": [
+      0.13886370694700234,
+      -1.9352505633370025,
+      11.186431664659537
+    ],
+    "objective": -1.3252094918264612,
+    "state": {
+      "converged": true,
+      "divergence_max": 3.863576125695545e-14,
+      "divergence_rms": 6.369598146184342e-15,
+      "fixed_point_iterations": 32843,
+      "fixed_point_residual": 2.1740345868836365e-11,
+      "steady_residual_max": 1.1487775287239918e-09,
+      "steady_residual_rms": 4.5205132040440244e-10
+    },
+    "taylor_test": {
+      "directional_derivative": 9.768852407026719,
+      "epsilons": [
+        0.008,
+        0.004,
+        0.002,
+        0.001
+      ],
+      "first_order_rates": [
+        1.869398849711621,
+        1.924320033305991,
+        1.959308207370219
+      ],
+      "first_order_remainders": [
+        0.006217719247220421,
+        0.001701711683199797,
+        0.0004483404560659682,
+        0.00011529152614373622
+      ],
+      "zero_order_rates": [
+        0.9446324610207447,
+        0.969254254057689,
+        0.983635955969235
+      ]
+    },
+    "theta": [
+      0.91,
+      0.47,
+      0.17
+    ]
+  },
+  "claim": "Three design routes share one material contract, one converged solver and one objective.",
+  "density_topology": {
+    "design_size": 192,
+    "gradient_norm": 0.14298827121730354,
+    "objective": -1.7126941978976753,
+    "settings": {
+      "beta": 2.0,
+      "eta": 0.5,
+      "filter_radius_over_h": 1.8,
+      "ramp_q": 0.2
+    },
+    "state": {
+      "converged": true,
+      "divergence_max": 1.7319479184152442e-14,
+      "divergence_rms": 2.852226473521926e-15,
+      "fixed_point_iterations": 23409,
+      "fixed_point_residual": 2.6578773983802027e-11,
+      "steady_residual_max": 1.3872947222416665e-09,
+      "steady_residual_rms": 5.528367853394087e-10
+    },
+    "taylor_test": {
+      "directional_derivative": 0.0057643594364694085,
+      "epsilons": [
+        0.008,
+        0.004,
+        0.002,
+        0.001
+      ],
+      "first_order_rates": [
+        2.0038082865120144,
+        1.9976852269589966,
+        1.9939508269501187
+      ],
+      "first_order_remainders": [
+        2.8482983548216263e-08,
+        7.101974019335292e-09,
+        1.7783445324185814e-09,
+        4.4645418179464015e-10
+      ],
+      "zero_order_rates": [
+        1.000446510233136,
+        1.0002217758612961,
+        1.0001107899681212
+      ]
+    }
+  },
+  "provenance": {
+    "backend": "cpu",
+    "device_kind": "cpu",
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "git_branch": "paper/major-revision-2026-09",
+    "git_commit": "e534c52afd2515414182820173c7a8a043c6d951",
+    "git_dirty": false,
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "precision": "float64",
+    "processor": "x86_64",
+    "python": "3.11.13",
+    "scipy": "1.16.0",
+    "script": "examples/24_multiple_geometry_routes.py",
+    "utc": "2026-09-03T09:34:40.277850+00:00",
+    "x64_enabled": true
+  },
+  "sampled_sdf_offset": {
+    "design_size": 1,
+    "gradient": -11.186431664659537,
+    "gradient_matches_negative_radius_derivative": true,
+    "gradient_sign_relation": "d/d(offset) = -d/d(radius) because a positive offset expands fluid",
+    "matches_analytic_objective": true,
+    "objective": -1.3252094918264612,
+    "taylor_test": {
+      "directional_derivative": -11.186431664659537,
+      "epsilons": [
+        0.008,
+        0.004,
+        0.002,
+        0.001
+      ],
+      "first_order_rates": [
+        2.0458416703583246,
+        2.041546038260697,
+        2.023753736615429
+      ],
+      "first_order_remainders": [
+        0.009166208101784992,
+        0.0022198825827058136,
+        0.0005392167924552944,
+        0.00013260284137745805
+      ],
+      "zero_order_rates": [
+        1.070826366032866,
+        1.0354962813487603,
+        1.0173575386774543
+      ]
+    }
+  },
+  "shared_solver": {
+    "adjoint_tolerances": {
+      "atol": 1e-12,
+      "tol": 1e-10
+    },
+    "alpha_max": 80.0,
+    "domain": [
+      2.0,
+      1.0
+    ],
+    "dt": 0.002,
+    "epsilon": 0.06666666666666667,
+    "epsilon_over_h": 0.8,
+    "fixed_point_tolerances": {
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    "grid": [
+      16,
+      12
+    ],
+    "mobility_weighted": true,
+    "objective": "negative domain-mean streamwise velocity at unit body force",
+    "pressure_tol": 1e-12,
+    "sensitivity_backend": "implicit fixed point (custom VJP + GMRES)",
+    "spacing": [
+      0.125,
+      0.08333333333333333
+    ],
+    "viscosity": 0.08
+  }
+}

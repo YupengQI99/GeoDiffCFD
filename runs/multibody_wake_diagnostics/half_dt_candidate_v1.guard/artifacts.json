@@ -1,0 +1,17 @@
+{
+  "half_dt_candidate_v1.guard/hardware.csv": "35110d69724c1a36262b09cef8fc93e338e2331046c6a97512d86f57189b9ff0",
+  "half_dt_candidate_v1.guard/source.json": "3007b99ab300e4dcce857aaf8ad78ad1fe9aa57624b10544386c489df5aab425",
+  "half_dt_candidate_v1.guard/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "half_dt_candidate_v1.guard/stdout.log": "41f6033a80d2227848e9876e69c269640d4784e50c236b1d3b6961d7d7669e08",
+  "half_dt_candidate_v1.guard/guard.json": "85ced1caa74e1b4d2f183441c1ad62596cbf3a70e7e6c5d7ff9a8d1ae8675cfb",
+  "half_dt_candidate_v1.guard/config.json": "e7a4d54dda587f5a09aec09054921eab60fe040a63f2a66a7872da9901b454f9",
+  "half_dt_candidate_v1/result.json": "83b2babb475898ec919cd48895e5fdcbe705dcfadb4abbb0aad9bd0f1d4abb52",
+  "half_dt_candidate_v1/geometry_envelope.json": "0941b18aade54e6052c749e378bfb309862a21329d415243eaea9b20bcddd960",
+  "half_dt_candidate_v1/progress.json": "5e340311ca7e098fd40d62a0a65b044e81d901e4914d0ed337ae73e7818ad70c",
+  "half_dt_candidate_v1/evaluations.json": "9561322e982f2d7bc943b904a7084ad2929034c7cecc1ae72c5d551f1d232b06",
+  "half_dt_candidate_v1/config.json": "e7a4d54dda587f5a09aec09054921eab60fe040a63f2a66a7872da9901b454f9",
+  "half_dt_candidate_v1/environment.json": "6e1996bdc1b3404b8e9e9784d5982090e9d1861640cd114f2c3bc41444b06133",
+  "half_dt_candidate_v1/evaluation-000/fields.npz": "328cc684aeec62112ff2a362fcb2104beb189fa443b8146a7768ade801f6997a",
+  "half_dt_candidate_v1/evaluation-000/metrics.json": "bdc39b0e06980495fd659d4fc885d911776a5f17e803cc03404e17db874dfef1",
+  "half_dt_candidate_v1/evaluation-000/history.csv": "011969e9dbfa3b332fe41e325fa7b76d0991d3b34b4c676bfb6eafd0c591348d"
+}

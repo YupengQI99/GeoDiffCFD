@@ -1,0 +1,8 @@
+{
+  "schema": "dfg2d1-wall-shift-corroboration-20260928-1",
+  "paper_eligible": false,
+  "case": "S1_2D1",
+  "phase": "preflight",
+  "wall_shift": 0.003102,
+  "normalize_level_set": false
+}

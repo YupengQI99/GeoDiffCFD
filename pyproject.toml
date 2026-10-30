@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geodiffcfd"
+version = "0.3.0"
+description = "Differentiable two-dimensional flow design with Brinkman penalization in JAX"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+    "jax>=0.7.0,<0.8",
+    "jaxlib>=0.7.0,<0.8",
+    "numpy>=2.3",
+    "scipy>=1.16",
+    "matplotlib>=3.7",
+]
+
+[project.urls]
+Repository = "https://github.com/YupengQI99/GeoDiffCFD"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-xdist",
+    "jsonschema>=4.20",
+]
+fem = [
+    "gmsh>=4.11",
+]
+
+[tool.setuptools.packages.find]
+include = ["jax_cad*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

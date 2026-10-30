@@ -1,0 +1,285 @@
+{
+  "artifacts": [
+    {
+      "media_type": "application/json",
+      "path": "config.json",
+      "role": "config",
+      "sha256": "c827b63c51105d12c063dd3be8dcc7829caf1347be119326ca2b5228dd125224"
+    },
+    {
+      "media_type": "application/json",
+      "path": "environment.json",
+      "role": "environment",
+      "sha256": "081c21680a4bc70dc019ae6c01d974041b31e08a92758206f094541c932ea82f"
+    },
+    {
+      "media_type": "application/json",
+      "path": "metrics.json",
+      "role": "table",
+      "sha256": "4a5a9dd947c3256c29f89b713cdb1bd42e6b6d506e5e4c43fce889acf88f31c6"
+    },
+    {
+      "media_type": "application/json",
+      "path": "solver_result.json",
+      "role": "other",
+      "sha256": "eab1d5d96bbdf17dd91bde7f865fdbf98378c59c551db33c55cd9ab53086a20c"
+    },
+    {
+      "media_type": "text/csv",
+      "path": "residual_history.csv",
+      "role": "residual-history",
+      "sha256": "eeaf3c3657db2935f2e3bb38de4144ee5d33a4047febe5fe791770ee9a77ce2c"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stdout.log",
+      "role": "log",
+      "sha256": "9f2ac0d5871e7934d9823ff1f59b9f9b09f99324d56e58d4cdba6e60de4d93b7"
+    },
+    {
+      "media_type": "text/plain",
+      "path": "stderr.log",
+      "role": "log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "media_type": "application/octet-stream",
+      "path": "fields.npz",
+      "role": "other",
+      "sha256": "eae21fcf142c98e46a275eb7164c0a8a5cae22d8872eb89fd9307614c889c2a6"
+    },
+    {
+      "media_type": "application/octet-stream",
+      "path": "normal_constraints.npz",
+      "role": "other",
+      "sha256": "c458424b1bc793536f7a0a42be34add6bfc21cfd9ed20c857dcace73d866e254"
+    }
+  ],
+  "command": {
+    "argv": [
+      "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+      "/home/user/GeoDiffCFD/jax_cad/tools/run_brinkman_cpu.py",
+      "--config",
+      "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/fe_normal_continuum_shift_local3.json",
+      "--output-dir",
+      "/home/user/GeoDiffCFD/mac_response_20260919/fe_continuum_shift_local3"
+    ],
+    "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+  },
+  "configuration": {
+    "advection_form": "conservative",
+    "case": "dfg-cylinder-2d1-finite-brinkman-normal-convolution",
+    "container": {
+      "expected_versions": {
+        "dolfinx": "0.11.0.post0",
+        "gmsh": "4.15.2",
+        "petsc4py": "3.25.1"
+      },
+      "image": "dolfinx/dolfinx@sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8"
+    },
+    "experiment_id": "dolfinx_normal_constraint_diagnostic",
+    "mesh": {
+      "diagonal": "right",
+      "local_refinements": 3,
+      "nx": 220,
+      "ny": 41
+    },
+    "normal_constraint": {
+      "source_config": "configs/forward_verification/diagnostics/normal_continuum_shift_medium48_fe_source.json",
+      "source_config_sha256": "78a5832a8d0122b1d2457ee394c5d953663375a4f5e389faa0fb3e23114ce795"
+    },
+    "quadrature_degree": 14,
+    "reference_comparison": {
+      "boundary_conditions_exact": true,
+      "geometry_exact": true,
+      "paper_eligible": false,
+      "quantity_definition_exact": false,
+      "reason": "Independent continuous finite mask; normal-convolution constraints included when configured. No sharp-wall acceptance. MAC interpolation and FE quadrature require refinement; direct pressure is not radial extrapolation."
+    },
+    "requires_gradient": false,
+    "run_id": "finite-normal-continuum-shift-local3",
+    "schema_version": "dolfinx-finite-brinkman-config-1.0",
+    "source_config": "configs/forward_verification/diagnostics/cylinder_continuum_shift_medium_fe_source.json",
+    "source_config_sha256": "c0fa06cd91ef9aee910a6b1833cab296411aa0653e83ac6ead32a1dd7e3ba1dc",
+    "study": {
+      "development_only": true,
+      "paper_eligible": false
+    },
+    "study_protocol": "Only mask shift changes, from grid-free planar Riccati equation; no DFG fitting. CPU FE attribution, not a MAC repair claim.",
+    "subprocess_capture": {
+      "argv": [
+        "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+        "/home/user/GeoDiffCFD/jax_cad/tools/run_brinkman_cpu.py",
+        "--config",
+        "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/fe_normal_continuum_shift_local3.json",
+        "--output-dir",
+        "/home/user/GeoDiffCFD/mac_response_20260919/fe_continuum_shift_local3"
+      ],
+      "end_utc": "2026-09-19T14:45:45.254441+00:00",
+      "exception": null,
+      "exit_code": 0,
+      "inner_reported": {
+        "command": {
+          "argv": [
+            "/dolfinx-env/bin/python3",
+            "/home/user/GeoDiffCFD/jax_cad/tools/dolfinx_brinkman_cylinder.py",
+            "--config",
+            "/home/user/GeoDiffCFD/jax_cad/configs/forward_verification/diagnostics/fe_normal_continuum_shift_local3.json",
+            "--output-dir",
+            "/home/user/GeoDiffCFD/mac_response_20260919/fe_continuum_shift_local3"
+          ],
+          "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+        },
+        "timestamps": {
+          "end_utc": "2026-09-19T14:45:43.107631+00:00",
+          "exit_code": 0,
+          "start_utc": "2026-09-19T14:43:36.020185+00:00",
+          "status": "success"
+        }
+      },
+      "inner_result": {
+        "accepted": true,
+        "normalization_error": null,
+        "present": true
+      },
+      "method": "subprocess.run with binary stdout/stderr pipes",
+      "schema_version": "subprocess-capture-1.0",
+      "start_utc": "2026-09-19T14:43:31.498910+00:00",
+      "streams": {
+        "stderr": {
+          "byte_count": 0,
+          "path": "stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "byte_count": 4555,
+          "path": "stdout.log",
+          "sha256": "9f2ac0d5871e7934d9823ff1f59b9f9b09f99324d56e58d4cdba6e60de4d93b7"
+        }
+      },
+      "working_directory": "/home/user/GeoDiffCFD/jax_cad"
+    }
+  },
+  "experiment_id": "dolfinx_normal_constraint_diagnostic",
+  "git": {
+    "branch": "fix/cylinder-convergence-diagnostics",
+    "commit": "f3372f4bb7ba157ed4a24d5affd3da76812c19ad",
+    "dirty": false,
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  },
+  "gradient": {
+    "adjoint_residual": null,
+    "backend": "none",
+    "message": "Independent forward reference solve has no design gradient.",
+    "norm": null,
+    "parameter_names": [],
+    "parameterization": null,
+    "success": false,
+    "taylor_test": null,
+    "values": []
+  },
+  "hardware": {
+    "accelerators": [],
+    "cpu_model": "AMD Ryzen 9 7950X3D 16-Core Processor",
+    "device_visibility": {
+      "CUDA_VISIBLE_DEVICES": "",
+      "ROCR_VISIBLE_DEVICES": null,
+      "unset_policy": "runtime default; no accelerator backend used"
+    },
+    "hostname": "fbd640954e75",
+    "logical_cpu_count": 32,
+    "memory_bytes": 134155698176,
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.39",
+    "process_cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "memory": {
+    "measurement_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+    "peak_accelerator_bytes": null,
+    "peak_host_bytes": 2618626048
+  },
+  "notes": "Independent fixed-physical-model diagnostic. P2/P1 is weakly divergence-free; inspect divergence and mesh convergence. Not paper evidence of sharp-cylinder convergence.",
+  "objective": {
+    "name": "finite_model_total_reaction_drag",
+    "normalization": "2F/(rho*Umean^2*diameter)",
+    "units": "dimensionless",
+    "value": 5.582721494299553
+  },
+  "primal": {
+    "converged": true,
+    "divergence_max": 0.4134444069094698,
+    "divergence_rms": 0.00342857573760908,
+    "failure_reason": null,
+    "iterations": 4,
+    "mass_flux_mismatch": 6.972742166853122e-14,
+    "residual_norm": 2.9922349637708974e-13
+  },
+  "run_id": "finite-normal-continuum-shift-local3",
+  "schema_version": "1.0",
+  "software": {
+    "backend": "cpu",
+    "backend_platform_version": null,
+    "cuda_toolkit_nvcc": null,
+    "environment_variables": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "XDG_CACHE_HOME": "/tmp/cache",
+      "XDG_CONFIG_HOME": "/tmp/config"
+    },
+    "jax": null,
+    "jax_cuda_pjrt": null,
+    "jax_cuda_plugin": null,
+    "jaxlib": null,
+    "numpy": "2.4.6",
+    "precision": "float64",
+    "python": "3.12.3",
+    "scipy": null
+  },
+  "timestamps": {
+    "end_utc": "2026-09-19T14:45:45.254441+00:00",
+    "exit_code": 0,
+    "start_utc": "2026-09-19T14:43:31.498910+00:00",
+    "status": "success"
+  },
+  "timing": {
+    "compile_seconds": null,
+    "forward_samples_seconds": [
+      100.054855535971
+    ],
+    "gradient_samples_seconds": [],
+    "optimizer_step_samples_seconds": []
+  }
+}

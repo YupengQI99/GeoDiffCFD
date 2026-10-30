@@ -1,0 +1,101 @@
+{
+  "configuration": {
+    "alpha_max": 120.0,
+    "domain": [
+      2.0,
+      1.0
+    ],
+    "dt": 0.0015,
+    "epsilon": 0.037500000000000006,
+    "epsilon_over_h": 0.75,
+    "final_time": 0.12,
+    "grid": [
+      32,
+      20
+    ],
+    "include_advection": true,
+    "mobility_weighted": true,
+    "n_steps": 80,
+    "pressure_tol": 1e-12,
+    "sensitivity_backend": "unrolled reverse mode through jax.lax.scan",
+    "spacing": [
+      0.0625,
+      0.05
+    ],
+    "viscosity": 0.05
+  },
+  "design": {
+    "meaning": [
+      "cx",
+      "cy",
+      "radius"
+    ],
+    "theta": [
+      1.0,
+      0.5,
+      0.17
+    ]
+  },
+  "divergence": {
+    "max_abs": 1.5917822615563182e-14,
+    "rms": 2.0685416231152456e-15
+  },
+  "gradient": [
+    -4.938486558572416e-06,
+    6.03900610074426e-17,
+    0.15303509865820136
+  ],
+  "objective": -0.10621697886571646,
+  "provenance": {
+    "backend": "cpu",
+    "device_kind": "cpu",
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "git_branch": "paper/major-revision-2026-09",
+    "git_commit": "cd9e2fd83a35fde0530c0d79f744cf6e977e4a16",
+    "git_dirty": false,
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "precision": "float64",
+    "processor": "x86_64",
+    "python": "3.11.13",
+    "scipy": "1.16.0",
+    "script": "examples/22_unified_design_program.py",
+    "utc": "2026-09-03T08:37:00.056120+00:00",
+    "x64_enabled": true
+  },
+  "taylor_test": {
+    "directional_derivative": 0.12412545255117607,
+    "epsilons": [
+      0.004,
+      0.002,
+      0.001,
+      0.0005
+    ],
+    "first_order_error": [
+      3.4874431152918982e-06,
+      1.136516916890528e-06,
+      3.1254214050518395e-07,
+      8.134278673735103e-08
+    ],
+    "first_order_rate": [
+      1.617550526288184,
+      1.8624965299789906,
+      1.9419644012201374
+    ],
+    "zero_order_error": [
+      0.0004999892533199962,
+      0.0002493874220192427,
+      0.00012443799469168126,
+      6.214406906232539e-05
+    ],
+    "zero_order_rate": [
+      1.0035083822418143,
+      1.002961652691198,
+      1.0017384369693005
+    ]
+  }
+}

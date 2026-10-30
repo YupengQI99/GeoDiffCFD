@@ -1,0 +1,466 @@
+{
+  "epsilon_over_h": 1.5,
+  "method": {
+    "axis_aligned_mac_fact": "the tangential component has no wall-normal face-average convolution; its coded average is along an invariant tangent",
+    "discrete_domain": {
+      "cell_centre_phase_over_h": 0.5,
+      "far_field_fit_cells": 16,
+      "fluid_cells": 64,
+      "solid_cells": 64
+    },
+    "displacement_definition": "far-fluid intercept divided by slope",
+    "equation": "-nu*d2u/dn2 + alpha(n)*u = 0",
+    "far_boundary": "unit shear",
+    "mask": "cell-centred compact-cosine solid fraction",
+    "primary_problem": "one-dimensional steady tangential shear",
+    "reference_data": "none",
+    "root_solver": {
+      "bracket_over_h": [
+        -2.0,
+        3.0
+      ],
+      "displacement_tolerance_over_h": 1e-10,
+      "max_iterations": 80,
+      "method": "bisection",
+      "shift_tolerance_over_h": 1e-12
+    },
+    "scope_limitation": "the calibrated root is planar and axis-aligned; orientation, curvature, and the normal-component face average are reported as sensitivities and are not absorbed into the root",
+    "shift_sign": "positive moves penalised mask into nominal fluid"
+  },
+  "orientation_and_curvature_audit": {
+    "mask_shift_over_h": 0.0,
+    "profile_coordinate_range_over_h": [
+      -2.5,
+      2.5
+    ],
+    "profile_point_count": 401,
+    "rows": [
+      {
+        "circular": [
+          {
+            "curvature_radius_over_h": 5.0,
+            "max_abs_alpha_u_minus_cell": 0.07957747154594774,
+            "max_abs_alpha_v_minus_cell": 0.01682047125300512,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 0.0,
+            "max_abs_tangential_alpha_minus_cell": 0.01682047125300512
+          },
+          {
+            "curvature_radius_over_h": 10.0,
+            "max_abs_alpha_u_minus_cell": 0.07957747154594774,
+            "max_abs_alpha_v_minus_cell": 0.008352274516475133,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 0.0,
+            "max_abs_tangential_alpha_minus_cell": 0.008352274516475133
+          },
+          {
+            "curvature_radius_over_h": 20.0,
+            "max_abs_alpha_u_minus_cell": 0.07957747154594774,
+            "max_abs_alpha_v_minus_cell": 0.004169025537503979,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 0.0,
+            "max_abs_tangential_alpha_minus_cell": 0.004169025537503979
+          },
+          {
+            "curvature_radius_over_h": 40.0,
+            "max_abs_alpha_u_minus_cell": 0.07957747154594774,
+            "max_abs_alpha_v_minus_cell": 0.002083627918756048,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 0.0,
+            "max_abs_tangential_alpha_minus_cell": 0.002083627918756048
+          }
+        ],
+        "normal_angle_degrees": 0.0,
+        "planar": {
+          "max_abs_alpha_u_minus_cell": 0.07957747154594774,
+          "max_abs_alpha_v_minus_cell": 0.0,
+          "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+          "max_abs_tangent_normal_coupling": 0.0,
+          "max_abs_tangential_alpha_minus_cell": 0.0
+        }
+      },
+      {
+        "circular": [
+          {
+            "curvature_radius_over_h": 5.0,
+            "max_abs_alpha_u_minus_cell": 0.07531285870386972,
+            "max_abs_alpha_v_minus_cell": 0.01831930185647679,
+            "max_abs_normal_alpha_minus_cell": 0.07128034521460902,
+            "max_abs_tangent_normal_coupling": 0.01884174502878652,
+            "max_abs_tangential_alpha_minus_cell": 0.02112594761545894
+          },
+          {
+            "curvature_radius_over_h": 10.0,
+            "max_abs_alpha_u_minus_cell": 0.07500030537125102,
+            "max_abs_alpha_v_minus_cell": 0.011125607093914636,
+            "max_abs_normal_alpha_minus_cell": 0.07064935797277494,
+            "max_abs_tangent_normal_coupling": 0.018076706296363623,
+            "max_abs_tangential_alpha_minus_cell": 0.01497522025625142
+          },
+          {
+            "curvature_radius_over_h": 20.0,
+            "max_abs_alpha_u_minus_cell": 0.07485302037156194,
+            "max_abs_alpha_v_minus_cell": 0.008134074033415373,
+            "max_abs_normal_alpha_minus_cell": 0.07036386774568226,
+            "max_abs_tangent_normal_coupling": 0.01766310203859175,
+            "max_abs_tangential_alpha_minus_cell": 0.012474995201521066
+          },
+          {
+            "curvature_radius_over_h": 40.0,
+            "max_abs_alpha_u_minus_cell": 0.07478137575034072,
+            "max_abs_alpha_v_minus_cell": 0.0068781172463679985,
+            "max_abs_normal_alpha_minus_cell": 0.07022765950443854,
+            "max_abs_tangent_normal_coupling": 0.017445947364332883,
+            "max_abs_tangential_alpha_minus_cell": 0.01139324355973137
+          }
+        ],
+        "normal_angle_degrees": 15.0,
+        "planar": {
+          "max_abs_alpha_u_minus_cell": 0.0747109867622956,
+          "max_abs_alpha_v_minus_cell": 0.005810046458454621,
+          "max_abs_normal_alpha_minus_cell": 0.07009549893425582,
+          "max_abs_tangent_normal_coupling": 0.017225235075960254,
+          "max_abs_tangential_alpha_minus_cell": 0.010425534286494398
+        }
+      },
+      {
+        "circular": [
+          {
+            "curvature_radius_over_h": 5.0,
+            "max_abs_alpha_u_minus_cell": 0.06338610718320636,
+            "max_abs_alpha_v_minus_cell": 0.029291432291374764,
+            "max_abs_normal_alpha_minus_cell": 0.054736405877429006,
+            "max_abs_tangent_normal_coupling": 0.01883860076794459,
+            "max_abs_tangential_alpha_minus_cell": 0.037615783446516504
+          },
+          {
+            "curvature_radius_over_h": 10.0,
+            "max_abs_alpha_u_minus_cell": 0.06217445246599762,
+            "max_abs_alpha_v_minus_cell": 0.024861893759829612,
+            "max_abs_normal_alpha_minus_cell": 0.05281569218991122,
+            "max_abs_tangent_normal_coupling": 0.018070438128088156,
+            "max_abs_tangential_alpha_minus_cell": 0.034136615836961814
+          },
+          {
+            "curvature_radius_over_h": 20.0,
+            "max_abs_alpha_u_minus_cell": 0.06161753168458872,
+            "max_abs_alpha_v_minus_cell": 0.02298497311752823,
+            "max_abs_normal_alpha_minus_cell": 0.051948848092003286,
+            "max_abs_tangent_normal_coupling": 0.017655874633068128,
+            "max_abs_tangential_alpha_minus_cell": 0.03262966558550373
+          },
+          {
+            "curvature_radius_over_h": 40.0,
+            "max_abs_alpha_u_minus_cell": 0.06134843038626281,
+            "max_abs_alpha_v_minus_cell": 0.022128579486721534,
+            "max_abs_normal_alpha_minus_cell": 0.05154084653101587,
+            "max_abs_tangent_normal_coupling": 0.01743847194429435,
+            "max_abs_tangential_alpha_minus_cell": 0.03192935851996037
+          }
+        ],
+        "normal_angle_degrees": 30.0,
+        "planar": {
+          "max_abs_alpha_u_minus_cell": 0.06108517778106537,
+          "max_abs_alpha_v_minus_cell": 0.021322719236447407,
+          "max_abs_normal_alpha_minus_cell": 0.05114456314491084,
+          "max_abs_tangent_normal_coupling": 0.01721764960828241,
+          "max_abs_tangential_alpha_minus_cell": 0.031263333872601884
+        }
+      },
+      {
+        "circular": [
+          {
+            "curvature_radius_over_h": 5.0,
+            "max_abs_alpha_u_minus_cell": 0.04650005608522878,
+            "max_abs_alpha_v_minus_cell": 0.04650005608522878,
+            "max_abs_normal_alpha_minus_cell": 0.04650005608522878,
+            "max_abs_tangent_normal_coupling": 2.7755575615628914e-16,
+            "max_abs_tangential_alpha_minus_cell": 0.04650005608522878
+          },
+          {
+            "curvature_radius_over_h": 10.0,
+            "max_abs_alpha_u_minus_cell": 0.04391036902843093,
+            "max_abs_alpha_v_minus_cell": 0.043910369028430374,
+            "max_abs_normal_alpha_minus_cell": 0.043910369028430596,
+            "max_abs_tangent_normal_coupling": 4.440892098500626e-16,
+            "max_abs_tangential_alpha_minus_cell": 0.043910369028430596
+          },
+          {
+            "curvature_radius_over_h": 20.0,
+            "max_abs_alpha_u_minus_cell": 0.04275337115640021,
+            "max_abs_alpha_v_minus_cell": 0.04275337115640021,
+            "max_abs_normal_alpha_minus_cell": 0.04275337115640021,
+            "max_abs_tangent_normal_coupling": 6.106226635438361e-16,
+            "max_abs_tangential_alpha_minus_cell": 0.04275337115640021
+          },
+          {
+            "curvature_radius_over_h": 40.0,
+            "max_abs_alpha_u_minus_cell": 0.042203845259880524,
+            "max_abs_alpha_v_minus_cell": 0.042203845259880524,
+            "max_abs_normal_alpha_minus_cell": 0.042203845259880524,
+            "max_abs_tangent_normal_coupling": 1.609823385706477e-15,
+            "max_abs_tangential_alpha_minus_cell": 0.042203845259880524
+          }
+        ],
+        "normal_angle_degrees": 45.0,
+        "planar": {
+          "max_abs_alpha_u_minus_cell": 0.04167559957139405,
+          "max_abs_alpha_v_minus_cell": 0.04167559957139405,
+          "max_abs_normal_alpha_minus_cell": 0.04167559957139405,
+          "max_abs_tangent_normal_coupling": 1.1102230246251565e-16,
+          "max_abs_tangential_alpha_minus_cell": 0.04167559957139405
+        }
+      },
+      {
+        "circular": [
+          {
+            "curvature_radius_over_h": 5.0,
+            "max_abs_alpha_u_minus_cell": 0.029291432291374764,
+            "max_abs_alpha_v_minus_cell": 0.06338610718320636,
+            "max_abs_normal_alpha_minus_cell": 0.054736405877429006,
+            "max_abs_tangent_normal_coupling": 0.018838600767944594,
+            "max_abs_tangential_alpha_minus_cell": 0.03761578344651684
+          },
+          {
+            "curvature_radius_over_h": 10.0,
+            "max_abs_alpha_u_minus_cell": 0.0248618937598295,
+            "max_abs_alpha_v_minus_cell": 0.06217445246599762,
+            "max_abs_normal_alpha_minus_cell": 0.05281569218991122,
+            "max_abs_tangent_normal_coupling": 0.01807043812808797,
+            "max_abs_tangential_alpha_minus_cell": 0.03413661583696215
+          },
+          {
+            "curvature_radius_over_h": 20.0,
+            "max_abs_alpha_u_minus_cell": 0.022984973117527896,
+            "max_abs_alpha_v_minus_cell": 0.06161753168458872,
+            "max_abs_normal_alpha_minus_cell": 0.051948848092003286,
+            "max_abs_tangent_normal_coupling": 0.017655874633068322,
+            "max_abs_tangential_alpha_minus_cell": 0.0326296655855034
+          },
+          {
+            "curvature_radius_over_h": 40.0,
+            "max_abs_alpha_u_minus_cell": 0.02212857948672098,
+            "max_abs_alpha_v_minus_cell": 0.06134843038626281,
+            "max_abs_normal_alpha_minus_cell": 0.05154084653101587,
+            "max_abs_tangent_normal_coupling": 0.017438471944295268,
+            "max_abs_tangential_alpha_minus_cell": 0.03192935851995937
+          }
+        ],
+        "normal_angle_degrees": 60.0,
+        "planar": {
+          "max_abs_alpha_u_minus_cell": 0.021322719236447407,
+          "max_abs_alpha_v_minus_cell": 0.061085177781065425,
+          "max_abs_normal_alpha_minus_cell": 0.05114456314491092,
+          "max_abs_tangent_normal_coupling": 0.017217649608282416,
+          "max_abs_tangential_alpha_minus_cell": 0.03126333387260191
+        }
+      },
+      {
+        "circular": [
+          {
+            "curvature_radius_over_h": 5.0,
+            "max_abs_alpha_u_minus_cell": 0.01831930185647679,
+            "max_abs_alpha_v_minus_cell": 0.07531285870386972,
+            "max_abs_normal_alpha_minus_cell": 0.07128034521460902,
+            "max_abs_tangent_normal_coupling": 0.01884174502878652,
+            "max_abs_tangential_alpha_minus_cell": 0.02112594761545894
+          },
+          {
+            "curvature_radius_over_h": 10.0,
+            "max_abs_alpha_u_minus_cell": 0.011125607093914636,
+            "max_abs_alpha_v_minus_cell": 0.07500030537125102,
+            "max_abs_normal_alpha_minus_cell": 0.07064935797277494,
+            "max_abs_tangent_normal_coupling": 0.018076706296363623,
+            "max_abs_tangential_alpha_minus_cell": 0.01497522025625142
+          },
+          {
+            "curvature_radius_over_h": 20.0,
+            "max_abs_alpha_u_minus_cell": 0.008134074033415373,
+            "max_abs_alpha_v_minus_cell": 0.07485302037156194,
+            "max_abs_normal_alpha_minus_cell": 0.07036386774568226,
+            "max_abs_tangent_normal_coupling": 0.01766310203859175,
+            "max_abs_tangential_alpha_minus_cell": 0.012474995201521066
+          },
+          {
+            "curvature_radius_over_h": 40.0,
+            "max_abs_alpha_u_minus_cell": 0.0068781172463679985,
+            "max_abs_alpha_v_minus_cell": 0.07478137575034072,
+            "max_abs_normal_alpha_minus_cell": 0.07022765950443854,
+            "max_abs_tangent_normal_coupling": 0.017445947364332883,
+            "max_abs_tangential_alpha_minus_cell": 0.01139324355973137
+          }
+        ],
+        "normal_angle_degrees": 75.0,
+        "planar": {
+          "max_abs_alpha_u_minus_cell": 0.005810046458454621,
+          "max_abs_alpha_v_minus_cell": 0.0747109867622956,
+          "max_abs_normal_alpha_minus_cell": 0.07009549893425582,
+          "max_abs_tangent_normal_coupling": 0.017225235075960254,
+          "max_abs_tangential_alpha_minus_cell": 0.010425534286494398
+        }
+      },
+      {
+        "circular": [
+          {
+            "curvature_radius_over_h": 5.0,
+            "max_abs_alpha_u_minus_cell": 0.01682047125300512,
+            "max_abs_alpha_v_minus_cell": 0.07957747154594774,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 5.329268113399012e-18,
+            "max_abs_tangential_alpha_minus_cell": 0.01682047125300512
+          },
+          {
+            "curvature_radius_over_h": 10.0,
+            "max_abs_alpha_u_minus_cell": 0.008352274516475133,
+            "max_abs_alpha_v_minus_cell": 0.07957747154594774,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 5.113341587003302e-18,
+            "max_abs_tangential_alpha_minus_cell": 0.008352274516475133
+          },
+          {
+            "curvature_radius_over_h": 20.0,
+            "max_abs_alpha_u_minus_cell": 0.004169025537503979,
+            "max_abs_alpha_v_minus_cell": 0.07957747154594774,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 4.996501696656787e-18,
+            "max_abs_tangential_alpha_minus_cell": 0.004169025537503979
+          },
+          {
+            "curvature_radius_over_h": 40.0,
+            "max_abs_alpha_u_minus_cell": 0.002083627918756048,
+            "max_abs_alpha_v_minus_cell": 0.07957747154594774,
+            "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+            "max_abs_tangent_normal_coupling": 4.9351210857552885e-18,
+            "max_abs_tangential_alpha_minus_cell": 0.002083627918756048
+          }
+        ],
+        "normal_angle_degrees": 90.0,
+        "planar": {
+          "max_abs_alpha_u_minus_cell": 1.1102230246251565e-16,
+          "max_abs_alpha_v_minus_cell": 0.07957747154594774,
+          "max_abs_normal_alpha_minus_cell": 0.07957747154594774,
+          "max_abs_tangent_normal_coupling": 4.872714790649224e-18,
+          "max_abs_tangential_alpha_minus_cell": 1.1102230246251565e-16
+        }
+      }
+    ],
+    "status": "implementation sensitivity, not calibration retuning"
+  },
+  "records": [
+    {
+      "alpha_max_h_squared_over_nu": 4.0,
+      "delta_b_over_h": 0.5,
+      "normal_face_average_sensitivity": {
+        "calibrated_shift_over_h": -0.07869715776178055,
+        "displacement_at_primary_shift_over_h": -0.27142451951282903,
+        "interpretation": "normal MAC component sensitivity; not a correction to the tangential shear calibration",
+        "root_displacement_over_h": 4.0307166880746515e-11
+      },
+      "poiseuille_cross_check_at_primary_shift": [
+        {
+          "displacement_over_h": 0.010256858004922265,
+          "expected_quadratic_coefficient": -0.5,
+          "fit_rms": 1.7449772842220347e-13,
+          "linear_coefficient": 2.115103957611461e-14,
+          "nominal_half_width_over_h": 24,
+          "quadratic_coefficient": -0.4999999999999967,
+          "residual_linf": 5.684341886080802e-14
+        },
+        {
+          "displacement_over_h": 0.005129250773535432,
+          "expected_quadratic_coefficient": -0.5,
+          "fit_rms": 1.5019119114296377e-12,
+          "linear_coefficient": 3.4980565452804934e-14,
+          "nominal_half_width_over_h": 48,
+          "quadratic_coefficient": -0.5000000000000044,
+          "residual_linf": 4.547473508864641e-13
+        }
+      ],
+      "primary_tangential_cell": {
+        "calibrated_shift_over_h": 0.16696815943578258,
+        "iterations": 34,
+        "root_displacement_over_h": -8.009481660212433e-11,
+        "unshifted_displacement_over_h": 0.1313752071922972
+      },
+      "sharp_continuous_optimal_shift_over_h": 0.5,
+      "sharp_continuous_unshifted_displacement_over_h": 0.5
+    },
+    {
+      "alpha_max_h_squared_over_nu": 1.7777777777777777,
+      "delta_b_over_h": 0.75,
+      "normal_face_average_sensitivity": {
+        "calibrated_shift_over_h": 0.27212250130833127,
+        "displacement_at_primary_shift_over_h": -0.23040428294473547,
+        "interpretation": "normal MAC component sensitivity; not a correction to the tangential shear calibration",
+        "root_displacement_over_h": -1.7132096478177626e-11
+      },
+      "poiseuille_cross_check_at_primary_shift": [
+        {
+          "displacement_over_h": 0.0182124915182591,
+          "expected_quadratic_coefficient": -0.5,
+          "fit_rms": 1.3005508541376784e-13,
+          "linear_coefficient": 1.3219399735071631e-14,
+          "nominal_half_width_over_h": 24,
+          "quadratic_coefficient": -0.5000000000000001,
+          "residual_linf": 1.1368683772161603e-13
+        },
+        {
+          "displacement_over_h": 0.00910883664966633,
+          "expected_quadratic_coefficient": -0.5,
+          "fit_rms": 8.776894243141045e-13,
+          "linear_coefficient": 0.0,
+          "nominal_half_width_over_h": 48,
+          "quadratic_coefficient": -0.49999999999999856,
+          "residual_linf": 4.547473508864641e-13
+        }
+      ],
+      "primary_tangential_cell": {
+        "calibrated_shift_over_h": 0.5006039613799658,
+        "iterations": 35,
+        "root_displacement_over_h": 3.201685238213373e-11,
+        "unshifted_displacement_over_h": 0.4713726820153748
+      },
+      "sharp_continuous_optimal_shift_over_h": 0.75,
+      "sharp_continuous_unshifted_displacement_over_h": 0.75
+    },
+    {
+      "alpha_max_h_squared_over_nu": 1.0,
+      "delta_b_over_h": 1.0,
+      "normal_face_average_sensitivity": {
+        "calibrated_shift_over_h": 0.6138643419835716,
+        "displacement_at_primary_shift_over_h": -0.15681779828807785,
+        "interpretation": "normal MAC component sensitivity; not a correction to the tangential shear calibration",
+        "root_displacement_over_h": -9.18873573001197e-11
+      },
+      "poiseuille_cross_check_at_primary_shift": [
+        {
+          "displacement_over_h": 0.02834901055180339,
+          "expected_quadratic_coefficient": -0.5,
+          "fit_rms": 1.4882898502832723e-13,
+          "linear_coefficient": 1.5863279682085957e-14,
+          "nominal_half_width_over_h": 24,
+          "quadratic_coefficient": -0.5000000000000026,
+          "residual_linf": 5.684341886080802e-14
+        },
+        {
+          "displacement_over_h": 0.014180782085013277,
+          "expected_quadratic_coefficient": -0.5,
+          "fit_rms": 2.96558093255895e-12,
+          "linear_coefficient": -1.2992781453898974e-13,
+          "nominal_half_width_over_h": 48,
+          "quadratic_coefficient": -0.49999999999999833,
+          "residual_linf": 2.2737367544323206e-13
+        }
+      ],
+      "primary_tangential_cell": {
+        "calibrated_shift_over_h": 0.7809903339948505,
+        "iterations": 32,
+        "root_displacement_over_h": 3.8912760233010544e-11,
+        "unshifted_displacement_over_h": 0.7776123743802338
+      },
+      "sharp_continuous_optimal_shift_over_h": 1.0,
+      "sharp_continuous_unshifted_displacement_over_h": 1.0
+    }
+  ],
+  "schema_version": "brinkman-mask-calibration-1.0"
+}

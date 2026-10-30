@@ -1,0 +1,3608 @@
+{
+  "schema": "multibody-calibrated-offset-sensitivity-evidence-1",
+  "paper_eligible": false,
+  "complete": true,
+  "validation": false,
+  "gain_gate": null,
+  "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+  "source_commits": [
+    "37d0f51b266ef762617d5f01d1973bb70f204e1b"
+  ],
+  "cases": [
+    {
+      "case": "T1i",
+      "normalized": true,
+      "shape": "initial",
+      "preflight": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1i_preflight_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1i_preflight_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 1.3322676295501878e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 836,
+                  "minimum": 0.9393434650096809,
+                  "maximum": 1.095695825511652,
+                  "quantiles_1_5_50_95_99": [
+                    0.9421578925469659,
+                    0.9544042672801633,
+                    0.9998055195585647,
+                    1.0603779698008018,
+                    1.0872957982091047
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 762,
+                  "minimum": 0.9596381214185772,
+                  "maximum": 1.165760744078618,
+                  "quantiles_1_5_50_95_99": [
+                    0.9647439618559462,
+                    0.9760793531513927,
+                    1.0023077017832267,
+                    1.1082680047567,
+                    1.1420656785308274
+                  ],
+                  "fraction_outside_10_percent": 0.06299212598425197,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9877429837421114,
+                  "maximum": 1.0134665179151294,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9917748358016009,
+                  "maximum": 1.0548733571124713,
+                  "count": 136
+                },
+                "corrected_band": {
+                  "minimum": 0.9603074272912923,
+                  "maximum": 1.165640526720575,
+                  "count": 762
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 848,
+                  "minimum": 0.9062582766090934,
+                  "maximum": 1.1351975671864019,
+                  "quantiles_1_5_50_95_99": [
+                    0.9221786509603833,
+                    0.9399084934090787,
+                    0.9992916009819139,
+                    1.083265391945851,
+                    1.112177568681575
+                  ],
+                  "fraction_outside_10_percent": 0.0330188679245283,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 800,
+                  "minimum": 0.9374901018011446,
+                  "maximum": 1.2642557981369555,
+                  "quantiles_1_5_50_95_99": [
+                    0.9408495777323479,
+                    0.959650175043628,
+                    1.0026006265509113,
+                    1.1539379221454051,
+                    1.2163722573164377
+                  ],
+                  "fraction_outside_10_percent": 0.12,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9819124023243592,
+                  "maximum": 1.0127025133160512,
+                  "count": 152
+                },
+                "corrected_interface": {
+                  "minimum": 0.9817100200766895,
+                  "maximum": 1.0724580876150067,
+                  "count": 124
+                },
+                "corrected_band": {
+                  "minimum": 0.9397213367265044,
+                  "maximum": 1.2604608769659695,
+                  "count": 800
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 817,
+                  "minimum": 0.939013465032524,
+                  "maximum": 1.0961414635258886,
+                  "quantiles_1_5_50_95_99": [
+                    0.9471810605216935,
+                    0.958281844112908,
+                    0.9999291685726089,
+                    1.0518118082211723,
+                    1.0813605493174965
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 769,
+                  "minimum": 0.9611507495659705,
+                  "maximum": 1.1542859027591934,
+                  "quantiles_1_5_50_95_99": [
+                    0.9687678543598467,
+                    0.9785367455738636,
+                    1.0017844033145933,
+                    1.1029268560683914,
+                    1.1399516966467491
+                  ],
+                  "fraction_outside_10_percent": 0.053315994798439535,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9882098828688398,
+                  "maximum": 1.0137121659402752,
+                  "count": 137
+                },
+                "corrected_interface": {
+                  "minimum": 0.9935749255099989,
+                  "maximum": 1.050271641171101,
+                  "count": 133
+                },
+                "corrected_band": {
+                  "minimum": 0.9603405383168852,
+                  "maximum": 1.1538786828338123,
+                  "count": 769
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.06720231263281981,
+              0.06811493902866031,
+              0.07619486030904879
+            ],
+            "minimum_wall_gap": 0.06688506097133964,
+            "minimum_pair_gap": 0.2196956951263169,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9877429837421114,
+                    "maximum": 1.0134665179151294,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9877,
+                    1.0135,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.2983742111424306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9917748358016009,
+                    "maximum": 1.0548733571124713,
+                    "count": 136
+                  },
+                  "reference": [
+                    0.9918,
+                    1.0549,
+                    136
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.6642887528627313e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603074272912923,
+                    "maximum": 1.165640526720575,
+                    "count": 762
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1656,
+                    762
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.052672057497375e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9819124023243592,
+                    "maximum": 1.0127025133160512,
+                    "count": 152
+                  },
+                  "reference": [
+                    0.9819,
+                    1.0127,
+                    152
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.24023243591731e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9817100200766895,
+                    "maximum": 1.0724580876150067,
+                    "count": 124
+                  },
+                  "reference": [
+                    0.9817,
+                    1.0725,
+                    124
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.1912384993292306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9397213367265044,
+                    "maximum": 1.2604608769659695,
+                    "count": 800
+                  },
+                  "reference": [
+                    0.9397,
+                    1.2605,
+                    800
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.912303403041939e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9882098828688398,
+                    "maximum": 1.0137121659402752,
+                    "count": 137
+                  },
+                  "reference": [
+                    0.9882,
+                    1.0137,
+                    137
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.216594027519946e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9935749255099989,
+                    "maximum": 1.050271641171101,
+                    "count": 133
+                  },
+                  "reference": [
+                    0.9936,
+                    1.0503,
+                    133
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.835882889895558e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603405383168852,
+                    "maximum": 1.1538786828338123,
+                    "count": 769
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1539,
+                    769
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.0538316885108117e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 100,
+          "mean_speed_ratio": [
+            0.016329898720640144,
+            0.014795489073396402,
+            0.012716694163633186,
+            0.011707982414398419,
+            0.017847227822046893,
+            0.016243143456441417
+          ],
+          "rms_speed_ratio": [
+            0.020591366280763287,
+            0.018433329105657786,
+            0.015793877404557594,
+            0.014033395112063703,
+            0.0214908140045979,
+            0.019410055256897298
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0008169720443373887,
+            0.0007664992525541159,
+            0.002935273931465857,
+            0.0026214803281638275,
+            0.0010927196671652233,
+            0.0010123317616396448
+          ],
+          "max_absolute_flux_ratio": [
+            0.0009219783634685909,
+            0.0008621947460751047,
+            0.003095573152897291,
+            0.0027586997694591486,
+            0.0012190283538912109,
+            0.0011368468004738718
+          ]
+        },
+        "core_counts": [
+          624,
+          456,
+          624,
+          456,
+          630,
+          467
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 200,
+          "window_start_step": 100,
+          "window_count": 100,
+          "window_start_time": 0.0125,
+          "end_time": 0.025,
+          "max_velocity_component_all": 3.212370477746187,
+          "max_velocity_component_window": 3.0677710097835833,
+          "component_screening_index": 0.5882011855292867,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.23365946478431082,
+          "snapshot_component_upper_index": 0.6594891550953783,
+          "snapshot_cell_center_max_speed": 2.8644986482475785,
+          "snapshot_cell_center_index": 0.5128345316132628,
+          "snapshot_count": 1,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 14.268754950102373,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      },
+      "production": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1i_production_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1i_production_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 7.105427357601002e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 836,
+                  "minimum": 0.9393434650096809,
+                  "maximum": 1.095695825511652,
+                  "quantiles_1_5_50_95_99": [
+                    0.9421578925469659,
+                    0.9544042672801633,
+                    0.9998055195585647,
+                    1.0603779698008018,
+                    1.0872957982091047
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 762,
+                  "minimum": 0.9596381214185772,
+                  "maximum": 1.165760744078618,
+                  "quantiles_1_5_50_95_99": [
+                    0.9647439618559462,
+                    0.9760793531513927,
+                    1.0023077017832267,
+                    1.1082680047567,
+                    1.1420656785308274
+                  ],
+                  "fraction_outside_10_percent": 0.06299212598425197,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9877429837421114,
+                  "maximum": 1.0134665179151294,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9917748358016009,
+                  "maximum": 1.0548733571124713,
+                  "count": 136
+                },
+                "corrected_band": {
+                  "minimum": 0.9603074272912923,
+                  "maximum": 1.165640526720575,
+                  "count": 762
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 848,
+                  "minimum": 0.9062582766090934,
+                  "maximum": 1.1351975671864019,
+                  "quantiles_1_5_50_95_99": [
+                    0.9221786509603833,
+                    0.9399084934090787,
+                    0.9992916009819139,
+                    1.083265391945851,
+                    1.112177568681575
+                  ],
+                  "fraction_outside_10_percent": 0.0330188679245283,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 800,
+                  "minimum": 0.9374901018011446,
+                  "maximum": 1.2642557981369555,
+                  "quantiles_1_5_50_95_99": [
+                    0.9408495777323479,
+                    0.959650175043628,
+                    1.0026006265509113,
+                    1.1539379221454051,
+                    1.2163722573164377
+                  ],
+                  "fraction_outside_10_percent": 0.12,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9819124023243592,
+                  "maximum": 1.0127025133160512,
+                  "count": 152
+                },
+                "corrected_interface": {
+                  "minimum": 0.9817100200766895,
+                  "maximum": 1.0724580876150067,
+                  "count": 124
+                },
+                "corrected_band": {
+                  "minimum": 0.9397213367265044,
+                  "maximum": 1.2604608769659695,
+                  "count": 800
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 817,
+                  "minimum": 0.939013465032524,
+                  "maximum": 1.0961414635258886,
+                  "quantiles_1_5_50_95_99": [
+                    0.9471810605216935,
+                    0.958281844112908,
+                    0.9999291685726089,
+                    1.0518118082211723,
+                    1.0813605493174965
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 769,
+                  "minimum": 0.9611507495659705,
+                  "maximum": 1.1542859027591934,
+                  "quantiles_1_5_50_95_99": [
+                    0.9687678543598467,
+                    0.9785367455738636,
+                    1.0017844033145933,
+                    1.1029268560683914,
+                    1.1399516966467491
+                  ],
+                  "fraction_outside_10_percent": 0.053315994798439535,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9882098828688398,
+                  "maximum": 1.0137121659402752,
+                  "count": 137
+                },
+                "corrected_interface": {
+                  "minimum": 0.9935749255099989,
+                  "maximum": 1.050271641171101,
+                  "count": 133
+                },
+                "corrected_band": {
+                  "minimum": 0.9603405383168852,
+                  "maximum": 1.1538786828338123,
+                  "count": 769
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.06720231263281981,
+              0.06811493902866031,
+              0.07619486030904879
+            ],
+            "minimum_wall_gap": 0.06688506097133964,
+            "minimum_pair_gap": 0.2196956951263169,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9877429837421114,
+                    "maximum": 1.0134665179151294,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9877,
+                    1.0135,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.2983742111424306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9917748358016009,
+                    "maximum": 1.0548733571124713,
+                    "count": 136
+                  },
+                  "reference": [
+                    0.9918,
+                    1.0549,
+                    136
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.6642887528627313e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603074272912923,
+                    "maximum": 1.165640526720575,
+                    "count": 762
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1656,
+                    762
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.052672057497375e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9819124023243592,
+                    "maximum": 1.0127025133160512,
+                    "count": 152
+                  },
+                  "reference": [
+                    0.9819,
+                    1.0127,
+                    152
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.24023243591731e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9817100200766895,
+                    "maximum": 1.0724580876150067,
+                    "count": 124
+                  },
+                  "reference": [
+                    0.9817,
+                    1.0725,
+                    124
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.1912384993292306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9397213367265044,
+                    "maximum": 1.2604608769659695,
+                    "count": 800
+                  },
+                  "reference": [
+                    0.9397,
+                    1.2605,
+                    800
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.912303403041939e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9882098828688398,
+                    "maximum": 1.0137121659402752,
+                    "count": 137
+                  },
+                  "reference": [
+                    0.9882,
+                    1.0137,
+                    137
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.216594027519946e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9935749255099989,
+                    "maximum": 1.050271641171101,
+                    "count": 133
+                  },
+                  "reference": [
+                    0.9936,
+                    1.0503,
+                    133
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.835882889895558e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603405383168852,
+                    "maximum": 1.1538786828338123,
+                    "count": 769
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1539,
+                    769
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.0538316885108117e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 16000,
+          "mean_speed_ratio": [
+            0.012808880476660687,
+            0.012353697545231452,
+            0.01363029571443467,
+            0.013313541298189274,
+            0.02165933486676616,
+            0.02103807075640597
+          ],
+          "rms_speed_ratio": [
+            0.014422080608830469,
+            0.013661016029584628,
+            0.01442228248299057,
+            0.013883167795452598,
+            0.025044926229083532,
+            0.023881508941420587
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0015484213814188077,
+            0.0012419070462142377,
+            0.0029269864777111687,
+            0.002725874882244871,
+            0.0026835237550293786,
+            0.0023998875004569284
+          ],
+          "max_absolute_flux_ratio": [
+            0.0015853601474931246,
+            0.0012712789010498515,
+            0.00323574860790095,
+            0.0030152569526544965,
+            0.004487532210002612,
+            0.003974356830909581
+          ]
+        },
+        "core_counts": [
+          624,
+          456,
+          624,
+          456,
+          630,
+          467
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 48000,
+          "window_start_step": 32000,
+          "window_count": 16000,
+          "window_start_time": 4.0,
+          "end_time": 6.0,
+          "max_velocity_component_all": 3.5897771826440557,
+          "max_velocity_component_window": 3.391728993018954,
+          "component_screening_index": 0.7189890976303354,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.31653368311919233,
+          "snapshot_component_upper_index": 1.3976896711340148,
+          "snapshot_cell_center_max_speed": 3.736583640077146,
+          "snapshot_cell_center_index": 0.8726285812057609,
+          "snapshot_count": 25,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 14.895739558982356,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      }
+    },
+    {
+      "case": "T1f",
+      "normalized": true,
+      "shape": "final10",
+      "preflight": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1f_preflight_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1f_preflight_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 3.552713678800501e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 819,
+                  "minimum": 0.9051392773869319,
+                  "maximum": 1.15535893366022,
+                  "quantiles_1_5_50_95_99": [
+                    0.9255738431200538,
+                    0.9492610444495383,
+                    0.9999762313903601,
+                    1.0627929402398306,
+                    1.1149034265709294
+                  ],
+                  "fraction_outside_10_percent": 0.014652014652014652,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 764,
+                  "minimum": 0.9405029914574288,
+                  "maximum": 1.2424805632851714,
+                  "quantiles_1_5_50_95_99": [
+                    0.9563069283639307,
+                    0.9746434844160369,
+                    1.0012572672546443,
+                    1.113853919014067,
+                    1.1791394400429878
+                  ],
+                  "fraction_outside_10_percent": 0.06413612565445026,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9857792630499091,
+                  "maximum": 1.0184855208619552,
+                  "count": 138
+                },
+                "corrected_interface": {
+                  "minimum": 0.9876298309055689,
+                  "maximum": 1.0705666073499542,
+                  "count": 130
+                },
+                "corrected_band": {
+                  "minimum": 0.9404754980988669,
+                  "maximum": 1.2477457371402547,
+                  "count": 764
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 881,
+                  "minimum": 0.837422700518348,
+                  "maximum": 1.2762649294799877,
+                  "quantiles_1_5_50_95_99": [
+                    0.8700360125605815,
+                    0.9130366305929253,
+                    0.9999167214615208,
+                    1.1221330974572172,
+                    1.1825126171913691
+                  ],
+                  "fraction_outside_10_percent": 0.09875141884222474,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 815,
+                  "minimum": 0.8347300292576075,
+                  "maximum": 1.3995715548282344,
+                  "quantiles_1_5_50_95_99": [
+                    0.9110353497770817,
+                    0.9441397450463915,
+                    1.003021978583883,
+                    1.2104289767978755,
+                    1.3248812907200098
+                  ],
+                  "fraction_outside_10_percent": 0.15460122699386503,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9733220598498569,
+                  "maximum": 1.035590139192301,
+                  "count": 145
+                },
+                "corrected_interface": {
+                  "minimum": 0.9460931745820184,
+                  "maximum": 1.127767505067135,
+                  "count": 135
+                },
+                "corrected_band": {
+                  "minimum": 0.858651315577878,
+                  "maximum": 1.40188639834902,
+                  "count": 815
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 805,
+                  "minimum": 0.9340386917399134,
+                  "maximum": 1.1139928373666896,
+                  "quantiles_1_5_50_95_99": [
+                    0.9403431558403365,
+                    0.9648640611950978,
+                    0.999978352025504,
+                    1.0484293201180241,
+                    1.0894085929748027
+                  ],
+                  "fraction_outside_10_percent": 0.007453416149068323,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 752,
+                  "minimum": 0.9576699040501342,
+                  "maximum": 1.1823119505956123,
+                  "quantiles_1_5_50_95_99": [
+                    0.9666254803933294,
+                    0.9822834596929928,
+                    1.0008255853873689,
+                    1.0881422646822834,
+                    1.1550139101506764
+                  ],
+                  "fraction_outside_10_percent": 0.041223404255319146,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9850991812416803,
+                  "maximum": 1.0152374551100123,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9933721299534806,
+                  "maximum": 1.0574961826638738,
+                  "count": 128
+                },
+                "corrected_band": {
+                  "minimum": 0.9584379945006967,
+                  "maximum": 1.1817218609543527,
+                  "count": 752
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.08374696978200957,
+              0.09185613124333117,
+              0.0852429071947158
+            ],
+            "minimum_wall_gap": 0.043143868756668785,
+            "minimum_pair_gap": 0.18690645602597908,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9857792630499091,
+                    "maximum": 1.0184855208619552,
+                    "count": 138
+                  },
+                  "reference": [
+                    0.9858,
+                    1.0185,
+                    138
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.0736950090860518e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9876298309055689,
+                    "maximum": 1.0705666073499542,
+                    "count": 130
+                  },
+                  "reference": [
+                    0.9876,
+                    1.0706,
+                    130
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.339265004576042e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9404754980988669,
+                    "maximum": 1.2477457371402547,
+                    "count": 764
+                  },
+                  "reference": [
+                    0.9405,
+                    1.2477,
+                    764
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.573714025468689e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9733220598498569,
+                    "maximum": 1.035590139192301,
+                    "count": 145
+                  },
+                  "reference": [
+                    0.9733,
+                    1.0356,
+                    145
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.205984985681475e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9460931745820184,
+                    "maximum": 1.127767505067135,
+                    "count": 135
+                  },
+                  "reference": [
+                    0.9461,
+                    1.1278,
+                    135
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.249493286494598e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.858651315577878,
+                    "maximum": 1.40188639834902,
+                    "count": 815
+                  },
+                  "reference": [
+                    0.8587,
+                    1.4019,
+                    815
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.868442212202506e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9850991812416803,
+                    "maximum": 1.0152374551100123,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9851,
+                    1.0152,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.74551100121856e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9933721299534806,
+                    "maximum": 1.0574961826638738,
+                    "count": 128
+                  },
+                  "reference": [
+                    0.9934,
+                    1.0575,
+                    128
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.787004651938485e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9584379945006967,
+                    "maximum": 1.1817218609543527,
+                    "count": 752
+                  },
+                  "reference": [
+                    0.9584,
+                    1.1817,
+                    752
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.799450069663646e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 100,
+          "mean_speed_ratio": [
+            0.010733493696267193,
+            0.009954028015257457,
+            0.00868350547642054,
+            0.007925117647506133,
+            0.011444970037302991,
+            0.010420646655628816
+          ],
+          "rms_speed_ratio": [
+            0.01490255263319212,
+            0.013763901005621564,
+            0.011153251357493777,
+            0.009715119267373246,
+            0.014224496259904471,
+            0.012914520972416969
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0002513560962112972,
+            0.00019872544537792675,
+            0.0021100011211844126,
+            0.0017227668296933207,
+            0.0002725270959830411,
+            0.00024195019242386547
+          ],
+          "max_absolute_flux_ratio": [
+            0.00029517831290799725,
+            0.00022714912520676485,
+            0.002225567033248108,
+            0.0018120993437558412,
+            0.00031209900225113947,
+            0.000277968751249953
+          ]
+        },
+        "core_counts": [
+          634,
+          474,
+          635,
+          434,
+          631,
+          480
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 200,
+          "window_start_step": 100,
+          "window_count": 100,
+          "window_start_time": 0.0125,
+          "end_time": 0.025,
+          "max_velocity_component_all": 2.954827070614204,
+          "max_velocity_component_window": 2.837050602571263,
+          "component_screening_index": 0.503053507596873,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.21225889611770304,
+          "snapshot_component_upper_index": 0.5538294719496643,
+          "snapshot_cell_center_max_speed": 2.657995044246905,
+          "snapshot_cell_center_index": 0.44155860345256914,
+          "snapshot_count": 1,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 11.619234733371384,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      },
+      "production": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1f_production_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T1f_production_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 3.552713678800501e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 819,
+                  "minimum": 0.9051392773869319,
+                  "maximum": 1.15535893366022,
+                  "quantiles_1_5_50_95_99": [
+                    0.9255738431200538,
+                    0.9492610444495383,
+                    0.9999762313903601,
+                    1.0627929402398306,
+                    1.1149034265709294
+                  ],
+                  "fraction_outside_10_percent": 0.014652014652014652,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 764,
+                  "minimum": 0.9405029914574288,
+                  "maximum": 1.2424805632851714,
+                  "quantiles_1_5_50_95_99": [
+                    0.9563069283639307,
+                    0.9746434844160369,
+                    1.0012572672546443,
+                    1.113853919014067,
+                    1.1791394400429878
+                  ],
+                  "fraction_outside_10_percent": 0.06413612565445026,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9857792630499091,
+                  "maximum": 1.0184855208619552,
+                  "count": 138
+                },
+                "corrected_interface": {
+                  "minimum": 0.9876298309055689,
+                  "maximum": 1.0705666073499542,
+                  "count": 130
+                },
+                "corrected_band": {
+                  "minimum": 0.9404754980988669,
+                  "maximum": 1.2477457371402547,
+                  "count": 764
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 881,
+                  "minimum": 0.837422700518348,
+                  "maximum": 1.2762649294799877,
+                  "quantiles_1_5_50_95_99": [
+                    0.8700360125605815,
+                    0.9130366305929253,
+                    0.9999167214615208,
+                    1.1221330974572172,
+                    1.1825126171913691
+                  ],
+                  "fraction_outside_10_percent": 0.09875141884222474,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 815,
+                  "minimum": 0.8347300292576075,
+                  "maximum": 1.3995715548282344,
+                  "quantiles_1_5_50_95_99": [
+                    0.9110353497770817,
+                    0.9441397450463915,
+                    1.003021978583883,
+                    1.2104289767978755,
+                    1.3248812907200098
+                  ],
+                  "fraction_outside_10_percent": 0.15460122699386503,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9733220598498569,
+                  "maximum": 1.035590139192301,
+                  "count": 145
+                },
+                "corrected_interface": {
+                  "minimum": 0.9460931745820184,
+                  "maximum": 1.127767505067135,
+                  "count": 135
+                },
+                "corrected_band": {
+                  "minimum": 0.858651315577878,
+                  "maximum": 1.40188639834902,
+                  "count": 815
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 805,
+                  "minimum": 0.9340386917399134,
+                  "maximum": 1.1139928373666896,
+                  "quantiles_1_5_50_95_99": [
+                    0.9403431558403365,
+                    0.9648640611950978,
+                    0.999978352025504,
+                    1.0484293201180241,
+                    1.0894085929748027
+                  ],
+                  "fraction_outside_10_percent": 0.007453416149068323,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 752,
+                  "minimum": 0.9576699040501342,
+                  "maximum": 1.1823119505956123,
+                  "quantiles_1_5_50_95_99": [
+                    0.9666254803933294,
+                    0.9822834596929928,
+                    1.0008255853873689,
+                    1.0881422646822834,
+                    1.1550139101506764
+                  ],
+                  "fraction_outside_10_percent": 0.041223404255319146,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9850991812416803,
+                  "maximum": 1.0152374551100123,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9933721299534806,
+                  "maximum": 1.0574961826638738,
+                  "count": 128
+                },
+                "corrected_band": {
+                  "minimum": 0.9584379945006967,
+                  "maximum": 1.1817218609543527,
+                  "count": 752
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.08374696978200957,
+              0.09185613124333117,
+              0.0852429071947158
+            ],
+            "minimum_wall_gap": 0.043143868756668785,
+            "minimum_pair_gap": 0.18690645602597908,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9857792630499091,
+                    "maximum": 1.0184855208619552,
+                    "count": 138
+                  },
+                  "reference": [
+                    0.9858,
+                    1.0185,
+                    138
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.0736950090860518e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9876298309055689,
+                    "maximum": 1.0705666073499542,
+                    "count": 130
+                  },
+                  "reference": [
+                    0.9876,
+                    1.0706,
+                    130
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.339265004576042e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9404754980988669,
+                    "maximum": 1.2477457371402547,
+                    "count": 764
+                  },
+                  "reference": [
+                    0.9405,
+                    1.2477,
+                    764
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.573714025468689e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9733220598498569,
+                    "maximum": 1.035590139192301,
+                    "count": 145
+                  },
+                  "reference": [
+                    0.9733,
+                    1.0356,
+                    145
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.205984985681475e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9460931745820184,
+                    "maximum": 1.127767505067135,
+                    "count": 135
+                  },
+                  "reference": [
+                    0.9461,
+                    1.1278,
+                    135
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.249493286494598e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.858651315577878,
+                    "maximum": 1.40188639834902,
+                    "count": 815
+                  },
+                  "reference": [
+                    0.8587,
+                    1.4019,
+                    815
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.868442212202506e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9850991812416803,
+                    "maximum": 1.0152374551100123,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9851,
+                    1.0152,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.74551100121856e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9933721299534806,
+                    "maximum": 1.0574961826638738,
+                    "count": 128
+                  },
+                  "reference": [
+                    0.9934,
+                    1.0575,
+                    128
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.787004651938485e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9584379945006967,
+                    "maximum": 1.1817218609543527,
+                    "count": 752
+                  },
+                  "reference": [
+                    0.9584,
+                    1.1817,
+                    752
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.799450069663646e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 16000,
+          "mean_speed_ratio": [
+            0.007632963109832762,
+            0.007499387092875255,
+            0.005811546021519301,
+            0.005529738767672352,
+            0.010943583231413569,
+            0.010638068446423798
+          ],
+          "rms_speed_ratio": [
+            0.009810023949362435,
+            0.009397621530082275,
+            0.006583905155314118,
+            0.005986972631123666,
+            0.012912037450776308,
+            0.012252481969394734
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0005842941132935414,
+            0.0004759391487138678,
+            0.001152260668468978,
+            0.000949207019717845,
+            0.0005983466045798996,
+            0.0005254640403286616
+          ],
+          "max_absolute_flux_ratio": [
+            0.000586481075084801,
+            0.0004777067886228476,
+            0.0012250916579647805,
+            0.0010082953885158642,
+            0.0008589634283624512,
+            0.0007425680192112485
+          ]
+        },
+        "core_counts": [
+          634,
+          474,
+          635,
+          434,
+          631,
+          480
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 48000,
+          "window_start_step": 32000,
+          "window_count": 16000,
+          "window_start_time": 4.0,
+          "end_time": 6.0,
+          "max_velocity_component_all": 2.981190835806319,
+          "max_velocity_component_window": 2.9472609424677194,
+          "component_screening_index": 0.5428966914372318,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.2360823223013102,
+          "snapshot_component_upper_index": 0.8082234689816515,
+          "snapshot_cell_center_max_speed": 2.9446429782617924,
+          "snapshot_cell_center_index": 0.5419326418391549,
+          "snapshot_count": 25,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 8.598842739981997,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      }
+    },
+    {
+      "case": "T2i",
+      "normalized": false,
+      "shape": "initial",
+      "preflight": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2i_preflight_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2i_preflight_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 2.6645352591003757e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 836,
+                  "minimum": 0.9393434650096809,
+                  "maximum": 1.095695825511652,
+                  "quantiles_1_5_50_95_99": [
+                    0.9421578925469659,
+                    0.9544042672801633,
+                    0.9998055195585647,
+                    1.0603779698008018,
+                    1.0872957982091047
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 762,
+                  "minimum": 0.9596381214185772,
+                  "maximum": 1.165760744078618,
+                  "quantiles_1_5_50_95_99": [
+                    0.9647439618559462,
+                    0.9760793531513927,
+                    1.0023077017832267,
+                    1.1082680047567,
+                    1.1420656785308274
+                  ],
+                  "fraction_outside_10_percent": 0.06299212598425197,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9877429837421114,
+                  "maximum": 1.0134665179151294,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9917748358016009,
+                  "maximum": 1.0548733571124713,
+                  "count": 136
+                },
+                "corrected_band": {
+                  "minimum": 0.9603074272912923,
+                  "maximum": 1.165640526720575,
+                  "count": 762
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 848,
+                  "minimum": 0.9062582766090934,
+                  "maximum": 1.1351975671864019,
+                  "quantiles_1_5_50_95_99": [
+                    0.9221786509603833,
+                    0.9399084934090787,
+                    0.9992916009819139,
+                    1.083265391945851,
+                    1.112177568681575
+                  ],
+                  "fraction_outside_10_percent": 0.0330188679245283,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 800,
+                  "minimum": 0.9374901018011446,
+                  "maximum": 1.2642557981369555,
+                  "quantiles_1_5_50_95_99": [
+                    0.9408495777323479,
+                    0.959650175043628,
+                    1.0026006265509113,
+                    1.1539379221454051,
+                    1.2163722573164377
+                  ],
+                  "fraction_outside_10_percent": 0.12,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9819124023243592,
+                  "maximum": 1.0127025133160512,
+                  "count": 152
+                },
+                "corrected_interface": {
+                  "minimum": 0.9817100200766895,
+                  "maximum": 1.0724580876150067,
+                  "count": 124
+                },
+                "corrected_band": {
+                  "minimum": 0.9397213367265044,
+                  "maximum": 1.2604608769659695,
+                  "count": 800
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 817,
+                  "minimum": 0.939013465032524,
+                  "maximum": 1.0961414635258886,
+                  "quantiles_1_5_50_95_99": [
+                    0.9471810605216935,
+                    0.958281844112908,
+                    0.9999291685726089,
+                    1.0518118082211723,
+                    1.0813605493174965
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 769,
+                  "minimum": 0.9611507495659705,
+                  "maximum": 1.1542859027591934,
+                  "quantiles_1_5_50_95_99": [
+                    0.9687678543598467,
+                    0.9785367455738636,
+                    1.0017844033145933,
+                    1.1029268560683914,
+                    1.1399516966467491
+                  ],
+                  "fraction_outside_10_percent": 0.053315994798439535,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9882098828688398,
+                  "maximum": 1.0137121659402752,
+                  "count": 137
+                },
+                "corrected_interface": {
+                  "minimum": 0.9935749255099989,
+                  "maximum": 1.050271641171101,
+                  "count": 133
+                },
+                "corrected_band": {
+                  "minimum": 0.9603405383168852,
+                  "maximum": 1.1538786828338123,
+                  "count": 769
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.06618094862644416,
+              0.06665451247730711,
+              0.07424753540275754
+            ],
+            "minimum_wall_gap": 0.06834548752269284,
+            "minimum_pair_gap": 0.2231034465839614,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9877429837421114,
+                    "maximum": 1.0134665179151294,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9877,
+                    1.0135,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.2983742111424306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9917748358016009,
+                    "maximum": 1.0548733571124713,
+                    "count": 136
+                  },
+                  "reference": [
+                    0.9918,
+                    1.0549,
+                    136
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.6642887528627313e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603074272912923,
+                    "maximum": 1.165640526720575,
+                    "count": 762
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1656,
+                    762
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.052672057497375e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9819124023243592,
+                    "maximum": 1.0127025133160512,
+                    "count": 152
+                  },
+                  "reference": [
+                    0.9819,
+                    1.0127,
+                    152
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.24023243591731e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9817100200766895,
+                    "maximum": 1.0724580876150067,
+                    "count": 124
+                  },
+                  "reference": [
+                    0.9817,
+                    1.0725,
+                    124
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.1912384993292306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9397213367265044,
+                    "maximum": 1.2604608769659695,
+                    "count": 800
+                  },
+                  "reference": [
+                    0.9397,
+                    1.2605,
+                    800
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.912303403041939e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9882098828688398,
+                    "maximum": 1.0137121659402752,
+                    "count": 137
+                  },
+                  "reference": [
+                    0.9882,
+                    1.0137,
+                    137
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.216594027519946e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9935749255099989,
+                    "maximum": 1.050271641171101,
+                    "count": 133
+                  },
+                  "reference": [
+                    0.9936,
+                    1.0503,
+                    133
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.835882889895558e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603405383168852,
+                    "maximum": 1.1538786828338123,
+                    "count": 769
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1539,
+                    769
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.0538316885108117e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 100,
+          "mean_speed_ratio": [
+            0.016035284374221227,
+            0.014968941879756168,
+            0.012636346246277212,
+            0.011803821892092937,
+            0.017564861299726436,
+            0.01633173944087255
+          ],
+          "rms_speed_ratio": [
+            0.020243219483402058,
+            0.01872458134869768,
+            0.01568225902744766,
+            0.014210031811990372,
+            0.02116909724307414,
+            0.019509445358724006
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0007863791010524723,
+            0.0007768097618181812,
+            0.0028613005509332493,
+            0.002557653462799822,
+            0.001043212733452742,
+            0.0010025665442788983
+          ],
+          "max_absolute_flux_ratio": [
+            0.0008814102737718824,
+            0.0008628173412708812,
+            0.002988662172656525,
+            0.0026648419586388613,
+            0.0011506027922228454,
+            0.0011102082826936347
+          ]
+        },
+        "core_counts": [
+          624,
+          522,
+          624,
+          520,
+          630,
+          521
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 200,
+          "window_start_step": 100,
+          "window_count": 100,
+          "window_start_time": 0.0125,
+          "end_time": 0.025,
+          "max_velocity_component_all": 3.22257781128572,
+          "max_velocity_component_window": 3.077712247734395,
+          "component_screening_index": 0.5920195424908938,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.23462860154034756,
+          "snapshot_component_upper_index": 0.6644338223559197,
+          "snapshot_cell_center_max_speed": 2.8706068778198994,
+          "snapshot_cell_center_index": 0.5150239904366819,
+          "snapshot_count": 1,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 14.099620520244182,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      },
+      "production": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2i_production_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2i_production_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 3.552713678800501e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 836,
+                  "minimum": 0.9393434650096809,
+                  "maximum": 1.095695825511652,
+                  "quantiles_1_5_50_95_99": [
+                    0.9421578925469659,
+                    0.9544042672801633,
+                    0.9998055195585647,
+                    1.0603779698008018,
+                    1.0872957982091047
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 762,
+                  "minimum": 0.9596381214185772,
+                  "maximum": 1.165760744078618,
+                  "quantiles_1_5_50_95_99": [
+                    0.9647439618559462,
+                    0.9760793531513927,
+                    1.0023077017832267,
+                    1.1082680047567,
+                    1.1420656785308274
+                  ],
+                  "fraction_outside_10_percent": 0.06299212598425197,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9877429837421114,
+                  "maximum": 1.0134665179151294,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9917748358016009,
+                  "maximum": 1.0548733571124713,
+                  "count": 136
+                },
+                "corrected_band": {
+                  "minimum": 0.9603074272912923,
+                  "maximum": 1.165640526720575,
+                  "count": 762
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 848,
+                  "minimum": 0.9062582766090934,
+                  "maximum": 1.1351975671864019,
+                  "quantiles_1_5_50_95_99": [
+                    0.9221786509603833,
+                    0.9399084934090787,
+                    0.9992916009819139,
+                    1.083265391945851,
+                    1.112177568681575
+                  ],
+                  "fraction_outside_10_percent": 0.0330188679245283,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 800,
+                  "minimum": 0.9374901018011446,
+                  "maximum": 1.2642557981369555,
+                  "quantiles_1_5_50_95_99": [
+                    0.9408495777323479,
+                    0.959650175043628,
+                    1.0026006265509113,
+                    1.1539379221454051,
+                    1.2163722573164377
+                  ],
+                  "fraction_outside_10_percent": 0.12,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9819124023243592,
+                  "maximum": 1.0127025133160512,
+                  "count": 152
+                },
+                "corrected_interface": {
+                  "minimum": 0.9817100200766895,
+                  "maximum": 1.0724580876150067,
+                  "count": 124
+                },
+                "corrected_band": {
+                  "minimum": 0.9397213367265044,
+                  "maximum": 1.2604608769659695,
+                  "count": 800
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 817,
+                  "minimum": 0.939013465032524,
+                  "maximum": 1.0961414635258886,
+                  "quantiles_1_5_50_95_99": [
+                    0.9471810605216935,
+                    0.958281844112908,
+                    0.9999291685726089,
+                    1.0518118082211723,
+                    1.0813605493174965
+                  ],
+                  "fraction_outside_10_percent": 0.0,
+                  "within_10_percent_diagnostic_only": true
+                },
+                "corrected_band": {
+                  "count": 769,
+                  "minimum": 0.9611507495659705,
+                  "maximum": 1.1542859027591934,
+                  "quantiles_1_5_50_95_99": [
+                    0.9687678543598467,
+                    0.9785367455738636,
+                    1.0017844033145933,
+                    1.1029268560683914,
+                    1.1399516966467491
+                  ],
+                  "fraction_outside_10_percent": 0.053315994798439535,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9882098828688398,
+                  "maximum": 1.0137121659402752,
+                  "count": 137
+                },
+                "corrected_interface": {
+                  "minimum": 0.9935749255099989,
+                  "maximum": 1.050271641171101,
+                  "count": 133
+                },
+                "corrected_band": {
+                  "minimum": 0.9603405383168852,
+                  "maximum": 1.1538786828338123,
+                  "count": 769
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.06618094862644416,
+              0.06665451247730711,
+              0.07424753540275754
+            ],
+            "minimum_wall_gap": 0.06834548752269284,
+            "minimum_pair_gap": 0.2231034465839614,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9877429837421114,
+                    "maximum": 1.0134665179151294,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9877,
+                    1.0135,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.2983742111424306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9917748358016009,
+                    "maximum": 1.0548733571124713,
+                    "count": 136
+                  },
+                  "reference": [
+                    0.9918,
+                    1.0549,
+                    136
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.6642887528627313e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603074272912923,
+                    "maximum": 1.165640526720575,
+                    "count": 762
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1656,
+                    762
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.052672057497375e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9819124023243592,
+                    "maximum": 1.0127025133160512,
+                    "count": 152
+                  },
+                  "reference": [
+                    0.9819,
+                    1.0127,
+                    152
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.24023243591731e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9817100200766895,
+                    "maximum": 1.0724580876150067,
+                    "count": 124
+                  },
+                  "reference": [
+                    0.9817,
+                    1.0725,
+                    124
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.1912384993292306e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9397213367265044,
+                    "maximum": 1.2604608769659695,
+                    "count": 800
+                  },
+                  "reference": [
+                    0.9397,
+                    1.2605,
+                    800
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.912303403041939e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9882098828688398,
+                    "maximum": 1.0137121659402752,
+                    "count": 137
+                  },
+                  "reference": [
+                    0.9882,
+                    1.0137,
+                    137
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 1.216594027519946e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9935749255099989,
+                    "maximum": 1.050271641171101,
+                    "count": 133
+                  },
+                  "reference": [
+                    0.9936,
+                    1.0503,
+                    133
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.835882889895558e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9603405383168852,
+                    "maximum": 1.1538786828338123,
+                    "count": 769
+                  },
+                  "reference": [
+                    0.9603,
+                    1.1539,
+                    769
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.0538316885108117e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 16000,
+          "mean_speed_ratio": [
+            0.012634462429204615,
+            0.012277140633935008,
+            0.014013203528061003,
+            0.013720404074906578,
+            0.021286970455226387,
+            0.020870268957631794
+          ],
+          "rms_speed_ratio": [
+            0.014214567745493541,
+            0.013653402418677489,
+            0.01475962409954777,
+            0.014313244622088966,
+            0.024773144607240626,
+            0.024016244961783603
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0015288726715326421,
+            0.0014337028155047866,
+            0.002955990702647836,
+            0.0027559475615895972,
+            0.002643001666675256,
+            0.0024536104655275078
+          ],
+          "max_absolute_flux_ratio": [
+            0.0015663369882600697,
+            0.001468728845410914,
+            0.0032483969209324273,
+            0.0030300421260456476,
+            0.004544346988833808,
+            0.004180417496417999
+          ]
+        },
+        "core_counts": [
+          624,
+          522,
+          624,
+          520,
+          630,
+          521
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 48000,
+          "window_start_step": 32000,
+          "window_count": 16000,
+          "window_start_time": 4.0,
+          "end_time": 6.0,
+          "max_velocity_component_all": 3.6223179744438916,
+          "max_velocity_component_window": 3.3931473559913043,
+          "component_screening_index": 0.7195905612169237,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.3173290476976933,
+          "snapshot_component_upper_index": 1.4248053836037364,
+          "snapshot_cell_center_max_speed": 3.7734289159849013,
+          "snapshot_cell_center_index": 0.8899228614994367,
+          "snapshot_count": 25,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 14.976899363437475,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      }
+    },
+    {
+      "case": "T2f",
+      "normalized": false,
+      "shape": "final10",
+      "preflight": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2f_preflight_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2f_preflight_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 1.7763568394002505e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 819,
+                  "minimum": 0.9051392773869319,
+                  "maximum": 1.15535893366022,
+                  "quantiles_1_5_50_95_99": [
+                    0.9255738431200538,
+                    0.9492610444495383,
+                    0.9999762313903601,
+                    1.0627929402398306,
+                    1.1149034265709294
+                  ],
+                  "fraction_outside_10_percent": 0.014652014652014652,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 764,
+                  "minimum": 0.9405029914574288,
+                  "maximum": 1.2424805632851714,
+                  "quantiles_1_5_50_95_99": [
+                    0.9563069283639307,
+                    0.9746434844160369,
+                    1.0012572672546443,
+                    1.113853919014067,
+                    1.1791394400429878
+                  ],
+                  "fraction_outside_10_percent": 0.06413612565445026,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9857792630499091,
+                  "maximum": 1.0184855208619552,
+                  "count": 138
+                },
+                "corrected_interface": {
+                  "minimum": 0.9876298309055689,
+                  "maximum": 1.0705666073499542,
+                  "count": 130
+                },
+                "corrected_band": {
+                  "minimum": 0.9404754980988669,
+                  "maximum": 1.2477457371402547,
+                  "count": 764
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 881,
+                  "minimum": 0.837422700518348,
+                  "maximum": 1.2762649294799877,
+                  "quantiles_1_5_50_95_99": [
+                    0.8700360125605815,
+                    0.9130366305929253,
+                    0.9999167214615208,
+                    1.1221330974572172,
+                    1.1825126171913691
+                  ],
+                  "fraction_outside_10_percent": 0.09875141884222474,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 815,
+                  "minimum": 0.8347300292576075,
+                  "maximum": 1.3995715548282344,
+                  "quantiles_1_5_50_95_99": [
+                    0.9110353497770817,
+                    0.9441397450463915,
+                    1.003021978583883,
+                    1.2104289767978755,
+                    1.3248812907200098
+                  ],
+                  "fraction_outside_10_percent": 0.15460122699386503,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9733220598498569,
+                  "maximum": 1.035590139192301,
+                  "count": 145
+                },
+                "corrected_interface": {
+                  "minimum": 0.9460931745820184,
+                  "maximum": 1.127767505067135,
+                  "count": 135
+                },
+                "corrected_band": {
+                  "minimum": 0.858651315577878,
+                  "maximum": 1.40188639834902,
+                  "count": 815
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 805,
+                  "minimum": 0.9340386917399134,
+                  "maximum": 1.1139928373666896,
+                  "quantiles_1_5_50_95_99": [
+                    0.9403431558403365,
+                    0.9648640611950978,
+                    0.999978352025504,
+                    1.0484293201180241,
+                    1.0894085929748027
+                  ],
+                  "fraction_outside_10_percent": 0.007453416149068323,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 752,
+                  "minimum": 0.9576699040501342,
+                  "maximum": 1.1823119505956123,
+                  "quantiles_1_5_50_95_99": [
+                    0.9666254803933294,
+                    0.9822834596929928,
+                    1.0008255853873689,
+                    1.0881422646822834,
+                    1.1550139101506764
+                  ],
+                  "fraction_outside_10_percent": 0.041223404255319146,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9850991812416803,
+                  "maximum": 1.0152374551100123,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9933721299534806,
+                  "maximum": 1.0574961826638738,
+                  "count": 128
+                },
+                "corrected_band": {
+                  "minimum": 0.9584379945006967,
+                  "maximum": 1.1817218609543527,
+                  "count": 752
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.08144546387844664,
+              0.08785249842291391,
+              0.08283835125377714
+            ],
+            "minimum_wall_gap": 0.04714750157708604,
+            "minimum_pair_gap": 0.19331464478733495,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9857792630499091,
+                    "maximum": 1.0184855208619552,
+                    "count": 138
+                  },
+                  "reference": [
+                    0.9858,
+                    1.0185,
+                    138
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.0736950090860518e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9876298309055689,
+                    "maximum": 1.0705666073499542,
+                    "count": 130
+                  },
+                  "reference": [
+                    0.9876,
+                    1.0706,
+                    130
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.339265004576042e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9404754980988669,
+                    "maximum": 1.2477457371402547,
+                    "count": 764
+                  },
+                  "reference": [
+                    0.9405,
+                    1.2477,
+                    764
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.573714025468689e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9733220598498569,
+                    "maximum": 1.035590139192301,
+                    "count": 145
+                  },
+                  "reference": [
+                    0.9733,
+                    1.0356,
+                    145
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.205984985681475e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9460931745820184,
+                    "maximum": 1.127767505067135,
+                    "count": 135
+                  },
+                  "reference": [
+                    0.9461,
+                    1.1278,
+                    135
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.249493286494598e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.858651315577878,
+                    "maximum": 1.40188639834902,
+                    "count": 815
+                  },
+                  "reference": [
+                    0.8587,
+                    1.4019,
+                    815
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.868442212202506e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9850991812416803,
+                    "maximum": 1.0152374551100123,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9851,
+                    1.0152,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.74551100121856e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9933721299534806,
+                    "maximum": 1.0574961826638738,
+                    "count": 128
+                  },
+                  "reference": [
+                    0.9934,
+                    1.0575,
+                    128
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.787004651938485e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9584379945006967,
+                    "maximum": 1.1817218609543527,
+                    "count": 752
+                  },
+                  "reference": [
+                    0.9584,
+                    1.1817,
+                    752
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.799450069663646e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 100,
+          "mean_speed_ratio": [
+            0.010601142459974698,
+            0.009729036881595486,
+            0.008720947770651709,
+            0.00787094832095211,
+            0.011357248739157229,
+            0.01022422795927584
+          ],
+          "rms_speed_ratio": [
+            0.014746610572190896,
+            0.013576166117770124,
+            0.011158135016921743,
+            0.009670157881843727,
+            0.014132819146995679,
+            0.012713049924964345
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0002506828003613246,
+            0.00020617926255952094,
+            0.00210234408385895,
+            0.0017202433266417841,
+            0.0002726802448509565,
+            0.0002465692167042293
+          ],
+          "max_absolute_flux_ratio": [
+            0.0002936386194030753,
+            0.00023661114492117135,
+            0.0022112977273169403,
+            0.0018039355927195937,
+            0.00031216770148243444,
+            0.0002842216337284772
+          ]
+        },
+        "core_counts": [
+          634,
+          531,
+          635,
+          532,
+          631,
+          529
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 200,
+          "window_start_step": 100,
+          "window_count": 100,
+          "window_start_time": 0.0125,
+          "end_time": 0.025,
+          "max_velocity_component_all": 2.967481992437217,
+          "max_velocity_component_window": 2.8442909607994733,
+          "component_screening_index": 0.5056244418553494,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.21290308426426455,
+          "snapshot_component_upper_index": 0.557045656593254,
+          "snapshot_cell_center_max_speed": 2.6641256968531573,
+          "snapshot_cell_center_index": 0.44359785803958257,
+          "snapshot_count": 1,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 11.450556305770341,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      },
+      "production": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2f_production_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/multibody_offset_T2f_production_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 3.552713678800501e-15,
+          "paper_eligible": false
+        },
+        "geometry": {
+          "bodies": [
+            {
+              "name": "trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 819,
+                  "minimum": 0.9051392773869319,
+                  "maximum": 1.15535893366022,
+                  "quantiles_1_5_50_95_99": [
+                    0.9255738431200538,
+                    0.9492610444495383,
+                    0.9999762313903601,
+                    1.0627929402398306,
+                    1.1149034265709294
+                  ],
+                  "fraction_outside_10_percent": 0.014652014652014652,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 764,
+                  "minimum": 0.9405029914574288,
+                  "maximum": 1.2424805632851714,
+                  "quantiles_1_5_50_95_99": [
+                    0.9563069283639307,
+                    0.9746434844160369,
+                    1.0012572672546443,
+                    1.113853919014067,
+                    1.1791394400429878
+                  ],
+                  "fraction_outside_10_percent": 0.06413612565445026,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9857792630499091,
+                  "maximum": 1.0184855208619552,
+                  "count": 138
+                },
+                "corrected_interface": {
+                  "minimum": 0.9876298309055689,
+                  "maximum": 1.0705666073499542,
+                  "count": 130
+                },
+                "corrected_band": {
+                  "minimum": 0.9404754980988669,
+                  "maximum": 1.2477457371402547,
+                  "count": 764
+                }
+              }
+            },
+            {
+              "name": "quatrefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 881,
+                  "minimum": 0.837422700518348,
+                  "maximum": 1.2762649294799877,
+                  "quantiles_1_5_50_95_99": [
+                    0.8700360125605815,
+                    0.9130366305929253,
+                    0.9999167214615208,
+                    1.1221330974572172,
+                    1.1825126171913691
+                  ],
+                  "fraction_outside_10_percent": 0.09875141884222474,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 815,
+                  "minimum": 0.8347300292576075,
+                  "maximum": 1.3995715548282344,
+                  "quantiles_1_5_50_95_99": [
+                    0.9110353497770817,
+                    0.9441397450463915,
+                    1.003021978583883,
+                    1.2104289767978755,
+                    1.3248812907200098
+                  ],
+                  "fraction_outside_10_percent": 0.15460122699386503,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9733220598498569,
+                  "maximum": 1.035590139192301,
+                  "count": 145
+                },
+                "corrected_interface": {
+                  "minimum": 0.9460931745820184,
+                  "maximum": 1.127767505067135,
+                  "count": 135
+                },
+                "corrected_band": {
+                  "minimum": 0.858651315577878,
+                  "maximum": 1.40188639834902,
+                  "count": 815
+                }
+              }
+            },
+            {
+              "name": "swept_trefoil",
+              "bands": {
+                "nominal_band": {
+                  "count": 805,
+                  "minimum": 0.9340386917399134,
+                  "maximum": 1.1139928373666896,
+                  "quantiles_1_5_50_95_99": [
+                    0.9403431558403365,
+                    0.9648640611950978,
+                    0.999978352025504,
+                    1.0484293201180241,
+                    1.0894085929748027
+                  ],
+                  "fraction_outside_10_percent": 0.007453416149068323,
+                  "within_10_percent_diagnostic_only": false
+                },
+                "corrected_band": {
+                  "count": 752,
+                  "minimum": 0.9576699040501342,
+                  "maximum": 1.1823119505956123,
+                  "quantiles_1_5_50_95_99": [
+                    0.9666254803933294,
+                    0.9822834596929928,
+                    1.0008255853873689,
+                    1.0881422646822834,
+                    1.1550139101506764
+                  ],
+                  "fraction_outside_10_percent": 0.041223404255319146,
+                  "within_10_percent_diagnostic_only": false
+                }
+              },
+              "finite_difference": {
+                "nominal_interface": {
+                  "minimum": 0.9850991812416803,
+                  "maximum": 1.0152374551100123,
+                  "count": 134
+                },
+                "corrected_interface": {
+                  "minimum": 0.9933721299534806,
+                  "maximum": 1.0574961826638738,
+                  "count": 128
+                },
+                "corrected_band": {
+                  "minimum": 0.9584379945006967,
+                  "maximum": 1.1817218609543527,
+                  "count": 752
+                }
+              }
+            }
+          ],
+          "envelope": {
+            "support_radius_bounds": [
+              0.08144546387844664,
+              0.08785249842291391,
+              0.08283835125377714
+            ],
+            "minimum_wall_gap": 0.04714750157708604,
+            "minimum_pair_gap": 0.19331464478733495,
+            "passed": true,
+            "scope": "conservative analytic bound of corrected support for the pinned fixed design, not a design-box certificate"
+          },
+          "full_band_within_10_percent_diagnostic_only": false,
+          "reference_checks": [
+            {
+              "name": "trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9857792630499091,
+                    "maximum": 1.0184855208619552,
+                    "count": 138
+                  },
+                  "reference": [
+                    0.9858,
+                    1.0185,
+                    138
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.0736950090860518e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9876298309055689,
+                    "maximum": 1.0705666073499542,
+                    "count": 130
+                  },
+                  "reference": [
+                    0.9876,
+                    1.0706,
+                    130
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.339265004576042e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9404754980988669,
+                    "maximum": 1.2477457371402547,
+                    "count": 764
+                  },
+                  "reference": [
+                    0.9405,
+                    1.2477,
+                    764
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.573714025468689e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "quatrefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9733220598498569,
+                    "maximum": 1.035590139192301,
+                    "count": 145
+                  },
+                  "reference": [
+                    0.9733,
+                    1.0356,
+                    145
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.205984985681475e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9460931745820184,
+                    "maximum": 1.127767505067135,
+                    "count": 135
+                  },
+                  "reference": [
+                    0.9461,
+                    1.1278,
+                    135
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.249493286494598e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.858651315577878,
+                    "maximum": 1.40188639834902,
+                    "count": 815
+                  },
+                  "reference": [
+                    0.8587,
+                    1.4019,
+                    815
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 4.868442212202506e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            },
+            {
+              "name": "swept_trefoil",
+              "nominal_interface_gate": true,
+              "reference_complete": true,
+              "regions": [
+                {
+                  "region": "nominal_interface",
+                  "observed": {
+                    "minimum": 0.9850991812416803,
+                    "maximum": 1.0152374551100123,
+                    "count": 134
+                  },
+                  "reference": [
+                    0.9851,
+                    1.0152,
+                    134
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.74551100121856e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_interface",
+                  "observed": {
+                    "minimum": 0.9933721299534806,
+                    "maximum": 1.0574961826638738,
+                    "count": 128
+                  },
+                  "reference": [
+                    0.9934,
+                    1.0575,
+                    128
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 2.787004651938485e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                },
+                {
+                  "region": "corrected_band",
+                  "observed": {
+                    "minimum": 0.9584379945006967,
+                    "maximum": 1.1817218609543527,
+                    "count": 752
+                  },
+                  "reference": [
+                    0.9584,
+                    1.1817,
+                    752
+                  ],
+                  "reference_available": true,
+                  "maximum_endpoint_difference": 3.799450069663646e-05,
+                  "endpoint_gate": true,
+                  "exact_count_gate": true
+                }
+              ],
+              "reference_endpoint_gate": true,
+              "reference_count_gate": true
+            }
+          ]
+        },
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1",
+            "nominal_body2",
+            "corrected_body2",
+            "nominal_body3",
+            "corrected_body3"
+          ],
+          "sample_count": 16000,
+          "mean_speed_ratio": [
+            0.007571218136571206,
+            0.007200624689822932,
+            0.0059618475273300765,
+            0.005568288318483113,
+            0.01104558401207672,
+            0.010563845045133165
+          ],
+          "rms_speed_ratio": [
+            0.009735020526402903,
+            0.009148076987679067,
+            0.006689787947955701,
+            0.006047571080079883,
+            0.012971187769533729,
+            0.01218935973792456
+          ],
+          "mean_absolute_flux_ratio": [
+            0.000581029801566982,
+            0.0005043742159855223,
+            0.0011971590142434074,
+            0.0009893704509018307,
+            0.0006024243697236931,
+            0.0005561622723391615
+          ],
+          "max_absolute_flux_ratio": [
+            0.0005833029270214152,
+            0.0005063309358548984,
+            0.0012704456545209414,
+            0.0010486443821272691,
+            0.0008743752749408698,
+            0.0007953336221380523
+          ]
+        },
+        "core_counts": [
+          634,
+          531,
+          635,
+          532,
+          631,
+          529
+        ],
+        "window": {
+          "dt": 0.000125,
+          "n_steps": 48000,
+          "window_start_step": 32000,
+          "window_count": 16000,
+          "window_start_time": 4.0,
+          "end_time": 6.0,
+          "max_velocity_component_all": 2.988634485642094,
+          "max_velocity_component_window": 2.961260925092452,
+          "component_screening_index": 0.5480666416549629,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.23707967510522937,
+          "snapshot_component_upper_index": 0.815482673130576,
+          "snapshot_cell_center_max_speed": 2.9659709291861964,
+          "snapshot_cell_center_index": 0.5498114720486018,
+          "snapshot_count": 25,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "objective": 8.634794196094623,
+        "screening_passed": true,
+        "label": "calibrated-offset model (DFG 2D-1 C_D +0.8%, DFG 2D-2 C_D,max +7.5%)",
+        "validation": false,
+        "gain_gate": null,
+        "paper_eligible": false
+      }
+    }
+  ],
+  "baseline": {
+    "J_initial": 15.510412318254385,
+    "J_final": 9.228790197980908,
+    "gain_percent": 40.499388355269986,
+    "runs": [
+      {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_initial_dt2",
+        "objective": 15.510412318254385,
+        "source_commit": "3e5566d64f233159d1d8d16bc77aec4e025305e6",
+        "audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_initial_dt2",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 7.105427357601002e-15,
+          "paper_eligible": false
+        }
+      },
+      {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_dt2_retry1",
+        "objective": 9.228790197980908,
+        "source_commit": "3e5566d64f233159d1d8d16bc77aec4e025305e6",
+        "audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/C_final10_dt2_retry1",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_pullback_checks": 0,
+          "analytic_pullback_max_error": null,
+          "raw_field_force_max_error": 3.552713678800501e-15,
+          "paper_eligible": false
+        }
+      }
+    ],
+    "prior_summary_sha256": "33b41202eaaf9bfbf8dd478c438c8e75c3ca82e58e8604d467d0c401f096c165"
+  },
+  "pairs": {
+    "T1": {
+      "J_initial": 14.895739558982356,
+      "J_final": 8.598842739981997,
+      "gain_percent": 42.27313987376502
+    },
+    "T2": {
+      "J_initial": 14.976899363437475,
+      "J_final": 8.634794196094623,
+      "gain_percent": 42.34591562273289
+    }
+  },
+  "contrasts": {
+    "offset_with_radial_definition_T2_minus_C": {
+      "J_initial": -0.53351295481691,
+      "J_final": -0.5939960018862855,
+      "gain_percent": 1.8465272674629034
+    },
+    "normalization_at_fixed_offset_T1_minus_T2": {
+      "J_initial": -0.08115980445511894,
+      "J_final": -0.035951456112625735,
+      "gain_percent": -0.07277574896787087
+    },
+    "total_T1_minus_C": {
+      "J_initial": -0.6146727592720289,
+      "J_final": -0.6299474579989113,
+      "gain_percent": 1.7737515184950325
+    },
+    "gain_difference_units": "percentage points"
+  },
+  "level_set_definition_sensitive": false,
+  "level_set_sensitivity_flag_threshold_percentage_points": 3,
+  "all_production_screening_passed": true,
+  "all_snapshot_upper_indices_le_one": false,
+  "all_snapshot_cell_center_indices_le_one": true,
+  "stability_limit": "The history maximum is a velocity-component maximum. Snapshot component maxima may come from different points/times; an upper bound above one is inconclusive, not an instability verdict. No new-model dt/4 sensitivity was authorized or run.",
+  "unchanged_solver_and_force": {
+    "jax_cad/differentiable/mac_channel.py": "d0dc7efb488e84dff4d10e3215890c567565bc8dab9ee244c837b6b2de4a7340",
+    "jax_cad/verification.py": "aa9c86065acf6d276af892c98fcd941a9e04824a5b662573290eda6e9ff7fb49"
+  },
+  "unchanged_trajectory_function_ast_sha256": {
+    "initial_flow": "4cf00cc1d5abb0b2f6db37f0a12192a04216bdf288b36094e9fbd65e2cf04f17",
+    "make_wake_kernels": "c8a731d2e20bd9226789a628f0e43d3d5d2f810750d6880deda749d330d82628",
+    "evaluate_trajectory": "44d057ddd6fb839c3cbfe6d609e1bd2d5098c9b359c30e43421577684be26f0f"
+  },
+  "baseline_physical_settings_and_fixed_designs_match": true,
+  "attribution_limit": "Sequential contrasts only. Normalization changes transition width/profile and local offset; not a pure offset effect. No normalized-zero-shift controls or interaction attribution. Full v2 rules were not supplied.",
+  "prior_S1_Re100_drag_failure_unchanged": true,
+  "original_validated_stage2_started": false,
+  "S15_retried": false,
+  "interpretation": "Fixed-design model sensitivity, not validated sharp-wall performance, geometry-gradient verification, or re-optimization."
+}

@@ -1,0 +1,60 @@
+{
+  "scope": "Small CPU verification of the non-periodic variable-mobility projection; not a final engineering benchmark.",
+  "projection": {
+    "grid": [18, 11],
+    "domain": [2.0, 1.0],
+    "spacing": [0.1111111111111111, 0.09090909090909091],
+    "tolerance_sweep": [
+      {
+        "pressure_tolerance": 0.0001,
+        "pressure_residual_relative": 8.581959432930132e-05,
+        "divergence_rms": 0.00022001707093347072,
+        "divergence_max": 0.0007739008780385248,
+        "mass_flux_mismatch": 3.3174878618805584e-06
+      },
+      {
+        "pressure_tolerance": 1e-06,
+        "pressure_residual_relative": 8.992058811431274e-07,
+        "divergence_rms": 2.305308545001306e-06,
+        "divergence_max": 6.1313821115849265e-06,
+        "mass_flux_mismatch": 2.2498611228018358e-08
+      },
+      {
+        "pressure_tolerance": 1e-08,
+        "pressure_residual_relative": 6.613017188147217e-09,
+        "divergence_rms": 1.6953898142087313e-08,
+        "divergence_max": 6.319383416553137e-08,
+        "mass_flux_mismatch": 1.6469999967024963e-10
+      },
+      {
+        "pressure_tolerance": 1e-10,
+        "pressure_residual_relative": 4.017504546755486e-11,
+        "divergence_rms": 1.0299743595110842e-10,
+        "divergence_max": 3.339423182424639e-10,
+        "mass_flux_mismatch": 2.0816681711721685e-12
+      },
+      {
+        "pressure_tolerance": 1e-12,
+        "pressure_residual_relative": 4.300625755508643e-13,
+        "divergence_rms": 1.1026043299210209e-12,
+        "divergence_max": 3.0792035587978717e-12,
+        "mass_flux_mismatch": 2.9341608507950565e-14
+      }
+    ]
+  },
+  "geometry_pullback": {
+    "grid": [12, 8],
+    "theta": [0.85, 0.51, 0.17],
+    "objective": 10.064353337460696,
+    "gradient": [0.008773894534123472, -0.15455826707354553, 50.35211268366111],
+    "directional_derivative": 37.489971162528015,
+    "epsilons": [0.004, 0.002, 0.001, 0.0005],
+    "first_order_remainders": [
+      0.0010479866110079672,
+      0.00026186005339753904,
+      6.544758269293183e-05,
+      1.6359695007149566e-05
+    ],
+    "first_order_rates": [2.0007523859613165, 2.000384181851601, 2.0001940547500245]
+  }
+}

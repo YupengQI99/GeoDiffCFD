@@ -1,0 +1,360 @@
+{
+  "maxima": {
+    "gpu_memory_mib": 17291.0,
+    "temperature_c": 58.0,
+    "cpu_temperature_c": 82.75,
+    "nvme_temperature_c": 55.85,
+    "system_disk_loss_gib": 0.0165557861328125
+  },
+  "minima": {
+    "available_ram_fraction": 0.6241333885509098,
+    "disk_free_gib": 1962.885410308838,
+    "system_disk_free_gib": 26.078323364257812
+  },
+  "records": {
+    "dfg2d1_wall_shift_S1_2D1_preflight_20260928": {
+      "source_commit": "42fac8bb2d7583eba870ef7e3e1705627af0e6c1",
+      "guard": {
+        "schema": "wake-hardware-guard-1",
+        "command": [
+          "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+          "/home/user/GeoDiffCFD/jax_cad/tools/run_dfg2d1_wall_shift.py",
+          "--mode",
+          "forward",
+          "--config",
+          "/home/user/GeoDiffCFD/jax_cad/configs/dfg2d1_wall_shift/S1_2D1_preflight.json",
+          "--output-dir",
+          "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_S1_2D1_preflight_20260928"
+        ],
+        "initial": {
+          "gpu_memory_mib": 15.0,
+          "temperature_c": 45.0,
+          "power_w": 36.46,
+          "cpu_temperature_c": 68.625,
+          "nvme_temperature_c": 49.85,
+          "unix_time": 1790602686.2922776,
+          "available_ram_fraction": 0.6757436359137658,
+          "disk_free_gib": 1963.1301345825195,
+          "disk_used_fraction": 0.8682636888241672,
+          "system_disk_free_gib": 26.130691528320312,
+          "system_disk_loss_gib": 0.0
+        },
+        "peak_temperatures_memory_and_minimum_reserves": {
+          "gpu_memory_mib": 17291.0,
+          "temperature_c": 51.0,
+          "power_w": 160.68,
+          "cpu_temperature_c": 76.375,
+          "nvme_temperature_c": 50.85,
+          "unix_time": 1790602686.2922776,
+          "available_ram_fraction": 0.6661919803268453,
+          "disk_free_gib": 1963.1225471496582,
+          "disk_used_fraction": 0.8682641979806407,
+          "system_disk_free_gib": 26.130691528320312,
+          "system_disk_loss_gib": 0.0
+        },
+        "stop_reason": null,
+        "elapsed_seconds": 41.220285889925435,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "paper_eligible": false,
+        "foreign_gpu_processes": [],
+        "storage_policy": {
+          "external_root": "/media/user/external/jax_cad_multibody_sensitivity_20260926",
+          "mounted_device": 2065,
+          "external_minimum_free_gib": 30,
+          "system_initial_free_gib": 26.130691528320312,
+          "system_maximum_loss_mib": 128,
+          "runtime_maximum_mib": 256,
+          "environment": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "TMPDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_preflight_20260928/tmp",
+            "XDG_CACHE_HOME": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_preflight_20260928/xdg",
+            "MPLCONFIGDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_preflight_20260928/matplotlib",
+            "CUDA_CACHE_PATH": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_preflight_20260928/cuda",
+            "JAX_COMPILATION_CACHE_DIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_preflight_20260928/jax",
+            "TMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_preflight_20260928/tmp",
+            "TEMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_preflight_20260928/tmp"
+          },
+          "external_drive_temperature": "SMART unavailable to current user; not measured"
+        }
+      }
+    },
+    "dfg2d1_wall_shift_S1_2D1_production_20260928": {
+      "source_commit": "42fac8bb2d7583eba870ef7e3e1705627af0e6c1",
+      "guard": {
+        "schema": "wake-hardware-guard-1",
+        "command": [
+          "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+          "/home/user/GeoDiffCFD/jax_cad/tools/run_dfg2d1_wall_shift.py",
+          "--mode",
+          "forward",
+          "--config",
+          "/home/user/GeoDiffCFD/jax_cad/configs/dfg2d1_wall_shift/S1_2D1_production.json",
+          "--output-dir",
+          "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_S1_2D1_production_20260928"
+        ],
+        "initial": {
+          "gpu_memory_mib": 15.0,
+          "temperature_c": 47.0,
+          "power_w": 37.44,
+          "cpu_temperature_c": 65.25,
+          "nvme_temperature_c": 49.85,
+          "unix_time": 1790602747.4035408,
+          "available_ram_fraction": 0.6784678563603735,
+          "disk_free_gib": 1963.1225318908691,
+          "disk_used_fraction": 0.8682641990045854,
+          "system_disk_free_gib": 26.128292083740234,
+          "system_disk_loss_gib": 0.0
+        },
+        "peak_temperatures_memory_and_minimum_reserves": {
+          "gpu_memory_mib": 17291.0,
+          "temperature_c": 58.0,
+          "power_w": 205.99,
+          "cpu_temperature_c": 82.25,
+          "nvme_temperature_c": 54.85,
+          "unix_time": 1790602747.4035408,
+          "available_ram_fraction": 0.6241333885509098,
+          "disk_free_gib": 1963.0078125,
+          "disk_used_fraction": 0.8682718972763949,
+          "system_disk_free_gib": 26.128292083740234,
+          "system_disk_loss_gib": 0.0
+        },
+        "stop_reason": null,
+        "elapsed_seconds": 316.0687118379865,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "paper_eligible": false,
+        "foreign_gpu_processes": [],
+        "storage_policy": {
+          "external_root": "/media/user/external/jax_cad_multibody_sensitivity_20260926",
+          "mounted_device": 2065,
+          "external_minimum_free_gib": 30,
+          "system_initial_free_gib": 26.128292083740234,
+          "system_maximum_loss_mib": 128,
+          "runtime_maximum_mib": 256,
+          "environment": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "TMPDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_production_20260928/tmp",
+            "XDG_CACHE_HOME": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_production_20260928/xdg",
+            "MPLCONFIGDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_production_20260928/matplotlib",
+            "CUDA_CACHE_PATH": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_production_20260928/cuda",
+            "JAX_COMPILATION_CACHE_DIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_production_20260928/jax",
+            "TMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_production_20260928/tmp",
+            "TEMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_S1_2D1_production_20260928/tmp"
+          },
+          "external_drive_temperature": "SMART unavailable to current user; not measured"
+        }
+      }
+    },
+    "dfg2d1_wall_shift_W0_2D1_preflight_20260928": {
+      "source_commit": "42fac8bb2d7583eba870ef7e3e1705627af0e6c1",
+      "guard": {
+        "schema": "wake-hardware-guard-1",
+        "command": [
+          "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+          "/home/user/GeoDiffCFD/jax_cad/tools/run_dfg2d1_wall_shift.py",
+          "--mode",
+          "forward",
+          "--config",
+          "/home/user/GeoDiffCFD/jax_cad/configs/dfg2d1_wall_shift/W0_2D1_preflight.json",
+          "--output-dir",
+          "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_W0_2D1_preflight_20260928"
+        ],
+        "initial": {
+          "gpu_memory_mib": 15.0,
+          "temperature_c": 47.0,
+          "power_w": 38.23,
+          "cpu_temperature_c": 69.25,
+          "nvme_temperature_c": 54.85,
+          "unix_time": 1790603092.950965,
+          "available_ram_fraction": 0.6763896864444432,
+          "disk_free_gib": 1963.0077934265137,
+          "disk_used_fraction": 0.8682718985563257,
+          "system_disk_free_gib": 26.111080169677734,
+          "system_disk_loss_gib": 0.0
+        },
+        "peak_temperatures_memory_and_minimum_reserves": {
+          "gpu_memory_mib": 17291.0,
+          "temperature_c": 51.0,
+          "power_w": 170.73,
+          "cpu_temperature_c": 82.75,
+          "nvme_temperature_c": 54.85,
+          "unix_time": 1790603092.950965,
+          "available_ram_fraction": 0.6678865806389526,
+          "disk_free_gib": 1963.0001983642578,
+          "disk_used_fraction": 0.8682724082247716,
+          "system_disk_free_gib": 26.111080169677734,
+          "system_disk_loss_gib": 0.0
+        },
+        "stop_reason": null,
+        "elapsed_seconds": 43.48744110483676,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "paper_eligible": false,
+        "foreign_gpu_processes": [],
+        "storage_policy": {
+          "external_root": "/media/user/external/jax_cad_multibody_sensitivity_20260926",
+          "mounted_device": 2065,
+          "external_minimum_free_gib": 30,
+          "system_initial_free_gib": 26.111080169677734,
+          "system_maximum_loss_mib": 128,
+          "runtime_maximum_mib": 256,
+          "environment": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "TMPDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_preflight_20260928/tmp",
+            "XDG_CACHE_HOME": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_preflight_20260928/xdg",
+            "MPLCONFIGDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_preflight_20260928/matplotlib",
+            "CUDA_CACHE_PATH": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_preflight_20260928/cuda",
+            "JAX_COMPILATION_CACHE_DIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_preflight_20260928/jax",
+            "TMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_preflight_20260928/tmp",
+            "TEMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_preflight_20260928/tmp"
+          },
+          "external_drive_temperature": "SMART unavailable to current user; not measured"
+        }
+      }
+    },
+    "dfg2d1_wall_shift_W0_2D1_production_20260928": {
+      "source_commit": "42fac8bb2d7583eba870ef7e3e1705627af0e6c1",
+      "guard": {
+        "schema": "wake-hardware-guard-1",
+        "command": [
+          "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+          "/home/user/GeoDiffCFD/jax_cad/tools/run_dfg2d1_wall_shift.py",
+          "--mode",
+          "forward",
+          "--config",
+          "/home/user/GeoDiffCFD/jax_cad/configs/dfg2d1_wall_shift/W0_2D1_production.json",
+          "--output-dir",
+          "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_W0_2D1_production_20260928"
+        ],
+        "initial": {
+          "gpu_memory_mib": 15.0,
+          "temperature_c": 43.0,
+          "power_w": 36.1,
+          "cpu_temperature_c": 67.625,
+          "nvme_temperature_c": 53.85,
+          "unix_time": 1790603164.697862,
+          "available_ram_fraction": 0.6749530178375895,
+          "disk_free_gib": 1963.0001792907715,
+          "disk_used_fraction": 0.8682724095047023,
+          "system_disk_free_gib": 26.093643188476562,
+          "system_disk_loss_gib": 0.0
+        },
+        "peak_temperatures_memory_and_minimum_reserves": {
+          "gpu_memory_mib": 17291.0,
+          "temperature_c": 58.0,
+          "power_w": 203.93,
+          "cpu_temperature_c": 82.625,
+          "nvme_temperature_c": 55.85,
+          "unix_time": 1790603164.697862,
+          "available_ram_fraction": 0.6307880448654615,
+          "disk_free_gib": 1962.885410308838,
+          "disk_used_fraction": 0.8682801111043319,
+          "system_disk_free_gib": 26.093643188476562,
+          "system_disk_loss_gib": 0.0
+        },
+        "stop_reason": null,
+        "elapsed_seconds": 314.83962624310516,
+        "source_unchanged": true,
+        "exit_code": 0,
+        "paper_eligible": false,
+        "foreign_gpu_processes": [],
+        "storage_policy": {
+          "external_root": "/media/user/external/jax_cad_multibody_sensitivity_20260926",
+          "mounted_device": 2065,
+          "external_minimum_free_gib": 30,
+          "system_initial_free_gib": 26.093643188476562,
+          "system_maximum_loss_mib": 128,
+          "runtime_maximum_mib": 256,
+          "environment": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "TMPDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_production_20260928/tmp",
+            "XDG_CACHE_HOME": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_production_20260928/xdg",
+            "MPLCONFIGDIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_production_20260928/matplotlib",
+            "CUDA_CACHE_PATH": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_production_20260928/cuda",
+            "JAX_COMPILATION_CACHE_DIR": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_production_20260928/jax",
+            "TMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_production_20260928/tmp",
+            "TEMP": "/media/user/external/jax_cad_multibody_sensitivity_20260926/runtime/dfg2d1_wall_shift_W0_2D1_production_20260928/tmp"
+          },
+          "external_drive_temperature": "SMART unavailable to current user; not measured"
+        }
+      }
+    }
+  },
+  "cpu": {
+    "source_commit": "42fac8bb2d7583eba870ef7e3e1705627af0e6c1",
+    "guard": {
+      "command": [
+        "/home/user/GeoDiffCFD/jax_cad/.venv/bin/python",
+        "/home/user/GeoDiffCFD/jax_cad/tools/guard_mac_normal_tests.py",
+        "--child",
+        "--suite",
+        "dfg2d1-wall-shift",
+        "--output-dir",
+        "/media/user/external/jax_cad_multibody_sensitivity_20260926/cpu_dfg2d1_wall_shift_frozen_20260928"
+      ],
+      "initial": {
+        "gpu_memory_mib": 15.0,
+        "temperature_c": 46.0,
+        "power_w": 36.15,
+        "cpu_temperature_c": 64.625,
+        "nvme_temperature_c": 49.85,
+        "unix_time": 1790602655.698109,
+        "available_ram_fraction": 0.674040486728852,
+        "disk_free_gib": 1963.1301918029785,
+        "disk_used_fraction": 0.8682636849843748
+      },
+      "low_disk_exception": true,
+      "address_space_bytes": 4294967296,
+      "cpu_seconds": 60,
+      "wall_seconds_limit": 120,
+      "stop_reason": null,
+      "source_unchanged": true,
+      "elapsed_seconds": 22.887750305933878,
+      "exit_code": 0
+    },
+    "child": {
+      "exit_code": 0,
+      "wall_seconds": 20.81954182800837,
+      "peak_host_bytes": 634888192,
+      "affinity": [
+        0,
+        1
+      ],
+      "address_space_bytes": 4294967296,
+      "cpu_seconds": 60,
+      "hidden_accelerator_packages": [
+        "jax_cuda12_plugin",
+        "jax_cuda13_plugin",
+        "jax_rocm60_plugin",
+        "jax_plugins.xla_cuda12",
+        "jax_plugins.xla_cuda13",
+        "jax_plugins.xla_rocm60"
+      ],
+      "software": {
+        "python": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+        "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+        "jax": "0.7.0",
+        "numpy": "2.3.1",
+        "scipy": "1.16.0",
+        "pytest": "9.1.1",
+        "devices": [
+          "TFRT_CPU_0"
+        ],
+        "backend": "cpu",
+        "precision": "float64"
+      },
+      "paper_eligible": false,
+      "experiment_kind": "bounded-unit-verification-not-cylinder"
+    },
+    "junit": {
+      "tests": 31,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    }
+  },
+  "interruptions": 0,
+  "retries": 0,
+  "external_drive_temperature": "not measured; SMART unavailable"
+}

@@ -1,0 +1,20 @@
+{
+  "git_commit": "1fa04a755bfc7e8a1f81aca616171b384f1a7775",
+  "git_branch": "feat/multibody-wake-design",
+  "git_dirty": false,
+  "python": "3.11.13",
+  "jax": "0.7.0",
+  "jaxlib": "0.7.0",
+  "numpy": "2.3.1",
+  "scipy": "1.16.0",
+  "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+  "processor": "x86_64",
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "device_kind": "NVIDIA GeForce RTX 4090",
+  "precision": "float64",
+  "x64_enabled": true,
+  "utc": "2026-09-23T20:00:34.030811+00:00"
+}

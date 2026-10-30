@@ -1,0 +1,101 @@
+{
+  "schema": "multibody-wake-result-1",
+  "mode": "forward",
+  "provenance": {
+    "git_commit": "fedf5f781c9c4a93c7e58668f707672abb86558f",
+    "git_branch": "feat/multibody-wake-design",
+    "git_dirty": false,
+    "python": "3.11.13",
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "scipy": "1.16.0",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "processor": "x86_64",
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "device_kind": "NVIDIA GeForce RTX 4090",
+    "precision": "float64",
+    "x64_enabled": true,
+    "utc": "2026-09-20T11:14:20.762909+00:00"
+  },
+  "paper_eligible": false,
+  "scope": "three-body finite-Brinkman finite-time native shape design; not sharp-wall acceptance",
+  "value": 15.760664882775771,
+  "evaluations": [
+    {
+      "theta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "body_coefficients": [
+        [
+          0.0,
+          0.24,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.04,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.02,
+          0.16,
+          0.0,
+          0.02,
+          0.16,
+          0.0
+        ]
+      ],
+      "objective": 15.760664882775771,
+      "gradient": null,
+      "geometric_areas": [
+        0.007853981633974482,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "reference_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "diffuse_areas": [
+        0.007961982987959984,
+        0.00795605918526059,
+        0.007954949071392783
+      ],
+      "diffuse_area": 0.023872991244613357,
+      "seconds": 89.70570849697106,
+      "max_diagnostics": [
+        101.23364686569224,
+        2.8685941394381773,
+        2.870680411352244e-12,
+        9.596323735650003e-12,
+        4.06179155350667e-16,
+        0.11965273176850241,
+        2.787296947113349
+      ],
+      "paper_eligible": false,
+      "directory": "evaluation-000"
+    }
+  ]
+}

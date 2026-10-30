@@ -1,0 +1,51 @@
+{
+  "configured_container": {
+    "digest": "sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8",
+    "expected_versions": {
+      "dolfinx": "0.11.0.post0",
+      "gmsh": "4.15.2",
+      "petsc4py": "3.25.1"
+    },
+    "image": "dolfinx/dolfinx:stable"
+  },
+  "dolfinx": "0.11.0.post0",
+  "git_branch": "exp/forward-verification-suite",
+  "git_commit": "bfb9034dfc986cf931abf0d2a4521366f9be3947",
+  "git_dirty": false,
+  "git_repository": "https://github.com/YupengQI99/jax_cad.git",
+  "gmsh": "4.15.2",
+  "hostname": "3470023f9eec",
+  "mpi_rank": 0,
+  "mpi_size": 1,
+  "numpy": "2.4.6",
+  "petsc4py": "3.25.1",
+  "petsc_scalar_type": "<class 'numpy.float64'>",
+  "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "reproducibility_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONPATH": "/usr/local/dolfinx-real/lib/python3.12/dist-packages:/usr/local/lib:"
+  },
+  "runtime_option_files": [
+    {
+      "path": "/root/.config/ffcx/ffcx_options.json",
+      "sha256": "1d6faa9e1a76d13f3ab8558a3640158b1f0a54f624a4e37ddc3ef41ed4191058"
+    }
+  ],
+  "source_snapshot": {
+    "branch": "exp/forward-verification-suite",
+    "commit": "bfb9034dfc986cf931abf0d2a4521366f9be3947",
+    "dirty": false,
+    "input_file_sha256": {
+      "/root/.config/ffcx/ffcx_options.json": "1d6faa9e1a76d13f3ab8558a3640158b1f0a54f624a4e37ddc3ef41ed4191058",
+      "/root/.petscrc": null,
+      "/work/ffcx_options.json": null,
+      "configs/forward_verification/dolfinx_dfg2d1_coarse.json": "f0b322b1e1349e3d51d15e97996ab90b7e8ac1d52e41fbeda86049e6986a18e6",
+      "tools/dolfinx_dfg2d1.py": "c7534c6592d52e73d6425f7c436fb4ac933274598f79d4889f02a1160b993aa4"
+    },
+    "repository": "https://github.com/YupengQI99/jax_cad.git"
+  }
+}

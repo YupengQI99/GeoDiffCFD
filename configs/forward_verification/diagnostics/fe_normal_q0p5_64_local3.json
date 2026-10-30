@@ -1,0 +1,32 @@
+{
+  "schema_version": "dolfinx-finite-brinkman-config-1.0",
+  "experiment_id": "dolfinx_normal_constraint_diagnostic",
+  "case": "dfg-cylinder-2d1-finite-brinkman-normal-convolution",
+  "run_id": "finite-normal-q0p5-64markers-local3",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "source_config": "configs/forward_verification/diagnostics/cylinder_central_medium_q0p5.json",
+  "source_config_sha256": "4927ca71c4b68fd156f526fadbf94ff65fe9fe2166df0c1133934b54a99efd3b",
+  "normal_constraint": {
+    "source_config": "configs/forward_verification/diagnostics/cylinder_normal_q0p5_medium64.json",
+    "source_config_sha256": "16d706b0b5267dbb069fcf45f8cca233036348d9ad34d2bccce34ea084c21c7a"
+  },
+  "mesh": {
+    "nx": 220,
+    "ny": 41,
+    "diagonal": "right",
+    "local_refinements": 3
+  },
+  "quadrature_degree": 10,
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8",
+    "expected_versions": {
+      "dolfinx": "0.11.0.post0",
+      "gmsh": "4.15.2",
+      "petsc4py": "3.25.1"
+    }
+  },
+  "advection_form": "conservative"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "dolfinx-finite-brinkman-config-1.0",
+  "experiment_id": "dolfinx_normal_constraint_diagnostic",
+  "case": "dfg-cylinder-2d1-finite-brinkman-normal-convolution",
+  "run_id": "finite-normal-continuum-shift-local2",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "source_config": "configs/forward_verification/diagnostics/cylinder_continuum_shift_medium_fe_source.json",
+  "source_config_sha256": "c0fa06cd91ef9aee910a6b1833cab296411aa0653e83ac6ead32a1dd7e3ba1dc",
+  "normal_constraint": {
+    "source_config": "configs/forward_verification/diagnostics/normal_continuum_shift_medium48_fe_source.json",
+    "source_config_sha256": "78a5832a8d0122b1d2457ee394c5d953663375a4f5e389faa0fb3e23114ce795"
+  },
+  "mesh": {
+    "nx": 220,
+    "ny": 41,
+    "diagonal": "right",
+    "local_refinements": 2
+  },
+  "quadrature_degree": 14,
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:2ae4bfbc0d9077268880faf04c72750528bee986c94ab223a2c159969bd56fa8",
+    "expected_versions": {
+      "dolfinx": "0.11.0.post0",
+      "gmsh": "4.15.2",
+      "petsc4py": "3.25.1"
+    }
+  },
+  "advection_form": "conservative",
+  "study_protocol": "Only mask shift changes, from grid-free planar Riccati equation; no DFG fitting. CPU FE attribution, not a MAC repair claim."
+}

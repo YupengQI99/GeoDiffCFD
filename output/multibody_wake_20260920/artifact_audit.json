@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "paper_eligible": false,
+  "records": [
+    {
+      "directory": "runs/multibody_wake_diagnostics/coarse_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/gradient_initial_v1",
+      "passed": true,
+      "evaluations": 13,
+      "analytic_pullback_checks": 1,
+      "analytic_pullback_max_error": 8.881784197001252e-16,
+      "raw_field_force_max_error": 7.105427357601002e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/gradient_nonzero_v1",
+      "passed": true,
+      "evaluations": 13,
+      "analytic_pullback_checks": 1,
+      "analytic_pullback_max_error": 8.881784197001252e-16,
+      "raw_field_force_max_error": 7.105427357601002e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/optimization_v1",
+      "passed": true,
+      "evaluations": 17,
+      "analytic_pullback_checks": 9,
+      "analytic_pullback_max_error": 2.1094237467877974e-15,
+      "raw_field_force_max_error": 7.105427357601002e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/medium_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 7.105427357601002e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/medium_candidate_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 3.552713678800501e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/half_dt_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/half_dt_candidate_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/late_window_initial_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 5.329070518200751e-15,
+      "paper_eligible": false
+    },
+    {
+      "directory": "runs/multibody_wake_diagnostics/late_window_candidate_v1",
+      "passed": true,
+      "evaluations": 1,
+      "analytic_pullback_checks": 0,
+      "analytic_pullback_max_error": null,
+      "raw_field_force_max_error": 3.552713678800501e-15,
+      "paper_eligible": false
+    }
+  ]
+}

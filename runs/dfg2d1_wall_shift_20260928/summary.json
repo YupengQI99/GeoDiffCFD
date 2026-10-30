@@ -1,0 +1,496 @@
+{
+  "schema": "dfg2d1-wall-shift-corroboration-evidence-1",
+  "paper_eligible": false,
+  "corroboration_only": true,
+  "complete": true,
+  "source_commits": [
+    "42fac8bb2d7583eba870ef7e3e1705627af0e6c1"
+  ],
+  "cases": [
+    {
+      "case": "S1_2D1",
+      "wall_shift_m": 0.003102,
+      "preflight": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_S1_2D1_preflight_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_S1_2D1_preflight_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_geometry_pullback_checks": 0,
+          "analytic_geometry_pullback_max_error": null,
+          "paper_eligible": false
+        },
+        "raw_field_force_max_error": 3.552713678800501e-15,
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1"
+          ],
+          "sample_count": 100,
+          "mean_speed_ratio": [
+            0.003281366123216291,
+            0.003161158800277185
+          ],
+          "rms_speed_ratio": [
+            0.003622687753914859,
+            0.0034835824568223307
+          ],
+          "mean_absolute_flux_ratio": [
+            0.0004305724955253949,
+            0.00040012931833207505
+          ],
+          "max_absolute_flux_ratio": [
+            0.0004958511225453642,
+            0.0004602538345367183
+          ]
+        },
+        "core_counts": [
+          616,
+          524
+        ],
+        "window": {
+          "dt": 0.0005,
+          "n_steps": 200,
+          "window_start_step": 100,
+          "window_count": 100,
+          "window_start_time": 0.05,
+          "end_time": 0.1,
+          "max_velocity_component_all": 0.5323923762847841,
+          "max_velocity_component_window": 0.4806439656651655,
+          "component_screening_index": 0.05775465543258419,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.13936191711373364,
+          "snapshot_component_upper_index": 0.06299850951325933,
+          "snapshot_cell_center_max_speed": 0.45781799773752974,
+          "snapshot_cell_center_index": 0.052399329763100196,
+          "snapshot_count": 1,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "periodic": null,
+        "steady": null,
+        "material_half_fraction_radius": {
+          "expected_m": 0.046898,
+          "minimum_m": 0.04688204800727222,
+          "maximum_m": 0.04691581332441283,
+          "mean_m": 0.046896095668743,
+          "crossing_count": 76,
+          "max_error_m": 1.7813324412828402e-05,
+          "method": "linear interpolation along cell-centred x rows"
+        },
+        "passed_registered_metrics": false,
+        "permits_stage2_metrics": false,
+        "paper_eligible": false,
+        "schema": "dfg2d1-wall-shift-audit-1",
+        "case": "S1_2D1",
+        "phase": "preflight",
+        "force_scale": 499.9999999999999,
+        "nominal_Re": 20.000000000000004,
+        "corroboration_only": true
+      },
+      "production": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_S1_2D1_production_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_S1_2D1_production_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_geometry_pullback_checks": 0,
+          "analytic_geometry_pullback_max_error": null,
+          "paper_eligible": false
+        },
+        "raw_field_force_max_error": 3.552713678800501e-15,
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1"
+          ],
+          "sample_count": 4000,
+          "mean_speed_ratio": [
+            0.0023091098916138294,
+            0.0022487643736551453
+          ],
+          "rms_speed_ratio": [
+            0.0026274070612644163,
+            0.002527710669060087
+          ],
+          "mean_absolute_flux_ratio": [
+            0.00028233205159404825,
+            0.0002675695521423344
+          ],
+          "max_absolute_flux_ratio": [
+            0.000282332051954213,
+            0.0002675695524685098
+          ]
+        },
+        "core_counts": [
+          616,
+          524
+        ],
+        "window": {
+          "dt": 0.0005,
+          "n_steps": 32000,
+          "window_start_step": 28000,
+          "window_count": 4000,
+          "window_start_time": 14.0,
+          "end_time": 16.0,
+          "max_velocity_component_all": 0.5323923762847841,
+          "max_velocity_component_window": 0.3981483006680648,
+          "component_screening_index": 0.039630517331216926,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.11991395979418872,
+          "snapshot_component_upper_index": 0.04977317215111879,
+          "snapshot_cell_center_max_speed": 0.40660584374799136,
+          "snapshot_cell_center_index": 0.04133207804250399,
+          "snapshot_count": 21,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "periodic": null,
+        "steady": {
+          "quantities": {
+            "Cd": {
+              "mean_14_16": 5.626835646230226,
+              "mean_14_15": 5.626835647644397,
+              "mean_15_16": 5.626835644816054,
+              "relative_half_window_drift": 5.026524801944368e-10,
+              "drift_undefined_reason": null,
+              "reference_point": 5.57953523384,
+              "reference_interval": [
+                5.57,
+                5.59
+              ],
+              "signed_point_error": 0.047300412390225866,
+              "signed_point_error_percent": 0.8477482515631074,
+              "absolute_point_error_percent": 0.8477482515631074,
+              "inside_reference_interval": false,
+              "outside_interval_error_percent": 0.6601920175504359,
+              "signed_interval_endpoint_error_percent": [
+                0.6589561042974257,
+                1.0203886217275526
+              ]
+            },
+            "Cl": {
+              "mean_14_16": 0.010602198736081377,
+              "mean_14_15": 0.010602249568086267,
+              "mean_15_16": 0.010602147904076488,
+              "relative_half_window_drift": 9.58895530154038e-06,
+              "drift_undefined_reason": null,
+              "reference_point": 0.010618948146,
+              "reference_interval": [
+                0.0104,
+                0.011
+              ],
+              "signed_point_error": -1.674940991862328e-05,
+              "signed_point_error_percent": -0.15773134672413258,
+              "absolute_point_error_percent": 0.15773134672413258,
+              "inside_reference_interval": true,
+              "outside_interval_error_percent": 0.0,
+              "signed_interval_endpoint_error_percent": [
+                -3.6163751265329336,
+                1.9442186161670927
+              ]
+            }
+          },
+          "window_steps": [
+            28001,
+            32000
+          ],
+          "window_seconds": [
+            14.0,
+            16.0
+          ],
+          "half_window_sample_counts": [
+            2000,
+            2000
+          ],
+          "Cd_drift_limit": 0.0001,
+          "Cd_citation_drift_passed": true,
+          "rule": "Only the strict Cd drift <1e-4 determines this citation-drift flag; it is not an accuracy or paper-eligibility gate.",
+          "corroboration_only": true,
+          "permits_stage2": false,
+          "paper_eligible": false
+        },
+        "material_half_fraction_radius": {
+          "expected_m": 0.046898,
+          "minimum_m": 0.04688204800727222,
+          "maximum_m": 0.04691581332441283,
+          "mean_m": 0.046896095668743,
+          "crossing_count": 76,
+          "max_error_m": 1.7813324412828402e-05,
+          "method": "linear interpolation along cell-centred x rows"
+        },
+        "passed_registered_metrics": false,
+        "permits_stage2_metrics": false,
+        "paper_eligible": false,
+        "schema": "dfg2d1-wall-shift-audit-1",
+        "case": "S1_2D1",
+        "phase": "production",
+        "force_scale": 499.9999999999999,
+        "nominal_Re": 20.000000000000004,
+        "corroboration_only": true
+      }
+    },
+    {
+      "case": "W0_2D1",
+      "wall_shift_m": 0.0,
+      "preflight": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_W0_2D1_preflight_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_W0_2D1_preflight_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_geometry_pullback_checks": 0,
+          "analytic_geometry_pullback_max_error": null,
+          "paper_eligible": false
+        },
+        "raw_field_force_max_error": 3.608224830031759e-16,
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1"
+          ],
+          "sample_count": 100,
+          "mean_speed_ratio": [
+            0.00304234500431031,
+            0.00304234500431031
+          ],
+          "rms_speed_ratio": [
+            0.0033546575677594437,
+            0.0033546575677594437
+          ],
+          "mean_absolute_flux_ratio": [
+            0.00041026414488531346,
+            0.00041026414488531346
+          ],
+          "max_absolute_flux_ratio": [
+            0.00047282811864105125,
+            0.00047282811864105125
+          ]
+        },
+        "core_counts": [
+          616,
+          616
+        ],
+        "window": {
+          "dt": 0.0005,
+          "n_steps": 200,
+          "window_start_step": 100,
+          "window_count": 100,
+          "window_start_time": 0.05,
+          "end_time": 0.1,
+          "max_velocity_component_all": 0.5346093758512422,
+          "max_velocity_component_window": 0.48457496131008776,
+          "component_screening_index": 0.05870322328216826,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.14096379536351178,
+          "snapshot_component_upper_index": 0.0646349151140145,
+          "snapshot_cell_center_max_speed": 0.46309119578732566,
+          "snapshot_cell_center_index": 0.0536133639039338,
+          "snapshot_count": 1,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "periodic": null,
+        "steady": null,
+        "material_half_fraction_radius": {
+          "expected_m": 0.05,
+          "minimum_m": 0.049984062099496795,
+          "maximum_m": 0.05001687921283016,
+          "mean_m": 0.0499996145243145,
+          "crossing_count": 80,
+          "max_error_m": 1.687921283016064e-05,
+          "method": "linear interpolation along cell-centred x rows"
+        },
+        "passed_registered_metrics": false,
+        "permits_stage2_metrics": false,
+        "paper_eligible": false,
+        "schema": "dfg2d1-wall-shift-audit-1",
+        "case": "W0_2D1",
+        "phase": "preflight",
+        "force_scale": 499.9999999999999,
+        "nominal_Re": 20.000000000000004,
+        "corroboration_only": true
+      },
+      "production": {
+        "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_W0_2D1_production_20260928",
+        "passed_raw_audit": true,
+        "raw_audit": {
+          "directory": "/media/user/external/jax_cad_multibody_sensitivity_20260926/dfg2d1_wall_shift_W0_2D1_production_20260928",
+          "passed": true,
+          "evaluations": 1,
+          "analytic_geometry_pullback_checks": 0,
+          "analytic_geometry_pullback_max_error": null,
+          "paper_eligible": false
+        },
+        "raw_field_force_max_error": 1.7763568394002505e-15,
+        "core": {
+          "labels": [
+            "nominal_body1",
+            "corrected_body1"
+          ],
+          "sample_count": 4000,
+          "mean_speed_ratio": [
+            0.0021748858673422654,
+            0.0021748858673422654
+          ],
+          "rms_speed_ratio": [
+            0.0024555955268436474,
+            0.0024555955268436474
+          ],
+          "mean_absolute_flux_ratio": [
+            0.00027432787698578677,
+            0.00027432787698578677
+          ],
+          "max_absolute_flux_ratio": [
+            0.0002743278774654898,
+            0.0002743278774654898
+          ]
+        },
+        "core_counts": [
+          616,
+          616
+        ],
+        "window": {
+          "dt": 0.0005,
+          "n_steps": 32000,
+          "window_start_step": 28000,
+          "window_count": 4000,
+          "window_start_time": 14.0,
+          "end_time": 16.0,
+          "max_velocity_component_all": 0.5346093758512422,
+          "max_velocity_component_window": 0.4049311687881831,
+          "component_screening_index": 0.040992312864041,
+          "steps_component_index_above_one": 0,
+          "window_max_cfl": 0.1224149713410883,
+          "snapshot_component_upper_index": 0.05171943969589492,
+          "snapshot_cell_center_max_speed": 0.4133177469551946,
+          "snapshot_cell_center_index": 0.04270788998702956,
+          "snapshot_count": 21,
+          "meaning": "component screening index and snapshot-only bounds; not a theorem for the projected variable-coefficient solver"
+        },
+        "periodic": null,
+        "steady": {
+          "quantities": {
+            "Cd": {
+              "mean_14_16": 6.041867967087082,
+              "mean_14_15": 6.041867968669829,
+              "mean_15_16": 6.041867965504336,
+              "relative_half_window_drift": 5.239261721790243e-10,
+              "drift_undefined_reason": null,
+              "reference_point": 5.57953523384,
+              "reference_interval": [
+                5.57,
+                5.59
+              ],
+              "signed_point_error": 0.4623327332470826,
+              "signed_point_error_percent": 8.286223025226636,
+              "absolute_point_error_percent": 8.286223025226636,
+              "inside_reference_interval": false,
+              "outside_interval_error_percent": 8.098666791213963,
+              "signed_interval_endpoint_error_percent": [
+                8.083505672398616,
+                8.471597254705232
+              ]
+            },
+            "Cl": {
+              "mean_14_16": 0.015527672283881152,
+              "mean_14_15": 0.015527709877563424,
+              "mean_15_16": 0.015527634690198881,
+              "relative_half_window_drift": 4.8421529749024804e-06,
+              "drift_undefined_reason": null,
+              "reference_point": 0.010618948146,
+              "reference_interval": [
+                0.0104,
+                0.011
+              ],
+              "signed_point_error": 0.004908724137881152,
+              "signed_point_error_percent": 46.22608633539844,
+              "absolute_point_error_percent": 46.22608633539844,
+              "inside_reference_interval": false,
+              "outside_interval_error_percent": 42.63767203333279,
+              "signed_interval_endpoint_error_percent": [
+                41.160657126192305,
+                49.304541191164944
+              ]
+            }
+          },
+          "window_steps": [
+            28001,
+            32000
+          ],
+          "window_seconds": [
+            14.0,
+            16.0
+          ],
+          "half_window_sample_counts": [
+            2000,
+            2000
+          ],
+          "Cd_drift_limit": 0.0001,
+          "Cd_citation_drift_passed": true,
+          "rule": "Only the strict Cd drift <1e-4 determines this citation-drift flag; it is not an accuracy or paper-eligibility gate.",
+          "corroboration_only": true,
+          "permits_stage2": false,
+          "paper_eligible": false
+        },
+        "material_half_fraction_radius": {
+          "expected_m": 0.05,
+          "minimum_m": 0.049984062099496795,
+          "maximum_m": 0.05001687921283016,
+          "mean_m": 0.0499996145243145,
+          "crossing_count": 80,
+          "max_error_m": 1.687921283016064e-05,
+          "method": "linear interpolation along cell-centred x rows"
+        },
+        "passed_registered_metrics": false,
+        "permits_stage2_metrics": false,
+        "paper_eligible": false,
+        "schema": "dfg2d1-wall-shift-audit-1",
+        "case": "W0_2D1",
+        "phase": "production",
+        "force_scale": 499.9999999999999,
+        "nominal_Re": 20.000000000000004,
+        "corroboration_only": true
+      }
+    }
+  ],
+  "same_grid_comparison": {
+    "Cd": {
+      "shifted": 5.626835646230226,
+      "unshifted": 6.041867967087082,
+      "difference": -0.4150323208568567,
+      "shifted_point_error_percent": 0.8477482515631074,
+      "unshifted_point_error_percent": 8.286223025226636,
+      "error_change_percentage_points": -7.438474773663529
+    },
+    "Cl": {
+      "shifted": 0.010602198736081377,
+      "unshifted": 0.015527672283881152,
+      "difference": -0.004925473547799776,
+      "shifted_point_error_percent": -0.15773134672413258,
+      "unshifted_point_error_percent": 46.22608633539844,
+      "error_change_percentage_points": -46.383817682122576
+    }
+  },
+  "benchmark_gate_applicable": false,
+  "stage2_started": false,
+  "S15_retried": false,
+  "prior_S1_Re100_drag_failure_unchanged": true,
+  "prediction": {
+    "Cd_signed_error_percent_range": [
+      2.0,
+      4.0
+    ],
+    "source": "user-supplied 440x82 CPU pre-run; not rerun here",
+    "observed_Cd_signed_error_percent": 0.8477482515631074,
+    "within_predicted_range": false
+  },
+  "physics_unchanged_from_S1_04185ba": {
+    "jax_cad/differentiable/mac_channel.py": "d0dc7efb488e84dff4d10e3215890c567565bc8dab9ee244c837b6b2de4a7340",
+    "jax_cad/differentiable/wake_design.py": "c18237fed231463815661bd6d867f983060ca86962b8ddd21b5c3a27d3235454",
+    "jax_cad/differentiable/wake_leakage.py": "e8ca4eb777d279ccf5e409b9954e5c22f4eaae633c619ce8281e30307c9891ec",
+    "jax_cad/differentiable/wall_shift.py": "727fc177c87de7d0daf2954180b92dad5325a57fd42ff1fa4701c741da9a510c",
+    "jax_cad/verification.py": "aa9c86065acf6d276af892c98fcd941a9e04824a5b662573290eda6e9ff7fb49"
+  },
+  "interpretation": "Only Cd drift<1e-4 permits citation as the requested steady value. No accuracy gate or claim of Re100, geometry-gradient, grid or sharp-interface convergence."
+}

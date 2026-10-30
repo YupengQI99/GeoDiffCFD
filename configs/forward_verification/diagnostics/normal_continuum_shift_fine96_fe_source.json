@@ -1,0 +1,46 @@
+{
+  "chunk_steps": 1000,
+  "experiment_id": "normal_constraint_cylinder_diagnostic",
+  "fine_authorization": {
+    "date": "2026-09-19",
+    "gpu_memory_stop_mib": 22000,
+    "gpu_preallocation_fraction": 0.7,
+    "minimum_disk_free_gib": 30,
+    "scope": "single-segmented-monitored-verification"
+  },
+  "gates": {
+    "cv_relative_closure": 0.00001,
+    "divergence_max": 1e-8,
+    "mass_flux_mismatch": 1e-9,
+    "normal_velocity_max": 1e-10
+  },
+  "grid": {
+    "lx": 2.2,
+    "ly": 0.41,
+    "nx": 880,
+    "ny": 164
+  },
+  "max_steps": 144000,
+  "normal_constraint": {
+    "angle_origin": 0,
+    "force_protocol": "mac-brinkman-plus-normal-reaction-prototype-v1",
+    "kernel": "tensor-cubic-bspline-native-mac",
+    "markers": 96,
+    "nominal_surface_shift": 0
+  },
+  "planar_calibration_control": {
+    "method": "continuous-planar-tangential-shear-zero-displacement",
+    "paper_eligible": false,
+    "purpose": "same-continuum-model-discretization-only",
+    "reference_data": "none"
+  },
+  "run_id": "normal-continuum-shift-fine96-fe-source-only",
+  "schema_version": "normal-cylinder-diagnostic-config-1.0",
+  "source_config": "configs/forward_verification/diagnostics/cylinder_continuum_shift_fine_fe_source.json",
+  "source_config_sha256": "068098c476e7fb51816e3f6ce668fab72d0ae107ed2d26fec6d4803f9dca2ba7",
+  "study": {
+    "development_only": true,
+    "paper_eligible": false
+  },
+  "execution_scope": "CPU FE attribution only; not an executable MAC cylinder configuration"
+}

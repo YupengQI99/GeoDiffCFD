@@ -1,0 +1,7 @@
+# Archived records must retain the exact bytes used by their checksums.
+/runs/** -text
+/output/data/** -text
+*.csv -text whitespace=cr-at-eol
+*.npz binary
+*.pdf binary
+*.png binary

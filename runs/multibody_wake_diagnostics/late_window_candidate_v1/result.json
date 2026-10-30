@@ -1,0 +1,101 @@
+{
+  "schema": "multibody-wake-result-1",
+  "mode": "forward",
+  "provenance": {
+    "git_commit": "fedf5f781c9c4a93c7e58668f707672abb86558f",
+    "git_branch": "feat/multibody-wake-design",
+    "git_dirty": false,
+    "python": "3.11.13",
+    "jax": "0.7.0",
+    "jaxlib": "0.7.0",
+    "numpy": "2.3.1",
+    "scipy": "1.16.0",
+    "platform": "Linux-6.2.0-39-generic-x86_64-with-glibc2.37",
+    "processor": "x86_64",
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "device_kind": "NVIDIA GeForce RTX 4090",
+    "precision": "float64",
+    "x64_enabled": true,
+    "utc": "2026-09-20T11:16:02.550854+00:00"
+  },
+  "paper_eligible": false,
+  "scope": "three-body finite-Brinkman finite-time native shape design; not sharp-wall acceptance",
+  "value": 10.896013265306946,
+  "evaluations": [
+    {
+      "theta": [
+        1.0,
+        -0.5931893473102787,
+        -1.0,
+        -0.08735577722460926,
+        1.0,
+        -0.3024696528758541,
+        -0.8793853192325943,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0
+      ],
+      "body_coefficients": [
+        [
+          0.18,
+          0.19,
+          0.0,
+          -0.0474551477848223,
+          -0.004367788861230463,
+          0.0
+        ],
+        [
+          0.22,
+          -0.04396926596162972,
+          0.2,
+          -0.024197572230068326,
+          0.05,
+          0.0
+        ],
+        [
+          0.16,
+          0.11,
+          0.0,
+          0.1,
+          0.11,
+          0.0
+        ]
+      ],
+      "objective": 10.896013265306946,
+      "gradient": null,
+      "geometric_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "reference_areas": [
+        0.007853981633974483,
+        0.007853981633974483,
+        0.007853981633974483
+      ],
+      "diffuse_areas": [
+        0.007955721136137947,
+        0.007960888034827168,
+        0.007958229493931252
+      ],
+      "diffuse_area": 0.02387483866489637,
+      "seconds": 100.45818407298066,
+      "max_diagnostics": [
+        101.65683762770924,
+        3.6606485515076037,
+        2.653006418439447e-12,
+        7.399636459126668e-12,
+        4.06179155350667e-16,
+        0.10674986301068548,
+        2.5574690058739136
+      ],
+      "paper_eligible": false,
+      "directory": "evaluation-000"
+    }
+  ]
+}
