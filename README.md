@@ -93,7 +93,7 @@ revision `203efc0`, the last revision used for the reported runs.
 | Table 17 (penalty and wall-offset sensitivity) | `runs/multibody_penalty_sensitivity_20260926/objectives.csv`, `runs/multibody_review_checks_20260926/timecheck.csv`, `runs/multibody_offset_20260928/pairs.csv` | `tools/run_multibody_penalty.py`, `tools/run_multibody_offset.py` |
 | Table 18 (flow inside the bodies) | `runs/multibody_penalty_sensitivity_20260926/summary.json`, `runs/multibody_offset_20260928/diagnostics.csv` | `tools/run_multibody_penalty.py`, `tools/run_multibody_offset.py` |
 | Figs. 11-12 (three-body flow fields) | `fields.npz` in `runs/multibody_wake_diagnostics/optimization_v1/evaluation-000/` and `runs/multibody_wake_continuation_20260921/continuation_01_retry/evaluation-005/` | `tools/guard_multibody_wake.py` |
-| Table A.1 (cylinder with normal constraints) | `runs/mac_normal_response_diagnostics/` | `tools/run_normal_cylinder.py`, `tools/fe_normal_constraint.py` |
+| Table A1 (cylinder with normal constraints) | `runs/mac_normal_response_diagnostics/` | `tools/run_normal_cylinder.py`, `tools/fe_normal_constraint.py` |
 
 `runs/derived/` holds two small summaries quoted in the text: the DFG 2D-2
 drag and Strouhal number on two grids with the design-model parameters, and
